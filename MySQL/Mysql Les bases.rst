@@ -5,17 +5,13 @@ Mysql
 ===================
 `Mysql Doc <https://dev.mysql.com/doc/>`_
 
-.. warning::
-        Vous devez étre connecter pour effectuer les commandes
-
-
 Show
 -------------------
 Voir la liste des database::
-     $ mysql>show databases;  
+     $ mysql> show databases;  
 
 Selectionner une database:: 
-     $ mysql>use name_database
+     $ mysql> use name_database
 
 La liste des tables dans cette database::  
      $ mysql> show tables;
@@ -64,15 +60,5 @@ Pour que les droits prennent effet::
 Listes des users::
      $ mysql> select * from mysql.user;
 
-.. note::
-        Exemple de table Mysql
-
-====== ============ =======
-ID    City          Name
-====== ============ =======
-1      NULL          Biros
-2      NULL          piskoty
-3      NULL          beton
-====== ============ =======
 
 
