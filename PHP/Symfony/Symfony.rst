@@ -1,10 +1,14 @@
-
+##################
 Commande 
+##################
+
 Commande de base 
+================
 
 
 
 Avec composer : 
+****************
 
 composer create-project symfony/skeleton myProject ( pour API ) 
 composer create-project symfony/website-skeleton my_project_name ( version Website ) 
@@ -181,49 +185,52 @@ $this->addReference(self::ADMIN_USER_REFERENCE, $user5);
 $trick->setAuthor($this->getReference(UserFixture::ADMIN_USER_REFERENCE));
 Annotations des entités  : 
 
-/**
-* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
-* @ORM\OrderBy({"createdAt" = "DESC"})
-*/
+::
+	/**
+	* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
+	* @ORM\OrderBy({"createdAt" = "DESC"})
+	*/
 
 
-/**
-* @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
-* @ORM\JoinColumn(nullable=false)
-*/
+	/**
+	* @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
+	* @ORM\JoinColumn(nullable=false)
+	*/
 
-Modéliser la relation des deux coté
-/**
-* @ORM\ManyToMany(targetEntity="App\Entity\Tag", inversedBy="articles")
-*/
+	/*Modéliser la relation des deux coté*/
+	/**
+	* @ORM\ManyToMany(targetEntity="App\Entity\Tag", inversedBy="articles")
+	*/
 
 
-* @ORM\OrderBy({"createdAt" = "DESC"})
-* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
+	* @ORM\OrderBy({"createdAt" = "DESC"})
+	* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
 
 Annotations des routes  : 
-/**
-* @Route("/admin/comment", name="comment_admin")
-* @IsGranted("ROLE_ADMIN")
-*/   
+::
+	/**
+	* @Route("/admin/comment", name="comment_admin")
+	* @IsGranted("ROLE_ADMIN")
+	*/   
 ( nécessite : composer require annotations ) 
 
 
 
 
 Code lié aux requêtes 
-public function findByExampleField($value)
-{
-   return $this->createQueryBuilder('c')
-       ->andWhere('c.exampleField = :val')
-       ->setParameter('val', $value)
-       ->orderBy('c.id', 'ASC')
-       ->innerJoin('c.article', 'a');
-       ->setMaxResults(10)
-       ->getQuery()
-       ->getResult()
-   ;
-}
+::
+	public function findByExampleField($value)
+	{
+	   return $this->createQueryBuilder('c')
+	       ->andWhere('c.exampleField = :val')
+	       ->setParameter('val', $value)
+	       ->orderBy('c.id', 'ASC')
+	       ->innerJoin('c.article', 'a');
+	       ->setMaxResults(10)
+	       ->getQuery()
+	       ->getResult()
+	   ;
+	}
 
 
 Exploitation des API
@@ -232,20 +239,22 @@ Se référer à la docs spécial API
 Formulaire 
 
 Générer du côté vue : 
-{{  form_start(form) }}
- 
-   {{ form_widget(form) }}
- 
-{{  form_end(form) }}
+::
+	{{  form_start(form) }}
+
+	   {{ form_widget(form) }}
+
+	{{  form_end(form) }}
 
 Controller : 
-       $form = $this->createForm(TricksType::class, $tricks);
-     //  $form->handleRequest($request);
- 
-       return $this->render('admin/tricksEdit.html.twig', [
-           'tricks' => $tricks,
-           'form' => $form->createView()
-       ]);
+::
+	$form = $this->createForm(TricksType::class, $tricks);
+	//  $form->handleRequest($request);
+
+	return $this->render('admin/tricksEdit.html.twig', [
+	   'tricks' => $tricks,
+	   'form' => $form->createView()
+	]);
 
 Pour créer un form : php bin/console make:form
 	-> nom de la class “ ex TricksType”
