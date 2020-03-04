@@ -53,6 +53,8 @@ $ git branch // voir la branche actuelle et toutes les branch
 $ git branch mon-test // Créer une nouvelle branch nommé "mon-test" 
 $ git checkout mon-test // pour changer de branch 
 
+Supprimer une branche ?? 
+
 Fusionnez des branches :
 -------------------
 
@@ -61,6 +63,16 @@ $ git checkout brancheA // (ou master)
 $ git merge brancheB // La B rentre dans A ou master 
 ( voir pour git push origin master aprés pour effectuer la merge ) 
 ( ou faire une demande de pull request sur git ) 
+
+Contribution :
+-------------------
+1. Créer une issue pour ajouter ou corriger
+2. créer la branch associé
+3. bosser sur la branche
+4. Commmit sur la branch 
+5. Créer une pull request 
+6. Attendre que une personne regarde et merge la PR 
+7. celui qui merge supprime la branche et close l'issue 
 
 
 
