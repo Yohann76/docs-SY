@@ -10,24 +10,36 @@ Commande de base
 Avec composer : 
 ****************
 
-composer create-project symfony/skeleton myProject ( pour API ) 
-composer create-project symfony/website-skeleton my_project_name ( version Website ) 
+Créer un projet simple ( API ou format court )
+.. code-block:: terminal
+
+    $ composer create-project symfony/skeleton myProject
+
+
+Créer un projet complexe ( Application, librairie deja présente )
+.. code-block:: terminal
+
+    $ composer create-project symfony/website-skeleton my_project_name
+
 
 Avec Symfony : 
-symfony new my_project_name --full ( Version Website ) 
-symfony new my_project_name ( créer un projet avec API ou simple ) 
+.. code-block:: terminal
 
-composer create-project symfony/website-skeleton my-project
+    $symfony new my_project_name --full ( Version Website ) 
+    $symfony new my_project_name ( créer un projet avec API ou simple ) 
+
+
 composer install ( installer les librairies du composer.json ) 
 composer update ( update les librairies du composer.json ) 
 
 Lancer le serveur interne de Symfony
-php bin/console server:run   
-php -S 127.0.0.1:8000 -t public
-symfony server:start --no-tls
-symfony serve ( nouvelle version https://symfony.com/download ) 
+.. code-block:: terminal
+    $ php bin/console server:run   
+    $ php -S 127.0.0.1:8000 -t public
+    $ symfony server:start --no-tls
+    $ symfony serve ( nouvelle version https://symfony.com/download ) 
 
-php bin/console cache:clear ( Vider le cache ) 
+    $php bin/console cache:clear ( Vider le cache ) 
 
 Composer : Les requires indispensable  et commandes composer 
 
@@ -70,7 +82,8 @@ composer update symfony/maker-bundle ( avant de faire php bin/console make:user 
 
 pour la création de fixture : composer require orm-fixtures --dev
 
-Commande lié à la création automatique 
+Création automatique ( makerBundle )
+------------------------------------
 
 php bin/console make:controller
 php bin/console generate:bundle
@@ -80,10 +93,14 @@ php bin/console make:user
 php bin/console make:auth ( créer un authentificateur ) 
 php bin/console make:voter ( créer un voteurs )
 php bin/console make:entity
+
 Nommer la class “ex Article”
 Choisir le nom du premier champs “ex name”
 Choisir le type de champ “ex string”
+
+
 Commande lié a doctrine 
+-----------------------
 
 composer require symfony/orm-pack (pour + de souplesse en ligne de commande ) 
 composer require --dev symfony/maker-bundle (pour +de souplesse en ligne de commande) 
@@ -112,14 +129,8 @@ php bin/console doctrine:fixtures:load ( charger les data des fixtures dans la b
 Pour les relation : 
 Faire un make Entity, entrer l’entité A, ensuite mettre “relation” et “B” par exemple 
 
-Debuggage
-Commande Git 
-git status *
-git commit -m “message”
-git status *
-git push origin master 
-
 Commande Lié a twig 
+--------------------
 
 php bin/console make:twig-extension ( créer une extension twig )
 php bin/console debug:twig ( voir les filtre ) 
@@ -136,12 +147,19 @@ Nouvelles commandes
 symfony server:start --no-tls
 symfony new --full my_project
 
-Code 
+Code
+#######
+
+Cette partie présente des démonstrations codé
+
 Service interne les plus utilisé 
+--------------------------------
+
 Security $sécurity (   $this->security->getUser()    )
 LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
 
 Bundle utile 
+------------
 composer require knplabs/knp-paginator-bundle ( bundle de pagination & Docs ) 
 
 Relatif aux bundle 
@@ -160,6 +178,7 @@ $request->query->get('id');
 $request->request->get('category', 'default category');
 
 Twig Syntax 
+-----------
 
 {% block title %}Hello {{ controller_name }}!{% endblock %}
 {{ article.author }}
@@ -303,6 +322,7 @@ return $this->redirect($_SERVER['HTTP_REFERER']);
 
 
 Configuration : 
+---------------
 Ajouter une déconnexion dans security.yaml
 logout:
    path:   logout
