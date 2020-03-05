@@ -16,6 +16,12 @@ Selectionner une database::
 La liste des tables dans cette database::  
      $ mysql> show tables;
 
+Afficher la les types des champs::
+     $ mysql> describe tablename;
+
+Afficher la taille des base de données::
+     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema;
+
 Requêtes
 -------------------
 
@@ -59,6 +65,23 @@ Pour que les droits prennent effet::
 
 Listes des users::
      $ mysql> select * from mysql.user;
+
+
+
+Sauvgarde et restauration
+-------------------
+
+Sauvegarder une seule base de donnée, données et structure::
+     $ mysqldump -u username -p --databases databasename > databasename.sql
+
+Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql::
+     $ mysqldump -uroot -p --all-databases > alldatabases.sql
+
+Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base::
+     $ mysql -u username -p databasename < databasename.sql 
+
+Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases::
+     $ mysql -u username -p --one-database mybase < alldatabases.sql
 
 
 
