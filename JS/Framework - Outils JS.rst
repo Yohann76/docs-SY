@@ -1,27 +1,13 @@
 Outils/Framework pour Javascript 
-
-
-Webpack	1
-Installation	1
-Fonctionnement	1
-Webpack Encore	2
-Installation :	2
-Configuration webpack.config.js	2
-Exemple Syntaxe module	3
-React.js ( Facebook )	4
-Pré-requis yarn add :	4
-Vérification de Data ( props )	5
-Héritage de composant ( par sacha )	5
-Architecture entre module ?	5
-Angular.js ( google )	5
-Installation	5
-Fonctionnement	5
+===================
 
 Webpack 
+-------------------
 Installation 
 Installer webpack avec yarn : yarn add webpack@3 --dev   ( ou webpack-cli ) 
 
 Fonctionnement 
+-------------------
 Exporter un objet, une variable, une classe, une fonction… :
 exporter de module : module.exports = food 
 Importer un module : const foods = require(‘foods’);
@@ -46,6 +32,7 @@ module.exports = {
 
 
 Webpack Encore 
+-------------------
 Prendre sur nos git les bases
 Webpackconfig.js [Copier]
 package.json  [Copier]
@@ -112,6 +99,7 @@ export default function(exclamationCount) {
 
 
 Production : 
+-------------------
 
 $Yarn install
 $Yarn build 
@@ -194,6 +182,7 @@ Des composants réutilisable ( ex: un Composants button avec une props pour déf
 
 
 Angular.js ( google ) 
+-------------------
 Installation 
 node requis.
 

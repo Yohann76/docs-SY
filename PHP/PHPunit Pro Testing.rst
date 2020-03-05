@@ -1,12 +1,9 @@
 Les test avec PHPunit 
+===================
 
-
-Commande et installation	1
-Test :	1
-Test Entité (unitaire)  tests/Entity/phoneTest.php	1
-Test controller (fonctionnelle) tests/Controller/homecontrollerTest	2
 
 Commande et installation
+-------------------
 prérequis : Installer Xdebug ( sur le wamp ) 
 Composer  : composer require phpunit 
 lancer les test : php bin/phpunit

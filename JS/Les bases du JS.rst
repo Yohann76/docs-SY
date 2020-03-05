@@ -1,23 +1,8 @@
 Les bases du JS
-
-
-Base du javascript
-Normalisation:
-Base :
-Sélection des éléments
-Méthode sur sur les éléments ( représenté par variable )
-Événement sur sur les éléments ( représenté par variable )
-Fonctions Sympathique
-Appel AJAX et fonctions asynchrone
-API & Annexe a Javascript
-POO Javascript
-Syntaxe :
-Jquery
-Sélection du DOM
-Autre Librairie
-
+===================
 
 Base du javascript 
+-------------------
 Normalisation: 
 préfixer js-xxxxx a toute les class de div qui servent pour le javascript
 
@@ -33,6 +18,7 @@ Définition d’un objet : var objet = {
 }
 
 Sélection des éléments 
+-------------------
 document.getElementById(‘monId’);
 document.getElementsByName(‘monId’);
 document.getElementsByClassName(‘class’);
@@ -55,6 +41,7 @@ utilisable directement dans le html -> span id=”input” onclick=”alert(‘v
 
 
 Fonctions Sympathique 
+-------------------
 console.log(xxx);   // affiche quelque chose sur la console ( texte,variable,objet..) 
 console.dir(objet);  // affiche les méthode et attribut d’un objet 
 alert();
@@ -152,6 +139,7 @@ class RepLogApp {
    }
 
 Syntaxe : 
+-------------------
 var clickme = document.getElementById('clickme');
     clickme.addEventListener('click', function(e) {
         e.target.innerHTML = 'Vous avez cliqué !';
@@ -166,6 +154,7 @@ type d’objet : Map ; WeakMap
 
 
 Yarn 
+-------------------
 Yarn est un gestionnaire de dépendance JS : 
 installer yarn avec un exécutable msi
 
@@ -191,6 +180,7 @@ Executer un fichier js avec node : node nom_du_fichier
 
 
 Jquery
+-------------------
 Sélection du DOM
 $(document).ready(function() {
 $('.class').on('click', function() {
@@ -200,7 +190,16 @@ $('.class').on('click', function() {
 Autre Librairie 
 
 Node.js
+-------------------
+
 Vue.js
+-------------------
+
 brain.js
+-------------------
+
 Dark Mode.js
-Phaser
+-------------------
+
+Phaser.Installation
+-------------------

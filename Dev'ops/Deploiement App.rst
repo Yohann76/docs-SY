@@ -1,32 +1,14 @@
 Outils de déploiement
+===================
 
 
-Processus de déploiement Symfony	1
-Docker	2
-Commande Général  :	2
-DOCKER-COMPOSE ET  DOSSIER “DOCKER” :	2
-ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )	2
-NETTOYAGE	3
-INFORMATION	3
-LANCER DES COMMANDES SYMFONY DANS DOCKER	3
-DEBUGGAGE :	3
-ANNEXE:	4
-DOCKER SUR DEBIAN ( windows environment )  :	4
-Ansible :	5
-COMMANDE GÉNÉRALE	5
-HOSTING	5
-PLAYBOOK	5
-DEBUGGAGE :	6
-Ancistrano ( construit sur Base de Ansible ) :	6
-Intégration continu	6
-CircleCi	6
-SymfonyCloud	6
-Github Action	6
-Intégration continue avec ansible	6
+
 
 Processus de déploiement Symfony
+-------------------
 
 Déployer: 
+-------------------
 Utiliser un fichier playbook.yaml
 S’assurer de la bonne connexion a MySQL
 Utiliser les bonne versions de PHP
@@ -73,6 +55,7 @@ A partir d’une config, docker-compose build && docker-compose up -d suffit à 
 
 
 NETTOYAGE
+-------------------
 
 Arrêter et supprimer tous  les conteneurs : docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
 docker volume rm $(docker volume ls -qf dangling=true)
@@ -95,6 +78,7 @@ docker-compose exec php bin/console …
 
 
 DEBUGGAGE :
+-------------------
 cannot start service caused process_linux… : regarder les ligne de volumes ( voir -v ) 
 ports allocated : changer le port d’utilisation du service 
 savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell ) 
@@ -115,6 +99,7 @@ $ docker-machine start default
 $ docker-compose up -d 
 
 ANNEXE: 
+-------------------
 docker-compose up --build  ( couteau suisse ) 
 démarrer un conteneur nginx $ docker run --name mynginx -P -d nginx
 docker exec -it ‘id’ bash 
@@ -146,7 +131,8 @@ docker-compose up -d
 Probléme Résolue : docker-compose command not found : Lien stackOverflow
 
 
-Ansible : 
+ANSIBLE : 
+-------------------
 COMMANDE GÉNÉRALE
 ansible localhost -m command -a "/bin/echo 'Hello Ansible'"
 ansible localhost -m ping
@@ -186,12 +172,15 @@ ansible-vault rekey foo.yml
 
 
 DEBUGGAGE : 
+-------------------
 
 deployment avec Nginx, si problème de 403 forbidden, voir/supprimer le défaut dans /etc/nginx/sites-enabled 
 Faire un composer install manuellement par SSH 
 	
 
 Ancistrano ( construit sur Base de Ansible ) :
+-------------------
+
 			A Voir plus tard 
 Intégration continu
 CircleCi
