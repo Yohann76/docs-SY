@@ -7,7 +7,9 @@ Normalisation:
 préfixer js-xxxxx a toute les class de div qui servent pour le javascript
 
 Base :
-Définition de variable : var variable = 3;
+Définition de variable :
+::
+    var variable = 3;
 
 Définition d’un objet :
 ::
@@ -30,13 +32,31 @@ Sélection des éléments
 
 
 Méthode sur sur les éléments ( représenté par variable ) 
-modifier le css d’un élément : variable.style[‘color’] = ‘green’
-compter le nombre de caractère : variable.length;
-ajouter une class a l’élément : variable.add(‘new class’);
-ajouter a l'élément : variable.append(‘new class’);  //( || appendChild ) 
-lire un attribut data-url : $(this).data('url');
-Rechercher chaque élément : $element.find(‘tbody tr’).each(function(){       });
+modifier le css d’un élément :
+::
+    variable.style[‘color’] = ‘green’;
 
+compter le nombre de caractère :
+::
+    variable.length;
+
+ajouter une class a l’élément :
+::
+    variable.add(‘new class’);
+
+ajouter a l'élément :
+::
+    variable.append(‘new class’);  //( || appendChild ) 
+
+lire un attribut data-url :
+::
+    $(this).data('url');
+
+Rechercher chaque élément :
+::
+    $element.find(‘tbody tr’).each(function(){       });
+
+    
 Événement sur sur les éléments ( représenté par variable ) 
 ::
 
@@ -116,6 +136,8 @@ Syntaxe :
     });
 
 ES6 ou ES 2015:
+-------------------
+
 déclaration de fonction : => 
 déclaration de variable : possible avec let a la place de var ( Let a la portée d’un bloc, moins d’erreur si la variable est pas défini ) 
 classe d’objet uniquement avec ES6 
@@ -160,11 +182,16 @@ Sélection du DOM
             console.log('todo delete!');
         });
     }
-    
+
 Autre Librairie 
 
 Node.js
 -------------------
+
+Executer un fichier js avec node ( cli ) : 
+::
+
+    node nom_du_fichier
 
 Vue.js
 -------------------
