@@ -9,7 +9,10 @@ préfixer js-xxxxx a toute les class de div qui servent pour le javascript
 Base :
 Définition de variable : var variable = 3;
 
-Définition d’un objet : var objet = {
+Définition d’un objet :
+::
+
+	var objet = {
 	var xxxxx = ‘xxxx’;
 	var2 xxxxx = 51 ;
 
@@ -19,9 +22,12 @@ Définition d’un objet : var objet = {
 
 Sélection des éléments 
 -------------------
-document.getElementById(‘monId’);
-document.getElementsByName(‘monId’);
-document.getElementsByClassName(‘class’);
+::
+
+	document.getElementById(‘monId’);
+    document.getElementsByName(‘monId’);
+    document.getElementsByClassName(‘class’);
+    
 Méthode sur sur les éléments ( représenté par variable ) 
 modifier le css d’un élément : variable.style[‘color’] = ‘green’
 compter le nombre de caractère : variable.length;
@@ -48,7 +54,9 @@ alert();
 Appel AJAX et fonctions asynchrone 
 
 Appel AJAX Simple : 
-$.ajax(
+::
+
+	$.ajax(
 {
 url: deleteUrl,
 method: ‘DELETE’,
@@ -63,84 +71,38 @@ objet window : variable globale
 
 Démonstration d’un objet : 
 
-class RepLogApp {
+::
 
-
-
-
+	class RepLogApp {
        constructor($wrapper) {
-
-
            this.$wrapper = $wrapper;
-
-
            this.helper = new Helper(this.$wrapper);
-
-
-
-
-
-
            this.loadRepLogs();
-
-
-
-
-
-
            this.$wrapper.on(
-
-
                'click',
-
-
                '.js-delete-rep-log',
-
-
                this.handleRepLogDelete.bind(this)
-
-
            );
 
-
            this.$wrapper.on(
-
-
                'click',
-
-
                'tbody tr',
-
-
                this.handleRowClick.bind(this)
-
-
            );
-
 
            this.$wrapper.on(
-
-
                'submit',
-
-
                this._selectors.newRepForm,
-
-
                this.handleNewFormSubmit.bind(this)
-
-
            );
-
-
        }
-
-
    }
 
 Syntaxe : 
 -------------------
-var clickme = document.getElementById('clickme');
+::
+
+	var clickme = document.getElementById('clickme');
     clickme.addEventListener('click', function(e) {
         e.target.innerHTML = 'Vous avez cliqué !';
     });
@@ -182,11 +144,13 @@ Executer un fichier js avec node : node nom_du_fichier
 Jquery
 -------------------
 Sélection du DOM
-$(document).ready(function() {
-$('.class').on('click', function() {
+::
+
+	$(document).ready(function() {
+    $('.class').on('click', function() {
             console.log('todo delete!');
         });
-}
+    }
 Autre Librairie 
 
 Node.js
