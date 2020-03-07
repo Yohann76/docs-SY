@@ -19,18 +19,16 @@ après modification du webpack.config.js : exécuter “sh node_modules/.bin/web
 Exemple de webpack.config.js : 
 ::
 
-module.exports = {
-   entry: {
-       rep_log: './public/js/rep_log.js',
-       login: './public/js/login.js',
-   },
-   output: {
-       path: path.resolve(__dirname, 'public', 'build'),
-       filename: '[name].js',
-   }
-};
-
-
+   module.exports = {
+      entry: {
+         rep_log: './public/js/rep_log.js',
+         login: './public/js/login.js',
+      },
+      output: {
+         path: path.resolve(__dirname, 'public', 'build'),
+         filename: '[name].js',
+      }
+   };
 
 
 Webpack Encore 
@@ -52,67 +50,70 @@ yarn build pour la prod ( mimifie les fichier )
 Ensuite chemin vers le fichier builder  dans base.html.twig
 ::
 
-{% block stylesheets %}
-   {{ encore_entry_link_tags('app') }}
-{% endblock %}
+   {% block stylesheets %}
+      {{ encore_entry_link_tags('app') }}
+   {% endblock %}
 
-{% block javascripts %}
-   {{ encore_entry_script_tags('app') }}
-{% endblock %}
+   {% block javascripts %}
+      {{ encore_entry_script_tags('app') }}
+   {% endblock %}
 
 
 Configuration webpack.config.js 
 
 Ajouter une entré : 
-.addEntry('app', './assets/js/app.js')
+::
+
+   .addEntry('app', './assets/js/app.js')
+
 Soit “app” le nom du fichier builder et ensuite le chemin du vrai fichier
 
 Pour la gestion d’image avec webpack :
 ::
 
-// CopyFile
-.copyFiles({
-   from : './assets/images',
-   to: 'images/[path][name].[hash:8].[ext]'
-})
+   // CopyFile
+   .copyFiles({
+      from : './assets/images',
+      to: 'images/[path][name].[hash:8].[ext]'
+   })
 
 Pour supporter le SCSS : 
 ::
 
-// enables Sass/SCSS support
-.enableSassLoader()
+   // enables Sass/SCSS support
+   .enableSassLoader()
 
 
 Exemple Syntaxe module 
 App.css :
 ::
 
-@import '~bootstrap';
-@import '~font-awesome';
+   @import '~bootstrap';
+   @import '~font-awesome';
 
-body {
-   background-color: lightgray;
-}
+   body {
+      background-color: lightgray;
+   }
 
 App.js :
 
 ::
 
-import '../css/app.css';
-import getPhone from './get_phone';   // Fichier get_phone.js 
+   import '../css/app.css';
+   import getPhone from './get_phone';   // Fichier get_phone.js 
 
 // Jquery environment
 ::
 
-import $ from 'jquery';
-import 'bootstrap'; // adds functionss to Jquery
+   import $ from 'jquery';
+   import 'bootstrap'; // adds functionss to Jquery
 
 Module get_phone.js exporter : 
 ::
 
-export default function(exclamationCount) {
-   return 'Hello Webpack EEncore! Edit me in assets/js/app.js'+'!'.repeat(exclamationCount);
-};
+   export default function(exclamationCount) {
+      return 'Hello Webpack EEncore! Edit me in assets/js/app.js'+'!'.repeat(exclamationCount);
+   };
 
 
 Production : 
@@ -131,12 +132,15 @@ Comprendre le jsx : yarn add babel-preset-react --dev
 Comprendre le jsx 2 : yarn add @babel/preset-react@^7.0.0 --dev
 Vérification de data ( props ) : yarn add prop-types --dev
 import PropTypes from 'prop-types';
-// Valid propTypes
-RepPhone.propTypes = {
-   withHeart: PropTypes.bool,
-   highlightedRowId: PropTypes.any,
-   onRowClick: PropTypes.func.isRequired
-};
+::
+
+   // Valid propTypes
+   RepPhone.propTypes = {
+      withHeart: PropTypes.bool,
+      highlightedRowId: PropTypes.any,
+      onRowClick: PropTypes.func.isRequired
+   };
+
 suppression de prototype en prod : yarn add babel-plugin-transform-react-remove-prop-types --dev
 
 Génération de clé id pour ajax : yarn add uuid --dev   ( info ) 
@@ -150,46 +154,46 @@ Ajouter au webpack-config.js : .enableReactPreset()
 Avoir un fichier .eslintrc.js a la racine : 
 ::
 
-module.exports = {
-   extends: ['eslint:recommended','plugin:react/recommended'],
-   parserOptions: {
-       ecmaVersion: 6,
-       sourceType: 'module',
-       ecmaFeatures: {
-           jsx: true
-       }
-   },
-   env: {
-       browser: true,
-       es6: true,
-       node: true
-   },
-   rules: {
-       "no-console": 0,
-       "no-unused-vars": 0
-   }
-};
+   module.exports = {
+      extends: ['eslint:recommended','plugin:react/recommended'],
+      parserOptions: {
+         ecmaVersion: 6,
+         sourceType: 'module',
+         ecmaFeatures: {
+            jsx: true
+         }
+      },
+      env: {
+         browser: true,
+         es6: true,
+         node: true
+      },
+      rules: {
+         "no-console": 0,
+         "no-unused-vars": 0
+      }
+   };
 
 Vérification de Data ( props ) 
 Vérification de data ( props ) : yarn add prop-types --dev
 import PropTypes from 'prop-types';
 ::
 
-// Valid propTypes
-RepPhone.propTypes = {
-   withHeart: PropTypes.bool,
-   highlightedRowId: PropTypes.any,
-   onRowClick: PropTypes.func.isRequired
-};
+   // Valid propTypes
+   RepPhone.propTypes = {
+      withHeart: PropTypes.bool,
+      highlightedRowId: PropTypes.any,
+      onRowClick: PropTypes.func.isRequired
+   };
 
 
 Héritage de props dans les composants( par sacha )
 dans le composant parent : 
 ::
 
-<composantX
-  propriété={‘hello’}
-/>
+   <composantX
+   propriété={‘hello’}
+   />
 
 dans le composant enfant :
 accéder a la propriété avec : this.props.propriété
@@ -197,9 +201,9 @@ accéder a la propriété avec : this.props.propriété
 Possibilité de passer des états en props :
 ::
 
-<composantX
- etatX={this.state.StateX}
-/>
+   <composantX
+   etatX={this.state.StateX}
+   />
 
 Architecture entre Composant?
 3 types de composants
