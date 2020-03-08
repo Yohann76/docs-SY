@@ -1,4 +1,4 @@
-Les bases du JS
+JavaScript
 ===================
 
 Base du javascript 
