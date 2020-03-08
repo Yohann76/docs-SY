@@ -2,6 +2,7 @@ Docker
 ===================
 
 Commande Général  :
+-------------------
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
 tester docker : docker run hello world  
@@ -21,14 +22,19 @@ docker-compose.yaml à la racine
 Dossier Docker à la racine 
 Modifier/ajouté les variable d'environnement du .env si il y a 
 Commande : 
-$ docker-compose up -d --build 
+::
 
-ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier ) 
-docker system prune ( remise a zero de docker ( perte de donnée ) )
-docker-compose down ( ferme les services et conteneurs ) 
-docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image ) 
-docker-compose up -d
-docker run -d -p 8080:80 sfserver  ( port pour nginx )
+    $ docker-compose up -d --build 
+
+ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
+-------------------
+::
+
+    docker system prune ( remise a zero de docker ( perte de donnée ) )
+    docker-compose down ( ferme les services et conteneurs ) 
+    docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image ) 
+    docker-compose up -d
+    docker run -d -p 8080:80 sfserver  ( port pour nginx )
 
 Adresse disponible pour Yohann : http://192.168.99.100:8000/
 Adresse disponible pour PhpMyAdmin : http://192.168.99.100:8080/
@@ -38,23 +44,42 @@ A partir d’une config, docker-compose build && docker-compose up -d suffit à 
 NETTOYAGE
 -------------------
 
-Arrêter et supprimer tous  les conteneurs : docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
-docker volume rm $(docker volume ls -qf dangling=true)
-supprimer un conteneur : docker rm ‘id’ 
-supprimer une image : docker rmi ‘id’  ( -f pour force ) 
-supprimer l’ensemble des ressources : docker system prune
-supprimer toutes les images : docker rmi $(docker images)
+Arrêter et supprimer tous  les conteneurs : 
+::
+    docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
+    docker volume rm $(docker volume ls -qf dangling=true)
+
+supprimer un conteneur :
+::
+    docker rm ‘id’ 
+
+supprimer une image :
+::
+    docker rmi ‘id’  ( -f pour force ) 
+
+supprimer l’ensemble des ressources :
+::
+    docker system prune
+
+supprimer toutes les images :
+::
+    docker rmi $(docker images)
 
 INFORMATION 
+-------------------
 lister les conteneurs existant : docker ps 
 voir les image local présente : docker images -a
 
 LANCER DES COMMANDES SYMFONY DANS DOCKER
 Accès à la machine dans php, rentrer pour exécuter des commande - exit pour sortir
-$docker exec -it php sh ( une fois avec var/www/projet #php bin/console..)
+::
+
+    $docker exec -it php sh ( une fois avec var/www/projet #php bin/console..)
 
 Accès à la machine pour exécuter des commande coup par coup 
-docker-compose exec php bin/console … 
+::
+
+    docker-compose exec php bin/console … 
 
 
 DEBUGGAGE :
@@ -65,18 +90,20 @@ savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell )
 Couldn't connect to Docker daemon. You might need to start Docker for Windows.  ???????????????? 
 
 Si la machine default plante :
+::
 
-$ docker-machine rm default  ( supprimer la machine ) 
-$ docker-machine create --driver virtualbox default ( créer une machine default ) 
-$ docker-machine env default ( voir les variables ) 
-$ docker-compose build && docker-compose up -d
+    $ docker-machine rm default  ( supprimer la machine ) 
+    $ docker-machine create --driver virtualbox default ( créer une machine default ) 
+    $ docker-machine env default ( voir les variables ) 
+    $ docker-compose build && docker-compose up -d
 
 Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machine start default`.
+::
 
-$ docker-machine start default
-$ docker-machine env ( X2 ) 
-$ docker-machine start default
-$ docker-compose up -d 
+    $ docker-machine start default
+    $ docker-machine env ( X2 ) 
+    $ docker-machine start default
+    $ docker-compose up -d 
 
 ANNEXE: 
 -------------------
@@ -92,20 +119,27 @@ Rentrer dans un container  : docker exec -it nginx bash
 Virer cache : docker system prune --no-cache 
 
 
-Terminale ToolBox Docker : 
+Terminale ToolBox Docker :
+-------------------
 projet : cd /c/wamp64/www/OC/BileMo_B2B_API (dev)
 DOCKER SUR DEBIAN ( windows environment )  :
 
 Doc install docker on debian : Docker On Debian
-Installer docker : sudo apt-get install docker
+Installer docker :
+::
+
+    sudo apt-get install docker
+
 Accéder au projet :  
 cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha ) 
 cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann ) 
 
 Lancer docker : sudo service docker start 
 Lancer la config : 
-docker-compose down 
-docker-compose up -d
+::
+
+    docker-compose down 
+    docker-compose up -d
 
 
 Probléme Résolue : docker-compose command not found : Lien stackOverflow
