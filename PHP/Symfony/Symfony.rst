@@ -260,7 +260,7 @@ Controller :
 	   'form' => $form->createView()
 	]);
 
-Pour créer un form : php bin/console make:form
+	Pour créer un form : php bin/console make:form
 	-> nom de la class “ ex TricksType”
 	->nom de l'entrée à gérer 
 
@@ -272,16 +272,18 @@ Besoin de :
 Exportation en production  
 
 Installation / création de la bdd avec les entités :
--php bin/console doctrine:database:create
--php bin/console make:migration ( Générer la migration ) 
--php bin/console doctrine:migrations:migrate( run the migration ) + y  
+::
 
-php bin/console doctrine:schema:create
+	-php bin/console doctrine:database:create
+	-php bin/console make:migration ( Générer la migration ) 
+	-php bin/console doctrine:migrations:migrate( run the migration ) + y  
+	-php bin/console doctrine:schema:create
 
 Charger les fixtures :
--php bin/console doctrine:fixtures:load
+::
 
-php bin/console server:run
+	-php bin/console doctrine:fixtures:load
+	-php bin/console server:run
 
 
 Code divers
@@ -294,42 +296,55 @@ Nous pouvons désormais naviguer sur le rôle de cet utilisateur
 et “?_switch_user=_exit” a la fin de l’url pour sortir de ce rôle 
 
 Intégrer dans le template une fonction que pour le user/Admin/autre  ( twig ) 
-{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
+::
+
+	{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
 
 Checker l’utilisateur qui utilise un controller ( dans controller ) 
-$logger->debug('Checking account page for '.$this->getUser()->getEmail());
+::
+
+	$logger->debug('Checking account page for '.$this->getUser()->getEmail());
 
 retourner a la page précedente : 
-return $this->redirect($_SERVER['HTTP_REFERER']);
+::
+
+	return $this->redirect($_SERVER['HTTP_REFERER']);
 
 
 Configuration : 
 ---------------
 Ajouter une déconnexion dans security.yaml
-logout:
-   path:   logout
-   target: home
+::
+
+	logout:
+	path:   logout
+	target: home
 
 Ajouter la fonction remember me 
-remember_me:
-   secret:   '%kernel.secret%'
-   lifetime: 2592000 # 30 days in seconds
-<input type="checkbox" name="_remember_me"> Remember me  (HTML)
+::
+
+	remember_me:
+	secret:   '%kernel.secret%'
+	lifetime: 2592000 # 30 days in seconds
+	<input type="checkbox" name="_remember_me"> Remember me  (HTML)
 
 
-Hierarchy des rôles : ( dans config/packages/security.yaml 
+Hierarchy des rôles : ( dans config/packages/security.yaml )
+::
 
-role_hierarchy:
-   ROLE_ADMIN: [ROLE_ADMIN_COMMENT, ROLE_ADMIN_ARTICLE, ROLE_ALLOWED_TO_SWITCH]
+	role_hierarchy:
+	ROLE_ADMIN: [ROLE_ADMIN_COMMENT, ROLE_ADMIN_ARTICLE, ROLE_ALLOWED_TO_SWITCH]
 
 utiliser un thème de formulaire twig 
-twig:
-   default_path: '%kernel.project_dir%/templates'
-   debug: '%kernel.debug%'
-   strict_variables: '%kernel.debug%'
+::
 
-   form_themes:
-       - bootstrap_4_layout.html.twig
+	twig:
+	default_path: '%kernel.project_dir%/templates'
+	debug: '%kernel.debug%'
+	strict_variables: '%kernel.debug%'
+
+	form_themes:
+		- bootstrap_4_layout.html.twig
 
 
 serveur interne de symfony  : ( source ) 

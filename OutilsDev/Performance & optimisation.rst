@@ -1,6 +1,0 @@
-Performance & Optimisation
-===================
-
-
-Code Climate
--------------------

@@ -1,18 +1,8 @@
 Linux
-
-Commande Généraliste
-spécificité de Manjaro
-spécificité de DietPi ( Voir ici )
-Outils de sécurité
-Se protéger
-Scanner un réseau
-Metasploit
-Nmap
-Installation serveur web
-Création web :
-
+===================
 
 Commande Généraliste  
+-------------------
 Etre en “root” : sudo su 
 lister les dossiers : ls
 entrer dans un dossier : cd xxx
@@ -26,6 +16,7 @@ Faire du SSH : ssh dev@127.0.0.1 -p 2222 ( accès SSH )
 Lancer un .sh : sh start_moonlander2.sh
 
 Edition de fichier 
+-------------------
 ( nano ) : nano <fichier>( ctrl O + ctrl X pour sauver et quitter ) 
 ( vim) : vim<fichier>( I pour INSERT, ECHAP puis :wq)
 
@@ -36,13 +27,15 @@ changer la version d’un package :
 sudo apt-get remove <paquet> && sudo apt-get install <paquet> -V <version>
 Regarder ce qui utilise un port : sudo lsof -i:80
 
- spécificité de Manjaro
+spécificité de Manjaro
+-------------------
 Synchroniser les dépots : $sudo pacman -Syy
 Maj : $sudo pacman -Syu
 Installer un paquet : $sudo pacman -S composer
 installer une surcouche à octopi  : $sudo pacman -S trizen ( permet d’avoir des librairie privé ) 
 
 spécificité de DietPi ( Voir ici )
+-------------------
 
 Voir en général le lancement : dietpi-launcher
 Voir les config : dietpi-config
@@ -54,6 +47,7 @@ Voir le cpu : cpu
 
 
 Outils de sécurité
+-------------------
 Se protéger 
 ajouter un user “admin” : adduser rp
 administrer les droit root a “admin : apt install sudo puis usermod -G root,sudo,adm rp
@@ -64,6 +58,7 @@ installer un firewall strict : apt-get install iptables
 
 
 Scanner un réseau
+-------------------
 
 Metasploit
 Nmap
@@ -98,6 +93,8 @@ man in the middle attack SSH problem:
 
 
 Création web : 
+-------------------
+
 installer easy engine :wget -qO ee rt.cx/ee && sudo bash ee
 creer un site : ee site create example.com --php7 --mysql
 avoir une structure Wordpress : ee site update exemple.com --wp

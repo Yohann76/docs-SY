@@ -18,46 +18,47 @@ Test Entité (unitaire)  tests/Entity/phoneTest.php
 
 	<?php
 
-namespace App\Tests;
+    namespace App\Tests;
 
-use App\Entity\Phone;
-use PHPUnit\Framework\TestCase;
+    use App\Entity\Phone;
+    use PHPUnit\Framework\TestCase;
 
-class phoneTest extends TestCase
-{
-   private $phone;
+    class phoneTest extends TestCase
+    {
+        private $phone;
 
-   public function setUp()
-   {
-       $this->phone = new Phone();
-   }
-   public function testPhoneName()
-   {
-       $this->phone->setName('Iphone');
-       $this->assertEquals('Iphone', $this->phone->getName());
-   }
-}
+        public function setUp()
+        {
+            $this->phone = new Phone();
+        }
+        public function testPhoneName()
+        {
+            $this->phone->setName('Iphone');
+            $this->assertEquals('Iphone', $this->phone->getName());
+        }
+    }
 
 
 
 
 Test controller (fonctionnelle) tests/Controller/homecontrollerTest
+::
 
-<?php
+    <?php
 
-namespace App\Tests\Controller;
+    namespace App\Tests\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+    use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class homeControllerTest extends webTestCase
-{
-   public function testIndex()
-   {
-       $client = static::createClient();
-       $client->request('GET', '/');
-       $this->assertEquals(200, $client->getResponse()->getStatusCode());
-   }
-}
+    class homeControllerTest extends webTestCase
+    {
+        public function testIndex()
+        {
+            $client = static::createClient();
+            $client->request('GET', '/');
+            $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        }
+    }
 
 
 

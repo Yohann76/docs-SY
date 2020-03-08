@@ -1,10 +1,5 @@
-Sommaire 
-
-Créer un théme enfant	1
-Traduire son théme	1
-
-
 Créer un thème enfant 
+================
 
 https://wpformation.com/theme-enfant-wordpress/
 

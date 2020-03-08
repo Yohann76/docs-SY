@@ -22,6 +22,8 @@ $git clone LienDuProjet
 Créer le repo sur la plateforme SANS README.txt et pusher en cli
 pour le push la première fois, enlever le .git a la racine si il y a
 git init
+::
+
 git add . 
 git status ( pour voir les fichier add a l'index ) 
 git commit -m "message" 
@@ -33,6 +35,7 @@ ou cliquer sur le repo et copier les commandes, avec https
 
 Faire un commit : 
 -------------------
+::
 
 git add * ( pour ajouter tout a l'index, sauf ce qui est exclus dans .gitignore ) 
 git status
@@ -48,6 +51,7 @@ $ git pull origin master // ( pour être à jour )
 
 Créer une branche : 
 -------------------
+::
 
 $ git branch // voir la branche actuelle et toutes les branch 
 $ git branch mon-test // Créer une nouvelle branch nommé "mon-test" 
@@ -58,7 +62,9 @@ Supprimer une branche ??
 Fusionnez des branches :
 -------------------
 
-Se positionner sur master 
+Se positionner sur master
+::
+ 
 $ git checkout brancheA // (ou master)
 $ git merge brancheB // La B rentre dans A ou master 
 ( voir pour git push origin master aprés pour effectuer la merge ) 
