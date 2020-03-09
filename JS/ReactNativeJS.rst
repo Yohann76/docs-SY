@@ -31,7 +31,7 @@ Créer son App :
     npm install create-react-native-app -g
     create-react-native-app TestReact ( pour une version de React Sans utiliser les composants telephone ) 
     cd TestReact
-    npm start ( donne un QR code ) 
+    npm start ( donne un QR code et lance le serveur node.js ) 
 
 
 2. Avec expo ( recomander ) 
@@ -39,7 +39,7 @@ Créer son App :
     expo init MonProjet ( commande ) 
     choisir "blank" a minimal app as clean as an empty canvas
     cd MonProjet
-    npm start ( donne un QR code  et envoie l'app sur le server Node.js)  
+    nnpm start ( donne un QR code et lance le serveur node.js ) 
 
 
 adresse : 
@@ -89,7 +89,8 @@ Style
         )
     }
 
-ET 
+Le style ( Aprés la class ) 
+-------------------
 ::
 
     const styles = StyleSheet.create({
@@ -128,11 +129,45 @@ Rendre un composant
     )
   }
 
-Suite..
+Utilisé une API 
+API/Name_apiAPI.js ( exemple ) :
+::
+
+    // API/TMDBApi.js
+
+    const API_TOKEN = "7f0c884269f18433248fb9bf049b54f2";
+
+    export function getFilmsFromApiWithSearchedText (text) {
+        const url = 'https://api.themoviedb.org/3/search/movie?api_key=' + API_TOKEN + '&language=fr&query=' + text
+        return fetch(url)
+            .then((response) => response.json())
+            .catch((error) => console.error(error))
+    }
+
+    export function getImageFromApi (name) {
+        return 'https://image.tmdb.org/t/p/w300' + name
+    }
 
 
 
+Gestion de Librairies
+-------------------
+Pour installer une librairie il faut Stopper le serveur Node.js avec ctrl + C 
+
+A la racine du projet dans le terminal : 
+::
+
+    npm install --save react-navigation
+
+`React Naviguation : <https://reactnavigation.org/docs/getting-started/>`_  Pour avoir une bonne naviguation 
 
 
+Le --save permet d'enregistrer la librairie dans le package.json , ainsi sur un autre ordinateur, on peux installer les dépendances avec :
+::
 
+    npm install
 
+Relancer le serveur avec : 
+::
+
+    npm start
