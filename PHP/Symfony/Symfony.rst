@@ -5,8 +5,6 @@ Commande
 Commande de base 
 ================
 
-
-
 Avec composer : 
 ****************
 
@@ -42,19 +40,60 @@ Lancer le serveur interne de Symfony
 
 Composer : Les requires indispensable  et commandes composer 
 
-enlever une lib : composer unpack ma-librairie
-server : composer require server 
-securité  : composer require --dev symfony/profiler-pack
-composer require security
-log : composer require logger
-twig : composer require twig 
-form : composer require form
-validator : composer require validation ( vérification  pour les form )
-Profiler : composer require profiler
-Bdd  : composer require orm 
-Composant make:..... : composer require symfony/maker-bundle --dev
+enlever une lib : 
+::
+	composer unpack ma-librairie
 
-Serializer pour formater en json ou xml.. (Doc YT ) : composer require serializer
+server : 
+::
+
+	composer require server 
+
+securité  :
+::
+
+	composer require --dev symfony/profiler-pack
+	composer require security
+
+log :
+::
+
+	composer require logger
+
+twig :
+::
+
+	composer require twig 
+
+form :
+:: 
+
+	composer require form
+
+validator :
+::
+
+	composer require validation ( vérification  pour les form )
+
+Profiler :
+::
+
+	composer require profiler
+
+Bdd  :
+::
+
+ 	composer require orm 
+
+Composant make:
+::
+
+	composer require symfony/maker-bundle --dev
+
+Serializer pour formater en json ou xml.. (Doc YT ) :
+::
+ 
+	composer require serializer
 
 
 	
@@ -136,14 +175,19 @@ Cette partie présente des démonstrations codé
 
 Service interne les plus utilisé 
 --------------------------------
+::
 
-Security $sécurity (   $this->security->getUser()    )
-LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
+	Security $sécurity (   $this->security->getUser()    )
+	LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
 
 Bundle utile 
 ------------ 
 
-créer un bundle (help): php bin/console generate:bundle 
+créer un bundle (help):
+::
+
+	php bin/console generate:bundle 
+
 ( convention de nommage Xxx/XxxxBundle ) -> Terminer par Bundle
 
 Session 
@@ -348,14 +392,13 @@ utiliser un thème de formulaire twig
 
 
 serveur interne de symfony  : ( source ) 
+::
 
-$symfony serve ( Lancer le serveur ) ( option -d ) 
-$symfony server:stop ( stopper le serveur )
-
-$symfony local:php:list ( lister les version de php dispo pour le server de sf ) 
+	$symfony serve ( Lancer le serveur ) ( option -d ) 
+	$symfony server:stop ( stopper le serveur )
+	$symfony local:php:list ( lister les version de php dispo pour le server de sf ) 
 
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve ) 
-
 Ou créer une “.php-version” qui contient “7.3.5” 
 
 
