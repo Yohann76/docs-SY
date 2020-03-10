@@ -3,12 +3,39 @@ React.js ( Facebook )
 
 Pré-requis yarn add : 
 
-js eslint : yarn add eslint --dev ( détecte les violation de code js ) 
-react eslint : yarn add eslint-plugin-react --dev ( détecte les violation de code react ) 
-Installer react et react dom : yarn add react react-dom --dev
-Comprendre le jsx : yarn add babel-preset-react --dev
-Comprendre le jsx 2 : yarn add @babel/preset-react@^7.0.0 --dev
-Vérification de data ( props ) : yarn add prop-types --dev
+js eslint :
+::
+
+   yarn add eslint --dev ( détecte les violation de code js ) 
+
+react eslint :
+::
+
+   yarn add eslint-plugin-react --dev ( détecte les violation de code react ) 
+
+
+Installer react et react dom :
+::
+
+   yarn add react react-dom --dev
+
+
+Comprendre le jsx :
+::
+   
+   yarn add babel-preset-react --dev
+
+Comprendre le jsx 2 :
+::
+   
+   yarn add @babel/preset-react@^7.0.0 --dev
+
+Vérification de data ( props ) :
+::
+
+   yarn add prop-types --dev
+
+
 import PropTypes from 'prop-types';
 ::
 
@@ -21,7 +48,10 @@ import PropTypes from 'prop-types';
 
 suppression de prototype en prod : yarn add babel-plugin-transform-react-remove-prop-types --dev
 
-Génération de clé id pour ajax : yarn add uuid --dev   ( info ) 
+Génération de clé id pour ajax :
+::
+
+   yarn add uuid --dev   ( info ) 
 
 
 Autre prés-requis : 

@@ -1,3 +1,6 @@
+.. index::
+   single: ReactNative
+
 ReactNative ( Base de React fait par Facebook ) 
 ===================
 
@@ -18,6 +21,7 @@ pré-requis:
 - Installer node.js
 - nécésite "expo-cli", demande de téléchargement lors de la création de l'appli ou cette commande :
 ::
+
     npm install -g expo-cli
 
 - Instalation de l'appplication android "expo" pour avoir le rendu sur le telephone ( connecter au méme réseau wii-fii ) 
@@ -49,10 +53,13 @@ Dans cette adresse nous pouvons voir le QR code, les tests , méme chose que dan
 Scanner le QR Code avec l'application Expo ( sur android )  
 
 Une seul commande a taper pour passer d'une CRNA ( create-React-Native-App donc sans composant telephone  ) 
-A une app React Native avec du code natif ( qui utilise les composant telephone -> lampe torche ) 
-::
-    Commande ? 
+A une app React Native avec du code natif ( qui utilise les composant telephone -> lampe torche , Galerie Photo, Camera..) 
 
+`Lien OpenclassRooms : <https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/>`_ 
+Attention : cela a un impact irréversible sur une application, des modifications a prévoir
+
+Nous pouvons plus utilisée Expo pour prévisualisé l'application, il faudra le faire avec Xcode pour IOS, ou android Studio pour android
+Retardé au maximum cette transformation
 
 Architecture 
 -------------------
@@ -171,3 +178,10 @@ Relancer le serveur avec :
 ::
 
     npm start
+
+
+Préparer pour les stores
+-------------------
+`Lien OC : <https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/>`_
+
+

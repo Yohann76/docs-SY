@@ -1,32 +1,6 @@
 Amazon Web Service : 
 ===================
 
-Manipulation : 
--------------------
-Lancer un serveur MC2 ( machine linux )
-Configuration ( obligatoire ) :
-Configuration suite :
-Authentification par Clé
-Se connecter au Serveur
-En SSH :
-FTP ( FileZilla )
-Adresse Ip-Élastique ( qui ne change pas )
-Sauvegarde
-- Restauration
-Suppression des vieux AMI
-Sauvegarde avec un instantané EBS
-Lancer un serveur RDS ( Gestion BDD )
-Restauration RDS
-Lié avec EC2
-Connection WorkBench
-Lancer un serveur S3 ( Stockage fichier )
-Gestion de droit par users :
-1 : User policy
-2 :Resource-based policy :
-Le cloud Uploader ( Service d’upload via site)  :
-Faire pointer Sur un nom de domaine
-
-
 Lancer un serveur MC2 ( machine linux ) 
 -------------------
 Configuration ( obligatoire ) : 
