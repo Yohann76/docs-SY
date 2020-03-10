@@ -25,11 +25,17 @@ Afficher la taille des base de données::
 Requêtes
 -------------------
 
-SELECT : 
+SELECT : ::
+     $ SELECT * FROM xxxx
 
-UPDATE : 
+UPDATE : ::
+     $ UPDATE table SET nom_colonne = 'valeur' 
 
-DELETE : 
+DELETE : ::
+     $ DELETE FROM table 
+
+Les commandes précedentes peuvent être suivi d'une clause WHERE pour préciser une condition.
+
 
 Construction Base de données en Sql 
 -------------------
