@@ -1,3 +1,6 @@
+WordPress
+===================
+
 Créer un thème enfant 
 ================
 
