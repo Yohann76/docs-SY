@@ -90,10 +90,6 @@ man in the middle attack SSH problem:
 ; or command: export ANSIBLE_HOST_KEY_CHECKING=False on 2 machine
 
 
-
-
-
-
 Création web : 
 -------------------
 
@@ -104,6 +100,13 @@ avoir une structure Wordpress : ee site update exemple.com --wp
 Probléme clé SSH : 
 ssh-keygen -R IpduServer 
 Se connecter sur la machine voulu 
+
+
+Tache Cron : 
+-------------------
+
+Script .SH : 
+-------------------
 
 
 
