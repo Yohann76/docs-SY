@@ -1,7 +1,37 @@
 React.js ( Facebook ) 
 ===================
 
-Pré-requis yarn add : 
+Commande pour monter un projet React 
+####################
+
+- composer require encore  / yarn add @symfony/webpack-encore --dev
+- yarn 
+- composer 
+
+- dépendances minimales 
+
+::
+
+   "@symfony/webpack-encore": "^0.19.0",
+   "babel-preset-es2015": "^6.24.1",
+   "babel-preset-react": "^6.24.1",
+   "babel-preset-stage-0": "^6.24.1",
+   "react": "^16.4.1",
+   "react-dom": "^16.4.1",
+   "react-on-rails": "^11.0.8",
+   "react-transition-group": "^2.3.1"
+
+- yarn install
+
+
+Installer le point d'entrée dans twig:
+#####################################
+
+- {{ encore_entry_script_tags('main')}}
+
+
+Dépendences yarn utiles : 
+##########################
 
 js eslint :
 ::
