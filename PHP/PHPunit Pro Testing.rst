@@ -5,9 +5,22 @@ Les test avec PHPunit
 Commande et installation
 -------------------
 prérequis : Installer Xdebug ( sur le wamp ) 
-Composer  : composer require phpunit 
-lancer les test : php bin/phpunit
-Créer le rapport dans public/data : php bin/phpunit --coverage-html public/data 
+
+Composer require : 
+::
+
+    composer require phpunit 
+
+lancer les test :
+::
+
+    php bin/phpunit
+
+Créer le rapport dans public/data :
+::
+
+    php bin/phpunit --coverage-html public/data 
+
 Rapport disponible : http://localhost/oc/SnowTricks/public/data/index.html
 
 Test : 
