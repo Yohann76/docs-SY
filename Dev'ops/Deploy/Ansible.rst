@@ -1,5 +1,10 @@
 ANSIBLE : 
 -------------------
+
+Instalation
+-------------------
+
+
 COMMANDE GÉNÉRALE
 ansible localhost -m command -a "/bin/echo 'Hello Ansible'"
 ansible localhost -m ping
