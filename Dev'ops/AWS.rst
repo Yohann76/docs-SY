@@ -1,3 +1,6 @@
+.. index::
+   single: AWS; 
+
 Amazon Web Service : 
 ===================
 

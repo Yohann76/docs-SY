@@ -1,3 +1,6 @@
+.. index::
+   single: Server; 
+
 Gestion d'un server 
 ===================
 

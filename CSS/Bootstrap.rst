@@ -1,2 +1,5 @@
+.. index::
+   single: Bootstrap; 
+
 BootStrap
 ===================

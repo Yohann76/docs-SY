@@ -1,3 +1,6 @@
+.. index::
+   single: Angular; 
+
 Angular.js ( google ) 
 ===================
 

@@ -1,3 +1,6 @@
+.. index::
+   single: Deploy; 
+
 Outils de déploiement
 ===================
 
