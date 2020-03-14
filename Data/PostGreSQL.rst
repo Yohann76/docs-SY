@@ -1,2 +1,5 @@
+.. index::
+   single: PostGreSQL; 
+
 PostGreSQL
 ===================

@@ -32,13 +32,19 @@ PLAYBOOK
 
 IMPORTANT
 exécuter le playbook : 
-ansible-playbook ansible/playbook.yml -i ansible/hosts.ini
+::
 
- exécuter le playbook avec le vault :
-ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-vault-pass
+	ansible-playbook ansible/playbook.yml -i ansible/hosts.ini
+
+exécuter le playbook avec le vault :
+::
+
+	ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-vault-pass
 
 Recréer les variables vault :
-ansible-vault rekey foo.yml
+::
+
+	ansible-vault rekey foo.yml
 
 
 
