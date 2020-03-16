@@ -1,0 +1,204 @@
+---
+- name: Server Install
+  hosts: all
+  remote_user: root
+
+  vars_files:
+    - ./vars/vault.yml
+    - ./vars/vars.yml
+
+  vars_prompt:
+    #- name: symfony_env
+      #prompt: "Enter the environment for your Symfony app (prod|dev|test)"
+      #default: prod
+      #private: no
+
+  environment:
+    SYMFONY_ENV: "prod"
+    #SYMFONY_ENV: "{{ symfony_env|lower }}"
+
+  tasks:
+    - ping: ~
+
+    - name: apt-get update
+      become: true
+      apt:
+        update_cache: yes
+
+    - name: Create project directory and set its permissions
+      become: true
+      file:
+        path: "{{ symfony_root_dir }}"
+        state: directory
+        recurse: yes
+
+    - name: Git clone
+      git:
+        repo: https://github.com/Yohann76/PortFolio
+        dest: "{{ symfony_root_dir }}"
+        force: yes
+        clone: yes
+
+    - name: Install Git VCS
+      become: true
+      apt:
+        name: git
+        state: latest
+
+    - name: Fix var directory permissions
+      file:
+        path: "{{ symfony_var_dir }}"
+        state: directory
+        mode: 0777
+        recurse: yes
+
+    - name: Fix bin/console permissions
+      file:
+        path: "{{ symfony_console_path }}"
+        mode: 0777
+
+    - name : Delete .env ( export github )
+      become: true
+      command: rm -rf /var/www/html/PortFolio/.env
+
+    - name: Add .env ( import ansible/templates )
+      become: true
+      template:
+        src: templates/.env
+        dest: "/var/www/html/PortFolio"
+
+    - name: apt-get install composer
+      become: true
+      apt:
+        name: composer
+        state: latest
+
+    - name: Fix var directory permissionss
+      file:
+        path: "{{ symfony_var_dir }}"
+        state: directory
+        mode: 0777
+        recurse: yes
+
+    - name: Check for Composer
+      stat:
+        path: /usr/local/bin/composer
+      register: composer_stat
+
+    - name: Make sure composer is at its latest version
+      composer:
+        working_dir: "{{ symfony_root_dir }}"
+        command: self-update
+      register: composer_self_update
+      changed_when: "not composer_self_update.stdout|search('You are already using composer version')"
+      when: composer_stat.stat.exists
+
+    - name: Download composer
+      get_url:
+        url: https://getcomposer.org/installer
+        dest: "{{ installer }}"
+
+    - name: Install composer
+      command: "{{ item }}"
+      with_items:
+        - "php {{ installer }}"
+        - mv composer.phar /usr/local/bin/composer
+      notify: Restart Nginx
+
+    - name: Set permissions on Composer
+      become: true
+      file:
+        path: /usr/bin/composer
+        mode: "a+x"
+
+    - name: Install Composer's dependencies
+      become: true
+      composer:
+        working_dir: "{{ symfony_root_dir }}"
+        no_dev: no
+
+    # Symfony console commands
+      #- name: Create DB if not exists
+      #command: '{{ symfony_console_path }} doctrine:database:create --if-not-exists --no-interaction'
+
+      #- name: make migration
+      #command: '{{ symfony_console_path }} make:migration'
+
+      #- name: Execute migrations
+      #command: '{{ symfony_console_path }} doctrine:migrations:migrate --no-interaction'
+
+      #- name: Load data fixtures
+      #command: '{{ symfony_console_path }} doctrine:fixtures:load --no-interaction'
+      #when: symfony_env != "prod"
+
+    # Yarn
+    - name: Add Yarn APT key
+      become: true
+      apt_key:
+        url: 'https://dl.yarnpkg.com/debian/pubkey.gpg'
+        state: present
+
+    - name: Add Yarn to the source lists
+      become: true
+      lineinfile:
+        path: '/etc/apt/sources.list.d/yarn.list'
+        regexp: 'deb https://dl.yarnpkg.com/debian/ stable main'
+        line: 'deb https://dl.yarnpkg.com/debian/ stable main'
+        create: yes
+
+    - name: "Yarn | Install"
+      package:
+        name: yarn
+        state: present
+
+    - name: Install NodeJS / yarn
+      become: true
+      apt:
+        name:
+          - nodejs
+          - yarn
+        update_cache: yes
+
+    # On server :
+    # curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    # apt-get install -y nodejs
+    - name: Install packages based on package.json
+      yarn:
+        path: '{{ symfony_root_dir }}'
+        state: latest
+
+    - name: Install bundle assets
+      command: '{{ symfony_console_path }} assets:install {{ symfony_web_dir }} --symlink --no-debug --env=prod'
+
+    - name: Install Node dependencies
+      command: yarn install
+      args:
+        chdir: '{{ symfony_root_dir }}'
+
+    #build all code in public/build // Launch yarn encore dev
+    - name: Build Yarn Dependencies
+      command: yarn encore dev
+      args:
+        chdir: '{{ symfony_root_dir }}'
+
+    - name: Clear cache
+      command: '{{ symfony_console_path }} cache:clear --env={{ symfony_env }}'
+
+  roles:
+    - php
+    - nginx
+    - mysql
+
+  handlers:
+    - name: Restart Nginx
+      become: true
+      service:
+        name: nginx
+        state: restarted
+
+    - name: Restart PHP-FPM
+      become: true
+      service:
+        name: php7.3-fpm
+        state: restarted
+...

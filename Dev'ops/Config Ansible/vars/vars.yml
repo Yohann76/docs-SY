@@ -1,0 +1,14 @@
+---
+symfony_root_dir: /var/www/html/PortFolio
+symfony_web_dir: "{{ symfony_root_dir }}/public"
+symfony_var_dir: "{{ symfony_root_dir }}/var"
+symfony_console_path: "{{ symfony_root_dir }}/bin/console"
+server_name: yohanndurand.fr #Ou Bilemo.yohanndurand.fr, selon domaine ou sous domaine qu'on veux deploy 
+installer: /tmp/installer.php
+
+symfony_secret: "{{ vault_symfony_secret }}"
+
+#create a vault : ansible-vault create ansible/vars/vault.yml
+#view the secret vault  : ansible-vault view ansible/vars/vault.yml
+#edit the secret vault : ansible-vault edit ansible/vars/vault.yml
+#ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-vault-pass  :for use ansible with vault

@@ -1,0 +1,31 @@
+---
+    - name: Install MySQL DB server
+      become: true
+      apt:
+        name: mysql-server
+        state: latest
+
+      # MySQL requirements
+    - name: Set MySQL root password before installing
+      become: true
+      debconf: name='mysql-server' question='mysql-server/root_password' value='{{mysql_root_password}}' vtype='password'
+      changed_when: false
+
+    - name: Confirm MySQL root password before installing
+      become: true
+      debconf: name='mysql-server' question='mysql-server/root_password_again' value='{{mysql_root_password}}' vtype='password'
+      changed_when: false
+
+    - name: Start MySQL
+      service: name=mysql state=started
+      become: true
+
+# For use new users Mysql, please create this users on server.
+
+# CREATE USER 'users'@'localhost' IDENTIFIED BY 'password';
+# GRANT ALL PRIVILEGES ON * . * TO 'users'@'localhost';
+# FLUSH PRIVILEGES;
+
+# Update Symfony.conf with new user.
+
+
