@@ -56,6 +56,15 @@ Recréer les variables vault :
 	ansible-vault rekey foo.yml
 
 
+Visualiser le vault :
+::
+
+	ansible-vault view ansible/vars/vault.yml
+
+Editer le vault :
+::
+
+	ansible-vault edit ansible/vars/vault.yml
 
 
 
