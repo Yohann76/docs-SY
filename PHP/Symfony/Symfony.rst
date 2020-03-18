@@ -402,7 +402,19 @@ $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony
 Ou créer une “.php-version” qui contient “7.3.5” 
 
 
+Migration d'application : 
+---------------
 
+
+3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4 
+	plusieurs resource : SfCast update to Sf 4 flex .. ( Dans Sf 3 ) 
+	Github.com/symfony/symfony -> changelang upgrade ( 3.4 ) 
+	Regler les dépréciation au fur et a mesurs 
+	( version de php 7.+ no problem )
+
+
+	BDD
+	-> migration : R a faire ( sauf modif de base ) 
 
 
 
