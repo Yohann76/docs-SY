@@ -171,10 +171,6 @@ Node.js:
 Executer un fichier js avec node : node nom_du_fichier
 
 
-
-
-
-
 Jquery
 -------------------
 Sélection du DOM
@@ -205,5 +201,5 @@ brain.js
 Dark Mode.js
 -------------------
 
-Phaser.Installation
+Phaser
 -------------------

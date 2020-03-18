@@ -22,7 +22,29 @@ Fonctions de chiffrements :
 - encrypt($data) && decrypt($data)
 
 
+savoir la valeur d'une variable : 
+::
+
+    var_dump($var);
+
+Afficher l'environement php 
+::
+
+    phpinfo() ;
+
 Generer un serveur PHP
+::
+
+    php -S 127.0.0.1:8000 -t public
+
+Trouver le chemin d'un fichier 
+::
+
+    <?php echo realpath('chemin.php'); ?>
+
+Mettre ce fichier la ou on veux trouver le chemin, et l'executer avec le serveur 
+cela va nous retransmettre le chemin 
+
 ############
 
 
