@@ -409,11 +409,18 @@ Voir sur github symfony/symfony -> changelog.org.. version qu'on veux upgrade ( 
 
 a partir de 3.1 : 
 
-Clone -> composer install 
-
-composer update pour mettre a jour sur 3.1 ? 
+Clone -> composer install -> Composer update 
 
 3.1 a 3.3 : 
+::
+
+    "require": {
+        "symfony/symfony": "3.3.*",
+	}
+
+et faire composer update 
+
+Depréciation :
 
 
 ////////////////////////////////////////////////////////////////////////
