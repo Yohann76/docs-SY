@@ -405,16 +405,28 @@ Ou créer une “.php-version” qui contient “7.3.5”
 Migration d'application : 
 ---------------
 
+Voir sur github symfony/symfony -> changelog.org.. version qu'on veux upgrade ( 3.4 ) 
 
+a partir de 3.1 : 
+
+Clone -> composer install 
+
+composer update pour mettre a jour sur 3.1 ? 
+
+3.1 a 3.3 : 
+
+
+////////////////////////////////////////////////////////////////////////
 3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4 
 	plusieurs resource : SfCast update to Sf 4 flex .. ( Dans Sf 3 ) 
 	Github.com/symfony/symfony -> changelang upgrade ( 3.4 ) 
 	Regler les dépréciation au fur et a mesurs 
 	( version de php 7.+ no problem )
 
-
 	BDD
 	-> migration : R a faire ( sauf modif de base ) 
+
+////////////////////////////////////////////////////////////////////////
 
 
 
