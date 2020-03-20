@@ -51,6 +51,18 @@ Corriger le message du dernier commit :
    git commit --amend -m "Nom de commit corrigé"
 
 
+revenir sur un commit précédent  : 
+::
+
+   git checkout SHADuCommit ( 5e78e8e389e28cf9ea91708eb37abfd975ffce31 par exemple ) 
+
+
+Créer un commit qui fait l'inverse du précédent ( attention cela crée un nouveau commit )  : 
+::
+
+   git revert SHADuCommit
+
+
 Récupérez des modification 
 -------------------
 
