@@ -402,6 +402,10 @@ $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony
 Ou créer une “.php-version” qui contient “7.3.5” 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c5c50070b7907fc633701759fb967923587d851f
 
 
 
