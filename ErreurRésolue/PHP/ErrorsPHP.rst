@@ -12,9 +12,14 @@ Erreur : "PHP Fatal error: Allowed memory size of XXXXXX bytes exhausted <...>"
     memory_limit = 400M
 
 Variable de base a "128M"
-Maximum de la variable ? 
+Maximum de la variable "5000M" ? 
 
 Variable à modifier dans le php.ini
+
+ou bien :
+::
+
+    php -dmemory_limit=-1 c:\composer\composer.phar update
 
 autre erreur : 
 -------------------
