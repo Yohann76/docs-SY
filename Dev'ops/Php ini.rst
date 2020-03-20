@@ -20,9 +20,47 @@ Blackfire
     ;extension=c:/wamp64/bin/php/php7.4.0/ext/blackfire.dll
     ;blackfire.agent_timeout = 0.25
 
+ou ( a voir )
+
+::
+    ;extension=blackfire.dll
+    ;blackfire.agent_timeout = 0.25
+    ;blackfire.log_file = /tmp/blackfire.log
+    ;blackfire.log_level = 4
+
 OPcache
 ::
     [opcache]
     zend_extension="c:/wamp64/bin/php/php7.4.0/ext/php_opcache.dll"
     ; Determines if Zend OPCache is enabled
     ;opcache.enable=1
+
+
+SQLite
+::
+    [sqllite]
+    extension=php_pdo_sqlite.dll
+    extension=php_sqlite3.dll
+ou ( selon version )
+::
+    [sqlite3]
+    ; Directory pointing to SQLite3 extensions
+    ; http://php.net/sqlite3.extension-dir
+    ;sqlite3.extension_dir =
+
+PostgreSQL
+::
+    [PostgreSQL]
+    ; Allow or prevent persistent links.
+    ; http://php.net/pgsql.allow-persistent
+    pgsql.allow_persistent = On
+
+
+Mail function
+::
+    [mail function]
+    ; For Win32 only.
+    ; http://php.net/smtp
+    SMTP = localhost
+    ; http://php.net/smtp-port
+    smtp_port = 25
