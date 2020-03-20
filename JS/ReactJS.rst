@@ -8,7 +8,9 @@ Commande pour monter un projet React
 - yarn 
 - composer 
 
-- dépendances minimales 
+dépendances minimales 
+#####################
+
 
 ::
 
@@ -21,6 +23,8 @@ Commande pour monter un projet React
    "react-on-rails": "^11.0.8",
    "react-transition-group": "^2.3.1"
 
+- yarn add @babel/preset-react --dev
+- yarn add react react-dom prop-types
 - yarn install
 
 
