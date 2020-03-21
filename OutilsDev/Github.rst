@@ -67,7 +67,7 @@ Créer un commit qui fait l'inverse du précédent ( attention cela crée un nou
 
 Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait : 
 ::
-
+   git reset
    git reset --hard‌
 
 
