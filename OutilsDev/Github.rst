@@ -71,6 +71,11 @@ Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait :
    git reset --hard‌
 
 
+Voir la liste des commit effectué
+::
+   git log
+
+
 Récupérez des modification 
 -------------------
 
