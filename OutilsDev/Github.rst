@@ -104,7 +104,7 @@ Se positionner sur master
 ( voir pour git push origin master aprés pour effectuer la merge ) 
 ( ou faire une demande de pull request sur git ) 
 
-Contribution :
+Contribution Open Source :
 -------------------
 1. Créer une issue pour ajouter ou corriger
 2. créer la branch associé
