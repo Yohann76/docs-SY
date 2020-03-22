@@ -4,7 +4,7 @@ Commande
 
 
 `Symfony docs  <https://symfony.com/doc/current/index.html#gsc.tab=0>`_
-`SSymfonyConnect  <https://connect.symfony.com/`_
+`SymfonyConnect  <https://connect.symfony.com/`_
 
 
 Commande de base 
