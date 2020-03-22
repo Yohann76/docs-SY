@@ -2,6 +2,7 @@
 Upgrade Symfony Version
 ##################
 
+`Cours SymfonyCast migration 3.0 a 4.0/4.4  <https://symfonycasts.com/screencast/symfony4-upgrade/framework-config>`_
 ::
     // Program
     3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
