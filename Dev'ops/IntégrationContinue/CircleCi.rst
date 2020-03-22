@@ -3,6 +3,7 @@
 
 CircleCI
 ===================
+`CircleCi  docs<https://circleci.com/docs/>`_
 
 Se rendre sur le site `CircleCi <https://circleci.com/vcs-authorize/>`_
 Se connectée avec Github

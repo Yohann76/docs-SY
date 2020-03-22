@@ -4,11 +4,18 @@
 Docker
 ===================
 
+`docker docs <https://docs.docker.com/>`_
+`docker hub <https://hub.docker.com/>`_
+
 Commande Général  :
 -------------------
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
-tester docker : docker run hello world  
+tester docker : 
+::
+
+    docker run hello world  
+
 Lancer serveur nginx sur port 80 : docker run -d -p 8080:80 nginx
 récupérer une image du hub docker : docker pull hello-world
 stopper un conteneur : docker stop ID_RETOURNÉ_LORS_DU_DOCKER_RUN

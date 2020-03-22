@@ -1,6 +1,9 @@
 API PLATEFORME : 
 ===================
 
+`ApiPlatform docs <https://api-platform.com/docs/>`_
+
+
 Installation 
 $ composer require api 
 
