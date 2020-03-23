@@ -14,6 +14,8 @@ Avec composer :
 ****************
 
 Créer un projet simple ( API ou format court )
+================
+
 .. code-block:: terminal
 
     $ composer create-project symfony/skeleton myProject

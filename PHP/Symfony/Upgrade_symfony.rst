@@ -32,8 +32,8 @@ A partir de Symfony 3.3 -> Symfony 3.4
     > composer install
     
 
-TODO: Changer composer.json 
 
+TODO: Changer composer.json 
 
 ::
     //composer.json
@@ -43,6 +43,8 @@ TODO: Changer composer.json
     > composer update
     > composer install
 
+
+Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du composer.json 
 
 A partir de Symfony 3.4 -> Symfony 4.4
 =======================================
