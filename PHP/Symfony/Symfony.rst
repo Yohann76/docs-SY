@@ -2,6 +2,11 @@
 Commande 
 ##################
 
+
+`Symfony docs  <https://symfony.com/doc/current/index.html#gsc.tab=0>`_
+`SymfonyConnect  <https://connect.symfony.com/`_
+
+
 Commande de base 
 ================
 
@@ -9,6 +14,8 @@ Avec composer :
 ****************
 
 Créer un projet simple ( API ou format court )
+================
+
 .. code-block:: terminal
 
     $ composer create-project symfony/skeleton myProject
@@ -399,13 +406,8 @@ serveur interne de symfony  : ( source )
 	$symfony local:php:list ( lister les version de php dispo pour le server de sf ) 
 
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve ) 
-Ou créer une “.php-version” qui contient “7.3.5” 
+Ou créer une “.php-version” qui contient “7.3.5”
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> c5c50070b7907fc633701759fb967923587d851f
 
 
 

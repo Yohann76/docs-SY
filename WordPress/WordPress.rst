@@ -1,11 +1,11 @@
 WordPress
 ===================
 
+
+
 Créer un thème enfant 
 ================
-
-https://wpformation.com/theme-enfant-wordpress/
-
+`Tuto WP <https://wpformation.com/theme-enfant-wordpress/>`_
 
 Dans le dossier wp-content/themes. on cré un dossier : 
 /nomdevotrethemeenfant

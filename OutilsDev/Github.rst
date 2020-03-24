@@ -50,6 +50,8 @@ Corriger le message du dernier commit :
 
    git commit --amend -m "Nom de commit corrigé"
 
+mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
+
 
 revenir sur un commit précédent  : 
 ::
@@ -61,6 +63,17 @@ Créer un commit qui fait l'inverse du précédent ( attention cela crée un nou
 ::
 
    git revert SHADuCommit
+
+
+Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait : 
+::
+   git reset
+   git reset --hard‌
+
+
+Voir la liste des commit effectué
+::
+   git log
 
 
 Récupérez des modification 
@@ -91,7 +104,7 @@ Se positionner sur master
 ( voir pour git push origin master aprés pour effectuer la merge ) 
 ( ou faire une demande de pull request sur git ) 
 
-Contribution :
+Contribution Open Source :
 -------------------
 1. Créer une issue pour ajouter ou corriger
 2. créer la branch associé

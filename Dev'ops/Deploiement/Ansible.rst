@@ -2,7 +2,10 @@
    single: Ansible; 
 
 ANSIBLE : 
--------------------
+===================
+
+`Ansible docs <https://docs.ansible.com/ansible/latest/index.html>`_
+`Ansible Galaxy <https://galaxy.ansible.com/>`_
 
 Instalation
 -------------------

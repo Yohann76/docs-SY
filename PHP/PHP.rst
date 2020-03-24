@@ -1,6 +1,7 @@
 Les bases du PHP
 ===================
 
+`PHP docs  <http://php.net/manual/fr/>`_
 
 Fonction utile dans PHP 
 ############ 

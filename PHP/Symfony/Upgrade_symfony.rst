@@ -2,6 +2,7 @@
 Upgrade Symfony Version
 ##################
 
+`Cours SymfonyCast migration 3.0 a 4.0/4.4  <https://symfonycasts.com/screencast/symfony4-upgrade/framework-config>`_
 ::
     // Program
     3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
@@ -31,8 +32,8 @@ A partir de Symfony 3.3 -> Symfony 3.4
     > composer install
     
 
-TODO: Changer composer.json 
 
+TODO: Changer composer.json 
 
 ::
     //composer.json
@@ -42,6 +43,8 @@ TODO: Changer composer.json
     > composer update
     > composer install
 
+
+Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du composer.json 
 
 A partir de Symfony 3.4 -> Symfony 4.4
 =======================================

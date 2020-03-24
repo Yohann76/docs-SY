@@ -32,11 +32,15 @@ API Utilisable
 Facebook 
 -------------------
 
+Se connecter via auth ? 
+
 Github
 -------------------
 
 Google
 -------------------
+
+Se connecter via auth ? 
 
 Nasa
 -------------------
@@ -44,7 +48,11 @@ Nasa
 Gmail 
 -------------------
 
+
+
 Paypal 
 -------------------
+
+Gestion d'un service de paiment 
 
 
