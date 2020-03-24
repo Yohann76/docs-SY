@@ -1,6 +1,7 @@
 Les test avec PHPunit 
 ===================
 
+`PHPunit   docs  <https://phpunit.readthedocs.io/fr/latest/>`_
 
 Commande et installation
 -------------------
