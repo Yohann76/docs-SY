@@ -32,9 +32,6 @@ A partir de Symfony 3.3 -> Symfony 3.4
     > composer install
     
 
-
-TODO: Changer composer.json 
-
 ::
     //composer.json
     "symfony/symfony": "3.4.*",
@@ -43,8 +40,13 @@ TODO: Changer composer.json
     > composer update
     > composer install
 
-
+Gestion de Flex 
+=======================================
+Flex est présent a partir de la 3.4
 Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du composer.json 
+
+Pour installer une recette, faire un composer require ... 
+( vérifier que le fichier de configuration est supprimé pour que flex puisse le configurer lui méme ) 
 
 A partir de Symfony 3.4 -> Symfony 4.4
 =======================================
@@ -72,8 +74,7 @@ A partir de Symfony 3.4 -> Symfony 4.4
         }
     },
 
-3. mettre a jour le bin/console via https://github.com/symfony/recipes/blob/master/symfony/console/3.3/bin/console
-
+3. `Symfony Recipe de Bin/console 3.3  <https://github.com/symfony/recipes/blob/master/symfony/console/3.3/bin/console>`_
 
 4. migrer la sécurité 
 - migrer les configuration de chaque service ( /app/config/* )vers les fichiers nouveaux fichiers config (/config/*)
@@ -100,6 +101,9 @@ A partir de Symfony 4.4 -> Symfony 5.4
 ##################
 DEPRECIATION
 ##################
+
+Pour regler les depréciation il faut mettre a jour certain fichier obtenu sur 
+`Symfony Recipe <https://github.com/symfony/recipes>`_
 
 
 
