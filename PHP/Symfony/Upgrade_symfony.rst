@@ -46,29 +46,46 @@ TODO: Changer composer.json
 A partir de Symfony 3.4 -> Symfony 4.4
 =======================================
 
-- ( mettre 4.4 sur le composer.json ) -> composer update & composer install
-- mettre a jour le composer.json ( enlever le symfony/symfony) & prendre exemple sur Symfony/demo ( enlever la replace section )
-- composer update & composer install
-- composer require annotations asset orm-pack twig logger mailer form security translation validator
-- composer require --dev dotenv maker-bundle orm-fixtures profiler
-- Ajouter notre propre configuration de service a partir de service.yml
-- Deplacer app/Resources/views => templates
-- Deplacer app/Resources/translations/ => translations ( dossier)
-- app/Resources/<BundleName>/views/ => templates/bundles/<BundleName>/
-- reste des app/Resources/ => src/resources/
+1. Mettre a jour le composer. json 
+- enlever symfony/symfony et faire un composer update pour installer les recettes flex
+- enlever les bundles et paquets inutiles pour les remplacer par les nouveaux supporté
+- enlever les probleme de conflit
 
-------
+2. Faire le systeme de double application ( autoload double chargement )
 
-- deplacer src/Appbundle/* ( sauf AppBundle.phpet DependencyInjection/ ) vers /src/
-- mettre a jour les valeur d'autoload et autoload-dev dans le composer.json
-- Déplacer les biens publics, tels que des images ou des fichiers compilés CSS / JS, à partir src/AppBundle/Resources/public/de public/(par exemple public/images/).
-- Déplacez la source des actifs (par exemple les fichiers SCSS ) vers assets/et utilisez Webpack Encore pour les gérer et les compiler.
-- SYMFONY_DEBUGet SYMFONY_ENVles variables d'environnement ont été remplacées par APP_DEBUGet APP_ENV. Copiez leurs valeurs dans les nouveaux vars, puis supprimez les anciens.
-- Créez le nouveau public/index.phpcontrôleur frontal en copiant la source index.php de Symfony et, si vous avez effectué une personnalisation dans vos fichiers web/app.phpet web/app_dev.php, copiez ces modifications dans le nouveau fichier. Vous pouvez maintenant supprimer l'ancien web/répertoire.
-- retirer src/Appbundle
-- Déplacez le code source d'origine de et mettez src/{App,...}Bundle/à src/jour les espaces de noms de chaque fichier PHP App\...(les IDE avancés peuvent le faire automatiquement).
-- Supprimez le bin/symfony_requirementsscript et si vous avez besoin d'un remplacement pour lui, utilisez le nouveau Symfony Requirements Checker .
-- Mettez à jour le .gitignorefichier pour remplacer l' var/logs/entrée existante par var/log/, qui est le nouveau nom du répertoire des journaux.
+::
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+
+3. mettre a jour le bin/console via https://github.com/symfony/recipes/blob/master/symfony/console/3.3/bin/console
+
+
+4. migrer la sécurité 
+- migrer les configuration de chaque service ( /app/config/* )vers les fichiers nouveaux fichiers config (/config/*)
+- s'il n'y a pas de fichiers prévu pour migrer la config : Intaller les composants manquant pour que les recettes ajoute la config nécéssaire.
+- security.yaml peut etre entierement copier-coller
+- migrer les config_[env].php, vers config/package/[env]/[config]
+
+5. migrer les template de /app/Resource/view vers templates/
+
+6. migrer src/AppBundle vers src/
+7. migrer web/* vers public/
+8. Retirer appbundle et remplacer les occurences de AppBundle par App
+9. Enlever l'autoload de double chargement
+
+
 
 A partir de Symfony 4.4 -> Symfony 5.4
 =======================================
