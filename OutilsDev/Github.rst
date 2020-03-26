@@ -101,6 +101,7 @@ Se positionner sur master
  
    $ git checkout brancheA // (ou master)
    $ git merge brancheB // La B rentre dans A ou master 
+   
 ( voir pour git push origin master aprés pour effectuer la merge ) 
 ( ou faire une demande de pull request sur git ) 
 
