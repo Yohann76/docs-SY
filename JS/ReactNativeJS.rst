@@ -40,13 +40,13 @@ Créer son App :
 
 2. Avec expo ( recomander ) 
 ::
-    expo init MonProjet ( commande ) 
+    expo init MonProjet ( commande pour créer le projet ) 
     choisir "blank" a minimal app as clean as an empty canvas
     cd MonProjet
-    nnpm start ( donne un QR code et lance le serveur node.js ) 
+    nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo ) 
 
 
-adresse : 
+Votre projet est d créer et disponible adresse : 
 http://localhost:19002/ ( QR Code à cette adresse ) 
 Dans cette adresse nous pouvons voir le QR code, les tests , méme chose que dans le terminal 
 
