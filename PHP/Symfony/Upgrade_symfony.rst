@@ -102,7 +102,7 @@ A partir de Symfony 4.4 -> Symfony 5.4
 DEPRECIATION
 ##################
 
-Pour regler les depréciation il faut mettre a jour certain fichier obtenu sur 
+Pour regler les depréciations il faut mettre a jour certain fichier obtenu sur 
 `Symfony Recipe <https://github.com/symfony/recipes>`_
 
 

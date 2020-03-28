@@ -1,16 +1,18 @@
 .. index::
    single: Server; 
 
-Gestion d'un server 
+Gestion d'un server linux
 ===================
 
 Commande de base 
 -------------------
 
+
+
 Pour redémarer le server : 
 reboot 
 
-Accéder a MySql : 
+Accéder a MySql : mysql -u root -p 
 
 Accéder a PHP : 
 

@@ -1,6 +1,17 @@
 .. index::
    single: Github; Github
 
+
+Github organization ( compte partagé )
+===================
+`Github organisation <https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations>`_ 
+
+2 organisation 
+- SYD Game 
+- Durand Tools
+
+
+
 Github
 ===================
 `Github Doc <https://help.github.com/en>`_
