@@ -1,10 +1,11 @@
 Heroku : 
 ===================
 
+`Heroku docs <https://devcenter.heroku.com/categories/reference>`_
+
 Step : 
 -------------------
-
-https://devcenter.heroku.com/articles/deploying-symfony4
+`Deployer avec SF4 <https://devcenter.heroku.com/articles/deploying-symfony4>`_
 
 
 Commande : 

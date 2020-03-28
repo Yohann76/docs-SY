@@ -412,7 +412,10 @@ Ou créer une “.php-version” qui contient “7.3.5”
 
 
 
+Gestion du déploiement : 
+---------------
 
+`Deploiement docs symfony <https://symfony.com/doc/current/deployment.html>`_
 
 
 
