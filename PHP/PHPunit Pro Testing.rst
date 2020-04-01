@@ -77,5 +77,33 @@ Test controller (fonctionnelle) tests/Controller/homecontrollerTest
 
 
 
+Test Formulaire (fonctionnelle) 
+::
+
+    public function testFormCreateActionUser(){
+        $client = $this->login('Yohann','dev') ;
+        $crawler = $client->request('GET', '/users/create');
+
+        $form = $crawler->selectButton('Ajouter')->form();
+        $form['user[username]'] = 'UserTest';
+        $form['user[password][first]'] = 'dev';
+        $form['user[password][second]'] = 'dev';
+        $form['user[email]'] = 'UserTest@gmail.com';
+        $form['user[Roles]'] = 'ROLE_USER';
+
+        $crawler = $client->submit($form);
+
+        $client->followRedirect(); // Suivre la redirection si il y a 
+
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+
+Les éléments sont à trouvé en html comme "user[email]" ou le bouton "ajouter"
+Sinon, faire un ->getName sur l'objet $form
+
+
+
+
+
 
 
