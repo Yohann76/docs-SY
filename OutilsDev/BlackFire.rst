@@ -9,13 +9,38 @@ Instalation Windows
 `windows blackfire Instalation <https://blackfire.io/docs/up-and-running/installation>`_
 
 
-profiler  http://192.168.99.105:8000/ avec blackfire via une ligne de commande sur docker :
-docker run -it --rm \
-    -e 323c48dc-fe0d-421a-88af-75e9667426f4\
-    -e 93d761c659c5ff01f23ed6d99990cfa86b94e6b8c429f3065344a3efecbe5ce5\
-    blackfire/blackfire blackfire \
-    curl http://192.168.99.105/
+Config Wamp 
+-----------
+::
+    [blackfire]
+    ;extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73_nts.dll
+    extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73.dll
+    blackfire.agent_timeout = 0.25
 
-créer un alias moins verbeux : 
-alias blackfire-curl='docker run -it --rm -e BLACKFIRE_CLIENT_ID -e BLACKFIRE_CLIENT_TOKEN blackfire/blackfire  blackfire curl'  
-utiliser cet alias pour profiler :  blackfire-curl http://192.168.99.105:8000
+    ;extension=blackfire.dll 
+    ;blackfire.agent_timeout = 0.25 
+    blackfire.log_file = /tmp/blackfire.log 
+    blackfire.log_level = 4
+    BLACKFIRE_AGENT_SOCKET="tcp://127.0.0.1:8307"
+
+Commande 
+=========
+
+Profiler :
+::
+    blackfire curl http://developpement/Formation%20PHP%20Symfony/Projet%208%20TodoList/TodoList/public/
+
+configuration pre-requis
+--------------------------
+
+- installer curl
+- deplacer les dll dans le dossier wamp64/bin/php/php7.3.12/ext/fihier.dll (preconiser sans extension nts)
+- reproduire la configuration cité plus haut dans le php.ini de php et également celui d'apache
+
+
+Mettre a jour les configuration:
+------------------------------
+::
+    configuration de l'agent: blackfire-agent --register --server-id=956c89f4-db87-4af3-b1ab-26fd386a49ed --server-token=aad82f78061aa8f204d53d29f56751481af094215884832fb767a2dcdb18336c
+    configuration du client probe: blackfire config --client-id=323c48dc-fe0d-421a-88af-75e9667426f4 --client-token=fe00b07da92104532542352ab0ec5ed188215046febb17310ce79c15a0880d4d
+    maj: blackfire config --dump      // blackfire curl https://gitlist.demo.blackfire.io/
