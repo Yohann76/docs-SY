@@ -3,8 +3,8 @@ Commande
 ##################
 
 
-`Symfony docs  <https://symfony.com/doc/current/index.html#gsc.tab=0>`_
-`SymfonyConnect  <https://connect.symfony.com/`_
+`Symfony docs`_
+`SymfonyConnect`_
 
 
 Commande de base 
@@ -175,8 +175,8 @@ Commande d’information et Commande divers
     $php bin/console debug:router ( voir toute les routes ).
 
 Nouvelles commandes 
-( nouvelle commande symfony avec le dernier exécutable ( https://symfony.com/download ) ) 
-
+( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) ) 
+															
 .. code-block:: terminal
 
     $ symfony server:start --no-tls
@@ -422,7 +422,23 @@ Ou créer une “.php-version” qui contient “7.3.5”
 Gestion du déploiement : 
 ---------------
 
-`Deploiement docs symfony <https://symfony.com/doc/current/deployment.html>`_
+`Deploiement docs symfony`_
+
+
+.. _`SymfonyConnect`: https://connect.symfony.com/
+.. _`Symfony docs`: https://symfony.com/doc/current/index.html#gsc.tab=0
+.. _`Deploiement docs symfony`: https://symfony.com/doc/current/deployment.html
+.. _`Symfony executable`: https://symfony.com/download 
+
+
+
+
+
+
+
+
+
+
 
 
 
