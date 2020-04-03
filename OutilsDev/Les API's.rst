@@ -31,27 +31,27 @@ API Utilisable
 
 Facebook 
 -------------------
-`Facebook API Docs  <https://developers.facebook.com/?locale=fr_FR>`_
+`Facebook API Docs`_
 
 TODO : Se connecter via auth ? 
 
 Github
 -------------------
-`Github API Docs  <https://developer.github.com/v3/>`_
+`Github API Docs`_
 
 TODO : Se connecter via auth ? 
 TODO : Récupérer le contenu d'un repository ( requete ) 
 
 Google
 -------------------
-`Google API Docs <https://developers.google.com/apis-explorer>`_
+`Google API Docs`_
 
 TODO : Se connecter via auth ? 
 
 
 Paypal 
 -------------------
-`Paypal API Docs <https://developer.paypal.com/classic-home/>`_
+`Paypal API Docs`_
 
 TODO : Gestion d'un service de paiment 
 
@@ -63,5 +63,10 @@ TODO : Récupérer des informations sur une planete ( requete )
 
 
 .. _`Nasa API Docs`: https://api.nasa.gov/
+.. _`Paypal API Docs`: https://api.nasa.gov/
+.. _`Google API Docs`: https://developers.google.com/apis-explorer
+.. _`Github API Docs`: https://developer.github.com/v3/
+.. _`Facebook API Docs `: https://developer.github.com/v3/
+
 
 
