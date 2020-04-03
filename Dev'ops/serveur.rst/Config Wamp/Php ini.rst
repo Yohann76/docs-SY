@@ -16,17 +16,16 @@ Xdebug
 
 Blackfire
 ::
-    ;[blackfire]
-    ;extension=c:/wamp64/bin/php/php7.4.0/ext/blackfire.dll
-    ;blackfire.agent_timeout = 0.25
+    [blackfire]
+    ;extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73_nts.dll
+    extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73.dll
+    blackfire.agent_timeout = 0.25
 
-ou ( a voir )
-
-::
-    ;extension=blackfire.dll
-    ;blackfire.agent_timeout = 0.25
-    ;blackfire.log_file = /tmp/blackfire.log
-    ;blackfire.log_level = 4
+    ;extension=blackfire.dll 
+    ;blackfire.agent_timeout = 0.25 
+    blackfire.log_file = /tmp/blackfire.log 
+    blackfire.log_level = 4
+    BLACKFIRE_AGENT_SOCKET="tcp://127.0.0.1:8307"
 
 OPcache
 ::
