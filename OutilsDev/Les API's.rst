@@ -57,8 +57,11 @@ TODO : Gestion d'un service de paiment
 
 Nasa
 -------------------
-`Nasa API Docs <https://api.nasa.gov/>`_
+`Nasa API Docs`_
 
 TODO : Récupérer des informations sur une planete ( requete ) 
+
+
+.. _`Nasa API Docs`: https://api.nasa.gov/
 
 
