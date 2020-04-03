@@ -66,7 +66,7 @@ TODO : Récupérer des informations sur une planete ( requete )
 .. _`Paypal API Docs`: https://api.nasa.gov/
 .. _`Google API Docs`: https://developers.google.com/apis-explorer
 .. _`Github API Docs`: https://developer.github.com/v3/
-.. _`Facebook API Docs `: https://developer.github.com/v3/
+.. _`Facebook API Docs`: https://developer.github.com/v3/
 
 
 

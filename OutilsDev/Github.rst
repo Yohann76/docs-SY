@@ -87,6 +87,11 @@ Voir la liste des commit effectué
    git log
 
 
+Synchroniser une branche avec une autre branche
+::
+   git pull origin master ou dev... 
+
+
 Récupérez des modification 
 -------------------
 
