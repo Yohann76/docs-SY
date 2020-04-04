@@ -1,13 +1,11 @@
 BlackFire
 ===================
-`Blackfire Docs <https://blackfire.io/docs/introduction>`_
-
+`Blackfire Docs`_
 
 Instalation Windows 
 -------------------
 
-`windows blackfire Instalation <https://blackfire.io/docs/up-and-running/installation>`_
-
+`windows blackfire Instalation`_
 
 Config Wamp 
 -----------
@@ -44,3 +42,9 @@ Mettre a jour les configuration:
     configuration de l'agent: blackfire-agent --register --server-id=956c89f4-db87-4af3-b1ab-26fd386a49ed --server-token=aad82f78061aa8f204d53d29f56751481af094215884832fb767a2dcdb18336c
     configuration du client probe: blackfire config --client-id=323c48dc-fe0d-421a-88af-75e9667426f4 --client-token=fe00b07da92104532542352ab0ec5ed188215046febb17310ce79c15a0880d4d
     maj: blackfire config --dump      // blackfire curl https://gitlist.demo.blackfire.io/
+
+
+
+.. _`Blackfire Docs`: https://blackfire.io/docs/introduction
+.. _`windows blackfire Instalation`: https://blackfire.io/docs/up-and-running/installation
+

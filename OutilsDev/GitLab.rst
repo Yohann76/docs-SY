@@ -1,8 +1,7 @@
 Gitlab
 ===================
 
-
-`Gitlab  <https://gitlab.com/>`_
+`Gitlab`_
 
 Créer par Facebook en 2012.
 
@@ -11,3 +10,8 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
 
 Instalation
 -------------------
+
+
+
+
+.. _`Gitlab`: https://gitlab.com/
