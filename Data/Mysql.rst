@@ -3,7 +3,7 @@
 
 Mysql
 ===================
-`Mysql Doc <https://dev.mysql.com/doc/>`_
+`Mysql Doc`_
 
 Show
 -------------------
@@ -88,6 +88,10 @@ Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la ba
 
 Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases::
      $ mysql -u username -p --one-database mybase < alldatabases.sql
+
+
+
+.. _`Mysql Doc`: https://dev.mysql.com/doc/
 
 
 
