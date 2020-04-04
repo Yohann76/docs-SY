@@ -1,4 +1,6 @@
 Vue JS
 ===================
 
-`Vue Docs  <https://fr.vuejs.org/v2/guide/>`_
+`Vue Docs`_
+
+.. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
