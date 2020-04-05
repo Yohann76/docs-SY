@@ -1,7 +1,7 @@
 API PLATEFORME : 
 ===================
 
-`ApiPlatform docs <https://api-platform.com/docs/>`_
+`ApiPlatform docs`_
 
 
 Installation 
@@ -63,5 +63,4 @@ Générer une docs :
 Generer avec le lien qui se trouve dans /api/ et faire pointer cette docs sur un lien 
 
 
-
-
+.. _`ApiPlatform docs`: https://api-platform.com/docs/

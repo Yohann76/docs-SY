@@ -1,4 +1,6 @@
 Messenger
 ===================
 
-`Messenger docs component <https://symfony.com/doc/current/components/messenger.html>`_
+`Messenger docs component`_
+
+.. _`Messenger docs component`: https://symfony.com/doc/current/components/messenger.html
