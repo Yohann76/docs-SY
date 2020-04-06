@@ -38,11 +38,31 @@ configuration pre-requis
 
 Mettre a jour les configuration:
 ------------------------------
+Sacha
 ::
-    configuration de l'agent: blackfire-agent --register --server-id=956c89f4-db87-4af3-b1ab-26fd386a49ed --server-token=aad82f78061aa8f204d53d29f56751481af094215884832fb767a2dcdb18336c
-    configuration du client probe: blackfire config --client-id=323c48dc-fe0d-421a-88af-75e9667426f4 --client-token=fe00b07da92104532542352ab0ec5ed188215046febb17310ce79c15a0880d4d
+     **Configuration de l'agent:**
+     blackfire-agent --register --server-id=956c89f4-db87-4af3-b1ab-26fd386a49ed --server-token=aad82f78061aa8f204d53d29f56751481af094215884832fb767a2dcdb18336c
+
+    **Configuration du client probe:**
+    blackfire config --client-id=323c48dc-fe0d-421a-88af-75e9667426f4 --client-token=fe00b07da92104532542352ab0ec5ed188215046febb17310ce79c15a0880d4d
+
     maj: blackfire config --dump      // blackfire curl https://gitlist.demo.blackfire.io/
 
+Yohann 
+::
+    **Configuration de l'agent:**
+    blackfire-agent --register --server-id=c54c0b78-b554-4456-b4e2-df00a33081c0 --server-token=9e4697a87d1a9c359d9205c53f0604ccf561d6bce2c18434d91cc5cbc4089ef9                                                                                        
+    sudo /etc/init.d/blackfire-agent restart // restart agent 
+
+    **Configuration du client probe:**
+    blackfire config --client-id=b584c08a-b27a-4ad0-bed9-d130a93450de --client-token=42f8d3d9b4bf452d73e52b1b4a296712399c82eac95e47c7241656e8e1e8beec
+
+
+Source d'érreur : 
+
+Verifier que l'extension php est présente et activé et a jours dans WAMP
+Verifier les droits des fichiers ( que l'agent soit accessible ) 
+Verifier les bon token/id client et server ( dans l'agents  -> server token/id et dans les variable d'environement -> client token/id ) 
 
 
 .. _`Blackfire Docs`: https://blackfire.io/docs/introduction
