@@ -7,8 +7,7 @@ Github organization ( compte partagé )
 `Github organisation`_ 
 
 2 organisation 
-- SYD Game 
-- Durand Tools
+- SYD Tools
 
 
 
@@ -135,6 +134,8 @@ Contribution Open Source :
 .. _`Github organisation`: https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations
 .. _`Github Doc`: https://help.github.com/en
 .. _`Github API`: https://developer.github.com/v3/
+
+
 
 
 

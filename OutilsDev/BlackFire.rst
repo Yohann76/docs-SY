@@ -51,11 +51,17 @@ Sacha
 Yohann 
 ::
     **Configuration de l'agent:**
-    blackfire-agent --register --server-id=c54c0b78-b554-4456-b4e2-df00a33081c0 --server-token=9e4697a87d1a9c359d9205c53f0604ccf561d6bce2c18434d91cc5cbc4089ef9                                                                                        
+    blackfire-agent.exe --register --server-id=c54c0b78-b554-4456-b4e2-df00a33081c0 --server-token=7cedc10841baebac26f47b2aff5cdfad9b1e25abe1affc4cee3a1323826d2647                                                                                                                                                           
     sudo /etc/init.d/blackfire-agent restart // restart agent 
-
     **Configuration du client probe:**
-    blackfire config --client-id=b584c08a-b27a-4ad0-bed9-d130a93450de --client-token=42f8d3d9b4bf452d73e52b1b4a296712399c82eac95e47c7241656e8e1e8beec
+    blackfire config --client-id=b584c08a-b27a-4ad0-bed9-d130a93450de --client-token=a72fb8e56b5513d8c9f689b80a6a9d485664b1be762f4783cc695c681604d1f6
+
+profiler : 
+::
+
+    **Lancer l'agent**
+    blackfire-agent.exe
+    ** lancé l'extension de Google chrome 
 
 
 Source d'érreur : 
@@ -63,6 +69,7 @@ Source d'érreur :
 Verifier que l'extension php est présente et activé et a jours dans WAMP
 Verifier les droits des fichiers ( que l'agent soit accessible ) 
 Verifier les bon token/id client et server ( dans l'agents  -> server token/id et dans les variable d'environement -> client token/id ) 
+L'agent doit etre dans Programme Data pour avoir les droits
 
 
 .. _`Blackfire Docs`: https://blackfire.io/docs/introduction
