@@ -1,7 +1,7 @@
 Les test avec PHPunit 
 ===================
 
-`PHPunit   docs  <https://phpunit.readthedocs.io/fr/latest/>`_
+`PHPunit docs`_
 
 Commande et installation
 -------------------
@@ -100,6 +100,9 @@ Test Formulaire (fonctionnelle)
 
 Les éléments sont à trouvé en html comme "user[email]" ou le bouton "ajouter"
 Sinon, faire un ->getName sur l'objet $form
+
+
+.. _`PHPunit docs`: https://phpunit.readthedocs.io/fr/latest/
 
 
 
