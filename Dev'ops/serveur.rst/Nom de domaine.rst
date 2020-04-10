@@ -14,9 +14,9 @@ Pour configurer un sous non de domaine sur OVH
 Se rendre dans la partie "nom de domaines"
 
 Ajouter une entré -> 
-CNAME
-Sousdomaine.mondomaine.fr
-mondomaine.fr. ( le point final est important ) 
+Type de champ : CNAME
+Domaine : sousdomaine.mondomaine.fr
+cible :mondomaine.fr. ( le point final est important ) 
 
 Ensuite pour pusher correctement avec ansible : 
 
