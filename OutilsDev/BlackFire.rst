@@ -70,6 +70,7 @@ Verifier que l'extension php est présente et activé et a jours dans WAMP
 Verifier les droits des fichiers ( que l'agent soit accessible ) 
 Verifier les bon token/id client et server ( dans l'agents  -> server token/id et dans les variable d'environement -> client token/id ) 
 L'agent doit etre dans Programme Data pour avoir les droits
+Vérifier que l'agent est bien détécter sur la docs de blackfire
 
 
 .. _`Blackfire Docs`: https://blackfire.io/docs/introduction
