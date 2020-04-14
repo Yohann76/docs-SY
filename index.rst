@@ -9,9 +9,9 @@ Sommaire
 .. toctree:: 
    :maxdepth: 2 
 
-   Bootstrap
-   CSS
-   Scss
+   CSS/Bootstrap
+   CSS/CSS
+   CSS/Scss
 
 
 
