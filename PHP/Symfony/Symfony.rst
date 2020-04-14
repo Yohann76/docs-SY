@@ -1,5 +1,4 @@
-##################
-Commande 
+Symfony
 ##################
 
 
@@ -8,13 +7,13 @@ Commande
 
 
 Commande de base 
-================
-
-Avec composer : 
 ****************
 
-Créer un projet simple ( API ou format court )
+Avec composer : 
 ================
+
+Créer un projet simple ( API ou format court )
+
 
 .. code-block:: terminal
 
@@ -28,6 +27,8 @@ Créer un projet complexe ( Application, librairie deja présente )
 
 
 Avec Symfony : 
+===============
+
 .. code-block:: terminal
 
     $symfony new my_project_name --full ( Version Website ) 
