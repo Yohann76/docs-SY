@@ -1,10 +1,8 @@
 Symfony
 ##################
 
-
 `Symfony docs`_
 `SymfonyConnect`_
-
 
 Commande de base 
 ****************
@@ -47,62 +45,19 @@ Lancer le serveur interne de Symfony
     $ php bin/console cache:clear 
 
 Composer : Les requires indispensable  et commandes composer 
-
-enlever une lib : 
 ::
-	composer unpack ma-librairie
-
-server : 
-::
-
-	composer require server 
-
-securité  :
-::
-
-	composer require --dev symfony/profiler-pack
-	composer require security
-
-log :
-::
-
-	composer require logger
-
-twig :
-::
-
-	composer require twig 
-
-form :
-:: 
-
-	composer require form
-
-validator :
-::
-
-	composer require validation ( vérification  pour les form )
-
-Profiler :
-::
-
-	composer require profiler
-
-Bdd  :
-::
-
- 	composer require orm 
-
-Composant make:
-::
-
-	composer require symfony/maker-bundle --dev
-
-Serializer pour formater en json ou xml.. (Doc YT ) :
-::
- 
-	composer require serializer
-
+	composer unpack ma-librairie //enlever une lib 
+	composer require server // server 
+	composer require --dev symfony/profiler-pack // profiler
+	composer require security // securité  
+	composer require logger // log 
+	composer require twig twig 
+	composer require form // form
+	composer require validation // vérification  pour les form )
+	composer require profiler // Profiler
+ 	composer require orm // Bdd 
+	composer require symfony/maker-bundle --dev // Composant make
+	composer require serializer // Serializer pour formater en json ou xml.. (Doc YT ) 
 
 	
 *doctrine : composer require doctrine
@@ -132,7 +87,6 @@ Création automatique ( makerBundle )
 *php bin/console make:registration-form
 *php bin/console make:functional-test
 *php bin/console make:unit-test
-
 
 
 Commande lié a doctrine 
