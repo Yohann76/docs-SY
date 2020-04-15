@@ -3,13 +3,11 @@ Twig
 
 `Twig Doc`_
 
-Importer Twig
-#############
-
-Les filtres utiles
-#############
-
-.. _`Twig Doc`: https://twig.symfony.com/doc/2.x/index.html
+Commande Lié a twig 
+--------------------
+.. code-block:: terminal
+    $php bin/console make:twig-extension ( créer une extension twig )
+    $php bin/console debug:twig ( voir les filtre ) 
 
 
 Twig Syntax 
@@ -31,4 +29,8 @@ situer une route dans un contrôleur ( si … = dashboard .. )
 
 
 *{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
+
+
+
+.. _`Twig Doc`: https://twig.symfony.com/doc/2.x/index.html
 
