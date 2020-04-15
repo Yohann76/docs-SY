@@ -174,51 +174,6 @@ transmission de variables :
 	$request->query->get('id');
 	$request->request->get('category', 'default category');
 
-Twig Syntax 
------------
-::
-
-	{% block title %}Hello {{ controller_name }}!{% endblock %}
-	{{ article.author }}
-	{{ path('article_show', {'slug': comment.article.slug}) }}
-	{{ comment.createdAt|ago }}  ( filtre ) 
-	{{ app.request.query.get('q') }}
-	{{ app.user.firstName }}
-
-situer une route dans un contrôleur ( si … = dashboard .. )  
-*{{ dump(app.request.get('_route')) }}
-
-*{% form_theme registrationForm _self %}
-*{{ form_row(articleForm.specificLocationName) }}
-
-
-*{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
-
-
-Annotations des entités  : 
----------------------------
-
-::
-	/**
-	* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
-	* @ORM\OrderBy({"createdAt" = "DESC"})
-	*/
-
-
-	/**
-	* @ORM\ManyToOne(targetEntity="App\Entity\Article", inversedBy="comments")
-	* @ORM\JoinColumn(nullable=false)
-	*/
-
-	/*Modéliser la relation des deux coté*/
-	/**
-	* @ORM\ManyToMany(targetEntity="App\Entity\Tag", inversedBy="articles")
-	*/
-
-
-	* @ORM\OrderBy({"createdAt" = "DESC"})
-	* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
-
 Annotations des routes  : 
 ::
 	/**
