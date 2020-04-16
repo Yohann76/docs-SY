@@ -7,22 +7,18 @@ Symfony
 Créer un projet
 ****************
 
-Avec composer : 
+Avec Composer : 
 ================
-
 Créer un projet simple ( API ou format court )
-
 
 .. code-block:: terminal
 
     $ composer create-project symfony/skeleton myProject
 
-
 Créer un projet complexe ( Application, librairie deja présente )
 .. code-block:: terminal
 
     $ composer create-project symfony/website-skeleton my_project_name
-
 
 Avec Symfony : 
 ===============
@@ -43,6 +39,9 @@ Lancer le serveur interne de Symfony
     $ symfony server:start --no-tls
     $ symfony serve 
     $ php bin/console cache:clear 
+
+Composer require utile : 
+===============
 
 Composer : Les requires indispensable  et commandes composer 
 ::
@@ -117,6 +116,7 @@ Service interne les plus utilisé
 	Security $sécurity (   $this->security->getUser()    )
 	LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
 
+
 Bundle utile 
 ------------ 
 
@@ -153,7 +153,7 @@ Annotations des routes  :
 
 
 
-Code lié aux requêtes 
+Code lié aux requêtes via le repository
 ---------------------
 ::
 	public function findByExampleField($value)
@@ -222,33 +222,10 @@ Charger les fixtures :
 	-php bin/console server:run
 
 
-Code divers
-------------
-se faire passer pour un utilisateur : 
-mettre une URL et ajouter ?_switch_user="xxx" ( x est le mail de l’utilisateur ) 
-Nous pouvons désormais naviguer sur le rôle de cet utilisateur
-( nécessite ROLE_ALLOWED_TO_SWITCH et switch_user: true ( dans config/packages/security.yaml 
- ) 
-et “?_switch_user=_exit” a la fin de l’url pour sortir de ce rôle 
-
-Intégrer dans le template une fonction que pour le user/Admin/autre  ( twig ) 
-::
-
-	{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
-
-Checker l’utilisateur qui utilise un controller ( dans controller ) 
-::
-
-	$logger->debug('Checking account page for '.$this->getUser()->getEmail());
-
-retourner a la page précedente : 
-::
-
-	return $this->redirect($_SERVER['HTTP_REFERER']);
-
-
-Configuration : 
+Config Symfony : 
 ---------------
+Les recettes de config sont généré par symfony/flex lors de l'instalation d'un paquet
+
 Ajouter une déconnexion dans security.yaml
 ::
 
@@ -293,6 +270,31 @@ serveur interne de symfony  : ( source )
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve ) 
 Ou créer une “.php-version” qui contient “7.3.5”
 
+
+
+Code divers
+------------
+se faire passer pour un utilisateur : 
+mettre une URL et ajouter ?_switch_user="xxx" ( x est le mail de l’utilisateur ) 
+Nous pouvons désormais naviguer sur le rôle de cet utilisateur
+( nécessite ROLE_ALLOWED_TO_SWITCH et switch_user: true ( dans config/packages/security.yaml 
+ ) 
+et “?_switch_user=_exit” a la fin de l’url pour sortir de ce rôle 
+
+Intégrer dans le template une fonction que pour le user/Admin/autre  ( twig ) 
+::
+
+	{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
+
+Checker l’utilisateur qui utilise un controller ( dans controller ) 
+::
+
+	$logger->debug('Checking account page for '.$this->getUser()->getEmail());
+
+retourner a la page précedente : 
+::
+
+	return $this->redirect($_SERVER['HTTP_REFERER']);
 
 
 
