@@ -57,35 +57,35 @@ Composer : Les requires indispensable  et commandes composer
  	composer require orm // Bdd 
 	composer require symfony/maker-bundle --dev // Composant make
 	composer require serializer // Serializer pour formater en json ou xml.. (Doc YT ) 
-
-	
-*doctrine : composer require doctrine
-*composer require --dev orm-fixtures  ( Fonction de fixture ) 
-*composer require knplabs/knp-time-bundle pour le filtre ago ( article.publishedAt|ago )
-*composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: ) 
-*composer require apache-pack
-*composer require twig/extensions ( filtre twig supplémentaire ) 
-*composer update symfony/maker-bundle
-*composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev ) 
-*composer require twig/extensions ( Extension Twig ) 
+	composer require doctrine // doctrine
+	composer require --dev orm-fixtures  ( Fonction de fixture ) 
+	composer require knplabs/knp-time-bundle pour le filtre ago ( article.publishedAt|ago )
+	composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: ) 
+	composer require apache-pack
+	composer require twig/extensions ( filtre twig supplémentaire ) 
+	composer update symfony/maker-bundle
+	composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev ) 
+	composer require twig/extensions ( Extension Twig ) 
 
 Création automatique ( makerBundle )
 ------------------------------------
-*php bin/console list make  ( affiche tout les make )
-*php bin/console make:controller
-*php bin/console generate:bundle
-*php bin/console make:command
-*php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
-*php bin/console make:user
-*php bin/console make:auth ( créer un authentificateur ) 
-*php bin/console make:voter ( créer un voteurs )
-*php bin/console make:entity
-*php bin/console make:subscriber
-*php bin/console make:form
-*php bin/console make:crud
-*php bin/console make:registration-form
-*php bin/console make:functional-test
-*php bin/console make:unit-test
+::
+
+	php bin/console list make  ( affiche tout les make )
+	php bin/console make:controller
+	php bin/console generate:bundle
+	php bin/console make:command
+	php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
+	php bin/console make:user
+	php bin/console make:auth ( créer un authentificateur ) 
+	php bin/console make:voter ( créer un voteurs )
+	php bin/console make:entity
+	php bin/console make:subscriber
+	php bin/console make:form
+	php bin/console make:crud
+	php bin/console make:registration-form
+	php bin/console make:functional-test
+	php bin/console make:unit-test
 
 
 Commande d’information et Commande divers 

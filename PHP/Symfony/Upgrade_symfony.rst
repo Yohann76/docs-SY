@@ -10,11 +10,9 @@ Upgrade Symfony Version
 
 A partir de Symfony 3.1 -> Symfony 3.3
 =======================================
-
 ::
     //composer.json
     "symfony/symfony": "3.3.*",
-
 ::
     > composer update
     > composer install
@@ -22,7 +20,6 @@ A partir de Symfony 3.1 -> Symfony 3.3
 
 A partir de Symfony 3.3 -> Symfony 3.4
 =======================================
-
 :: 
     > composer self-update
     > composer require symfony/flex
@@ -57,7 +54,6 @@ A partir de Symfony 3.4 -> Symfony 4.4
 - enlever les probleme de conflit
 
 2. Faire le systeme de double application ( autoload double chargement )
-
 ::
     "autoload": {
         "psr-4": {
