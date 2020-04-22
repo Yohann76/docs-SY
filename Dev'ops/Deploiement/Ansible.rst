@@ -4,8 +4,8 @@
 ANSIBLE : 
 ===================
 
-`Ansible docs <https://docs.ansible.com/ansible/latest/index.html>`_
-`Ansible Galaxy <https://galaxy.ansible.com/>`_
+`Ansible docs`_
+`Ansible Galaxy`_
 
 Instalation
 -------------------
@@ -32,6 +32,7 @@ ping sur un host :
 ::
 
 	ansible 127.0.0.1 -m ping -i ansible/hosts.ini
+
 Lister host(server) : 
 ::
 
@@ -76,4 +77,8 @@ DEBUGGAGE :
 
 deployment avec Nginx, si problème de 403 forbidden, voir/supprimer le défaut dans /etc/nginx/sites-enabled 
 Faire un composer install manuellement par SSH 
+
+
+.. _`Ansible docs`: https://docs.ansible.com/ansible/latest/index.html
+.. _`Ansible Galaxy`: https://galaxy.ansible.com/
 	
