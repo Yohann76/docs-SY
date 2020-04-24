@@ -65,6 +65,7 @@ Il existe aussi la fonction preg_match qui envoie true ou false selon si un moti
 Regex utile: 
 ::
     #(https?://)([\w\d.&:\#@%/;$~_?\+-=]*)#  // trouve une chaine https://
+    preg_match_all("#^\s[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}\s$#",$content, $out); // Trouver une adresse mail 
 
 
 .. _`Memento expression reguliere OC`: https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres
