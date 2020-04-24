@@ -1,7 +1,7 @@
 Les bases du PHP
 ===================
 
-`PHP docs  <http://php.net/manual/fr/>`_
+`PHP docs`_
 
 Fonction utile dans PHP 
 ############ 
@@ -52,6 +52,7 @@ cela va nous retransmettre le chemin
 Expressions réguliere  
 ############
 
+`Memento expression reguliere OC`_
 
 Une regex sert a trouver un motif dans une chaine de caractere: 
 
@@ -64,4 +65,8 @@ Il existe aussi la fonction preg_match qui envoie true ou false selon si un moti
 Regex utile: 
 ::
     #(https?://)([\w\d.&:\#@%/;$~_?\+-=]*)#  // trouve une chaine https://
+
+
+.. _`Memento expression reguliere OC`: https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres
+.. _`PHP docs`: http://php.net/manual/fr/
 

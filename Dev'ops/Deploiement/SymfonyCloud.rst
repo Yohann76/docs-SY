@@ -1,8 +1,7 @@
 Synfony cloud
 ================
 
-`Symfony Cloud official site <https://symfony.com/cloud/>`_
-
+`Symfony Cloud official site`_
 
 Instalation Synfony cloud
 ================
@@ -26,3 +25,8 @@ Création du projet dans le cloud
 
     symfony project:create --title=demo --plan=development
     symfony deploy
+
+
+
+
+.. _`Symfony Cloud official site`: https://symfony.com/cloud/
