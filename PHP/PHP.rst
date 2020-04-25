@@ -4,7 +4,7 @@ Les bases du PHP
 `PHP docs`_
 
 Fonction utile dans PHP 
-############ 
+===================
 
 Trouver la longueur d'une chaine de caractere : 
 :
@@ -45,6 +45,13 @@ Trouver le chemin d'un fichier
 
 Mettre ce fichier la ou on veux trouver le chemin, et l'executer avec le serveur 
 cela va nous retransmettre le chemin 
+
+
+remplacer un contenu 
+::
+
+    $content = str_replace(">", " ",  $content);
+    $content = str_replace("<", " ",  $content);
 
 ############
 
