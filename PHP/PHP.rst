@@ -3,6 +3,14 @@ Les bases du PHP
 
 `PHP docs`_
 
+Variable
+===================
+Concatener une variable dans une chaine de caractére a simple quote 
+::
+
+    'https://www.google.com/search?q='.$keyword1.'&num=1000'
+
+
 Fonction utile dans PHP 
 ===================
 
