@@ -3,8 +3,6 @@ Composer
 
 `Composer docs`_
 
-.. _`Composer docs`: https://getcomposer.org/doc/
-
 Commande Composer : 
 ===================
 ::
@@ -28,3 +26,5 @@ Options Composer
     --ansi: Force ANSI output.
     --no-ansi: Disable ANSI output.
     --version (-V): Display this application version.
+
+    .. _`Composer docs`: https://getcomposer.org/doc/
