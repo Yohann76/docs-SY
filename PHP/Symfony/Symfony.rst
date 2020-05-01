@@ -109,6 +109,46 @@ Code
 
 Cette partie présente des démonstrations codé
 
+
+Faire apelle a une fonction du repository 
+--------------------------------
+::
+
+    /**
+     * @Route("/dashboard/admin", name="app_dashboard_admin")
+     */
+    public function index(UserRepository $userRepository, OrderRepository $orderRepository, ListMailRepository $listMailRepository)
+    {
+        $ClientNumber = $userRepository->countAllUser();
+        $OrderNumber = $orderRepository->countAllOrder();
+        $ListMailNumber = $listMailRepository->countAllListMail();
+
+        return $this->render('dashboard/dashboardAdmin.html.twig', [
+            'ClientNumber' => $ClientNumber,
+            'OrderNumber' => $OrderNumber,
+            'ListMailNumber' => $ListMailNumber
+        ]);
+    }
+
+Fonction de count pour une entité dans le repository : 
+::
+
+    public function countAllUser()
+    {
+        $qb = $this->createQueryBuilder('e');
+        $qb ->select($qb->expr()->count('e'));
+        return (int) $qb->getQuery()->getSingleScalarResult();
+    }
+	
+Dans la vue : 
+::
+
+{{ ClientNumber }} {{ OrderNumber }} {{ ListMailNumber }}
+
+
+
+
+
 Service interne les plus utilisé 
 --------------------------------
 ::
@@ -118,8 +158,7 @@ Service interne les plus utilisé
 
 
 Bundle utile 
------------- 
-
+-------
 créer un bundle (help):
 ::
 
