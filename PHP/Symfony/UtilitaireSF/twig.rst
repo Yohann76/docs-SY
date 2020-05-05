@@ -17,9 +17,9 @@ Twig Syntax
 	{% block title %}Hello {{ controller_name }}!{% endblock %}
 	{{ article.author }}
 	{{ path('article_show', {'slug': comment.article.slug}) }}
-	{{ comment.createdAt|ago }}  ( filtre ) 
 	{{ app.request.query.get('q') }}
 	{{ app.user.firstName }}
+	{{ ticketUserClose.createdAt|date('Y-m-d')}} ( filtre de date ) 
 
 situer une route dans un contrôleur ( si … = dashboard .. )  
 *{{ dump(app.request.get('_route')) }}
