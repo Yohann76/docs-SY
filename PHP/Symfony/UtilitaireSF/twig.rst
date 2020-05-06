@@ -30,7 +30,30 @@ situer une route dans un contrôleur ( si … = dashboard .. )
 
 *{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
 
+Structure If elseif else endif
+::
 
+	{% if product.stock > 10 %}
+	Available
+	{% elseif product.stock > 0 %}
+	Only {{ product.stock }} left!
+	{% else %}
+	Sold-out!
+	{% endif %}
+
+
+	{% if temperature > 18 and temperature < 27 %}
+		<p>It's a nice day for a walk in the park.</p>
+	{% endif %}
+
+
+	{% if users %}
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username|e }}</li>
+        {% endfor %}
+    </ul>
+	{% endif %}
 
 .. _`Twig Doc`: https://twig.symfony.com/doc/2.x/index.html
 
