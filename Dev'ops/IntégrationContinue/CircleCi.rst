@@ -3,7 +3,7 @@
 
 CircleCI
 ===================
-`CircleCi  docs<https://circleci.com/docs/>`_
+`CircleCi  docs <https://circleci.com/docs/>`_
 
 Se rendre sur le site `CircleCi <https://circleci.com/vcs-authorize/>`_
 Se connectée avec Github
@@ -148,3 +148,15 @@ Config circleCI :
                 only: master
 
 Dans un dossier ".circleci/config.yml
+
+
+
+Accepter les projets d'organisation github 
+===================
+
+- Se rendre ici : `CircleCi account <hhttps://circleci.com/account>`_
+- Cliquer sur cjeck permissions ( en bleu ) 
+- Autoriser l'accés a l'organisation voulu
+- Depuis le tableau de bord de circleCI, changer de compte ( fléche a droite de la photo ) 
+
+

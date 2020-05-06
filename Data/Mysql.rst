@@ -54,7 +54,7 @@ Création users
 
 Connexion:: 
      $ mysql -u root -p 
-     $ mysql -h localhost -u root -p
+     $ mysql -h localhost -u root -p // connexion en tant que root password = root 
 
 localhost : nom de votre serveur mysql
 u : user souhaité, ici root
