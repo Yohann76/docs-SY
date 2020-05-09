@@ -50,4 +50,9 @@ Commande lié a doctrine
     $php bin/console doctrine:fixtures:load ( charger les data des fixtures dans la bdd ) 
 
 Pour les relation : 
-Faire un make Entity, entrer l’entité A, ensuite mettre “relation” et “B” par exemple 
+Faire un make Entity, 
+
+champ : user ( pour faire user_id )
+type : relation 
+Classe lié : User
+Choisir le type de relation : ManyToOne .... 
