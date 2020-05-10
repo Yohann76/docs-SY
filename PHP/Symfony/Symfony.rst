@@ -109,7 +109,6 @@ Code
 
 Cette partie présente des démonstrations codé
 
-
 Faire apelle a une fonction du repository 
 --------------------------------
 ::
@@ -139,14 +138,11 @@ Fonction de count pour une entité dans le repository :
         $qb ->select($qb->expr()->count('e'));
         return (int) $qb->getQuery()->getSingleScalarResult();
     }
-	
+
 Dans la vue : 
 ::
 
 {{ ClientNumber }} {{ OrderNumber }} {{ ListMailNumber }}
-
-
-
 
 
 Service interne les plus utilisé 
@@ -208,22 +204,9 @@ Code lié aux requêtes via le repository
 	   ;
 	}
 
-
-Exploitation des API
----------------------
-
-Se référer à la docs spécial API
-
 Formulaire 
 ----------
-
-Générer du côté vue : 
-::
-	{{  form_start(form) }}
-
-	   {{ form_widget(form) }}
-
-	{{  form_end(form) }}
+php bin/console make:form
 
 Controller : 
 ::
@@ -238,6 +221,14 @@ Controller :
 	Pour créer un form : php bin/console make:form
 	-> nom de la class “ ex TricksType”
 	->nom de l'entrée à gérer 
+
+Générer du côté vue : 
+::
+	{{  form_start(form) }}
+
+	   {{ form_widget(form) }}
+
+	{{  form_end(form) }}
 
 
 Fixture
@@ -308,7 +299,6 @@ serveur interne de symfony  : ( source )
 
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve ) 
 Ou créer une “.php-version” qui contient “7.3.5”
-
 
 
 Code divers

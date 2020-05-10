@@ -4,4 +4,6 @@
 Github Action
 ===================
 
-`Github Action docs <https://help.github.com/en/actions>`_
+`Github Action docs`_
+
+.. _`Github Action docs`: https://help.github.com/en/actions
