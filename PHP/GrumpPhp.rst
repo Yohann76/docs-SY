@@ -63,4 +63,6 @@ Config ( dossier grumphp.yml )
                 triggered_by: ['twig']
 
 
+Grump php est un "composant" qui permet de verifier a chaque commit si le code est valide, cela permet de vérifier l'ensemble du projet selon certain critére. 
+
 .. _`Github docs`: https://github.com/phpro/grumphp
