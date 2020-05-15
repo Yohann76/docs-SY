@@ -107,6 +107,7 @@ Créer une branche :
    $ git branch mon-test // Créer une nouvelle branch nommé "mon-test" 
    $ git checkout mon-test // pour changer de branch 
    $ git branch -D mon-test // Supprimer une branche 
+   $ git branch -b mon-test // Créer une branche et aller dessus directement 
 
 Fusionnez des branches :
 -------------------
