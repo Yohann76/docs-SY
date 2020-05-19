@@ -46,6 +46,13 @@ Generer un serveur PHP
 
     php -S 127.0.0.1:8000 -t public
 
+Executer un fichier php en ligne de commande
+::
+
+    php nom du fichier
+
+`PHP shell-exec`_
+
 Trouver le chemin d'un fichier 
 ::
 
@@ -85,4 +92,5 @@ Regex utile:
 
 .. _`Memento expression reguliere OC`: https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres
 .. _`PHP docs`: http://php.net/manual/fr/
+.. _`PHP shell-exec`: https://www.php.net/manual/fr/function.shell-exec.php
 
