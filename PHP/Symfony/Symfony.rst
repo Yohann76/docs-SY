@@ -63,7 +63,7 @@ Composer : Les requires indispensable  et commandes composer
 	composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: ) 
 	composer require apache-pack
 	composer require twig/extensions ( filtre twig supplémentaire ) 
-	composer update symfony/maker-bundle
+	ycomposer update symfony/maker-bundle
 	composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev ) 
 	composer require twig/extensions ( Extension Twig ) 
 
