@@ -37,5 +37,88 @@ Les bases
 Les routes
 -------------------
 
+Dans le fichier RouteConfig.classes
+::
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+
+            // Controller = Home pour homecontroller et action = Index, la méthode : public ActionResult Index() { return View(); }
+            // par default return la view associé au nom. 
+
+
+Le Controller 
+-------------------  
+
+
+Le Modele 
+-------------------   
+Exemple d'un modéle Category : 
+::
+
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web;
+
+    namespace PhotoGalery.Models
+    {
+
+        // One 
+        public class Category
+        {
+            public string Name { get; set; }
+            public int Years { get; set; }
+        }
+
+        // Many 
+        public class Categories
+        {
+            public List<Category> GetListCategories()
+            {
+                return new List<Category>
+                {
+                new Category {  Years = 30, Name = "Nicolas" },
+                new Category {  Years = 30, Name = "Delphine" },
+                new Category {  Years = 30, Name = "Jérémie" },
+                new Category {  Years = 30, Name = "Timéo" }
+                };
+            }
+        }
+    }
+
+
+
+La View 
+-------------------
+
+
+Une vue est sous format .cshtml
+
+Pour écrire du C# dans la view : 
+::
+
+            <tr>
+                <td>@category.Name</td>
+                <td>@category.Years</td>
+
+            </tr>
+
+Info de view ( début de page , titre... ) : 
+::
+
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+Récupéré des infos : 
+::
+
+    La Category @ViewData["Name"] a bien été trouvé et a @ViewData["Years"] ans.
+
+
+
 .. _`Cours OC`: https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc
                
