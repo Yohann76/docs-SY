@@ -1,0 +1,50 @@
+---
+  # Yarn
+  - name: Add Yarn APT key
+    become: true
+    apt_key:
+      url: 'https://dl.yarnpkg.com/debian/pubkey.gpg'
+      state: present
+
+  - name: Add Yarn to the source lists
+    become: true
+    lineinfile:
+      path: '/etc/apt/sources.list.d/yarn.list'
+      regexp: 'deb https://dl.yarnpkg.com/debian/ stable main'
+      line: 'deb https://dl.yarnpkg.com/debian/ stable main'
+      create: yes
+
+  - name: "Yarn | Install"
+    package:
+      name: yarn
+      state: present
+
+  - name: Install NodeJS / yarn
+    become: true
+    apt:
+      name:
+        - nodejs
+        - yarn
+      update_cache: yes
+
+  # On server :
+  # curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+  # apt-get install -y nodejs
+  - name: Install packages based on package.json
+    yarn:
+      path: '{{ symfony_root_dir }}'
+      state: latest
+
+  - name: Install bundle assets
+    command: '{{ symfony_console_path }} assets:install {{ symfony_web_dir }} --symlink --no-debug --env=prod'
+
+  - name: Install Node dependencies
+    command: yarn install
+    args:
+      chdir: '{{ symfony_root_dir }}'
+
+  #build all code in public/build // Launch yarn encore dev
+  - name: Build Yarn Dependencies
+    command: yarn encore dev
+    args:
+      chdir: '{{ symfony_root_dir }}'
