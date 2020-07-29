@@ -49,6 +49,23 @@ Dans le fichier RouteConfig.classes
             // par default return la view associé au nom. 
 
 
+Exemple 
+::
+            routes.MapRoute(
+                name: "Default",
+                url: "{action}/{valeur1}/{valeur2}",
+                defaults: new { controller = "Calculateur", action = "Ajouter", valeur1 = 0, valeur2 = 0 });
+
+            public class CalculateurController : Controller
+            {
+                public string Ajouter(int valeur1, int valeur2)
+                {
+                    int resultat = valeur1 + valeur2;
+                    return resultat.ToString();
+                }
+            }
+
+
 Le Controller 
 -------------------  
 
