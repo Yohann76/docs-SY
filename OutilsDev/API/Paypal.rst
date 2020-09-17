@@ -31,4 +31,53 @@ Http client connect paypal, return token
     }
 
     
+
+Js 
+::
+
+<script src="https://www.paypal.com/sdk/js?client-id=CLIENT-ID-TOKEN"></script> <!-- Prod Token  -->  
+                                                                                 
+    <script>
+        paypal.Buttons({
+            // createOrder est appelé lorsque l'acheteur clique sur l'un des boutons de paiement.
+            // Cette fonction doit retourner un numéro de commande ( https://developer.paypal.com/docs/api/orders/v2/#orders )
+            // pour rendre le flux de paiement. Dans cet exemple,
+            // createOrder appelle votre serveur pour obtenir l'ID de commande.
+            createOrder: function (data, actions) {
+                // return fetch('/perso/Web-Item-Market/public/createOrder', { // dev
+                   return fetch('http://webitemmarket.yohanndurand.fr/createOrder', {
+                    method: 'POST'
+                }).then(function(res) {
+                    if (res.status === 204)
+                    {
+                        document.location.href="{{ path('errorPayment') }}";
+                    }
+                    else
+                    {
+                        return res.json();
+                    }
+                }).then(function(data) {
+                    // console.log(data.id );
+                    // console.log(data);
+                    return data.id; // return json id
+                });
+            },
+            // Send orderId in methods
+            onApprove: function (data, actions) {
+                // console.log(data.orderID) ;
+                // return fetch('/perso/Web-Item-Market/public/captureOrder/'+data.orderID, { // dev
+                return fetch('http://webitemmarket.yohanndurand.fr/captureOrder/'+data.orderID, {
+                    method: 'POST'
+                }).then(function(res) {
+                    console.log(res.status);
+                    if (res.status = 200) {
+                         document.location.href="{{  path('successPayment') }}";  // OrderID no exist
+                    }
+                    else {
+                        document.location.href="{{ path('errorPayment') }}";
+                    }
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
 .. _`Paypal docs`: https://developer.paypal.com/docs/platforms/get-started/
