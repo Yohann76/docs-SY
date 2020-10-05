@@ -1,5 +1,5 @@
 .. index::
-   single: Docker; 
+   single: Docker;
 
 Docker
 ===================
@@ -11,10 +11,10 @@ Commande Général  :
 -------------------
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
-tester docker : 
+tester docker :
 ::
 
-    docker run hello world  
+    docker run hello world
 
 Lancer serveur nginx sur port 80 : docker run -d -p 8080:80 nginx
 récupérer une image du hub docker : docker pull hello-world
@@ -27,22 +27,22 @@ connaître son IP de machine virtuel : docker-machine ip default
 push une image : docker push hasalex/img
 executer un fichier docker-compose.yml : docker-compose up -d
 DOCKER-COMPOSE ET  DOSSIER “DOCKER” :
-Mettre en place les fichier 
-docker-compose.yaml à la racine 
-Dossier Docker à la racine 
-Modifier/ajouté les variable d'environnement du .env si il y a 
-Commande : 
+Mettre en place les fichier
+docker-compose.yaml à la racine
+Dossier Docker à la racine
+Modifier/ajouté les variable d'environnement du .env si il y a
+Commande :
 ::
 
-    $ docker-compose up -d --build 
+    $ docker-compose up -d --build
 
 ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
 -------------------
 ::
 
     docker system prune ( remise a zero de docker ( perte de donnée ) )
-    docker-compose down ( ferme les services et conteneurs ) 
-    docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image ) 
+    docker-compose down ( ferme les services et conteneurs )
+    docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image )
     docker-compose up -d
     docker run -d -p 8080:80 sfserver  ( port pour nginx )
 
@@ -54,18 +54,18 @@ A partir d’une config, docker-compose build && docker-compose up -d suffit à 
 NETTOYAGE
 -------------------
 
-Arrêter et supprimer tous  les conteneurs : 
+Arrêter et supprimer tous  les conteneurs :
 ::
     docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
     docker volume rm $(docker volume ls -qf dangling=true)
 
 supprimer un conteneur :
 ::
-    docker rm ‘id’ 
+    docker rm ‘id’
 
 supprimer une image :
 ::
-    docker rmi ‘id’  ( -f pour force ) 
+    docker rmi ‘id’  ( -f pour force )
 
 supprimer l’ensemble des ressources :
 ::
@@ -75,9 +75,9 @@ supprimer toutes les images :
 ::
     docker rmi $(docker images)
 
-INFORMATION 
+INFORMATION
 -------------------
-lister les conteneurs existant : docker ps 
+lister les conteneurs existant : docker ps
 voir les image local présente : docker images -a
 
 LANCER DES COMMANDES SYMFONY DANS DOCKER
@@ -86,47 +86,47 @@ Accès à la machine dans php, rentrer pour exécuter des commande - exit pour s
 
     $docker exec -it php sh ( une fois avec var/www/projet #php bin/console..)
 
-Accès à la machine pour exécuter des commande coup par coup 
+Accès à la machine pour exécuter des commande coup par coup
 ::
 
-    docker-compose exec php bin/console … 
+    docker-compose exec php bin/console …
 
 
 DEBUGGAGE :
 -------------------
-cannot start service caused process_linux… : regarder les ligne de volumes ( voir -v ) 
-ports allocated : changer le port d’utilisation du service 
-savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell ) 
-Couldn't connect to Docker daemon. You might need to start Docker for Windows.  ???????????????? 
+cannot start service caused process_linux… : regarder les ligne de volumes ( voir -v )
+ports allocated : changer le port d’utilisation du service
+savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell )
+Couldn't connect to Docker daemon. You might need to start Docker for Windows.  ????????????????
 
 Si la machine default plante :
 ::
 
-    $ docker-machine rm default  ( supprimer la machine ) 
-    $ docker-machine create --driver virtualbox default ( créer une machine default ) 
-    $ docker-machine env default ( voir les variables ) 
+    $ docker-machine rm default  ( supprimer la machine )
+    $ docker-machine create --driver virtualbox default ( créer une machine default )
+    $ docker-machine env default ( voir les variables )
     $ docker-compose build && docker-compose up -d
 
 Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machine start default`.
 ::
 
     $ docker-machine start default
-    $ docker-machine env ( X2 ) 
+    $ docker-machine env ( X2 )
     $ docker-machine start default
-    $ docker-compose up -d 
+    $ docker-compose up -d
 
-ANNEXE: 
+ANNEXE:
 -------------------
-docker-compose up --build  ( couteau suisse ) 
+docker-compose up --build  ( couteau suisse )
 démarrer un conteneur nginx $ docker run --name mynginx -P -d nginx
-docker exec -it ‘id’ bash 
-Lancer la machine : docker-machine start default 
+docker exec -it ‘id’ bash
+Lancer la machine : docker-machine start default
 Se connecter avec le docker hub : docker login
-Donner les droits au daemon : sudo usermod -aG docker yohann ( nom séssion je pense ) 
+Donner les droits au daemon : sudo usermod -aG docker yohann ( nom séssion je pense )
 down les volumes : docker-compose down --volumes
 forcer à recréer : docker-compose up -d --build --force-recreate
-Rentrer dans un container  : docker exec -it nginx bash 
-Virer cache : docker system prune --no-cache 
+Rentrer dans un container  : docker exec -it nginx bash
+Virer cache : docker system prune --no-cache
 
 
 Terminale ToolBox Docker :
@@ -140,15 +140,15 @@ Installer docker :
 
     sudo apt-get install docker
 
-Accéder au projet :  
-cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha ) 
-cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann ) 
+Accéder au projet :
+cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
+cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
 
-Lancer docker : sudo service docker start 
-Lancer la config : 
+Lancer docker : sudo service docker start
+Lancer la config :
 ::
 
-    docker-compose down 
+    docker-compose down
     docker-compose up -d
 
 
@@ -162,8 +162,6 @@ Configuration
 
 Configuration docker-compose fonctionnel:
 -------------------------------------------
-
-
 ::
     version: '3.7'
 
@@ -266,7 +264,7 @@ DockerFile PHP:
 Nginx conf.d:
 -------------------------------------------
 
-:: 
+::
     server {
 
         root /var/www/Symfony-Snowtricks/public;
