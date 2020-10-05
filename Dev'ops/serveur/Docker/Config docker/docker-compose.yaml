@@ -1,0 +1,72 @@
+version: '3.7'
+
+services:
+
+  blackfire:
+    container_name: blackfire
+    environment:
+      BLACKFIRE_CLIENT_ID: ${BLACKFIRE_CLIENT_ID}
+      BLACKFIRE_CLIENT_TOKEN: ${BLACKFIRE_CLIENT_TOKEN}
+      BLACKFIRE_SERVER_ID: ${BLACKFIRE_SERVER_ID}
+      BLACKFIRE_SERVER_TOKEN: ${BLACKFIRE_SERVER_TOKEN}
+    image: blackfire/blackfire
+
+  mysql:
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+
+  nginx:
+    container_name: nginx
+    build : docker/nginx
+    links:
+      - php
+    ports:
+      - ${NGINX_PORT}:80
+    restart: always
+    volumes:
+      - '.:/var/www/BileMo_B2B_API:cached'
+      #- './docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf'
+    working_dir: ${SYMFONY_ROOT_DIR}
+
+  php:
+    build: docker/php
+    container_name: php
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    ports:
+      - ${PHP_PORT}:9000
+    restart: always
+    volumes:
+      - .:${SYMFONY_ROOT_DIR}:cached
+    working_dir: ${SYMFONY_ROOT_DIR}
+
+  varnish:
+    build: docker/varnish
+    container_name: varnish
+    depends_on:
+      - nginx
+    ports:
+      - ${VARNISH_PORT}:80
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: PhpMyAdmin
+    restart: always
+    links:
+      - mysql:mysql
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  db_data:
