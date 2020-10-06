@@ -2,12 +2,20 @@ version: '3'
 
 services:
 
-  # no function
-  nginx:
-    image: nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-    command: [nginx-debug, '-g', 'daemon off;']
+  http:
+    build: ./docker/nginx
+    container_name: nginx
+    working_dir: /srv
+    restart: always
+    depends_on:
+      - php
+
+  php:
+    build: ./docker/php
+    container_name: php
+    working_dir: /srv
+    restart: always
+
 
   # function
   db:
@@ -21,7 +29,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: root
 
-  # no function
+  # function http://localhost:8080/ - user : password
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: PhpMyAdmin
