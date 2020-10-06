@@ -1,15 +1,11 @@
 version: '3'
 
 services:
-  db:
-    image: mysql:5.7
+
+  nginx:
+    image: nginx
     volumes:
-      - db_data:/var/lib/mysql    # not found 
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    command: [nginx-debug, '-g', 'daemon off;']
 
 # run with : docker-compose up -d

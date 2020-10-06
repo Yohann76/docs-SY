@@ -152,7 +152,20 @@ Lancer la config :
     docker-compose up -d
 
 
-Probléme Résolue : docker-compose command not found : Lien stackOverflow
+Probléme Résolue :
+
+prblm :
+::
+
+  docker-compose command not found : Lien stackOverflow
+
+prblm :
+::
+
+  Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+  
+- Essayer en sudo
+
 
 
 Configuration
@@ -160,7 +173,7 @@ Configuration
 
 
 
-Configuration docker-compose fonctionnel:
+Configuration docker-compose fonctionnel ( Symfony ):
 -------------------------------------------
 ::
     version: '3.7'
