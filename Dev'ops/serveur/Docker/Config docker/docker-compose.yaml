@@ -27,7 +27,7 @@ services:
     container_name: PhpMyAdmin
     restart: always
     links:
-      - mysql:mysql
+      - db:db #mysql:mysql
     ports:
       - "8080:80"
     environment:
