@@ -135,20 +135,23 @@ projet : cd /c/wamp64/www/OC/BileMo_B2B_API (dev)
 DOCKER SUR DEBIAN ( windows environment )  :
 
 Doc install docker on debian : Docker On Debian
+
 Installer docker :
 ::
 
     sudo apt-get install docker
 
 Accéder au projet :
-cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
-cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
+::
+
+  cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
+  cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
 
 Lancer docker :
 ::
 
   sudo service docker start
-  
+
 Lancer la config :
 ::
 
@@ -157,11 +160,7 @@ Lancer la config :
 
 
 Probléme Résolue :
-
-prblm :
-::
-
-  docker-compose command not found : Lien stackOverflow
+-------------------
 
 prblm :
 ::
