@@ -26,3 +26,23 @@ variables
     float nombre;
     nombre = 2.0f;
     String text = "ABCDE";
+
+Un hello World made in JAVA 
+::
+
+    package hello;
+
+    /** Ceci est une implémentation du message traditionnel "Hello world!"
+    * @author L'équipe Education d'OpenClassrooms
+    */
+    public class HelloWorld {
+
+    /** Le programme commence ici */
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+
+    }
+
+Executer un .java avec le terminal : 
+    $ javac.exe hello∖HelloWorld.java
