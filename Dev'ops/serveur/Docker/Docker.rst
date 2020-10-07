@@ -144,7 +144,11 @@ Accéder au projet :
 cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
 cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
 
-Lancer docker : sudo service docker start
+Lancer docker :
+::
+
+  sudo service docker start
+  
 Lancer la config :
 ::
 
@@ -163,141 +167,5 @@ prblm :
 ::
 
   Couldn't connect to Docker daemon at http+docker://localhost - is it running?
-  
+
 - Essayer en sudo
-
-
-
-Configuration
-##############
-
-
-
-Configuration docker-compose fonctionnel ( Symfony ):
--------------------------------------------
-::
-    version: '3.7'
-
-    services:
-
-    mysql:
-        container_name: mysql
-        environment:
-        MYSQL_ROOT_PASSWORD: root #${MYSQL_ROOT_PASSWORD}
-        image: mysql:5.7
-        restart: always
-        volumes:
-        - db_data:/var/lib/mysql
-
-    nginx:
-        container_name: nginx
-        image: nginx
-        links:
-        - php
-        ports:
-        - 8000:80 #${NGINX_PORT}:80
-        restart: always
-        volumes:
-        - .:/var/www/Symfony-Snowtricks:cached #${SYMFONY_ROOT_DIR}:cached
-        - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
-        working_dir: /var/www/Symfony-Snowtricks  #${SYMFONY_ROOT_DIR}
-
-    php:
-        build: docker/php
-        container_name: php
-        depends_on:
-        - mysql
-
-        ports:
-        - 9000:9000 #${PHP_PORT}:9000
-        restart: always
-        volumes:
-        - .:/var/www/Symfony-Snowtricks:cached #${SYMFONY_ROOT_DIR}:cached
-        working_dir: /var/www/Symfony-Snowtricks #${SYMFONY_ROOT_DIR}
-
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        restart: always
-        links:
-        - mysql:mysql
-        ports:
-        - "8080:80"
-        environment:
-        PMA_HOST: mysql
-        MYSQL_ROOT_PASSWORD: root
-
-    volumes:
-    db_data:
-
-DockerFile PHP:
--------------------------------------------
-
-::
-    FROM    composer:1.8 as composer
-    FROM    php:7.3-fpm-alpine
-
-    COPY    --from=composer /usr/bin/composer /usr/local/bin/composer
-
-    # Removing APKINDEX warnings
-    RUN     rm -rf /var/cache/apk/* && \
-            rm -rf /tmp/*
-    RUN     apk update
-
-    # Native libs and building dependencies
-    # su-exec > gosu (10kb instead of 1.8MB)
-    RUN     apk add --update --no-cache \
-            git \
-            unzip \
-            make \
-            nodejs \
-            yarn \
-            zlib-dev \
-            libzip-dev \
-            ca-certificates \
-            php-intl \
-            && apk add --no-cache --virtual .build-deps \
-                $PHPIZE_DEPS \
-                curl \
-                icu-dev \
-            && docker-php-ext-configure intl \
-            && docker-php-ext-install \
-                zip \
-                intl \
-                pdo_mysql \
-            && yes | pecl install xdebug \
-            && apk add --no-cache su-exec \
-            && addgroup bar \
-            && adduser -D -h /home -s /bin/sh -G bar foo \
-            && apk del .build-deps
-
-    # PHP config
-    COPY    conf.d/php.ini /usr/local/etc/php
-    COPY    conf.d/symfony.ini /usr/local/etc/php/conf.d
-
-Nginx conf.d:
--------------------------------------------
-
-::
-    server {
-
-        root /var/www/Symfony-Snowtricks/public;
-
-        location / {
-            try_files $uri /index.php$is_args$args;
-        }
-        # PROD
-        location ~ ^/index\.php(/|$) {
-            fastcgi_pass php:9000;
-            fastcgi_split_path_info ^(.+\.php)(/.*)$;
-            include fastcgi_params;
-            fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
-            fastcgi_param DOCUMENT_ROOT $realpath_root;
-            internal;
-    }
-    location ~ \.php$ {
-        return 404;
-    }
-
-    error_log /var/log/nginx/smartfact_prod_error.log;
-    access_log /var/log/nginx/smartfact_prod_access.log;
-    }
