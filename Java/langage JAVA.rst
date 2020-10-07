@@ -18,3 +18,11 @@ Utilité de JAVA
 
 Syntaxe du langage 
 -------------------
+
+variables
+::
+    int temperatureSoleil;
+    temperatureSoleil = 15600000; //La température est exprimée en kelvins
+    float nombre;
+    nombre = 2.0f;
+    String text = "ABCDE";

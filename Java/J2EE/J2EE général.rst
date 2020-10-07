@@ -17,9 +17,8 @@ Spécificité de l'extension EE
 Installation 
 -------------------
 
-TODO: Lien et consigne pour installer java
-`java link <https://blackfire.io/docs/up-and-running/installation>`_
-
+`Serveur Tomcat<https://tomcat.apache.org/download-70.cgi>`_
+`IDE Eclipse pour Java EE <https://www.eclipse.org/downloads/packages/>`_
 
 
 Utilité de JAVA 
