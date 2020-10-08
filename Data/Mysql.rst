@@ -76,6 +76,13 @@ Suppression d’une table
 Création user
 -------------------
 
+Créer un user SQL et transférer ses droits :
+::
+
+   CREATE USER 'user1'@'localhost' IDENTIFIED BY '000000';
+   GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost';
+   FLUSH PRIVILEGES;
+
 Connexion
 ::
 
