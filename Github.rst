@@ -85,6 +85,11 @@ Voir la liste des commit effectué
 ::
    git log
 
+Désindexer un fichier ajouté a l'index pour un commit 
+::
+
+    git restore --staged <fichier>...
+
 
 Synchroniser une branche avec une autre branche
 ::
