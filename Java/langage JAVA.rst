@@ -46,3 +46,46 @@ Un hello World made in JAVA
 
 Executer un .java avec le terminal : 
     $ javac.exe hello∖HelloWorld.java
+
+
+classe java 
+::
+    class Unicorn {
+        
+        // propriétés
+        private int height = 170;
+        public String power = "Double.infinity";
+        
+        // méthodes
+        private static void sleep() {
+        }
+        public static void run() {
+        }
+
+    }
+
+boucle for : 
+::
+    int[] myArray = new int[]{7,2,4};
+
+    for (int i=0; i<myArray.length; i++) {
+
+    System.out.println(myArray[i]);
+
+    }
+
+boucle while:
+::
+    int numberOfTrees = 0;
+
+    while (numberOfTrees < 10) {
+        numberOfTrees += 1;
+        System.out.println("I planted " + numberOfTrees + " trees");
+    }
+
+
+
+
+
+
+
