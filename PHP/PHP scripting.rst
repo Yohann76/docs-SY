@@ -1,7 +1,7 @@
-Quelques script utile avec PHP 
+Quelques script utile avec PHP
 ===================
 
-Checker une URL avec Curl 
+Checker une URL avec Curl
 #######################
 
 ::
@@ -28,7 +28,5 @@ Checker une URL avec Curl
     }
 
 
-Autre script 
+Autre script
 #######################
-
-

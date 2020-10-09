@@ -1,11 +1,12 @@
 Heroku : 
 ===================
 
-`Heroku docs <https://devcenter.heroku.com/categories/reference>`_
+`Heroku docs`_
 
 Step : 
 -------------------
-`Deployer avec SF4 <https://devcenter.heroku.com/articles/deploying-symfony4>`_
+
+`Deployer avec SF4 `_
 
 
 Commande : 
@@ -18,3 +19,5 @@ Commande :
     heroku ps:exec  // Se connencter a la machine // SSH 
     git push heroku master // pousher sur la branch heroku 
     
+.. _`Heroku docs`: https://devcenter.heroku.com/categories/reference
+.. _`Deployer avec SF4`: https://devcenter.heroku.com/articles/deploying-symfony4

@@ -55,7 +55,7 @@ Scanner le QR Code avec l'application Expo ( sur android )
 Une seul commande a taper pour passer d'une CRNA ( create-React-Native-App donc sans composant telephone  ) 
 A une app React Native avec du code natif ( qui utilise les composant telephone -> lampe torche , Galerie Photo, Camera..) 
 
-`Lien OpenclassRooms : <https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/>`_ 
+`Lien OpenclassRooms`_ 
 Attention : cela a un impact irréversible sur une application, des modifications a prévoir
 
 Nous pouvons plus utilisée Expo pour prévisualisé l'application, il faudra le faire avec Xcode pour IOS, ou android Studio pour android
@@ -166,7 +166,7 @@ A la racine du projet dans le terminal :
 
     npm install --save react-navigation
 
-`React Naviguation : <https://reactnavigation.org/docs/getting-started/>`_  Pour avoir une bonne naviguation 
+`React Naviguation`_  Pour avoir une bonne naviguation 
 
 
 Le --save permet d'enregistrer la librairie dans le package.json , ainsi sur un autre ordinateur, on peux installer les dépendances avec :
@@ -182,6 +182,17 @@ Relancer le serveur avec :
 
 Préparer pour les stores
 -------------------
-`Lien OC : <https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/>`_
+`Lien OC`_
+
+
+.. _`Lien OC`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/
+.. _`React Naviguation`: https://reactnavigation.org/docs/getting-started/
+.. _`Lien OpenclassRooms`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/
+
+
+
+
+
+
 
 

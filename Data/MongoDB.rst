@@ -4,4 +4,6 @@
 MongoDB
 ===================
 
-`MongoDB Docs  <https://docs.mongodb.com/`_
+`MongoDB Docs`_
+
+.. _`MongoDB Docs`: https://docs.mongodb.com/

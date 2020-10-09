@@ -5,4 +5,7 @@ Installation
 -------------------
 
 Sur `windows` Prendre la version `MSI`
-`Télécharger ici : <https://nodejs.org/en/download/>`_ 
+`Node Install`_ 
+
+
+.. _`Node Install`: https://nodejs.org/en/download/

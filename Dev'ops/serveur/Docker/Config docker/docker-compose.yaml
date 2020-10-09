@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+
+  http:
+    build: ./docker/nginx
+    container_name: nginx
+    working_dir: /srv
+    restart: always
+    depends_on:
+      - php
+
+  php:
+    build: ./docker/php
+    container_name: php
+    working_dir: /srv
+    restart: always
+
+
+  # function
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+
+  # function http://localhost:8080/ - user : password
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: PhpMyAdmin
+    restart: always
+    links:
+      - db:db #mysql:mysql
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+
+volumes:
+  db_data: {}
+
+# run with : sudo docker-compose up -d --build

@@ -1,4 +1,6 @@
 Python
 ===================
 
-`Docs Python  <https://docs.python.org/fr/3/>`_
+`Docs Python`_
+
+.. _`Docs Python`: https://docs.python.org/fr/3/

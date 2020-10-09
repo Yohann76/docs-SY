@@ -188,6 +188,7 @@
     - php
     - nginx
     - mysql
+    - yarn
 
   handlers:
     - name: Restart Nginx

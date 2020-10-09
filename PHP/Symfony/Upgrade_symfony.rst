@@ -2,7 +2,7 @@
 Upgrade Symfony Version
 ##################
 
-`Cours SymfonyCast migration 3.0 a 4.0/4.4  <https://symfonycasts.com/screencast/symfony4-upgrade/framework-config>`_
+`Cours SymfonyCast migration 3.0 a 4.0/4.4`_
 ::
     // Program
     3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
@@ -10,11 +10,9 @@ Upgrade Symfony Version
 
 A partir de Symfony 3.1 -> Symfony 3.3
 =======================================
-
 ::
     //composer.json
     "symfony/symfony": "3.3.*",
-
 ::
     > composer update
     > composer install
@@ -22,7 +20,6 @@ A partir de Symfony 3.1 -> Symfony 3.3
 
 A partir de Symfony 3.3 -> Symfony 3.4
 =======================================
-
 :: 
     > composer self-update
     > composer require symfony/flex
@@ -57,7 +54,6 @@ A partir de Symfony 3.4 -> Symfony 4.4
 - enlever les probleme de conflit
 
 2. Faire le systeme de double application ( autoload double chargement )
-
 ::
     "autoload": {
         "psr-4": {
@@ -74,7 +70,7 @@ A partir de Symfony 3.4 -> Symfony 4.4
         }
     },
 
-3. `Symfony Recipe de Bin/console 3.3  <https://github.com/symfony/recipes/blob/master/symfony/console/3.3/bin/console>`_
+3. `Symfony Recipe de Bin/console 3.3`_
 
 4. migrer la sécurité 
 - migrer les configuration de chaque service ( /app/config/* )vers les fichiers nouveaux fichiers config (/config/*)
@@ -103,10 +99,9 @@ DEPRECIATION
 ##################
 
 Pour regler les depréciations il faut mettre a jour certain fichier obtenu sur 
-`Symfony Recipe <https://github.com/symfony/recipes>`_
+`Symfony Recipe`_
 
 
-
-
-
-
+.. _`Symfony Recipe`: https://github.com/symfony/recipes
+.. _`Symfony Recipe de Bin/console 3.3`: https://github.com/symfony/recipes/blob/master/symfony/console/3.3/bin/console
+.. _`Cours SymfonyCast migration 3.0 a 4.0/4.4`: https://symfonycasts.com/screencast/symfony4-upgrade/framework-config

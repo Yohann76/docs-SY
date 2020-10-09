@@ -4,7 +4,7 @@
 Sqlite
 ===================
 
-`SqLite Docs <https://www.sqlite.org/docs.html>`_
+`SqLite Docs`_
 
 SQLite est un utilitaire de base de donnée qui ne necessite pas de base de donnée sur serveur. Nous utilisons notre propre stockage qui est un fichier
 SQLite.
@@ -79,3 +79,7 @@ Le fichier SQLlite:
 
 Utilisation avec symfony:
 -----------
+
+
+
+.. _`SqLite Docs`: https://www.sqlite.org/docs.html

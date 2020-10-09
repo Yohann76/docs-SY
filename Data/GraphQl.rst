@@ -4,4 +4,6 @@
 GraphQl
 ===================
 
-`GraphQl Docs  <https://docs.mongodb.com/`_
+`GraphQl Docs`_
+
+.. _`GraphQl Docs`: https://docs.mongodb.com/
