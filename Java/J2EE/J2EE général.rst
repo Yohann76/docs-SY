@@ -32,7 +32,7 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
 -> ou demarrer le serveur : et consulter le http://localhost:8080/
 
--> enregistrer un projet :
+-> enregistrer un projet : créer un raccourci depuis le workplace ( user/xxx/workplace-eclipse/)
 
 Utilité de JAVA EE
 -------------------
