@@ -36,3 +36,5 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
 Utilité de JAVA EE
 -------------------
+
+Java EE offre une structure et des librairie pour le developpement d'applications web. 
