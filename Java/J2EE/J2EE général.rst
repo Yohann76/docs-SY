@@ -37,4 +37,10 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 Utilité de JAVA EE
 -------------------
 
-Java EE offre une structure et des librairie pour le developpement d'applications web. 
+Java EE offre une structure et des librairies pour le developpement d'applications web. Java EE utilise le java classique, et le JRE pour compiler le code 
+en un site web. 
+
+Structure de JAVA EE
+-------------------
+Java EE repose sur un modèle MVC.
+
