@@ -17,9 +17,9 @@ Spécificité de l'extension EE
 Installation 
 -------------------
 
-`Serveur Tomcat<https://tomcat.apache.org/download-70.cgi>`_
-`IDE Eclipse pour Java EE <https://www.eclipse.org/downloads/packages/>`_
-`création de projet avec eclipse <https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/>`_
+`Serveur Tomcat <https://tomcat.apache.org/download-70.cgi>`
+`IDE Eclipse pour Java EE <https://www.eclipse.org/downloads/packages/>`
+`création de projet avec eclipse <https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/>`
 
 Création de projet
 -------------------
