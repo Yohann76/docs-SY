@@ -1,6 +1,5 @@
 J2EE Généralitée
 ===================
-`J2EE openclassrooms <https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee>`_
 
 Le terme « Java EE » signifie Java Enterprise Edition, et était anciennement raccourci en « J2EE ».
 Il fait quant à lui référence à une extension de la plate-forme standard. Autrement dit,
@@ -17,7 +16,7 @@ Spécificité de l'extension EE
 Installation 
 -------------------
 
-`Serveur Tomcat <https://tomcat.apache.org/download-70.cgi>`
+_`Serveur tomcat`
 `IDE Eclipse pour Java EE <https://www.eclipse.org/downloads/packages/>`
 `création de projet avec eclipse <https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/>`
 
@@ -34,6 +33,8 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
 -> enregistrer un projet : créer un raccourci depuis le workplace ( user/xxx/workplace-eclipse/)
 
+
+
 Utilité de JAVA EE
 -------------------
 
@@ -43,4 +44,11 @@ en un site web.
 Structure de JAVA EE
 -------------------
 Java EE repose sur un modèle MVC.
+
+
+
+.. _`IDE Eclipse`: https://www.eclipse.org/downloads/packages/
+.. _`Serveur tomcat`: https://tomcat.apache.org/download-70.cgi
+.. _`Cours Openclassrooms`: https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/
+
 
