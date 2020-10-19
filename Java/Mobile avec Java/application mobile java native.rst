@@ -11,6 +11,7 @@ Lancer un projet ( quel outils ? )
 -------------------
 
 Eclipse est utilisable pour les projets java, il convient également d'utiliser android studio, qui est spécialisé pour développer en java pour une plateforme android.
+AndroidStudio possède également des emulateurs, qui sont essentiel pour simuler les applications mobiles et le responsive design
 
 
 Spécificité developpement mobile
