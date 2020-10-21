@@ -14,3 +14,5 @@ Demmarrer avec flask en 7 lignes
 
   if __name__ == "__main__":
       app.run()
+      
+ Python crée un environnement a l'adresse localhost:5000
