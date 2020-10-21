@@ -6,10 +6,10 @@ Vue JS
 Vue.js est un framework qui permet de ne pas charger les pages dans leurs intégralité, mais seulement par morceaux, pour des raisons de quantité de donnée et de fluidité. Vue.js est une technologie populaire dans le frontend. Il est connu pour sa facilité de prise en main, même a l'arrivée de projets complexe, et les développeurs deviennet plus productif. Vue est accueillant et sa documentation est remarquable. Un bon choix comme premier framework front.
 
 
-Installation de vue 
+Installation de vue
 =====================
 
-Via un simple lien CDN : 
+Via un simple lien CDN :
 ::
     <!DOCTYPE html>
       <html lang="en">
@@ -21,11 +21,11 @@ Via un simple lien CDN :
               <h1>Ma première application Vue.js !</h1>
               <p>J'ai hâte de créer des applications incroyables !</p>
           </div>
-          <script src="<https://cdn.jsdelivr.net/npm/vue>"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
       </body>
       </html>
-  
-Tester le fonctionnement de vue : 
+
+Tester le fonctionnement de vue :
 ::
   <!DOCTYPE html>
     <html lang="en">
@@ -42,7 +42,7 @@ Tester le fonctionnement de vue :
         // Vue n'est pas encore chargé donc une RefenreceError devrait être retournée
         console.log(Vue)
         </script>
-        <script src="<https://cdn.jsdelivr.net/npm/vue>"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <script>
             // La console devrait maintenant afficher une fonction
             console.log(Vue)
@@ -58,11 +58,11 @@ Definir ou vue devrait apparaitre sur une page ( pour decider de ce vue peut con
       el: '#app'
     })
   </script>
-  
+
 Base de Vue.js
 =====================
 
-Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge des variables. 
+Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge des variables.
 ::
     const app = new Vue({
         el: '#app',
@@ -71,7 +71,7 @@ Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge
             string: 'hello'
         }
     })
-    
+
 Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
 ::
     {{ variable }}
@@ -79,7 +79,7 @@ Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
     {{ variable.toUpperCase() }}
     {{ 2 > 0 ? 'Deux est plus grand que zéro' : 'Vous ne verrez jamais cette phrase' }}
 
-Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat: 
+Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat:
 ::
     <html>
     <body>
@@ -108,7 +108,7 @@ Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier 
       </script>
     </body>
     </html>
-  
+
 Directives
 =====================
 
@@ -123,7 +123,7 @@ Les directive permettent de résoudre les probleme courant. Elle sont écrit de 
         <!-- Si l'utilisateur n'a aucune autorisation afficher ce qui suit -->
         <section v-else>...</section>
     </div>
-    
+
 v-show est utilisté pour les éléments de toggle, pour controler la visibilité d'un élément avec une permutation fréquente comme une modale
 ::
     <div id="app">
@@ -139,8 +139,8 @@ v-show est utilisté pour les éléments de toggle, pour controler la visibilit�
             }
         })
     </script>
-    
-une boucle for 
+
+une boucle for
 ::
     <div id="app">
         <h1>Vue Mart</h1>
@@ -168,7 +168,7 @@ une boucle for
 v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est utilisé pour renvoyer des donnée issue d'API, ou des données en fonction d'autre systême.
 ::
     v-bind:href="item.url"
-    
+
 Les évenements
 =====================
 
@@ -177,7 +177,7 @@ Voici commencer créer un evenement avec la directive v-on
     <div id="app">
         <button v-on:click="alert('Bonjour')">Cliquez ici !</button>
     </div>
-    
+
 peut être abrégé en : @click="alert('Bonjour')"
 
 Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler d'autre ) :
@@ -201,8 +201,8 @@ Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler
             }
         }
     })
-    
-Insertion de donnée dans les formulaire : 
+
+Insertion de donnée dans les formulaire :
 ::
     <div id="app">
         <label for="un">Nom d'utilisateur</label>
@@ -220,7 +220,7 @@ Insertion de donnée dans les formulaire :
             }
         })
     </script>
-    
+
 Vue avec le CLI
 ================
 Installer vue CLI
@@ -231,30 +231,30 @@ Installer vue CLI
     #TEST
     vue --version
 
-Créer un projet 
+Créer un projet
 ::
     vue create my-first-vue-cli-app
 
-Acceder a une interface local 
+Acceder a une interface local
 ::
     vue ui
- 
+
 Lancer un environnement de dev local
 ::
     npm run serve
-    
+
 Architecture de l'application
 =============================
 
 - node_module ( dépendance, gérer par yarn ou npm )
-- public 
+- public
 - src ( 99% du temps )
     - Assets ( image, ressource )
-    - Components 
+    - Components
     - main.js ( option de configuration haut level
-    -App.vue ( composants monofichier ) 
+    -App.vue ( composants monofichier )
 - .gitignore
-- package.json ( avec serve pour l'env de developpement, et build ) 
+- package.json ( avec serve pour l'env de developpement, et build )
 
 Composant monofichier
 =============================
