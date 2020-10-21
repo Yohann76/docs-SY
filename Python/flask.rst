@@ -16,3 +16,23 @@ Demmarrer avec flask en 7 lignes
       app.run()
       
 Python crée un environnement a l'adresse localhost:5000
+
+installation 
+===========
+
+flask
+::
+  pip install flask
+  
+virtualenv 
+::
+  pip install virtualenv
+  virtualenv -p python3 env // créer un environnement 
+  
+Structure
+===========
+
+Static : CSS/images:script
+Templates : Fichiers HTML
+Tests : ranger les tests
+views.py : Contient les diférentes routes
