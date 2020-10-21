@@ -46,3 +46,18 @@ Structure
 - Tests : ranger les tests
 - views.py : Contient les diférentes routes
 - config.py : variable de configuration
+
+
+Console Flask
+==============
+
+lancer la console flask 
+::
+  set FLASK_APP=run.py
+::
+  flask shell
+
+  
+  
+  
+  
