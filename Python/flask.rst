@@ -54,6 +54,7 @@ Console Flask
 lancer la console flask 
 ::
   set FLASK_APP=run.py
+  set FLASK_APP=run.py flask init_db  // avec une méthode d'initialisation
 puis
 ::
   flask shell
