@@ -79,4 +79,36 @@ Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
     {{ variable.toUpperCase() }}
     {{ 2 > 0 ? 'Deux est plus grand que zéro' : 'Vous ne verrez jamais cette phrase' }}
 
+Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat: 
+::
+    <html>
+    <body>
+      <div id="app">
+        <h2>Panier</h2>
+          <li>Pommes: {{ costOfApples }}€</li>
+          <li>Bananes: {{ costOfBananas }}€</li>
+          <li>Noix de coco: {{ costOfCoconuts }}€</li>
+        <p>Total: {{ totalAmount }}€</li>
+      </div>
+
+      <script>
+        const app = new Vue({
+          el: '#app',
+          data: {
+            costOfApples: 6,
+            costOfBananas: 2,
+            costOfCoconuts: 8
+          },
+          computed: {
+            totalAmount() {
+              return this.costOfApples + this.costOfBananas + this.costOfCoconuts //  ( afficher avec {{ totalAmount }}
+            }
+          }
+        })
+      </script>
+    </body>
+    </html>
+
+
+
 .. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
