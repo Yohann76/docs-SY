@@ -126,7 +126,6 @@ Les directive permettent de résoudre les probleme courant. Elle sont écrit de 
     </div>
     
 v-show est utilisté pour les éléments de toggle, pour controler la visibilité d'un élément avec une permutation fréquente comme une modale
-
 ::
     <div id="app">
         <button>Display Modal</button>
@@ -142,8 +141,7 @@ v-show est utilisté pour les éléments de toggle, pour controler la visibilit�
         })
     </script>
     
-une boucle for : 
-
+une boucle for 
 ::
     <div id="app">
         <h1>Vue Mart</h1>
@@ -183,7 +181,6 @@ Les évenements
 peut être abrégé en : @click="alert('Bonjour')"
 
 Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler d'autre ) :
-
 ::
     const app = new Vue({
         el: '#app',
