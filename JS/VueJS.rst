@@ -108,7 +108,117 @@ Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier 
       </script>
     </body>
     </html>
+  
+Directives
+=====================
 
+Les directive permettent de résoudre les probleme courant. Elle sont écrit de manière semantique, elles ressemble a des attributs HTML, elle se préfixe par v-
+( v-show ; v-if ; v-for ; v-model ; v-on ; v-bind ; v-else-if ; v-else )
 
+::
+    <div id="app">
+    <!-- Si (if) l'utilisateur a les autorisations par défaut, afficher ce qui suit -->
+    <section v-if="userPermission === 'default'">...</section>
+    <!-- Sinon et si l'utilisateur a les autorisations administrateur, afficher ce qui suit -->
+    <section v-else-if="userPermission === 'admin'">...</section>
+    <!-- Si l'utilisateur n'a aucune autorisation afficher ce qui suit -->
+    <section v-else>...</section>
+    </div>
+    
+v-show est utilisté pour les éléments de toggle, pour controler la visibilité d'un élément avec une permutation fréquente comme une modale
+::
+    <div id="app">
+        <button>Display Modal</button>
+        <div v-show="showModal" class="modal">...</div>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                showModal: false
+            }
+        })
+    </script>
+    
+une boucle for : 
+::
+    <div id="app">
+        <h1>Vue Mart</h1>
+        <h2>Shopping Cart</h2>
+        <ul>
+            <li v-for="item in shoppingCart">
+                {{ item.label }} : {{ item.cost }}€
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                shoppingCart: [
+                    { label: 'Pommes', cost: 6 },
+                    { label: 'Bananes', cost: 2 },
+                    { label: 'Noix de coco', cost: 8 {
+                ]
+            }
+        })
+    </script>
+
+v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est utilisé pour renvoyer des donnée issue d'API, ou des données en fonction d'autre systême.
+::
+    v-bind:href="item.url"
+    
+Les évenements
+=====================
+::
+    <div id="app">
+        <button v-on:click="alert('Bonjour')">Cliquez ici !</button>
+    </div>
+    
+peut être abrégé en : @click="alert('Bonjour')"
+
+Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler d'autre ) :
+::
+    const app = new Vue({
+        el: '#app',
+        data: {
+            favoriteColor: 'bleu'
+        },
+        computed: {
+            label() {
+                return ': ' + this.favoriteColor
+            }
+        },
+        methods: {
+            alertColor(color) {
+                alert('Ma couleur préférée est ' + color)
+            },
+            changeColor() {
+                console.log('Je veux changer ma couleur préférée !')
+            }
+        }
+    })
+    
+Insertion de donnée dans les formulaire : 
+::
+    <div id="app">
+        <label for="un">Nom d'utilisateur</label>
+        <input id="un" type="text" v-model="username" />
+        <label for="pw">Mot de passe</label>
+        <input id="pw" type="password" v-model="password" />
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                username: '',
+                password: ''
+            }
+        })
+    </script>
+    
 
 .. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
