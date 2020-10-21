@@ -2,6 +2,7 @@ Vue JS
 ===================
 
 `Vue Docs`_
+`Vue OC cours`_
 
 Vue.js est un framework qui permet de ne pas charger les pages dans leurs intégralité, mais seulement par morceaux, pour des raisons de quantité de donnée et de fluidité. Vue.js est une technologie populaire dans le frontend. Il est connu pour sa facilité de prise en main, même a l'arrivée de projets complexe, et les développeurs deviennet plus productif. Vue est accueillant et sa documentation est remarquable. Un bon choix comme premier framework front.
 
@@ -79,7 +80,8 @@ Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
     {{ variable.toUpperCase() }}
     {{ 2 > 0 ? 'Deux est plus grand que zéro' : 'Vous ne verrez jamais cette phrase' }}
 
-Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat:
+Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat
+( une propriété calculé/computed doit retourner une fonction obligatoirement):
 ::
     <html>
     <body>
@@ -261,3 +263,4 @@ Composant monofichier
 
 
 .. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
+.. _`Vue OC cours`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862871-creez-un-nouveau-projet-avec-vue-cli
