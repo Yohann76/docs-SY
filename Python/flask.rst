@@ -54,6 +54,7 @@ Console Flask
 lancer la console flask 
 ::
   set FLASK_APP=run.py
+puis
 ::
   flask shell
 
