@@ -221,5 +221,43 @@ Insertion de donnée dans les formulaire :
         })
     </script>
     
+Vue avec le CLI
+================
+Installer vue CLI
+::
+    npm install -g @vue/cli
+    # OR
+    yarn global add @vue/cli
+    #TEST
+    vue --version
+
+Créer un projet 
+::
+    vue create my-first-vue-cli-app
+
+Acceder a une interface local 
+::
+    vue ui
+ 
+Lancer un environnement de dev local
+::
+    npm run serve
+    
+Architecture de l'application
+=============================
+
+- node_module ( dépendance, gérer par yarn ou npm )
+- public 
+- src ( 99% du temps )
+    - Assets ( image, ressource )
+    - Components 
+    - main.js ( option de configuration haut level
+    -App.vue ( composants monofichier ) 
+- .gitignore
+- package.json ( avec serve pour l'env de developpement, et build ) 
+
+Composant monofichier
+=============================
+
 
 .. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
