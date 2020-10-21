@@ -58,7 +58,22 @@ puis
 ::
   flask shell
 
+Base de donnée SQLlite
+=======================
+
+Il faudra installer Sqllite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée : 
+::
+  from fbapp.models import db, Content
   
+  db.session.add(Content("What's your favorite scary movie?", 0))
+  db.session.commit()
+  Content.query.all()
+  // affiche un array de 1 
+  content = Content.query.get(1)
+  db.session.delete(content)
+  db.session.commit()
+  Content.query.all()
+  // affiche un tableau vide
   
   
   
