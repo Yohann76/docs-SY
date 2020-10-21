@@ -32,8 +32,8 @@ virtualenv
 Structure
 ===========
 
-Static : CSS/images:script
-Templates : Fichiers HTML
-Tests : ranger les tests
-views.py : Contient les diférentes routes
-config.py : variable de configuration
+- Static : CSS/images:script
+- Templates : Fichiers HTML
+- Tests : ranger les tests
+- views.py : Contient les diférentes routes
+- config.py : variable de configuration
