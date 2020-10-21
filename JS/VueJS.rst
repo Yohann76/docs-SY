@@ -114,7 +114,6 @@ Directives
 
 Les directive permettent de résoudre les probleme courant. Elle sont écrit de manière semantique, elles ressemble a des attributs HTML, elle se préfixe par v-
 ( v-show ; v-if ; v-for ; v-model ; v-on ; v-bind ; v-else-if ; v-else )
-
 ::
     <div id="app">
         <!-- Si (if) l'utilisateur a les autorisations par défaut, afficher ce qui suit -->
@@ -173,6 +172,7 @@ v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est
 Les évenements
 =====================
 
+Voici commencer créer un evenement avec la directive v-on
 ::
     <div id="app">
         <button v-on:click="alert('Bonjour')">Cliquez ici !</button>
