@@ -117,15 +117,16 @@ Les directive permettent de résoudre les probleme courant. Elle sont écrit de 
 
 ::
     <div id="app">
-    <!-- Si (if) l'utilisateur a les autorisations par défaut, afficher ce qui suit -->
-    <section v-if="userPermission === 'default'">...</section>
-    <!-- Sinon et si l'utilisateur a les autorisations administrateur, afficher ce qui suit -->
-    <section v-else-if="userPermission === 'admin'">...</section>
-    <!-- Si l'utilisateur n'a aucune autorisation afficher ce qui suit -->
-    <section v-else>...</section>
+        <!-- Si (if) l'utilisateur a les autorisations par défaut, afficher ce qui suit -->
+        <section v-if="userPermission === 'default'">...</section>
+        <!-- Sinon et si l'utilisateur a les autorisations administrateur, afficher ce qui suit -->
+        <section v-else-if="userPermission === 'admin'">...</section>
+        <!-- Si l'utilisateur n'a aucune autorisation afficher ce qui suit -->
+        <section v-else>...</section>
     </div>
     
 v-show est utilisté pour les éléments de toggle, pour controler la visibilité d'un élément avec une permutation fréquente comme une modale
+
 ::
     <div id="app">
         <button>Display Modal</button>
@@ -142,6 +143,7 @@ v-show est utilisté pour les éléments de toggle, pour controler la visibilit�
     </script>
     
 une boucle for : 
+
 ::
     <div id="app">
         <h1>Vue Mart</h1>
@@ -172,6 +174,7 @@ v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est
     
 Les évenements
 =====================
+
 ::
     <div id="app">
         <button v-on:click="alert('Bonjour')">Cliquez ici !</button>
@@ -180,6 +183,7 @@ Les évenements
 peut être abrégé en : @click="alert('Bonjour')"
 
 Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler d'autre ) :
+
 ::
     const app = new Vue({
         el: '#app',
