@@ -227,11 +227,9 @@ Vue avec le CLI
 ================
 Installer vue CLI
 ::
-    npm install -g @vue/cli
-    # OR
-    yarn global add @vue/cli
-    #TEST
-    vue --version
+    npm install -g @vue/cli # avec npm
+    yarn global add @vue/cli #avec yarn
+    vue --version #TEST
 
 Créer un projet
 ::
