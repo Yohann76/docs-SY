@@ -1,7 +1,7 @@
 Flask
 ======
 
-Flask est un micro framework très minimaliste et très leger, concu pour developper des application rappidement.
+Flask est un micro framework très minimaliste et leger, concu pour developper des application rappidement.
 
 Demmarrer avec flask en 7 lignes
 ::
@@ -15,7 +15,7 @@ Demmarrer avec flask en 7 lignes
   if __name__ == "__main__":
       app.run()
       
-Python crée un environnement a l'adresse localhost:5000
+Python créer un environnement a l'adresse localhost:5000
 
 installation 
 ===========
@@ -62,7 +62,7 @@ puis
 Base de donnée SQLlite
 =======================
 
-Il faudra installer Sqllite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée : 
+Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée : 
 ::
   from fbapp.models import db, Content
   
