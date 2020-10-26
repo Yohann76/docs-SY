@@ -181,13 +181,3 @@ Sélection du DOM
             console.log('todo delete!');
         });
     }
-
-
-brain.js
--------------------
-
-Dark Mode.js
--------------------
-
-Phaser
--------------------
