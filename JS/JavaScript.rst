@@ -167,17 +167,3 @@ Installation :
 Liste complètes des dépendances pour réact sur son propre fichier.
 
 Les dépendances installer se trouve dans node module et sont installable directement en téléchargeant le package.json avec yarn install
-Node.js:
-Executer un fichier js avec node : node nom_du_fichier
-
-
-Jquery
--------------------
-Sélection du DOM
-::
-
-	$(document).ready(function() {
-    $('.class').on('click', function() {
-            console.log('todo delete!');
-        });
-    }
