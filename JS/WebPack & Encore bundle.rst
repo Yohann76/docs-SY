@@ -31,13 +31,16 @@ Exemple de webpack.config.js :
 
 Webpack Encore
 ===================
+::
 
-Prendre sur nos git les bases
-Webpackconfig.js [Copier]
-package.json  [Copier]
-App.scss  [Copier]
-app.js  [Copier]
-postcss.config  [Copier]
+  Prendre sur nos git les bases
+  Webpackconfig.js [Copier]
+  package.json  [Copier]
+  App.scss  [Copier]
+  app.js  [Copier]
+  postcss.config  [Copier]
+
+
 Installation :
 $composer require symfony/webpack-encore-bundle
 $yarn install ( pour exécuter le package.json )

@@ -69,7 +69,10 @@ Rechercher chaque élément :
     variable.select; //( sélectionner le contenu d’un textArea )
     variable.mouseover; // ( survol )
 
-utilisable directement dans le html -> span id=”input” onclick=”alert(‘vous avez cliqué’)”></span>
+utilisable directement dans le html :
+::
+
+  span id=”input” onclick=”alert(‘vous avez cliqué’)”></span>
 
 
 Fonctions Sympathique
