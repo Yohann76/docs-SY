@@ -1,7 +1,10 @@
 Installer python
 =================
 
-installer python:
+installer python ( Windows ):
+
+Telecharger Python 3.9 sur le Windows Store ( non vérifié )
+ou sur le site officiel de Python `downloads Python Windows`_
 
 installer pip:
 
@@ -19,3 +22,12 @@ Module de géométrie
 
 Module de Data Science
 ========================================
+
+Module IA et machine learning
+========================================
+
+
+
+
+
+.. _`downloads Python Windows`: https://www.python.org/downloads/windows/

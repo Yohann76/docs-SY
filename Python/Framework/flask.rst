@@ -14,23 +14,23 @@ Demmarrer avec flask en 7 lignes
 
   if __name__ == "__main__":
       app.run()
-      
+
 Python créer un environnement a l'adresse localhost:5000
 
-installation 
+installation
 ===========
 
-Necessite pip 
+Necessite pip ( dans machine virtuel Debian sur Windows )
 
 flask
 ::
   pip install flask
-  
-virtualenv 
+
+virtualenv
 ::
   pip install virtualenv
-  virtualenv -p python3 env // créer un environnement 
-  
+  virtualenv -p python3 env // créer un environnement
+
 Obtenir l'environnement
 ===========
 1. Terminal : Aller dans le repertoire du site
@@ -52,7 +52,7 @@ Structure
 Console Flask
 ==============
 
-lancer la console flask 
+lancer la console flask
 ::
   set FLASK_APP=run.py
   set FLASK_APP=run.py flask init_db  // avec une méthode d'initialisation
@@ -63,38 +63,33 @@ puis
 Base de donnée SQLlite
 =======================
 
-1. Connecter la base de donnée : 
-Comment connecter la base de donnée ? 
+1. Connecter la base de donnée :
+Comment connecter la base de donnée ?
 
-Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée : 
+Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée :
 ::
   from fbapp.models import db, Content
-  
+
   db.session.add(Content("What's your favorite scary movie?", 0))
   db.session.commit()
   Content.query.all()
-  // affiche un array de 1 
+  // affiche un array de 1
   content = Content.query.get(1)
   db.session.delete(content)
   db.session.commit()
   Content.query.all()
   // affiche un tableau vide
-  
+
 Les tests
 =========
 
 lancer un test :
 ::
   pytest app/tests/test_functionnal.py
-  
+
 librairie requise :
 - Selenium
 - flask-testing
 - pytest
 
 Les tests ont besoin de __init__.py, config.py dans le dossier de test
-
-
-  
-  
-  
