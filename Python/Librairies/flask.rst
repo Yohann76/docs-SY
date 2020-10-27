@@ -62,6 +62,9 @@ puis
 Base de donnée SQLlite
 =======================
 
+1. Connecter la base de donnée : 
+Comment connecter la base de donnée ? 
+
 Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée : 
 ::
   from fbapp.models import db, Content
