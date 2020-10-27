@@ -8,6 +8,8 @@ ou sur le site officiel de Python `downloads Python Windows`_
 
 installer pip:
 
+Installer directement avec l'application windows Store
+
 
 Dépendances et installation de librairie
 ========================================

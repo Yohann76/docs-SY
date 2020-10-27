@@ -20,18 +20,19 @@ Python créer un environnement a l'adresse localhost:5000
 installation
 ===========
 
-Necessite pip ( dans machine virtuel Debian sur Windows )
+Necessite pip
 
 flask
 ::
   pip install flask
 
-virtualenv
+virtualenv ( pas obligatoire ,
+pour géré plusieurs projets avec des variables différentes )
 ::
   pip install virtualenv
   virtualenv -p python3 env // créer un environnement
 
-Obtenir l'environnement
+Obtenir l'environnement ( simuler le site et démarrer le serveur )
 ===========
 1. Terminal : Aller dans le repertoire du site
 2. Terminal : python views.py
