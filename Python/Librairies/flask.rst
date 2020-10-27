@@ -46,6 +46,7 @@ Structure
 - Tests : ranger les tests
 - views.py : Contient les diférentes routes
 - config.py : variable de configuration
+- Les controllers peuvent êtres inclus en annexe ( utils.py,... ) et être importé sur views.py
 
 
 Console Flask
