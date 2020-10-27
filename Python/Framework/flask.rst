@@ -80,5 +80,21 @@ Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi d√
   Content.query.all()
   // affiche un tableau vide
   
+Les tests
+=========
+
+lancer un test :
+::
+  pytest app/tests/test_functionnal.py
+  
+librairie requise :
+- Selenium
+- flask-testing
+- pytest
+
+Les tests ont besoin de __init__.py, config.py dans le dossier de test
+
+
+  
   
   
