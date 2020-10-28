@@ -18,6 +18,8 @@ Dépendances et installation de librairie
 - pip install Flask-Testing ( test pour flask )
 - pip install xlrd ( sert a ? )
 - pip install flask_sqlalchemy ( ORM pour flask ( `cours OC sur flask_sqlalchemy`_ ) )
+- pip install brython ( faire tourner du python comme du js )
+- pip install pygame ( Graphique et jeux)
 
 Module de géométrie
 ========================================
