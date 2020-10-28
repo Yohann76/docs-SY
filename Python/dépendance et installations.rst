@@ -14,8 +14,10 @@ Installer directement avec l'application windows Store
 Dépendances et installation de librairie
 ========================================
 
-- pip install pytest
-- pip install Flask-Testing
+- pip install pytest ( python testing ? )
+- pip install Flask-Testing ( test pour flask )
+- pip install xlrd ( sert a ? )
+- pip install flask_sqlalchemy ( ORM pour flask ( `cours OC sur flask_sqlalchemy`_ ) )
 
 Module de géométrie
 ========================================
@@ -30,6 +32,5 @@ Module IA et machine learning
 
 
 
-
-
+.. _`cours OC sur flask_sqlalchemy`: https://openclassrooms.com/fr/courses/4425066-concevez-un-site-avec-flask/4525912-ajoutez-une-nouvelle-table-dans-la-base-de-donnees
 .. _`downloads Python Windows`: https://www.python.org/downloads/windows/
