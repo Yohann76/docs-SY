@@ -20,11 +20,12 @@ Dépendances et installation de librairie
 - pip install flask_sqlalchemy ( ORM pour flask ( `cours OC sur flask_sqlalchemy`_ ) )
 - pip install brython ( faire tourner du python comme du js )
 - pip install pygame ( Graphique et jeux)
+- pip install svgwrite ( pour svg )
 
 Module de géométrie
 ========================================
 
-- turtle pour les dessin géométrique
+- pip install turtle ( pour les dessin géométrique )
 
 Module de Data Science
 ========================================
