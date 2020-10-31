@@ -76,7 +76,7 @@ Figure simples :
       turtle.forward(longueur_cote)  #Côté
       turtle.left(90)  #Angle
 
-      #Un exemple d'octogone
+  #Un exemple d'octogone
   longueur_cote = 100
   for i in range(8):
       turtle.forward(longueur_cote)  #Côté
@@ -96,3 +96,26 @@ les points :
   turtle.dot(100, 'red')  #Imprime un point rouge d'un diamètre de 100px
   turtle.dot(50, 'yellow')  #Imprime un point jaune d'un diamètre de 50px
   turtle.dot(25)  #Imprime un point noir d'un diamètre de 25px
+
+
+Remplir une figure d'une couleurs  :
+::
+
+    turtle.color('green')
+    turtle.up()
+    turtle.goto(x, 400)
+    turtle.down()
+
+    turtle.fillcolor('grey') # background color
+    turtle.begin_fill() # begin color
+
+    turtle.forward(300) #Forward turtle by 150 units ( width )
+    turtle.left(90) #Turn turtle by 90 degree
+    turtle.forward(600) #Forward turtle by 80 units ( height )
+    turtle.left(90) #Turn turtle by 90 degree
+    turtle.forward(300) #Forward turtle by 150 units ( width )
+    turtle.left(90) #Turn turtle by 90 degree
+    turtle.forward(600) #Forward turtle by 80 units ( height )
+    turtle.left(90) #Turn turtle by 90 degree
+
+    turtle.end_fill() # end color 
