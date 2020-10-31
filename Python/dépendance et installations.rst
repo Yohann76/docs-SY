@@ -16,11 +16,12 @@ Dépendances et installation de librairie
 
 - pip install pytest ( python testing ? )
 - pip install Flask-Testing ( test pour flask )
-- pip install xlrd ( sert a ? )
+- pip install xlrd ( sert a gerer l'extension excel )
 - pip install flask_sqlalchemy ( ORM pour flask ( `cours OC sur flask_sqlalchemy`_ ) )
 - pip install brython ( faire tourner du python comme du js )
 - pip install pygame ( Graphique et jeux)
 - pip install svgwrite ( pour svg )
+- pip install os, math ( gerer les os
 
 Module de géométrie
 ========================================
@@ -32,6 +33,8 @@ Module de Data Science
 
 Module IA et machine learning
 ========================================
+
+- TensorFlow
 
 
 
