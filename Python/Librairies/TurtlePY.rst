@@ -118,4 +118,12 @@ Remplir une figure d'une couleurs  :
     turtle.forward(600) #Forward turtle by 80 units ( height )
     turtle.left(90) #Turn turtle by 90 degree
 
-    turtle.end_fill() # end color 
+    turtle.end_fill() # end color
+
+
+Ecrire :
+::
+
+    turtle.write(str) qui écrit la chaîne de caractères donnée à la position courante
+    turtle.write(str, True) qui érit et déplace la tortue à la fin du texte écrit.
+    turtle.write("hello")
