@@ -31,9 +31,13 @@ Boucle
         #turtle.circle(50, 180)  #Trace un demi-cercle de rayon 70px
         turtle.up()
 
+Mannipuller les chaines de charactére
+===========
+::
+    txtLabel[0:25] # prend les 25 premieres lettres, si négatif = partant de la fin
 
 Debug
 ===========
-
-print("je suis un label")
-print(var)
+::
+    print("je suis un label")
+    print(var)
