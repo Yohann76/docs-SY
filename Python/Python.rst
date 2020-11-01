@@ -30,3 +30,10 @@ Boucle
         turtle.circle(25) #50 good
         #turtle.circle(50, 180)  #Trace un demi-cercle de rayon 70px
         turtle.up()
+
+
+Debug
+===========
+
+print("je suis un label")
+print(var)
