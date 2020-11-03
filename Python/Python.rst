@@ -57,7 +57,7 @@ comparaison
     is	x is y	est le même objet	0
     is not	x is not y	n'est pas le même objet	1
 
-comparaison
+Opérateur logique
 ::
 
     ( )	de gauche à droite	parenthèses
