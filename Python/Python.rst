@@ -4,11 +4,16 @@ Python
 
 .. _`Docs Python`: https://docs.python.org/fr/3/
 
-Variable
+Variable et dictionnaire
 ===========
 ::
 
     a = 1
+
+    dico = {clé 1:valeur 1, clé 2:valeur 2}
+    dico = dict(clé 1=valeur 1, clé 2=valeur 2)
+    print dico
+    {clé 1: valeur 1, clé 2: valeur 2}
 
 Condition
 ===========
