@@ -36,6 +36,14 @@ Boucle
         #turtle.circle(50, 180)  #Trace un demi-cercle de rayon 70px
         turtle.up()
 
+fonction
+===========
+::
+
+    def nameFunction():
+        i = 5
+        return i
+
 Mannipuller les chaines de charactére
 ===========
 ::
