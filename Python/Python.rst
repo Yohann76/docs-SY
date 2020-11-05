@@ -56,6 +56,18 @@ Debug
     print("je suis un label")
     print(var)
 
+Lever une erreur
+===========
+::
+
+    if i - 2 > nbLabel:
+    else:
+        try:
+
+        except:
+            pass
+
+
 Opérateur logique et comparaison
 ===========
 comparaison
