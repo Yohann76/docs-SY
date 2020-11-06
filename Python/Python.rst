@@ -47,12 +47,14 @@ fonction
 Mannipuller les chaines de charactére
 ===========
 ::
+
     txtLabel[0:25] # prend les 25 premieres lettres, si négatif = partant de la fin
     txtLabel[25:50] # prend les lettres entre 25 et 50 ?
 
 Debug
 ===========
 ::
+
     print("je suis un label")
     print(var)
 
