@@ -22,7 +22,10 @@ Condition
     if os.path.exists(path):
             # Delete old app/static/img/diagram.svg
             os.remove(path) # specifying the path of the file for delete old diagram
-
+    elsif:
+      print("elsif")
+    else:
+    
 Boucle
 ===========
 ::
