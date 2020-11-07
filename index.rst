@@ -5,15 +5,24 @@ Welcome to the Sacha and Yohann Documentation
 
 Sommaire
 -------------------
+::
 
-.. toctree:: 
-   :maxdepth: 2 
+  Docs-SY ( repository )
+    .NET
+    API
+    CSS
+    Data
+    Dev'ops
+    Go
+    Hacking
+    Java
+    JS
+    PHP
+    python
+    Ruby
+    WordPress
+    BlackFire.rst
+    Github.rst
+    Gitlab.rst
 
-   CSS/Bootstrap
-   CSS/CSS
-   CSS/Scss
-
-   .. _`Docs github`: https://github.com/Yohann76/docs-SY
-
-
-
+.. _`Docs github`: https://github.com/Yohann76/docs-SY
