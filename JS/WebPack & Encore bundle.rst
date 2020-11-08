@@ -7,10 +7,11 @@ Installer webpack avec yarn : yarn add webpack@3 --dev   ( ou webpack-cli )
 Fonctionnement
 -------------------
 Exporter un objet, une variable, une classe, une fonction… :
-exporter de module : module.exports = food
-Importer un module : const foods = require(‘foods’);
-const $ = require('jquery');
-const Helper = require('./RepLogAppHelper')
+
+  - exporter de module : module.exports = food
+  - Importer un module : const foods = require(‘foods’);
+  - const $ = require('jquery');
+  - const Helper = require('./RepLogAppHelper')
 
 après modification du webpack.config.js : exécuter “sh node_modules/.bin/webpack” pour builder le Js
 
