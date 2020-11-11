@@ -7,11 +7,10 @@ Symfony
 Créer un projet
 ****************
 
-Avec Composer : 
+Avec Composer :
 ================
 Créer un projet simple ( API ou format court )
-
-.. code-block:: terminal
+::
 
     $ composer create-project symfony/skeleton myProject
 
@@ -20,52 +19,52 @@ Créer un projet complexe ( Application, librairie deja présente )
 
     $ composer create-project symfony/website-skeleton my_project_name
 
-Avec Symfony : 
+Avec Symfony :
 ===============
 
 .. code-block:: terminal
 
-    $symfony new my_project_name --full ( Version Website ) 
-    $symfony new my_project_name ( créer un projet avec API ou simple ) 
+    $symfony new my_project_name --full ( Version Website )
+    $symfony new my_project_name ( créer un projet avec API ou simple )
 
 
-composer install ( installer les librairies du composer.json ) 
-composer update ( update les librairies du composer.json ) 
+composer install ( installer les librairies du composer.json )
+composer update ( update les librairies du composer.json )
 
 Lancer le serveur interne de Symfony
 .. code-block:: terminal
-    $ php bin/console server:run   
+    $ php bin/console server:run
     $ php -S 127.0.0.1:8000 -t public
     $ symfony server:start --no-tls
-    $ symfony serve 
-    $ php bin/console cache:clear 
+    $ symfony serve
+    $ php bin/console cache:clear
 
-Composer require utile : 
+Composer require utile :
 ===============
 
-Composer : Les requires indispensable  et commandes composer 
+Composer : Les requires indispensable  et commandes composer
 ::
-	composer unpack ma-librairie //enlever une lib 
-	composer require server // server 
+	composer unpack ma-librairie //enlever une lib
+	composer require server // server
 	composer require --dev symfony/profiler-pack // profiler
-	composer require security // securité  
-	composer require logger // log 
-	composer require twig twig 
+	composer require security // securité
+	composer require logger // log
+	composer require twig twig
 	composer require form // form
 	composer require validation // vérification  pour les form )
 	composer require profiler // Profiler
- 	composer require orm // Bdd 
+ 	composer require orm // Bdd
 	composer require symfony/maker-bundle --dev // Composant make
-	composer require serializer // Serializer pour formater en json ou xml.. (Doc YT ) 
+	composer require serializer // Serializer pour formater en json ou xml.. (Doc YT )
 	composer require doctrine // doctrine
-	composer require --dev orm-fixtures  ( Fonction de fixture ) 
+	composer require --dev orm-fixtures  ( Fonction de fixture )
 	composer require knplabs/knp-time-bundle pour le filtre ago ( article.publishedAt|ago )
-	composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: ) 
+	composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: )
 	composer require apache-pack
-	composer require twig/extensions ( filtre twig supplémentaire ) 
+	composer require twig/extensions ( filtre twig supplémentaire )
 	ycomposer update symfony/maker-bundle
-	composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev ) 
-	composer require twig/extensions ( Extension Twig ) 
+	composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev )
+	composer require twig/extensions ( Extension Twig )
 
 Création automatique ( makerBundle )
 ------------------------------------
@@ -77,7 +76,7 @@ Création automatique ( makerBundle )
 	php bin/console make:command
 	php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
 	php bin/console make:user
-	php bin/console make:auth ( créer un authentificateur ) 
+	php bin/console make:auth ( créer un authentificateur )
 	php bin/console make:voter ( créer un voteurs )
 	php bin/console make:entity
 	php bin/console make:subscriber
@@ -88,17 +87,17 @@ Création automatique ( makerBundle )
 	php bin/console make:unit-test
 
 
-Commande d’information et Commande divers 
+Commande d’information et Commande divers
 
 .. code-block:: terminal
     $php bin/console
     $php bin/console debug:autowiring
-    $php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package ) 
+    $php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
     $php bin/console debug:router ( voir toute les routes ).
 
-Nouvelles commandes 
-( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) ) 
-															
+Nouvelles commandes
+( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) )
+
 .. code-block:: terminal
 
     $ symfony server:start --no-tls
@@ -109,7 +108,7 @@ Code
 
 Cette partie présente des démonstrations codé
 
-Faire apelle a une fonction du repository 
+Faire apelle a une fonction du repository
 --------------------------------
 ::
 
@@ -129,7 +128,7 @@ Faire apelle a une fonction du repository
         ]);
     }
 
-Fonction de count pour une entité dans le repository : 
+Fonction de count pour une entité dans le repository :
 ::
 
     public function countAllUser()
@@ -139,13 +138,13 @@ Fonction de count pour une entité dans le repository :
         return (int) $qb->getQuery()->getSingleScalarResult();
     }
 
-Dans la vue : 
+Dans la vue :
 ::
 
 {{ ClientNumber }} {{ OrderNumber }} {{ ListMailNumber }}
 
 
-Service interne les plus utilisé 
+Service interne les plus utilisé
 --------------------------------
 ::
 
@@ -153,16 +152,16 @@ Service interne les plus utilisé
 	LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
 
 
-Bundle utile 
+Bundle utile
 -------
 créer un bundle (help):
 ::
 
-	php bin/console generate:bundle 
+	php bin/console generate:bundle
 
 ( convention de nommage Xxx/XxxxBundle ) -> Terminer par Bundle
 
-Session 
+Session
 -------
 
 Session Users, dispo dans twig avec App.users
@@ -177,13 +176,13 @@ transmission de variables :
 	$request->query->get('id');
 	$request->request->get('category', 'default category');
 
-Annotations des routes  : 
+Annotations des routes  :
 ::
 	/**
 	* @Route("/admin/comment", name="comment_admin")
 	* @IsGranted("ROLE_ADMIN")
-	*/   
-( nécessite : composer require annotations ) 
+	*/
+( nécessite : composer require annotations )
 
 
 
@@ -204,11 +203,11 @@ Code lié aux requêtes via le repository
 	   ;
 	}
 
-Formulaire 
+Formulaire
 ----------
 php bin/console make:form
 
-Controller : 
+Controller :
 ::
 	$form = $this->createForm(TricksType::class, $tricks);
 	//  $form->handleRequest($request);
@@ -220,9 +219,9 @@ Controller :
 
 	Pour créer un form : php bin/console make:form
 	-> nom de la class “ ex TricksType”
-	->nom de l'entrée à gérer 
+	->nom de l'entrée à gérer
 
-Générer du côté vue : 
+Générer du côté vue :
 ::
 	{{  form_start(form) }}
 
@@ -234,15 +233,15 @@ Générer du côté vue :
 Fixture
 --------
 
-Besoin de : 
-Exportation en production  
+Besoin de :
+Exportation en production
 
 Installation / création de la bdd avec les entités :
 ::
 
 	-php bin/console doctrine:database:create
-	-php bin/console make:migration ( Générer la migration ) 
-	-php bin/console doctrine:migrations:migrate( run the migration ) + y  
+	-php bin/console make:migration ( Générer la migration )
+	-php bin/console doctrine:migrations:migrate( run the migration ) + y
 	-php bin/console doctrine:schema:create
 
 Charger les fixtures :
@@ -252,7 +251,7 @@ Charger les fixtures :
 	-php bin/console server:run
 
 
-Config Symfony : 
+Config Symfony :
 ---------------
 Les recettes de config sont généré par symfony/flex lors de l'instalation d'un paquet
 
@@ -263,7 +262,7 @@ Ajouter une déconnexion dans security.yaml
 	path:   logout
 	target: home
 
-Ajouter la fonction remember me 
+Ajouter la fonction remember me
 ::
 
 	remember_me:
@@ -278,7 +277,7 @@ Hierarchy des rôles : ( dans config/packages/security.yaml )
 	role_hierarchy:
 	ROLE_ADMIN: [ROLE_ADMIN_COMMENT, ROLE_ADMIN_ARTICLE, ROLE_ALLOWED_TO_SWITCH]
 
-utiliser un thème de formulaire twig 
+utiliser un thème de formulaire twig
 ::
 
 	twig:
@@ -290,37 +289,37 @@ utiliser un thème de formulaire twig
 		- bootstrap_4_layout.html.twig
 
 
-serveur interne de symfony  : ( source ) 
+serveur interne de symfony  : ( source )
 ::
 
-	$symfony serve ( Lancer le serveur ) ( option -d ) 
+	$symfony serve ( Lancer le serveur ) ( option -d )
 	$symfony server:stop ( stopper le serveur )
-	$symfony local:php:list ( lister les version de php dispo pour le server de sf ) 
+	$symfony local:php:list ( lister les version de php dispo pour le server de sf )
 
-$echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve ) 
+$echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve )
 Ou créer une “.php-version” qui contient “7.3.5”
 
 
 Code divers
 ------------
-se faire passer pour un utilisateur : 
-mettre une URL et ajouter ?_switch_user="xxx" ( x est le mail de l’utilisateur ) 
+se faire passer pour un utilisateur :
+mettre une URL et ajouter ?_switch_user="xxx" ( x est le mail de l’utilisateur )
 Nous pouvons désormais naviguer sur le rôle de cet utilisateur
-( nécessite ROLE_ALLOWED_TO_SWITCH et switch_user: true ( dans config/packages/security.yaml 
- ) 
-et “?_switch_user=_exit” a la fin de l’url pour sortir de ce rôle 
+( nécessite ROLE_ALLOWED_TO_SWITCH et switch_user: true ( dans config/packages/security.yaml
+ )
+et “?_switch_user=_exit” a la fin de l’url pour sortir de ce rôle
 
-Intégrer dans le template une fonction que pour le user/Admin/autre  ( twig ) 
+Intégrer dans le template une fonction que pour le user/Admin/autre  ( twig )
 ::
 
 	{% if is_granted('ROLE_USER') %} <a href”reserver au user”> {% endif %}
 
-Checker l’utilisateur qui utilise un controller ( dans controller ) 
+Checker l’utilisateur qui utilise un controller ( dans controller )
 ::
 
 	$logger->debug('Checking account page for '.$this->getUser()->getEmail());
 
-retourner a la page précedente : 
+retourner a la page précedente :
 ::
 
 	return $this->redirect($_SERVER['HTTP_REFERER']);
@@ -328,7 +327,7 @@ retourner a la page précedente :
 
 
 
-Gestion du déploiement : 
+Gestion du déploiement :
 ---------------
 
 `Deploiement docs symfony`_
@@ -337,18 +336,4 @@ Gestion du déploiement :
 .. _`SymfonyConnect`: https://connect.symfony.com/
 .. _`Symfony docs`: https://symfony.com/doc/current/index.html#gsc.tab=0
 .. _`Deploiement docs symfony`: https://symfony.com/doc/current/deployment.html
-.. _`Symfony executable`: https://symfony.com/download 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.. _`Symfony executable`: https://symfony.com/download
