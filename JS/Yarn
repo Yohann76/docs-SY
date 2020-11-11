@@ -1,0 +1,9 @@
+Yarn
+===================
+
+
+Dependencies
+===================
+::
+
+    yarn add vuedraggable // add component Drag and Drop
