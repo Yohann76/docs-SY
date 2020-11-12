@@ -94,3 +94,30 @@ librairie requise :
 - pytest
 
 Les tests ont besoin de __init__.py, config.py dans le dossier de test
+
+
+BDD postres SQL
+=================
+
+- models.py pour implementer la classe qui représente les tables 
+- manage.py pour acceder a a la base 
+
+:: 
+    #from flask import Flask
+    from flask_script import Manager
+    from flask_migrate import Migrate, MigrateCommand
+    from app import app, db
+
+
+    manager = Manager(app)
+    migrate = Migrate(app, db)
+
+    manager.add_command('db', MigrateCommand)
+
+    #if __name__ == '__main__':
+        #manager.run()
+        
+Commande : 
+
+- python manage.py db init ( initialiser la base ) 
+- python manage.py db migrate ( faire une migration )
