@@ -9,3 +9,10 @@ Sélection du DOM
             console.log('todo delete!');
         });
     }
+
+
+compter le nombre de div
+-------------------
+::
+
+		Var nbDiapos = $('div.diapo').length;
