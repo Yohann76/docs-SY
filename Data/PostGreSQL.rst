@@ -10,7 +10,28 @@ PostGreSQL s'installe ici
 
 Sur le shell, les commandes psql sont disponibles ( taper plusieurs fois entrée pour les parametre par defaut, et taper le mot de passe ): 
 
-- createdb mybdd
-- dropdb mybdd
+  create database bddDragDrop;
+  create database bddDragDrop;
+
+lister les bdd:
+
+  \l
+
+se connecter a la base : 
+
+  \c bddDragDrop
+  
+créer une table : 
+  
+  create table books(title varchar(128), author varchar(128), price int, date date);
+  
+Lister les tables :
+  
+  \d
+  
+selection:
+
+- select * from books;
+- select * from books where price < 28;
 
 .. _`PostGreSQL download`: https://www.postgresql.org/download/windows/
