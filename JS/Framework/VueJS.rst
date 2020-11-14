@@ -223,6 +223,22 @@ Insertion de donnée dans les formulaire :
         })
     </script>
 
+
+Changer les délimiter
+================
+
+/*console.log(Vue)
+
+    const app = new Vue({
+        el: '#app',
+        data: {
+            diagramTitle: 'Title of function',
+            txtLabel: 'Mon texte',
+        },
+        delimiters: ['[[', ']]'] // Use this in a template // useful not to confuse with the {{ }} syntax of flask
+    })
+
+
 Vue avec le CLI
 ================
 Installer vue CLI
