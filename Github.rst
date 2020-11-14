@@ -85,7 +85,7 @@ Voir la liste des commit effectué
 ::
    git log
 
-Désindexer un fichier ajouté a l'index pour un commit 
+Désindexer un fichier ajouté a l'index pour un commit
 ::
 
     git restore --staged <fichier>...
@@ -94,6 +94,12 @@ Désindexer un fichier ajouté a l'index pour un commit
 Synchroniser une branche avec une autre branche
 ::
    git pull origin master ou dev...
+
+Retirer un fichier ou dossier de l'index aprés un git add * :
+-------------------
+::
+
+    git reset monfichieroudossier
 
 
 Récupérez des modification
