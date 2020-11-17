@@ -28,8 +28,13 @@ créer une table :
 
 Lister les tables :
 
-  \d
+  ''\d''
 
+supprimer une table 
+
+  drop table alembic_version
+    
+    
 selection:
 
 - select * from books;
