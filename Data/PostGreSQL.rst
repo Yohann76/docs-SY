@@ -13,7 +13,6 @@ Sur le shell, les commandes psql sont disponibles
 ::
 
   create database bddDragDrop;
-  create database bddDragDrop;
 
 lister les bdd:
 ::
