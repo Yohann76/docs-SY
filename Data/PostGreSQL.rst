@@ -25,6 +25,7 @@ se connecter a la base :
   \c bddDragDrop
 
 créer une table :
+::
 
   create table books(title varchar(128), author varchar(128), price int, date date);
 
@@ -40,8 +41,9 @@ supprimer une table
     
     
 selection:
+::
 
-- select * from books;
-- select * from books where price < 28;
+  select * from books;
+  select * from books where price < 28;
 
 .. _`PostGreSQL download`: https://www.postgresql.org/download/windows/
