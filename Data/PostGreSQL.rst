@@ -28,7 +28,7 @@ créer une table :
 
 Lister les tables :
 
-  ''\d''
+  /\d
 
 supprimer une table 
 
