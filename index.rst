@@ -12,6 +12,9 @@ Sommaire
       ASP.net_MVC
       C#
     API
+      Les API's
+      Paypal
+      Stripe
     CSS
     Data
     Dev'ops
