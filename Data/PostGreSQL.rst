@@ -16,11 +16,13 @@ Sur le shell, les commandes psql sont disponibles
 
 lister les bdd:
 
-  \l
+::
+  /\l
 
 se connecter a la base :
 
-  \c bddDragDrop
+::
+  /\c bddDragDrop
 
 créer une table :
 
@@ -28,10 +30,12 @@ créer une table :
 
 Lister les tables :
 
+::
   /\d
 
 supprimer une table 
 
+::
   drop table alembic_version
     
     
