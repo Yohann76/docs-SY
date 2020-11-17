@@ -21,6 +21,12 @@ Sommaire
       sass
       Scss
     Data
+      GraphlQL
+      MongoDB
+      MySQL
+      postgresql
+      rédis
+      SQLLite
     Dev'ops
     Go
     Hacking
