@@ -15,13 +15,13 @@ Sur le shell, les commandes psql sont disponibles
   create database bddDragDrop;
 
 lister les bdd:
-
 ::
+
   /\l
 
 se connecter a la base :
-
 ::
+
   /\c bddDragDrop
 
 créer une table :
@@ -29,13 +29,13 @@ créer une table :
   create table books(title varchar(128), author varchar(128), price int, date date);
 
 Lister les tables :
-
 ::
+
   /\d
 
 supprimer une table 
-
 ::
+
   drop table alembic_version
     
     
