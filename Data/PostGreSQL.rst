@@ -37,7 +37,7 @@ Lister les tables :
 supprimer une table 
 ::
 
-  drop table alembic_version
+  DROP TABLE  alembic_version CASCADE;
     
     
 selection:
