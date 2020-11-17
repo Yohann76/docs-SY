@@ -10,6 +10,7 @@ PostGreSQL s'installe ici
 
 Sur le shell, les commandes psql sont disponibles
 ( taper plusieurs fois entrée pour les parametre par defaut, et taper le mot de passe ):
+::
 
   create database bddDragDrop;
   create database bddDragDrop;
