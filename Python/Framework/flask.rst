@@ -129,9 +129,9 @@ Route avec flask
 ::
     @app.route("/greeting")
     def greeting():
-        return {"greeting": "Hello from Flask API"}
+    return {"greeting": "Hello from Flask API"}
 
     @app.route("/addLabel/<nb1>/<nb2>")
     def addLabel(nb1,nb2):
-        return addLabelAPI(escape(nb1),escape(nb2))
+    return addLabelAPI(escape(nb1),escape(nb2))
 
