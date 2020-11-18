@@ -28,6 +28,10 @@ Sommaire
       rédis
       SQLLite
     Dev'ops
+      Deploiement
+      Intégration continue
+      Serveur
+      SystemExploitation
     Go
     Hacking
     Java
