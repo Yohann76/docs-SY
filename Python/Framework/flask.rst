@@ -121,3 +121,21 @@ Commande :
 
 - python manage.py db init ( initialiser la base ) 
 - python manage.py db migrate ( faire une migration )
+
+
+Route avec flask 
+=================
+
+::
+    @app.route("/greeting")
+    def greeting():
+      return {"greeting": "Hello from Flask API"}
+
+::
+    @app.route("/addLabel/<nb1>/<nb2>")
+    def addLabel(nb1,nb2):
+      return addLabelAPI(escape(nb1),escape(nb2))
+        
+other
+=====
+
