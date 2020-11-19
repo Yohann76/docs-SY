@@ -29,6 +29,12 @@ Sommaire
       SQLLite
     Dev'ops
       Deploiement
+        Config Ansible
+        Ansible
+        Ancistranos
+        GooglePlatform
+        Heroku
+        Symfonycloud
       Intégration continue
       Serveur
       SystemExploitation
