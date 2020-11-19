@@ -36,6 +36,10 @@ Sommaire
         Heroku
         Symfonycloud
       Intégration continue
+        CircleCI
+        DoctorRST
+        GithubAction
+        Jenkins
       Serveur
       SystemExploitation
     Go
