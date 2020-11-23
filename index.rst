@@ -83,8 +83,16 @@ Sommaire
       Librairies
         GrumpPHP
       PHP Scripting
-      PHP        
+      PHP
     python
+      Framework
+        Django
+        Flask
+      Librairies
+        PyGame
+        TurtlePY
+      Dependance et installations
+      Python
     Ruby
     WordPress
     BlackFire.rst
