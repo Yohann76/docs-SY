@@ -94,6 +94,8 @@ Sommaire
       Dependance et installations
       Python
     Ruby
+      Ruby
+      RubyOnRails
     WordPress
     BlackFire.rst
     Github.rst
