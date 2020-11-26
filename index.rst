@@ -97,6 +97,9 @@ Sommaire
       Ruby
       RubyOnRails
     WordPress
+      Créer un thème WP
+      Extension
+      WordPress
     BlackFire.rst
     Github.rst
     Gitlab.rst
