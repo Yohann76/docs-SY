@@ -25,7 +25,7 @@ Condition
     elsif:
       print("elsif")
     else:
-    
+
 Boucle
 ===========
 ::
