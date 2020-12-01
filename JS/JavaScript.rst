@@ -6,6 +6,20 @@ JavaScript
 
 Base du javascript
 -------------------
+::
+
+  var fruits = ['Apple', 'Banana'];
+  console.log(fruits.length); // compter le nombre d'éléments
+  var first = fruits[0]; // acceder à un élément
+  var newLength = fruits.push('Orange'); // ajouter a la fin d'un tableau
+  var newLength = fruits.unshift('Strawberry') // ajoute au début
+  var pos = fruits.indexOf('Banana'); // Trouver l'index d'un tableau // 1
+
+Les tableau
+-------------------
+
+
+
 Normalisation:
 préfixer js-xxxxx a toute les class de div qui servent pour le javascript
 
