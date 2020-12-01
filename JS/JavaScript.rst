@@ -6,6 +6,9 @@ JavaScript
 
 Base du javascript
 -------------------
+
+Les tableau
+-------------------
 ::
 
   var fruits = ['Apple', 'Banana'];
@@ -15,18 +18,12 @@ Base du javascript
   var newLength = fruits.unshift('Strawberry') // ajoute au début
   var pos = fruits.indexOf('Banana'); // Trouver l'index d'un tableau // 1
 
-Les tableau
+Les variables
 -------------------
-
-
-
-Normalisation:
-préfixer js-xxxxx a toute les class de div qui servent pour le javascript
-
-Base :
-Définition de variable :
 ::
-    var variable = 3;
+
+  var x = 1; // Déclarer une variable
+  let varTxt = 'La révolution ne sera pas télévisée.'; // Déclarer une vairable chaine de caractére
 
 Définition d’un objet :
 ::
@@ -43,7 +40,7 @@ Sélection des éléments
 -------------------
 ::
 
-	document.getElementById(‘monId’);
+    document.getElementById(‘monId’);
     document.getElementsByName(‘monId’);
     document.getElementsByClassName(‘class’);
 
