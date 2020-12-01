@@ -5,11 +5,26 @@ Les bases du PHP
 
 Variable
 ===================
+
 Concatener une variable dans une chaine de caractére a simple quote
 ::
 
     'https://www.google.com/search?q='.$keyword1.'&num=1000'
 
+Les tableau
+===================
+::
+    $theVariable = array("A", "B", "C");
+
+    array(
+        key  => value,
+        key2 => value2,
+        key3 => value3,
+        ...
+    )
+
+Function sur tableau
+-------------------
 
 Fonction utile dans PHP
 ===================
