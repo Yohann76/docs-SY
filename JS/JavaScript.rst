@@ -17,6 +17,7 @@ Les tableau
   var newLength = fruits.push('Orange'); // ajouter a la fin d'un tableau
   var newLength = fruits.unshift('Strawberry') // ajoute au début
   var pos = fruits.indexOf('Banana'); // Trouver l'index d'un tableau // 1
+  var last = fruits.pop(); // Supprimer le dernier élément du tableau
 
 Les variables
 -------------------
