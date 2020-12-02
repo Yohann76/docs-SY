@@ -30,6 +30,12 @@ lister les bdd:
 
   \l
 
+Lister les champs d'une table:
+::
+
+  \d nametable
+  
+
 se connecter a la base :
 ::
 
