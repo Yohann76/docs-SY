@@ -14,10 +14,27 @@ Sur le shell, les commandes psql sont disponibles
 
   create database bddDragDrop;
 
+supprimer une bdd
+::
+  
+  drop database bddDragDrop;
+
+Se déconnecter d'une bdd:
+::
+  
+  relancer le shell
+
+
 lister les bdd:
 ::
 
   \l
+
+Lister les champs d'une table:
+::
+
+  \d nametable
+  
 
 se connecter a la base :
 ::
