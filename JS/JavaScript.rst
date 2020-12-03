@@ -18,6 +18,11 @@ Les tableau
   var newLength = fruits.unshift('Strawberry') // ajoute au début
   var pos = fruits.indexOf('Banana'); // Trouver l'index d'un tableau // 1
   var last = fruits.pop(); // Supprimer le dernier élément du tableau
+  passer les éléments d'un tableau sur une boucle :
+  let sequence = [1, 1, 2, 3, 5, 8, 13];
+  for (var i = 0; i < sequence.length; i++) {
+    console.log(sequence[i]);
+  }
 
 Les variables
 -------------------
