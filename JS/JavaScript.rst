@@ -23,6 +23,7 @@ Les tableau
   for (var i = 0; i < sequence.length; i++) {
     console.log(sequence[i]);
   }
+  fruits.splice(indexPosition, 1); // supprimer un élément du tableau a un index précis
 
 Les variables
 -------------------
