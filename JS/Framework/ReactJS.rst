@@ -3,8 +3,10 @@ React.js ( Facebook )
 
 Commande pour monter un projet React 
 ####################
+::
 
-- composer require encore  / yarn add @symfony/webpack-encore --dev
+   composer require encore  / yarn add @symfony/webpack-encore --dev
+   
 - yarn 
 - composer 
 
