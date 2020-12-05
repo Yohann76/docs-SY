@@ -6,9 +6,11 @@ Commande pour monter un projet React
 ::
 
    composer require encore  / yarn add @symfony/webpack-encore --dev
-   
-- yarn 
-- composer 
+
+::
+
+   yarn install
+ 
 
 dépendances minimales 
 #####################
