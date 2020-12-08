@@ -1,45 +1,30 @@
 React.js ( Facebook ) 
 ===================
 
+pré-requis : node, npm5.3+
 Commande pour monter un projet React 
 ####################
 ::
+   (utiliser pour initialiser l'utilitaire create-react-app ) 
+   npm install --global create-react-app
+   
+::
 
+   create-react-app my-app
+   
+::
+
+   (uniquement dans un projet symfony )
    composer require encore  / yarn add @symfony/webpack-encore --dev
 
 ::
 
+   (uniquement dans un projet symfony )
    yarn install
  
 
-dépendances minimales 
-#####################
-
-
-::
-
-   "@symfony/webpack-encore": "^0.19.0",
-   "babel-preset-es2015": "^6.24.1",
-   "babel-preset-react": "^6.24.1",
-   "babel-preset-stage-0": "^6.24.1",
-   "react": "^16.4.1",
-   "react-dom": "^16.4.1",
-   "react-on-rails": "^11.0.8",
-   "react-transition-group": "^2.3.1"
-
-- yarn add @babel/preset-react --dev
-- yarn add react react-dom prop-types
-- yarn install
-
-
-Installer le point d'entrée dans twig:
-#####################################
-
-- {{ encore_entry_script_tags('main')}}
-
-
-Dépendences yarn utiles : 
-##########################
+Dépendances additionelles :
+############################ 
 
 js eslint :
 ::
@@ -73,6 +58,8 @@ Vérification de data ( props ) :
 
    yarn add prop-types --dev
 
+Code
+######
 
 import PropTypes from 'prop-types';
 ::
@@ -150,6 +137,9 @@ Possibilité de passer des états en props :
    <composantX
    etatX={this.state.StateX}
    />
+
+Architecture 
+###############
 
 Architecture entre Composant?
 3 types de composants
