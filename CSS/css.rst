@@ -1,43 +1,90 @@
 .. index::
-   single: CSS; 
+   single: CSS;
 
 CSS
 ===================
 
 
-Propriété 
+Propriété
 -------------------
 ::
 
-    background-color : green ; 
+    background-color : green ; // background color green
     margin : 0px ; // Marge extérieur
-    padding : 0% ; // marge intérieur 
-    margin-top : 2px ; 
-    margin-bottom : 2px ; 
-    margin-left : 2% ; 
-    margin-right : 20% ; 
+    padding : 0% ; // marge intérieur
+    margin-top : 2px ; // marge extérieur haut
+    margin-bottom : 2px ; // marge extérieur bas
+    margin-left : 2% ; // marge extérieur gauche
+    margin-right : 20% ; // marge extérieur droite
+    border-radius : 15px ; //  bord arrondi, utilisé pour faire un rond
 
+Les bordures
+-------------------
+::
 
+    border: 3px blue dashed; // bordur 3px bleu, style de bordure : none - solid - dotted - dashed - double - groove - ridge - inset - outset
+    border: 3px blue dashed; // bordur seulement en bas
+    border-radius: 10px 5px 10px 5px; // bordur avec 10px en haut a gauche, 5px en haut a droite, 10px en bas a droite et 5px en bas a gauche
+
+Les ombres
+-------------------
+::
+
+    box-shadow: 6px 6px 6px black; // bordure : 1 bordur normal, 2 l'ombre, 3 genre de transparence 4 couleur
+    box-shadow: 6px 6px 6px black inset; // méme bordure que la précédente mais avec un effet renfoncer ( ombre intérieur du bloc )
+    text-shadow: 2px 2px 4px black; // bordure pour text
+
+Les dégrader
+-------------------
+::
+
+    background: linear-gradient(blue, white); // dégrader linéaire haut en bas, bleu vers blanc
+    background: linear-gradient(to right, blue, white); // dégrader linéaire gauche a droite, bleu droite - blanc gauche
+    background: linear-gradient(to bottom right, blue, white); // dégrader diagonal
+    background: linear-gradient(70deg, blue, pink); // dégrader avec angle ( 0deg, 90deg,180deg,-90deg )
+    background: linear-gradient(red, yellow, blue, orange); // dégrader plusieurs couleurs
+    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%); // dégrader avec ligne franche ( deux couleur distinct )
+    background: radial-gradient(red, blue); // dégrader radial ( forme de rond )
+    background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%); // dégrader rond avec point d'arret
+    background: conic-gradient(red, blue); // dégrader conique
+    background: conic-gradient(at 0% 30%, red 10%, yellow 30%, #1e90ff 50%); // dégrader conique avec position du centre
+    background: conic-gradient(from 45deg, red, orange, yellow, green, blue, purple); // dégrader avec angle différent
+    background: linear-gradient(to right, transparent, mistyrose),
+      url("https://mdn.mozillademos.org/files/15525/critters.png"); // dégrader avec intégration d'image transparent
 
 Selection des éléments
 -------------------
-
-.nomDeLaclasse
-
-#nomDeLaDiv 
-
-selectionne la section ou le nav, footer, header...
 ::
 
-    .section 
+  .nomDeLaclasse // selectionne une classe
+  #nomDeLaDiv // selectionne une div
+  .section // selectionne une section ( ou nav .. )
+  nav a // tout élément a descendant d'un élément nav
+  nav > a // tout élément a fils direct d'un élément nav
 
-
-Selectionner un éléments enfants : 
+Styler les liens
+-------------------
 ::
 
-    ??
+  a:link { color: green; }  // par défaut
+  a:visited { color: orange; }  // déjà visité
+  a:hover { color: black; background-color: red; }  // lors du survol
+  a:focus { color: #aaa; text-decoration: line-through; }  // focus clavier
+  a:active { color: yellow; }  // lors du clic
 
 Au survol :
 ::
 
-    .section :hover 
+    .section :hover
+
+
+Génération de contenu
+-------------------
+
+Les pseudo-éléments ::before, ::after permettent d'insérer du contenu au
+début ou à la fin d'un élément, grâce à la propriété content
+::
+
+  #toto::after {
+      content: "je suis le dernier";
+  }
