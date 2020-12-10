@@ -1,0 +1,44 @@
+.. index::
+   single: HTML;
+
+HTML
+===================
+
+code minimal pour page html :
+::
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Titre</title>
+        </head>
+
+        <body>
+
+        </body>
+    </html>
+
+
+Balise d'en-tête :
+::
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+        <script> </script>
+        <style> </style>
+        <link> </link>
+    </head>
+
+Balise de tableau :
+::
+
+    <table> // Tableau
+    <caption> // Titre du tableau
+    <tr> // Ligne de tableau
+    <th> // Cellule d'en-tête
+    <td> // Cellule
+    <thead> // Section de l'en-tête du tableau
+    <tbody> // Section du corps du tableau
+    <tfoot> // Section du pied du tableau
