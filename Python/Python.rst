@@ -26,6 +26,18 @@ Condition
       print("elsif")
     else:
 
+
+    # On fait un test pour savoir si a est comprise dans l'intervalle allant de 2 à 8 inclus
+    
+    a = 5
+    if a >= 2:
+        if a <= 8:
+            print("a est dans l'intervalle.")
+        else:
+            print("a n'est pas dans l'intervalle.")
+    else:
+        print("a n'est pas dans l'intervalle.")
+
 Boucle
 ===========
 ::
