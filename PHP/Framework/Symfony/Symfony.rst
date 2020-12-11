@@ -27,7 +27,6 @@ Avec Symfony :
     $symfony new my_project_name --full ( Version Website )
     $symfony new my_project_name ( créer un projet avec API ou simple )
 
-
 composer install ( installer les librairies du composer.json )
 composer update ( update les librairies du composer.json )
 
@@ -325,7 +324,20 @@ retourner a la page précedente :
 	return $this->redirect($_SERVER['HTTP_REFERER']);
 
 
+Création espace de connexion
+------------------------------------
+`Symfony connexion`_
+::
 
+  $ symfony composer req security
+  $ symfony console make:user Admin
+  $ symfony console make:migration
+  $ symfony console doctrine:migrations:migrate -n
+  $ symfony console security:encode-password // généré un password admin
+
+  Authentification
+
+  $ symfony console make:auth
 
 Gestion du déploiement :
 ---------------
@@ -337,3 +349,4 @@ Gestion du déploiement :
 .. _`Symfony docs`: https://symfony.com/doc/current/index.html#gsc.tab=0
 .. _`Deploiement docs symfony`: https://symfony.com/doc/current/deployment.html
 .. _`Symfony executable`: https://symfony.com/download
+.. _`Symfony connexion` : https://symfony.com/doc/current/the-fast-track/fr/15-security.html#configuring-the-security-authentication
