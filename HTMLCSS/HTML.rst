@@ -42,3 +42,9 @@ Balise de tableau :
     <thead> // Section de l'en-tête du tableau
     <tbody> // Section du corps du tableau
     <tfoot> // Section du pied du tableau
+
+
+Inserstion image :
+::
+
+    <img src="images/montagne.jpg" alt="Photo de montagne" />
