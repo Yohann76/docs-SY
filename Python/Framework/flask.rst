@@ -55,11 +55,14 @@ Console Flask
 
 lancer la console flask
 ::
-  set FLASK_APP=run.py
-  set FLASK_APP=run.py flask init_db  // avec une méthode d'initialisation
+
+  $ set FLASK_APP=run.py
+  $ set FLASK_APP=run.py flask init_db  // avec une méthode d'initialisation
+
 puis
 ::
-  flask shell
+
+  $ flask shell
 
 Base de donnée SQLlite
 =======================
@@ -86,7 +89,8 @@ Les tests
 
 lancer un test :
 ::
-  pytest app/tests/test_functionnal.py
+
+  $ pytest app/tests/test_functionnal.py
 
 librairie requise :
 - Selenium
@@ -99,10 +103,10 @@ Les tests ont besoin de __init__.py, config.py dans le dossier de test
 BDD postres SQL
 =================
 
-- models.py pour implementer la classe qui représente les tables 
-- manage.py pour acceder a a la base 
+- models.py pour implementer la classe qui représente les tables
+- manage.py pour acceder a a la base
 
-:: 
+::
     #from flask import Flask
     from flask_script import Manager
     from flask_migrate import Migrate, MigrateCommand
@@ -116,16 +120,16 @@ BDD postres SQL
 
     #if __name__ == '__main__':
         #manager.run()
-        
+
 Commande : 
+::
 
-- python manage.py db init ( initialiser la base ) 
-- python manage.py db migrate ( faire une migration )
+    $ python manage.py db init ( initialiser la base )
+    $ python manage.py db migrate ( faire une migration )
 
 
-Route avec flask 
+Route avec flask
 =================
-
 ::
     @app.route("/greeting")
     def greeting():
@@ -135,7 +139,6 @@ Route avec flask
     @app.route("/addLabel/<nb1>/<nb2>")
     def addLabel(nb1,nb2):
       return addLabelAPI(escape(nb1),escape(nb2))
-        
+
 other
 =====
-
