@@ -12,16 +12,16 @@ Sur le shell, les commandes psql sont disponibles
 ( taper plusieurs fois entrée pour les parametre par defaut, et taper le mot de passe ):
 ::
 
-  create database bddDragDrop;
+  $ create database bddDragDrop;
 
 supprimer une bdd
 ::
-  
-  drop database bddDragDrop;
+
+  $ drop database bddDragDrop;
 
 Se déconnecter d'une bdd:
 ::
-  
+
   relancer le shell
 
 
@@ -33,34 +33,34 @@ lister les bdd:
 Lister les champs d'une table:
 ::
 
-  \d nametable
-  
+  $ \d nametable
+
 
 se connecter a la base :
 ::
 
-  \c bddDragDrop
+  $ \c bddDragDrop
 
 créer une table :
 ::
 
-  create table books(title varchar(128), author varchar(128), price int, date date);
+  $ create table books(title varchar(128), author varchar(128), price int, date date);
 
 Lister les tables :
 ::
 
-  \d
+  $ \d
 
-supprimer une table 
+supprimer une table
 ::
 
-  DROP TABLE  alembic_version CASCADE;
-    
-    
+  $ DROP TABLE  alembic_version CASCADE;
+
+
 selection:
 ::
 
-  select * from books;
-  select * from books where price < 28;
+  $ select * from books;
+  $ select * from books where price < 28;
 
 .. _`PostGreSQL download`: https://www.postgresql.org/download/windows/
