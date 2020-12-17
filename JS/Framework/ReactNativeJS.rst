@@ -5,12 +5,13 @@ ReactNative ( Base de React fait par Facebook )
 ===================
 
 Info : 
--------------------
-
-Base de code pour IOS et Android ( a quelques modification préte ) 
+------------------- 
 React Native permet de developper des application cross-platforms en javascript 
 
-Nous avons obligatoirement besoin de Node.js / Expo et un editeur de texte 
+Pré-requis
+- Node
+- Expo
+
 
 
 Initialisation : 
