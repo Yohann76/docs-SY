@@ -226,9 +226,9 @@ Insertion de donnée dans les formulaire :
 
 Changer les délimiter
 ================
+::
 
-/*console.log(Vue)
-
+    console.log(Vue)
     const app = new Vue({
         el: '#app',
         data: {
