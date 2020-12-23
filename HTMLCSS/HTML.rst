@@ -48,3 +48,9 @@ Inserstion image :
 ::
 
     <img src="images/montagne.jpg" alt="Photo de montagne" />
+
+
+Ligne horizontale :
+::
+
+   <hr>
