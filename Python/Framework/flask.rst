@@ -132,14 +132,16 @@ Commande :
 Route avec flask
 =================
 ::
-    @app.route("/greeting")
-    def greeting():
-      return {"greeting": "Hello from Flask API"}
+
+  @app.route("/greeting")
+  def greeting():
+    return {"greeting": "Hello from Flask API"}
 
 ::
-    @app.route("/addLabel/<nb1>/<nb2>")
-    def addLabel(nb1,nb2):
-      return addLabelAPI(escape(nb1),escape(nb2))
+
+  @app.route("/addLabel/<nb1>/<nb2>")
+  def addLabel(nb1,nb2):
+    return addLabelAPI(escape(nb1),escape(nb2))
 
 
 API avec flask ( /api/ )
@@ -174,16 +176,16 @@ dans api/app.py
 Définition de addLabelAPI dans /api/apiFunction.py
 ::
 
-import math
-from models import db, Label, Record
+  import math
+  from models import db, Label, Record
 
-#return addLabelAPI(escape(title),escape(node1),escape(node2),escape(functionNumber), escape(column))
-def addLabelAPI(title,node1,node2,functionNumber,column):
-    #db.create_all()
-    Label1 = Label(title=title, node1=node1, node2=node2, functionNumber=functionNumber, column=column)
-    db.session.add(Label1)
-    db.session.commit()
-    return {"labelStatus": "added in database"}
+  #return addLabelAPI(escape(title),escape(node1),escape(node2),escape(functionNumber), escape(column))
+  def addLabelAPI(title,node1,node2,functionNumber,column):
+      #db.create_all()
+      Label1 = Label(title=title, node1=node1, node2=node2, functionNumber=functionNumber, column=column)
+      db.session.add(Label1)
+      db.session.commit()
+      return {"labelStatus": "added in database"}
 
 
 
