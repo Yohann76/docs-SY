@@ -121,7 +121,7 @@ BDD postres SQL
     #if __name__ == '__main__':
         #manager.run()
 
-Commande : 
+Commande :
 ::
 
     $ python manage.py db init ( initialiser la base )
@@ -139,6 +139,41 @@ Route avec flask
     @app.route("/addLabel/<nb1>/<nb2>")
     def addLabel(nb1,nb2):
       return addLabelAPI(escape(nb1),escape(nb2))
+
+
+API avec flask ( /api/ )
+=================
+
+dans app.py
+::
+
+  from flask import Flask
+  from flask_cors import CORS
+  from apiFunction import addLabelAPI, addRecordAPI, createDataAPI
+  from markupsafe import escape
+  import models
+  from models import db, Label, Record
+
+  app = Flask(__name__)
+  app.config.from_object('config')
+  app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+  CORS(app)
+  models.db.init_app(app)
+
+  @app.route("/")
+  def home():
+      return {"home": "Welcome to Flask API"}
+
+  # Route : /addLabel/{title}/{node1}/{node2}/{functionNumber}/{column}
+  @app.route("/addLabel/<string:title>/<string:node1>/<string:node2>/<int:functionNumber>/<int:column>", methods=['GET'])
+  def addLabel(title,node1,node2,functionNumber,column):
+      # try this route: addLabel/loremIpsum/BR45/CV10/1/1
+      return addLabelAPI(str(title), str(node1), str(node2), int(functionNumber), int(column))
+
+
+
+
+
 
 other
 =====
