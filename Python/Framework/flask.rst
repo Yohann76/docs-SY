@@ -144,7 +144,7 @@ Route avec flask
 API avec flask ( /api/ )
 =================
 
-dans app.py
+dans api/app.py
 ::
 
   from flask import Flask
@@ -169,6 +169,22 @@ dans app.py
   def addLabel(title,node1,node2,functionNumber,column):
       # try this route: addLabel/loremIpsum/BR45/CV10/1/1
       return addLabelAPI(str(title), str(node1), str(node2), int(functionNumber), int(column))
+
+Définition de addLabelAPI dans /api/apiFunction.py
+::
+
+import math
+from models import db, Label, Record
+
+#return addLabelAPI(escape(title),escape(node1),escape(node2),escape(functionNumber), escape(column))
+def addLabelAPI(title,node1,node2,functionNumber,column):
+    #db.create_all()
+    Label1 = Label(title=title, node1=node1, node2=node2, functionNumber=functionNumber, column=column)
+    db.session.add(Label1)
+    db.session.commit()
+    return {"labelStatus": "added in database"}
+
+
 
 
 
