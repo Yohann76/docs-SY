@@ -10,6 +10,11 @@ installer pip:
 
 Installer directement avec l'application windows Store
 
+upgrade pip :
+::
+
+  $ pip install --upgrade pip
+
 
 Dépendances et installation de librairie
 ========================================
@@ -32,7 +37,7 @@ Module IA et machine learning
 ========================================
 ::
 
-    $ TensorFlow
+    $ pip install TensorFlow
 
 Connaitre les modules installé avec python
 ==========================================
