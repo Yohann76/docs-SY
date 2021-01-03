@@ -24,8 +24,8 @@ Avec Symfony :
 
 .. code-block:: terminal
 
-    $symfony new my_project_name --full ( Version Website )
-    $symfony new my_project_name ( créer un projet avec API ou simple )
+    $ symfony new my_project_name --full ( Version Website )
+    $ symfony new my_project_name ( créer un projet avec API ou simple )
 
 composer install ( installer les librairies du composer.json )
 composer update ( update les librairies du composer.json )
@@ -43,56 +43,56 @@ Composer require utile :
 
 Composer : Les requires indispensable  et commandes composer
 ::
-	composer unpack ma-librairie //enlever une lib
-	composer require server // server
-	composer require --dev symfony/profiler-pack // profiler
-	composer require security // securité
-	composer require logger // log
-	composer require twig twig
-	composer require form // form
-	composer require validation // vérification  pour les form )
-	composer require profiler // Profiler
- 	composer require orm // Bdd
-	composer require symfony/maker-bundle --dev // Composant make
-	composer require serializer // Serializer pour formater en json ou xml.. (Doc YT )
-	composer require doctrine // doctrine
-	composer require --dev orm-fixtures  ( Fonction de fixture )
-	composer require knplabs/knp-time-bundle pour le filtre ago ( article.publishedAt|ago )
-	composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: )
-	composer require apache-pack
-	composer require twig/extensions ( filtre twig supplémentaire )
-	ycomposer update symfony/maker-bundle
-	composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev )
-	composer require twig/extensions ( Extension Twig )
+	$ composer unpack ma-librairie //enlever une lib
+	$ composer require server // server
+	$ composer require --dev symfony/profiler-pack // profiler
+	$ composer require security // securité
+	$ composer require logger // log
+	$ composer require twig twig
+	$ composer require form // form
+	$ composer require validation // vérification  pour les form )
+	$ composer require profiler // Profiler
+ 	$ composer require orm // Bdd
+	$ composer require symfony/maker-bundle --dev // Composant make
+	$ composer require serializer // Serializer pour formater en json ou xml.. (Doc YT )
+	$ composer require doctrine // doctrine
+	$ composer require --dev orm-fixtures  ( Fonction de fixture )
+	$ composer require knplabs/knp-time-bundle pour le filtre ago ( article.publishedAt|ago )
+	$ composer require knplabs/knp-paginator-bundle ( pagination Lien tuto SFCast: )
+	$ composer require apache-pack
+	$ composer require twig/extensions ( filtre twig supplémentaire )
+	$ composer update symfony/maker-bundle
+	$ composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev )
+	$ composer require twig/extensions ( Extension Twig )
 
 Création automatique ( makerBundle )
 ------------------------------------
 ::
 
-	php bin/console list make  ( affiche tout les make )
-	php bin/console make:controller
-	php bin/console generate:bundle
-	php bin/console make:command
-	php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
-	php bin/console make:user
-	php bin/console make:auth ( créer un authentificateur )
-	php bin/console make:voter ( créer un voteurs )
-	php bin/console make:entity
-	php bin/console make:subscriber
-	php bin/console make:form
-	php bin/console make:crud
-	php bin/console make:registration-form
-	php bin/console make:functional-test
-	php bin/console make:unit-test
+	$ php bin/console list make  ( affiche tout les make )
+	$ php bin/console make:controller
+	$ php bin/console generate:bundle
+	$ php bin/console make:command
+	$ php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
+	$ php bin/console make:user
+	$ php bin/console make:auth ( créer un authentificateur )
+	$ php bin/console make:voter ( créer un voteurs )
+	$ php bin/console make:entity
+	$ php bin/console make:subscriber
+	$ php bin/console make:form
+	$ php bin/console make:crud
+	$ php bin/console make:registration-form
+	$ php bin/console make:functional-test
+	$ php bin/console make:unit-test
 
 
 Commande d’information et Commande divers
 
 .. code-block:: terminal
-    $php bin/console
-    $php bin/console debug:autowiring
-    $php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
-    $php bin/console debug:router ( voir toute les routes ).
+    $ php bin/console
+    $ php bin/console debug:autowiring
+    $ php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
+    $ php bin/console debug:router ( voir toute les routes ).
 
 Nouvelles commandes
 ( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) )
@@ -156,7 +156,7 @@ Bundle utile
 créer un bundle (help):
 ::
 
-	php bin/console generate:bundle
+	$ php bin/console generate:bundle
 
 ( convention de nommage Xxx/XxxxBundle ) -> Terminer par Bundle
 
@@ -204,10 +204,13 @@ Code lié aux requêtes via le repository
 
 Formulaire
 ----------
-php bin/console make:form
+::
+
+  $ php bin/console make:form
 
 Controller :
 ::
+
 	$form = $this->createForm(TricksType::class, $tricks);
 	//  $form->handleRequest($request);
 
@@ -238,16 +241,16 @@ Exportation en production
 Installation / création de la bdd avec les entités :
 ::
 
-	-php bin/console doctrine:database:create
-	-php bin/console make:migration ( Générer la migration )
-	-php bin/console doctrine:migrations:migrate( run the migration ) + y
-	-php bin/console doctrine:schema:create
+	$ php bin/console doctrine:database:create
+	$ php bin/console make:migration ( Générer la migration )
+	$ php bin/console doctrine:migrations:migrate( run the migration ) + y
+	$ php bin/console doctrine:schema:create
 
 Charger les fixtures :
 ::
 
-	-php bin/console doctrine:fixtures:load
-	-php bin/console server:run
+	$ php bin/console doctrine:fixtures:load
+	$ php bin/console server:run
 
 
 Config Symfony :
