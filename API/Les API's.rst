@@ -1,8 +1,8 @@
 API REST
 ===================
 
-Créer une API REST pour son projet  : 
-Méthode https : 
+Créer une API REST pour son projet  :
+Méthode https :
 GET : Permet de récupérer une ou plusieurs ressource.
 POST : Permet de créer une nouvelle ressource.
 PUT : Permet de remplacer une ressource existante.
@@ -16,50 +16,52 @@ Client-serveur
 Sans état
 Avec mise en cache
 En couche
-Avec code à la demande ( facultative ) 
-A interface uniforme 
+Avec code à la demande ( facultative )
+A interface uniforme
 
-Code serveur : 
+Code serveur :
 -------------------
 201 : Validation
 404 : page non trouver
+401 : Accès à la ressource refusé
+500 : Erreur interne du serveur
 
 
 API Utilisable
 ===================
 
 
-Facebook 
+Facebook
 -------------------
 `Facebook API Docs`_
 
-TODO : Se connecter via auth ? 
+TODO : Se connecter via auth ?
 
 Github
 -------------------
 `Github API Docs`_
 
-TODO : Se connecter via auth ? 
-TODO : Récupérer le contenu d'un repository ( requete ) 
+TODO : Se connecter via auth ?
+TODO : Récupérer le contenu d'un repository ( requete )
 
 Google
 -------------------
 `Google API Docs`_
 
-TODO : Se connecter via auth ? 
+TODO : Se connecter via auth ?
 
 
-Paypal 
+Paypal
 -------------------
 `Paypal API Docs`_
 
-TODO : Gestion d'un service de paiment 
+TODO : Gestion d'un service de paiment
 
 Nasa
 -------------------
 `Nasa API Docs`_
 
-TODO : Récupérer des informations sur une planete ( requete ) 
+TODO : Récupérer des informations sur une planete ( requete )
 
 
 .. _`Nasa API Docs`: https://api.nasa.gov/
@@ -67,6 +69,3 @@ TODO : Récupérer des informations sur une planete ( requete )
 .. _`Google API Docs`: https://developers.google.com/apis-explorer
 .. _`Github API Docs`: https://developer.github.com/v3/
 .. _`Facebook API Docs`: https://developer.github.com/v3/
-
-
-
