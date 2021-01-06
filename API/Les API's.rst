@@ -21,10 +21,13 @@ A interface uniforme
 
 Code serveur :
 -------------------
-201 : Validation
-404 : page non trouver
-401 : Accès à la ressource refusé
-500 : Erreur interne du serveur
+::
+
+  200 : Requête traitée avec succès
+  201 : Validation
+  404 : page non trouver
+  401 : Accès à la ressource refusé
+  500 : Erreur interne du serveur
 
 
 API Utilisable
