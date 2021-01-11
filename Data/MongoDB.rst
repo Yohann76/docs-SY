@@ -17,6 +17,7 @@ MongoDB
    db.createCollection(name, options)
    
 3. URI de db
-   mongodb://mongodb0.example.com:27017
+   mongodb://mongodb0.example.com:27017  or 
+   mongodb://localhost:27017/shifumi
 
    
