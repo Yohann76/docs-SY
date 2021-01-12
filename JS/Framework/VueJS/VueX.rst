@@ -83,9 +83,45 @@ Les mutation ( fonction pour par exemple ajouer des choses )
   export default store
 
 Nous pouvons désormais accéder au state du store via la console avec store.state ( avec les deux derniére ligne )
+Une mutation peux etre effectuer et tester en ligne de commande dans la console avec : store.commit('ADD_FUNCTION', 'nametest'),
+nous avons ensuite une mutation qui modifie le state dans l'extension vueTools
 
+Utiliser et acceder au store depuis des component, qui ont un lien de parenté, ou non
+=============================
 
+Les Getter
+=============================
+dans le component
+::
 
+  import store from "../store";
+  import Vuex from 'vuex';
+  ...
+
+  computed: {
+    ...Vuex.mapGetters(['diagram']),
+  }
+
+dans le store.js
+::
+
+  // use in component for get data
+  const getters = {
+    diagram: state => state.diagram
+    // other getter
+  }
+  let store = new Vuex.Store({
+    state: state,
+    mutations: mutations,
+    getters:getters,
+    actions: {
+    },
+    modules: {
+    }
+  })
+
+  global.store = store
+  export default store
 
 .. _`OC instalation Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6869761-creez-un-data-store-centralise-avec-vuex
 .. _`OC récupération données Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6870051-recuperez-des-donnees-depuis-vuex
