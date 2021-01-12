@@ -43,7 +43,49 @@ Définir le state dans store.js
     }
   })
 
-Le State est visible dans l'extension Chrome VueTools 
+Le State est visible dans l'extension Chrome VueTools
+
+Les mutation ( fonction pour par exemple ajouer des choses )
+=============================
+::
+
+  import Vue from 'vue'
+  import Vuex from 'vuex'
+
+  Vue.use(Vuex)
+
+  const state = {
+    diagram: [{
+      name: 'Diagram',
+    }]
+  }
+
+  const mutations = {
+    ADD_FUNCTION :(state, name) => {
+      state.diagram.push ({
+        name: name,
+        number : false
+      })
+    }
+  }
+
+  let store = new Vuex.Store({
+    state: state,
+    mutations: mutations,
+    actions: {
+    },
+    modules: {
+    }
+  })
+
+  global.store = store
+
+  export default store
+
+Nous pouvons désormais accéder au state du store via la console avec store.state ( avec les deux derniére ligne )
+
+
+
 
 .. _`OC instalation Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6869761-creez-un-data-store-centralise-avec-vuex
 .. _`OC récupération données Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6870051-recuperez-des-donnees-depuis-vuex
