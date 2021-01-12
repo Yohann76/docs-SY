@@ -19,5 +19,31 @@ Récupéré des données avec Vuex ( `OC récupération données Vuex`_ ) :
   </template>
 
 
+Définir le state dans store.js
+=============================
+::
+
+  import Vue from 'vue'
+  import Vuex from 'vuex'
+
+  Vue.use(Vuex)
+
+  const state = {
+    diagram: [{
+      name: 'Diagram',
+    }]
+  }
+  export default new Vuex.Store({
+    state: state,
+    mutations: {
+    },
+    actions: {
+    },
+    modules: {
+    }
+  })
+
+Le State est visible dans l'extension Chrome VueTools 
+
 .. _`OC instalation Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6869761-creez-un-data-store-centralise-avec-vuex
 .. _`OC récupération données Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6870051-recuperez-des-donnees-depuis-vuex
