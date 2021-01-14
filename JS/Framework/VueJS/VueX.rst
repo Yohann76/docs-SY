@@ -19,7 +19,7 @@ Récupéré des données avec Vuex ( `OC récupération données Vuex`_ ) :
   </template>
 
 
-Définir le state dans store.js
+Définir le state dans store.js  ( Grafikart tuto ( `Grafikart tutoVuex`_ ) :
 =============================
 ::
 
@@ -125,3 +125,4 @@ dans le store.js
 
 .. _`OC instalation Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6869761-creez-un-data-store-centralise-avec-vuex
 .. _`OC récupération données Vuex`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6870051-recuperez-des-donnees-depuis-vuex
+.. _`Grafikart tutoVuex`: https://www.youtube.com/watch?v=OjM7hzcdBrs&t=1003s&ab_channel=Grafikart.fr
