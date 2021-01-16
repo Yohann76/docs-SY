@@ -3,6 +3,7 @@ React Navigate component
 importer le systeme de routage: 
 
 ::
+
   import * as React from 'react';
   import { NavigationContainer, useRoute } from '@react-navigation/native';
   import { createStackNavigator } from '@react-navigation/stack';
