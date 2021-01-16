@@ -1,7 +1,4 @@
-.. index::
-   single: ReactNative
-
-ReactNative ( Base de React fait par Facebook ) 
+ReactNative ( React (facebook) pour mobile 
 ===================
 
 Info : 
@@ -10,8 +7,7 @@ React Native permet de developper des application cross-platforms en javascript
 
 Pré-requis
 - Node
-- Expo
-
+- Expo ou device 
 
 
 Initialisation : 
@@ -29,7 +25,7 @@ pré-requis:
 
 Créer son App : 
 -------------------
-
+   
 1. Avec npm ( fournis avec node.js ) : 
 ::
 
@@ -38,8 +34,7 @@ Créer son App :
     cd TestReact
     npm start ( donne un QR code et lance le serveur node.js ) 
 
-
-2. Avec expo ( recomander ) 
+2. Avec expo ( recomandé ) 
 ::
     expo init MonProjet ( commande pour créer le projet ) 
     choisir "blank" a minimal app as clean as an empty canvas
@@ -47,57 +42,21 @@ Créer son App :
     nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo ) 
 
 
-Votre projet est d créer et disponible adresse : 
-http://localhost:19002/ ( QR Code à cette adresse ) 
-Dans cette adresse nous pouvons voir le QR code, les tests , méme chose que dans le terminal 
 
-Scanner le QR Code avec l'application Expo ( sur android )  
-
-Une seul commande a taper pour passer d'une CRNA ( create-React-Native-App donc sans composant telephone  ) 
-A une app React Native avec du code natif ( qui utilise les composant telephone -> lampe torche , Galerie Photo, Camera..) 
-
-`Lien OpenclassRooms`_ 
-Attention : cela a un impact irréversible sur une application, des modifications a prévoir
-
-Nous pouvons plus utilisée Expo pour prévisualisé l'application, il faudra le faire avec Xcode pour IOS, ou android Studio pour android
-Retardé au maximum cette transformation
-
-Architecture 
+Architecture de l'application 
 -------------------
-Créer un dossier "Components" A la racine pour ranger les composants
-Components/Search.js
+- Components : dossier des composants ( a refactoriser dès que possible
+- Stores : Modèle et base de donnée 
+- utils : service annexe ( get, petite function ) 
+- assets : image et icon
+- nodes_module : librairie 
 
-Créer un dossier "Helpers" pour avoir de la data par exemple 
-Helpers/filmsData.js
-
-Ne pas oublier d'importer les composants :
-::
-
-    import React from 'react'
-    import { StyleSheet, View, TextInput, Button , Text,FlatList } from 'react-native'
-
-Style 
+Classes des composants 
 -------------------
 ::
 
-    render() {
-        return (
-            <View style={styles.main_container}>
-                <TextInput style={styles.text_input} placeholder='Titre du film'/>
-                <Button style={styles.button} title='Rechercher' onPress={() => {}}/>
-                <FlatList
-                    data={films} // import FilmItem
-                    keyExtractor={(item) => item.id.toString()}
-                    renderItem={({item}) =>
-                        <FilmItem
-                            film={item}
-                        />}
-                />
-            </View>
-        )
-    }
-
-Le style ( Aprés la class ) 
+   
+Le style du composant
 -------------------
 ::
 
@@ -123,62 +82,35 @@ Le style ( Aprés la class )
         },
     })
 
-Ne pas oublié d'exporter un composants en fin de fichier 
+
+Faire une requete 
+----------------------
+
 ::
-
-    export default Search
-
-Rendre un composant 
-::
-
-  render() {
-    return (
-        <Search/>
-    )
-  }
-
-Utilisé une API 
-API/Name_apiAPI.js ( exemple ) :
-::
-
-    // API/TMDBApi.js
-
-    const API_TOKEN = "7f0c884269f18433248fb9bf049b54f2";
-
-    export function getFilmsFromApiWithSearchedText (text) {
-        const url = 'https://api.themoviedb.org/3/search/movie?api_key=' + API_TOKEN + '&language=fr&query=' + text
-        return fetch(url)
-            .then((response) => response.json())
-            .catch((error) => console.error(error))
-    }
-
-    export function getImageFromApi (name) {
-        return 'https://image.tmdb.org/t/p/w300' + name
-    }
+     const url = 'xxxxx'
+     return fetch(url)
+         .then((response) => response.json())
+         .catch((error) => console.error(error))
 
 
 
-Gestion de Librairies
--------------------
-Pour installer une librairie il faut Stopper le serveur Node.js avec ctrl + C 
-
-A la racine du projet dans le terminal : 
-::
-
-    npm install --save react-navigation
-
-`React Naviguation`_  Pour avoir une bonne naviguation 
+State et props
+--------------------
 
 
-Le --save permet d'enregistrer la librairie dans le package.json , ainsi sur un autre ordinateur, on peux installer les dépendances avec :
-::
 
-    npm install
 
-Relancer le serveur avec : 
-::
 
-    npm start
+Composants JSX
+----------------
+
+
+
+
+Spécificité de RN
+------------------
+
+
 
 
 Préparer pour les stores
