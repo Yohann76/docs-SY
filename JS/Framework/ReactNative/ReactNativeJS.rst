@@ -97,6 +97,8 @@ Faire une requete
 State et props
 --------------------
 
+This.state()
+This.setstate() 
 
 
 
