@@ -26,3 +26,21 @@ Pré-requis :
 
 
 .. _`Install Complilateur Go`: https://golang.org/dl/
+
+
+Tester et lancer son premier programme( test.go) :
+===================
+::
+
+  package main
+
+  import "fmt"
+
+  func main() {
+      fmt.Println("Hello, World!")
+  }
+
+Ensuite lancer la commande suivante pour obtenir le resultat "Hellon World!"
+::
+
+  go run test.go
