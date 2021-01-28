@@ -1,8 +1,8 @@
 
-Node.JS
+Node.JS & npm
 ===================
 
-Checker les dépendance yarn non utilisé :
+Checker les dépendance npm non utilisé :
 -------------------
 
 ::
