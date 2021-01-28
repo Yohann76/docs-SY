@@ -27,6 +27,12 @@ Démarrer un projet npm ( avec les set config pré-rempli )
 
   npm init
   
+Chercher un package avec son nom partiel 
+----------------------------
+
+::
+
+  npm search <nompartiel>
 
   
 https://www.npmjs.com/package/npm-check
