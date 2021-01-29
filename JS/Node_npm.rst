@@ -34,6 +34,16 @@ Chercher un package avec son nom partiel
 
   npm search <nompartiel>
 
+
+Résoudre les dépendences avec un rollback :
+--------------------------
+
+::
+
+  npm dedupe
+  
+  
+  
   
 https://www.npmjs.com/package/npm-check
   
