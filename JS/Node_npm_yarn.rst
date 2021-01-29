@@ -1,6 +1,15 @@
 
-Node.JS & npm
+Node.JS / yarn & npm
 ===================
+
+
+npm et yarn sont deux outils similaire pour gerer les dépendances javascript d'un projet front.
+
+Installer des dépendances globales :
+----------------------------------------
+
+Pour avoir accès a une librairie depuis n'importe ou, il faut installer les dépendances globalement avec -g ou -- global
+
 
 Checker les dépendance npm non utilisé :
 -------------------
