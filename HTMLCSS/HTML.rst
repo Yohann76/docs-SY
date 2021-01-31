@@ -50,7 +50,15 @@ Inserstion image :
     <img src="images/montagne.jpg" alt="Photo de montagne" />
 
 
-Ligne horizontale :
+Balises Divers :
 ::
 
-   <hr>
+   <hr> // ligne horizontale
+   <audio> // fichier audio
+   <video> // fichier vidéo
+   
+   <form> // Formulaire
+   <input /> // Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
+   <select> Liste déroulante
+   <option> // Élément d'une liste déroulante
+   <optgroup> // Groupe d'éléments d'une liste déroulante
