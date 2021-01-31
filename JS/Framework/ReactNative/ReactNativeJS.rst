@@ -115,8 +115,49 @@ Spécificité de RN
 
 
 
-Préparer pour les stores
+Exporter l'app en APK 
 -------------------
+
+https://docs.expo.io/distribution/building-standalone-apps/
+
+
+configure app.json
+
+::
+
+     {
+   "expo": {
+    "name": "Your App Name",
+    "icon": "./path/to/your/app-icon.png",
+    "version": "1.0.0",
+    "slug": "your-app-slug",
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "versionCode": 1
+    }
+   }
+ }
+ 
+
+::
+
+    expo build:android -t apk
+    
+Récuperer la keystore ( indispensable pour les MAJ )
+
+::
+
+    expo fetch:android:keystore
+    
+    
+puis publier sur play store ( avec bannière, icone, screen, description,...
+
+
+
 `Lien OC`_
 
 
