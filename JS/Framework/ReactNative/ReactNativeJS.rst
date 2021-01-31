@@ -1,4 +1,4 @@
-ReactNative ( React (facebook) pour mobile 
+React Native ( react cross-platform )
 ===================
 
 Info : 
