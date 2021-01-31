@@ -43,6 +43,16 @@ Créer son App :
 
 
 
+Gestion assets
+-------------------
+
+- icone
+- Screen1, Screen2, Screen3
+- Bannière
+
+
+Pour inclure des images dans l'application, il faut faire un fichier _image.js, une constante objet qui possède toute les images. puis dans le code du composant, il faudra appeler { img.nameimage }
+
 Architecture de l'application 
 -------------------
 - Components : dossier des composants ( a refactoriser dès que possible
@@ -82,6 +92,8 @@ Le style du composant
         },
     })
 
+Utiliser flexbox pour styliser les view et les arrangements..
+
 
 Faire une requete 
 ----------------------
@@ -99,21 +111,6 @@ State et props
 
 This.state()
 This.setstate() 
-
-
-
-
-Composants JSX
-----------------
-
-
-
-
-Spécificité de RN
-------------------
-
-
-
 
 Exporter l'app en APK 
 -------------------
