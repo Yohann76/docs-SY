@@ -95,21 +95,6 @@ Créer un branche dev :
     git branch dev
     git checkout -b dev ( créer et switcher dessus )
 
-Lister les branches :
-::
-
-    git branch -v
-
-Changer la branche courante:
-::
-
-    git checkout dev
-
-Supprimer une branche :
-::
-
-    git branch -d dev
-
 Récupérer une branche du dépôt git distant en local :
 ::
 
@@ -122,17 +107,18 @@ Par exemple, pour fusionner la branche « dev» avec la branche « master » :
     git checkout master
     git merge dev
 
-Statistiques
-Connaitre le nombre de commit git par utilisateur :
+Gestion des branches :
 ::
 
-    git shortlog -sn
+  $ git checkout dev // Changer la branche courante
+  $ git branch -v // Lister les branches
+  $ git branch -d dev // Supprimer une branche ( dev ) 
 
 Commande diverse :
 ::
 
   $ git status // savoir le changement
-  $ git add * // ajouter à l'index 
-
+  $ git add * // ajouter à l'index
+  $ git shortlog -sn // Connaitre le nombre de commit git par utilisateur
 
 .. _`Gitlab`: https://gitlab.com/
