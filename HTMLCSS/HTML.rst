@@ -56,9 +56,11 @@ Balises Divers :
    <hr> // ligne horizontale
    <audio> // fichier audio
    <video> // fichier vidéo
-   
+
    <form> // Formulaire
    <input /> // Champ de formulaire (texte, mot de passe, case à cocher, bouton, etc.)
    <select> Liste déroulante
    <option> // Élément d'une liste déroulante
    <optgroup> // Groupe d'éléments d'une liste déroulante
+
+   <h1> <h2> <h3> <h4> <h5> <h6> // titre 
