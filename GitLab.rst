@@ -5,24 +5,24 @@ Gitlab
 
 Créer par Facebook en 2012.
 
-Language de requéte : 
+Language de requéte :
 Un langage de requête est un langage informatique utilisé pour accéder aux données d'une base de données ou d'autres systèmes d'information.
 
 Commande
 -------------------
 
- installer git avec la commande : 
+ installer git avec la commande :
  ::
 
     apt-get install git
 
-Se connecter : 
+Se connecter :
 ::
 
     git config --global user.name "ThorAndCo"
     git config --global user.email thorandco@domaine.fr
 
-Créer un nouveau projet vide sur un dépot git vide : 
+Créer un nouveau projet vide sur un dépot git vide :
 ::
 
     cd /home/git
@@ -45,7 +45,7 @@ Créer un nouveau projet vide sur un dépot git vide :
     git remote add git.domaine.fr/thorandco/monprojet.git
     git pull -u origin master
 
-Commiter sur le dépôt git local : 
+Commiter sur le dépôt git local :
 ::
 
     git commit --amend -m "Ajout du fichier monfichier.txt pour le projet"
@@ -55,14 +55,14 @@ Voir l’historique des commits :
 
     git log
 
-Annuler un commit : 
+Annuler un commit :
 ::
 
-   git reset HEAD 
-   git reset HEAD nomdufichier.txt ( sur un fichier précis ) 
+   git reset HEAD
+   git reset HEAD nomdufichier.txt ( sur un fichier précis )
 
 
-Récupérer les sources du dépôt distants: 
+Récupérer les sources du dépôt distants:
 ::
 
     git fetch
@@ -80,17 +80,22 @@ Annuler un commit en particulier déjà pushé:
     git revert XXX
     git push
 
+Cloner :
+
+Cloner un projet:
+::
+
+  git clone adresse_git_projet
 
 Les branches :
-
 
 Créer un branche dev :
 ::
 
     git branch dev
-    git checkout -b dev ( créer et switcher dessus ) 
+    git checkout -b dev ( créer et switcher dessus )
 
-Lister les branches : 
+Lister les branches :
 ::
 
     git branch -v
@@ -122,6 +127,6 @@ Connaitre le nombre de commit git par utilisateur :
 ::
 
     git shortlog -sn
- 
+
 
 .. _`Gitlab`: https://gitlab.com/
