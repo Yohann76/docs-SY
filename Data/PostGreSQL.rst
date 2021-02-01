@@ -14,6 +14,12 @@ Sur le shell, les commandes psql sont disponibles
 
   $ create database bddDragDrop;
 
+Ligne de connexion à la BDD
+::
+
+  DATABASE_URL=postgres://dauser:dapassword@localhost:5432/dadb
+
+
 supprimer une bdd
 ::
 
