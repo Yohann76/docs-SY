@@ -1,4 +1,4 @@
-ReactNative ( React (facebook) pour mobile 
+React Native ( react cross-platform )
 ===================
 
 Info : 
@@ -43,6 +43,16 @@ Créer son App :
 
 
 
+Gestion assets
+-------------------
+
+- icone
+- Screen1, Screen2, Screen3
+- Bannière
+
+
+Pour inclure des images dans l'application, il faut faire un fichier _image.js, une constante objet qui possède toute les images. puis dans le code du composant, il faudra appeler { img.nameimage }
+
 Architecture de l'application 
 -------------------
 - Components : dossier des composants ( a refactoriser dès que possible
@@ -82,6 +92,8 @@ Le style du composant
         },
     })
 
+Utiliser flexbox pour styliser les view et les arrangements..
+
 
 Faire une requete 
 ----------------------
@@ -100,23 +112,49 @@ State et props
 This.state()
 This.setstate() 
 
-
-
-
-Composants JSX
-----------------
-
-
-
-
-Spécificité de RN
-------------------
-
-
-
-
-Préparer pour les stores
+Exporter l'app en APK 
 -------------------
+
+https://docs.expo.io/distribution/building-standalone-apps/
+
+
+configure app.json
+
+::
+
+     {
+   "expo": {
+    "name": "Your App Name",
+    "icon": "./path/to/your/app-icon.png",
+    "version": "1.0.0",
+    "slug": "your-app-slug",
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname",
+      "versionCode": 1
+    }
+   }
+ }
+ 
+
+::
+
+    expo build:android -t apk
+    
+Récuperer la keystore ( indispensable pour les MAJ )
+
+::
+
+    expo fetch:android:keystore
+    
+    
+puis publier sur play store ( avec bannière, icone, screen, description,...
+
+
+
 `Lien OC`_
 
 
