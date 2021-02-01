@@ -128,5 +128,11 @@ Connaitre le nombre de commit git par utilisateur :
 
     git shortlog -sn
 
+Commande diverse :
+::
+
+  $ git status // savoir le changement
+  $ git add * // ajouter à l'index 
+
 
 .. _`Gitlab`: https://gitlab.com/
