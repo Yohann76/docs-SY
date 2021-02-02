@@ -12,58 +12,33 @@ Sur le shell, les commandes psql sont disponibles
 ( taper plusieurs fois entrée pour les parametre par defaut, et taper le mot de passe ):
 ::
 
-  $ create database bddDragDrop;
-
 Ligne de connexion à la BDD
 ::
 
-  DATABASE_URL=postgres://dauser:dapassword@localhost:5432/dadb
+  // DATABASE_URL=postgres://dauser:dapassword@localhost:5432/dadb
+  Server : localhost ( default )
+  Database : PostGreSQL ( default )
+  Port : 5432 ( default )
+  Username : dauser
+  password : dapassword
 
-
-supprimer une bdd
+Divers commande
 ::
-
-  $ drop database bddDragDrop;
+  $ create database bddDragDrop; // créer une bdd
+  $ drop database bddDragDrop; // supprimer une bdd
+  $ \l // lister les bases de données
+  $ \d nametable // Lister les champs d'une table
+  $ \c bddDragDrop // se connecter a la base
+  $ \d // Lister les tables
+  $ create table books(title varchar(128), author varchar(128), price int, date date); // créer une table
+  $ DROP TABLE  alembic_version CASCADE; // supprimer une table
 
 Se déconnecter d'une bdd:
 ::
 
   relancer le shell
 
-
-lister les bdd:
-::
-
-  \l
-
-Lister les champs d'une table:
-::
-
-  $ \d nametable
-
-
-se connecter a la base :
-::
-
-  $ \c bddDragDrop
-
-créer une table :
-::
-
-  $ create table books(title varchar(128), author varchar(128), price int, date date);
-
-Lister les tables :
-::
-
-  $ \d
-
-supprimer une table
-::
-
-  $ DROP TABLE  alembic_version CASCADE;
-
-
-selection:
+Les Select :
 ::
 
   $ select * from books;
