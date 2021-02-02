@@ -117,16 +117,19 @@ Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machi
 
 ANNEXE:
 -------------------
-docker-compose up --build  ( couteau suisse )
-démarrer un conteneur nginx $ docker run --name mynginx -P -d nginx
-docker exec -it ‘id’ bash
-Lancer la machine : docker-machine start default
-Se connecter avec le docker hub : docker login
-Donner les droits au daemon : sudo usermod -aG docker yohann ( nom séssion je pense )
-down les volumes : docker-compose down --volumes
-forcer à recréer : docker-compose up -d --build --force-recreate
-Rentrer dans un container  : docker exec -it nginx bash
-Virer cache : docker system prune --no-cache
+::
+
+  $ docker-compose up --build
+  $ démarrer un conteneur nginx $ docker run --name mynginx -P -d nginx
+  $ docker exec -it ‘id’ bash
+  $ docker-machine start default // Lancer la machine
+  Se connecter avec le docker hub : docker login
+  Donner les droits au daemon : sudo usermod -aG docker yohann ( nom séssion je pense )
+  down les volumes : docker-compose down --volumes
+  forcer à recréer : docker-compose up -d --build --force-recreate
+  Rentrer dans un container  : docker exec -it nginx bash
+  Virer cache : docker system prune --no-cache
+  $ docker-compose logs app // Voir les logs du lancement 
 
 
 Terminale ToolBox Docker :
