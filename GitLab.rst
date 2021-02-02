@@ -80,20 +80,7 @@ Annuler un commit en particulier déjà pushé:
     git revert XXX
     git push
 
-Cloner :
 
-Cloner un projet:
-::
-
-  git clone adresse_git_projet
-
-Les branches :
-
-Créer un branche dev :
-::
-
-    git branch dev
-    git checkout -b dev ( créer et switcher dessus )
 
 Récupérer une branche du dépôt git distant en local :
 ::
@@ -112,7 +99,7 @@ Gestion des branches :
 
   $ git checkout dev // Changer la branche courante
   $ git branch -v // Lister les branches
-  $ git branch -d dev // Supprimer une branche ( dev ) 
+  $ git branch -d dev // Supprimer une branche ( dev )
 
 Commande diverse :
 ::
@@ -120,5 +107,8 @@ Commande diverse :
   $ git status // savoir le changement
   $ git add * // ajouter à l'index
   $ git shortlog -sn // Connaitre le nombre de commit git par utilisateur
+  $ git branch dev // créer une branche dev
+  $ git checkout -b dev // créer et switcher dessus
+  $ git clone adresse_git_projet // Cloner un projet 
 
 .. _`Gitlab`: https://gitlab.com/
