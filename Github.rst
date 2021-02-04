@@ -62,18 +62,15 @@ Corriger le message du dernier commit :
 
 mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
 
-
 revenir sur un commit précédent  :
 ::
 
    git checkout SHADuCommit ( 5e78e8e389e28cf9ea91708eb37abfd975ffce31 par exemple )
 
-
 Créer un commit qui fait l'inverse du précédent ( attention cela crée un nouveau commit )  :
 ::
 
    git revert SHADuCommit
-
 
 Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait :
 ::
@@ -90,7 +87,6 @@ Désindexer un fichier ajouté a l'index pour un commit
 
     git restore --staged <fichier>...
 
-
 Synchroniser une branche avec une autre branche
 ::
    git pull origin master ou dev...
@@ -102,33 +98,18 @@ Retirer un fichier ou dossier de l'index aprés un git add * :
     git reset monfichieroudossier
 
 
-Récupérez des modification
--------------------
-
-Pour avoir la dernière version du repo en ligne sur le local  ( synchroniser )
-::
-
-   $ git pull origin master // ( pour être à jour )
-
-Créer une branche :
+Commande divers :
 -------------------
 ::
 
    $ git branch // voir la branche actuelle et toutes les branch
    $ git branch mon-test // Créer une nouvelle branch nommé "mon-test"
-   $ git checkout mon-test // pour changer de branch
+   $ git checkout mon-test // pour changer de branch, se positionner sur une branch
    $ git branch -D mon-test // Supprimer une branche
    $ git branch -b mon-test // Créer une branche et aller dessus directement
    $ git remote show origin // voir la liste des branches distantes
-
-Fusionnez des branches :
--------------------
-
-Se positionner sur master
-::
-
-   $ git checkout brancheA // (ou master)
    $ git merge brancheB // La B rentre dans A ou master
+   $ git pull origin master // Récuperer le code de master, copier une branch
 
 ( voir pour git push origin master aprés pour effectuer la merge )
 ( ou faire une demande de pull request sur git )
