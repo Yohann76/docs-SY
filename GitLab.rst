@@ -70,13 +70,6 @@ Annuler un commit en particulier déjà pushé:
     git revert XXX
     git push
 
-Merger (fusionner) une branche avec une autre
-Par exemple, pour fusionner la branche « dev» avec la branche « master » :
-::
-
-    git checkout master
-    git merge dev
-
 Gestion des branches :
 ::
 
@@ -84,6 +77,7 @@ Gestion des branches :
   $ git branch -v // Lister les branches
   $ git branch -d dev // Supprimer une branche ( dev )
   $ git checkout -b dev origin/dev // Récupérer une branche du dépôt git distant en local ( déconseiller )
+  $ git merge dev // se rendre sur master, puis effectuer cette commande pour merger dev dans master
 
 Commande diverse :
 ::
