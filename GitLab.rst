@@ -14,13 +14,9 @@ Commande
  installer git avec la commande :
  ::
 
-    apt-get install git
-
-Se connecter :
-::
-
-    git config --global user.name "ThorAndCo"
-    git config --global user.email thorandco@domaine.fr
+    $ apt-get install git
+    $ git config --global user.name "ThorAndCo" // connecter
+    $ git config --global user.email thorandco@domaine.fr // connecter
 
 Créer un nouveau projet vide sur un dépot git vide :
 ::
@@ -50,7 +46,7 @@ Commiter sur le dépôt git local :
 
     git commit --amend -m "Ajout du fichier monfichier.txt pour le projet"
 
-Voir l’historique des commits :
+Information :
 ::
 
     git log
@@ -61,17 +57,11 @@ Annuler un commit :
    git reset HEAD
    git reset HEAD nomdufichier.txt ( sur un fichier précis )
 
-
 Récupérer les sources du dépôt distants:
 ::
 
     git fetch
     git pull origin master
-
-Pusher ses commit sur le dépot distant:
-::
-
-    git push origin master
 
 Annuler un commit en particulier déjà pushé:
 ::
@@ -79,13 +69,6 @@ Annuler un commit en particulier déjà pushé:
     git log
     git revert XXX
     git push
-
-
-
-Récupérer une branche du dépôt git distant en local :
-::
-
-    git checkout -b dev origin/dev
 
 Merger (fusionner) une branche avec une autre
 Par exemple, pour fusionner la branche « dev» avec la branche « master » :
@@ -100,6 +83,7 @@ Gestion des branches :
   $ git checkout dev // Changer la branche courante
   $ git branch -v // Lister les branches
   $ git branch -d dev // Supprimer une branche ( dev )
+  $ git checkout -b dev origin/dev // Récupérer une branche du dépôt git distant en local ( déconseiller )
 
 Commande diverse :
 ::
@@ -109,6 +93,7 @@ Commande diverse :
   $ git shortlog -sn // Connaitre le nombre de commit git par utilisateur
   $ git branch dev // créer une branche dev
   $ git checkout -b dev // créer et switcher dessus
-  $ git clone adresse_git_projet // Cloner un projet 
+  $ git clone adresse_git_projet // Cloner un projet
+  $ git push origin master // push ses commit sur la branch master
 
 .. _`Gitlab`: https://gitlab.com/
