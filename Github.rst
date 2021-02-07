@@ -91,12 +91,6 @@ Synchroniser une branche avec une autre branche
 ::
    git pull origin master ou dev...
 
-Retirer un fichier ou dossier de l'index aprés un git add * :
--------------------
-::
-
-    git reset monfichieroudossier
-
 
 Commande divers :
 -------------------
@@ -110,6 +104,7 @@ Commande divers :
    $ git remote show origin // voir la liste des branches distantes
    $ git merge brancheB // La B rentre dans A ou master
    $ git pull origin master // Récuperer le code de master, copier une branch
+   $ git reset monfichieroudossier // Retirer un fichier ou dossier de l'index aprés un git add *
 
 ( voir pour git push origin master aprés pour effectuer la merge )
 ( ou faire une demande de pull request sur git )
