@@ -272,8 +272,24 @@ Architecture de l'application
 - .gitignore
 - package.json ( avec serve pour l'env de developpement, et build )
 
-Composant monofichier
+Apell API avec Axios ( avec bearer_token)
 =============================
+
+  const TOKEN = '17e30c48-3d17-394d-b224-72611bcab21f'; // Token Test
+  const BASEURL = 'https://api.insee.fr/entreprises/sirene/V3';
+  const ENDPOINT = '/siret?q=(activitePrincipaleUniteLegale:85.59A)AND(codeCommuneEtablissement:[76000TO76999])';
+
+  axios.create({
+       baseURL: BASEURL,
+       headers: {
+           'Content-Type': 'application/json',
+           'Authorization': 'Bearer '+TOKEN
+       }
+   })
+   .get(ENDPOINT)
+   .then(res => {
+           console.log(res);
+   });
 
 .. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
 .. _`Vue OC cours`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862871-creez-un-nouveau-projet-avec-vue-cli
