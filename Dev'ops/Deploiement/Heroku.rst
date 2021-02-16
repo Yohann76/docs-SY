@@ -1,23 +1,34 @@
-Heroku : 
+Heroku :
 ===================
 
 `Heroku docs`_
 
-Step : 
+Symfony : `Deployer avec SF4 `_
 -------------------
 
-`Deployer avec SF4 `_
+  $ heroku create
+
+  // for /public on symfony
+  $ echo 'web: heroku-php-apache2 public/' > Procfile
+  $ git add Procfile
+  $ git commit -m "Heroku Procfile"
+
+  $ heroku config:set APP_ENV=prod // change environment variable
+  $ git push heroku master // push or deploy
+  $ heroku open // open new windows
 
 
-Commande : 
+
+
+Commande :
 -------------------
 ::
     heroku create
     git remote-set-url heroku <lien obtenu précédement de git>
     heroku config:set DATABASE_URL=......
     Heroku open // ouvrir le lien de la page
-    heroku ps:exec  // Se connencter a la machine // SSH 
-    git push heroku master // pousher sur la branch heroku 
-    
+    heroku ps:exec  // Se connencter a la machine // SSH
+    git push heroku master // pousher sur la branch heroku
+
 .. _`Heroku docs`: https://devcenter.heroku.com/categories/reference
 .. _`Deployer avec SF4`: https://devcenter.heroku.com/articles/deploying-symfony4
