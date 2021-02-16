@@ -7,25 +7,16 @@ Symfony
 Créer un projet
 ****************
 
-Avec Composer :
-================
+
 Créer un projet simple ( API ou format court )
-::
 
-    $ composer create-project symfony/skeleton myProject
-
-Créer un projet complexe ( Application, librairie deja présente )
-.. code-block:: terminal
-
-    $ composer create-project symfony/website-skeleton my_project_name
-
-Avec Symfony :
-===============
 
 .. code-block:: terminal
 
-    $ symfony new my_project_name --full ( Version Website )
-    $ symfony new my_project_name ( créer un projet avec API ou simple )
+    $ composer create-project symfony/skeleton myProject // composer API
+    $ composer create-project symfony/website-skeleton my_project_name // composer website
+    $ symfony new my_project_name --full // Symfony website ( recommander )
+    $ symfony new my_project_name // symfony API
 
 composer install ( installer les librairies du composer.json )
 composer update ( update les librairies du composer.json )
