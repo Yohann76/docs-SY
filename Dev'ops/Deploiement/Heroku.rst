@@ -17,9 +17,6 @@ Symfony : `Deployer avec SF4 `_
   $ git push heroku master // push or deploy
   $ heroku open // open new windows
 
-
-
-
 Commande :
 -------------------
 ::
@@ -29,6 +26,13 @@ Commande :
     Heroku open // ouvrir le lien de la page
     heroku ps:exec  // Se connencter a la machine // SSH
     git push heroku master // pousher sur la branch heroku
+
+
+Divers :
+-------------------
+    $ heroku ps:scale web=1 // vérifier qu'une instance est en cours
+    $ heroku logs --tail // voir les logs en cours
+
 
 .. _`Heroku docs`: https://devcenter.heroku.com/categories/reference
 .. _`Deployer avec SF4`: https://devcenter.heroku.com/articles/deploying-symfony4
