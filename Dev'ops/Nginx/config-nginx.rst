@@ -1,5 +1,12 @@
 this is a nginx configuration
 
+## Reload nginx 
+
+::
+
+        nginx -t && service nginx reload
+        
+        sudo service start nginx
 
 ## install a SSL certificate : 
 in etc/nginx/sites-available
