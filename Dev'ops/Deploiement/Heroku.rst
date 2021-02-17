@@ -32,7 +32,9 @@ Divers :
 -------------------
     $ heroku ps:scale web=1 // vérifier qu'une instance est en cours
     $ heroku logs --tail // voir les logs en cours
-
+    $ heroku restart // restart Heroku
+    $ heroku run composer install // le prefixe heroku run permet d'executer sur le server heroku
+    $ heroku config // voir la liste des config 
 
 .. _`Heroku docs`: https://devcenter.heroku.com/categories/reference
 .. _`Deployer avec SF4`: https://devcenter.heroku.com/articles/deploying-symfony4

@@ -105,6 +105,7 @@ Commande divers :
    $ git merge brancheB // La B rentre dans A ou master
    $ git pull origin master // Récuperer le code de master, copier une branch
    $ git reset monfichieroudossier // Retirer un fichier ou dossier de l'index aprés un git add *
+   $ git rev-list --count HEAD // compter le nombre de commit sur la branch actuelle ls
 
 ( voir pour git push origin master aprés pour effectuer la merge )
 ( ou faire une demande de pull request sur git )
