@@ -80,5 +80,38 @@ deployment avec Nginx, si problème de 403 forbidden, voir/supprimer le défaut 
 Faire un composer install manuellement par SSH
 
 
+Clonner un projet privé  :
+-------------------
+vars_prompt:
+  - name: "githubuser"
+    prompt: "Enter your gitlab username"
+    private: no
+  - name: "githubpassword"
+    prompt: "Enter your gitlab password"
+    private: yes
+    
+# 4 next step for clone repo git private
+    - name: install pip3
+      apt: name=python3-pip state=present
+
+    - name: install pexpect #for clone
+      pip:
+        name: pexpect
+      become: yes
+
+    - name: delete old folders
+      file:
+        state: absent
+        path: "{{ symfony_root_dir }}/"
+
+    - name: Git clone
+      expect:
+        command: git clone https://gitlab.com/ozez/blitz.git "{{ symfony_root_dir }}"
+        responses:
+          Username: "{{ githubuser }}" # Username is a regex
+          Password: "{{ githubpassword }}" # Password is a regex
+        #no_log: true
+
+
 .. _`Ansible docs`: https://docs.ansible.com/ansible/latest/index.html
 .. _`Ansible Galaxy`: https://galaxy.ansible.com/
