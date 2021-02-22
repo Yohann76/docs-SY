@@ -172,7 +172,11 @@ Annotations des routes  :
 	* @Route("/admin/comment", name="comment_admin")
 	* @IsGranted("ROLE_ADMIN")
 	*/
-( nécessite : composer require annotations )
+
+nécessite :
+ composer require annotations
+ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
 
 
 
