@@ -130,6 +130,11 @@ Changer le fichier d'arrivé de linux:
   - acceder a ~/.bashrc
   - ajouter la ligne cd /mon/dossier/arriver/..
 
+Copier
+-------
+
+Cp fichier 1 fichier2
+
 
 Créer un ScriptPowerShell
 ---------------------------
