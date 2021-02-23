@@ -47,5 +47,25 @@ Utilisation
 
 - mongo --bind_ip_all
 
+/etc/mongod.conf configuration
+===================
+
+::
+
+      systemLog:
+         destination: file
+         path: "/var/log/mongodb/mongod.log"
+         logAppend: true
+      storage:
+         journal:
+            enabled: true
+      processManagement:
+         fork: true
+      net:
+         bindIp: 127.0.0.1
+         port: 27017
+      setParameter:
+         enableLocalhostAuthBypass: false
+      ...
 
 
