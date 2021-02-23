@@ -36,6 +36,14 @@ Démarrer un projet npm ( avec les set config pré-rempli )
 
   npm init
   
+Recréer un projet npm ( peut résoudre des bugs )
+-------------
+
+::
+
+  npm rebuild
+  
+
 Chercher un package avec son nom partiel 
 ----------------------------
 
