@@ -45,5 +45,7 @@ Utilisation
    2. mongo --host 198.51.100.1
    3. mongod --bind_ip localhost,My-Example-Associated-Hostname
 
+- mongo --bind_ip_all
+
 
 
