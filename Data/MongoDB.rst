@@ -40,5 +40,10 @@ Utilisation
 - créer une donnée : db.myCollection.insertOne( { x: 1 } );
 - trouver une donnée : db.getCollection("stats").find()
 
+- se lier a une ip 
+   1. mongo --host My-Example-Associated-Hostname
+   2. mongo --host 198.51.100.1
+   3. mongod --bind_ip localhost,My-Example-Associated-Hostname
+
 
 
