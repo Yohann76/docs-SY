@@ -98,3 +98,5 @@ Utilisation
       #auditLog:
 
       #snmp:
+      
+reset : rm -Rf mongodb/*
