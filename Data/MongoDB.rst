@@ -75,12 +75,13 @@ Utilisation
       # network interfaces
       net:
         port: 27017
-        bindIp: 127.0.0.1
+        bindIp: 127.0.0.1, /tmp/mongod.sock, 10.0.86.86
 
 
       # how the process runs
       processManagement:
         timeZoneInfo: /usr/share/zoneinfo
+        fork: true
 
       setParameter:
         enableLocalhostAuthBypass: false
@@ -97,5 +98,3 @@ Utilisation
       #auditLog:
 
       #snmp:
-
-
