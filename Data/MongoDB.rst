@@ -93,6 +93,12 @@ Utilisation
    
 ::
 
+Restart le service 
+
+::
+
+   sudo systemctl restart mongod
+
    mongo --bind_ip 127.0.0.1
 
 /etc/mongod.conf configuration
