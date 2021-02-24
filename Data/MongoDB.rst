@@ -11,14 +11,20 @@ MongoDB
 ( L'éxécutable shell est dans le /bin ) 
 
 1. creer une base de donnée 
-   - use bddTest
+::
+
+   use bddTest
    
 2. créer une collection
-   - db.createCollection(name, options)
+::
+   
+   db.createCollection(name, options)
    
 3. URI de db
-   - mongodb://mongodb0.example.com:27017  or 
-   - mongodb://localhost:27017/shifumi
+::
+
+   mongodb://mongodb0.example.com:27017 
+   mongodb://localhost:27017/shifumi
 
    
 MongoDB sur un debian INSTALLATION
