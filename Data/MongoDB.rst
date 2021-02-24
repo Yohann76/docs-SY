@@ -50,6 +50,11 @@ Accès a mongoShell
 ::
 
    Mongo
+   
+Autoriser toute les IP
+::
+
+   mongod --bind_ip_all
 
 Utilisation
 ===================
