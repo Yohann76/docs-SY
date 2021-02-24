@@ -167,6 +167,11 @@ installer une surcouche à octopi  :
 spécificité de Debian
 -------------------
 
+lister les user 
+::
+
+   cat /etc/passwd
+
 spécificité de KaliLinux
 -------------------
 
