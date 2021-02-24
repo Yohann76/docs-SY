@@ -21,3 +21,82 @@ MongoDB
    - mongodb://localhost:27017/shifumi
 
    
+MongoDB sur un debian
+===================
+
+- echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list 
+- sudo apt-get update
+- sudo apt-get install -y mongodb-org
+- démarrer un shell mongo : mongo
+- sudo systemctl restart mongod
+
+Utilisation
+===================
+
+- créer ou utiliser une base : use mybdd
+- se mettre sur un port :  mongo --port 28015
+- se connecter depuis une autre machine : mongo --host mongodb0.example.com:28015
+- connexion string : mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
+- créer une donnée : db.myCollection.insertOne( { x: 1 } );
+- trouver une donnée : db.getCollection("stats").find()
+
+- se lier a une ip 
+   1. mongo --host My-Example-Associated-Hostname
+   2. mongo --host 198.51.100.1
+   3. mongod --bind_ip localhost,My-Example-Associated-Hostname
+
+- mongo --bind_ip_all
+
+/etc/mongod.conf configuration
+===================
+
+::
+
+      # mongod.conf
+
+      # for documentation of all options, see:
+      #   http://docs.mongodb.org/manual/reference/configuration-options/
+
+      # Where and how to store data.
+      storage:
+        dbPath: /var/lib/mongodb
+        journal:
+          enabled: true
+      #  engine:
+      #  mmapv1:
+      #  wiredTiger:
+
+      # where to write logging data.
+      systemLog:
+        destination: file
+        logAppend: true
+        path: /var/log/mongodb/mongod.log
+
+      # network interfaces
+      net:
+        port: 27017
+        bindIp: 127.0.0.1, /tmp/mongod.sock, 10.0.86.86
+
+
+      # how the process runs
+      processManagement:
+        timeZoneInfo: /usr/share/zoneinfo
+        fork: true
+
+      setParameter:
+        enableLocalhostAuthBypass: false
+      #security:
+
+      #operationProfiling:
+
+      #replication:
+
+      #sharding:
+
+      ## Enterprise-Only Options:
+
+      #auditLog:
+
+      #snmp:
+      
+reset : rm -Rf mongodb/*
