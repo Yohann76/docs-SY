@@ -159,3 +159,12 @@ Restart le service
       #snmp:
       
 reset : rm -Rf mongodb/*
+
+
+lancer le serveur avec terminal éteint : 
+::
+
+   nohup mongod --bind_ip 0.0.0.0 &
+   
+   
+( nohup permet d'executer un processus détaché quand la console est fermé ) 
