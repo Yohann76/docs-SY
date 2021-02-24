@@ -113,4 +113,9 @@ https://www.npmjs.com/package/npm-check
   
 
 
+Lancer une instance plus complexe en cas de bug :
+::
+
+  pm2 start npm --name wikirunParse -- run npm start
+
   
