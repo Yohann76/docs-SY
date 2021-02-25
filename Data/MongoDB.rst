@@ -202,7 +202,7 @@ Mode admin
    mongo-express -a -u superuser -p password
    
 
-exemple fonctionnel (  : 
+exemple fonctionnel  : 
 ::
 
    mongo-express -a -U "mongodb://51.83.108.58:27017/wikirun-db"
