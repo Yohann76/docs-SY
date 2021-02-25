@@ -179,6 +179,13 @@ https://github.com/mongo-express/mongo-express
 
    yarn global add mongo-express
    
+- copier default.config.js avec config.js, puis parametrer la connexion dans config.js 
+
+Lancer la configuration 
+::
+
+   mongo-express
+
 Accès a une base sur une application ( installation non globale ) 
 ::
 
