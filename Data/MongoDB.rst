@@ -168,3 +168,30 @@ lancer le serveur avec terminal éteint :
    
    
 ( nohup permet d'executer un processus détaché quand la console est fermé ) 
+
+
+Mongo Express ( équivalent phpmyAdmin for mongo ) 
+================================================
+
+https://github.com/mongo-express/mongo-express
+
+::
+
+   yarn global add mongo-express
+   
+Accès a une base sur une application ( installation non globale ) 
+::
+
+   mongo-express -u user -p password -d database
+   
+Accès a une base distante 
+::
+
+   mongo-express -u user -p password -d database -H mongoDBHost -P mongoDBPort
+   
+Mode admin
+::
+
+   mongo-express -a -u superuser -p password
+   
+
