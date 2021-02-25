@@ -20,6 +20,11 @@ Lister les processus sur un port
 
    lsof -i tcp:8080
 
+
+
+--------------------
+
+
 ::
 
    Etre en “root” en tout temps : sudo su
