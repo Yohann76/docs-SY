@@ -77,12 +77,45 @@ Lister les instances pm2
 Démarrer un projet pm2
 ::
 
-  pm2 list
+  pm2 start
+  
+
+Faire une image des processus et les redémarrer si la machine bug ou s'éteint : 
+::
+
+  pm2 save
+  
+  
+Configuration d'un fichier ecosystem.config.js 
+::
+  module.exports = {
+    apps : [{
+      name: "wikirun-parse-server",
+      script: "yarn",
+      args: "start",
+      cwd:"/var/www/wikirun-parse-server/index.js",
+      autorestart: true,
+      env: {
+        NODE_ENV: 'development'
+      },
+      env_production: {
+        NODE_ENV: 'production',
+        //API_URL: 'YOUR ENV URL',
+        PORT:1337
+      }
+    }]
+  };
+
   
   
   
 https://www.npmjs.com/package/npm-check
   
 
+
+Lancer une instance plus complexe en cas de bug :
+::
+
+  pm2 start npm --name wikirunParse -- run npm start
 
   
