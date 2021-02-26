@@ -6,6 +6,25 @@ Linux
 
 Commande Généraliste
 -------------------
+
+Gestion des ports et des processus 
+-------------------
+
+Supprimer un processus avec un type 
+::
+
+   pkill -f nginx
+   
+Lister les processus sur un port 
+::
+
+   lsof -i tcp:8080
+
+
+
+--------------------
+
+
 ::
 
    Etre en “root” en tout temps : sudo su
