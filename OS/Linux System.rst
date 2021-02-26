@@ -21,8 +21,18 @@ Lister les processus sur un port
    lsof -i tcp:8080
 
 
-
+Utilitaire 
 --------------------
+
+Utiliser une commande ou un serveur actif ( mongoDB, instance node,... ) même après que la console soit fermé
+::
+
+   nohup <maCommande> &
+
+
+
+
+-----------------------
 
 
 ::
