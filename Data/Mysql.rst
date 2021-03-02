@@ -19,6 +19,10 @@ changer un mot de passe d'un user:
 
    UPDATE mysql.user SET password=PASSWORD("wikipass") where User="zabbix";
    
+::
+
+   UPDATE mysql.user SET passwd="wikipass" where User="zabbix";
+   
 
 changer le type de mot de passe :
 ::
