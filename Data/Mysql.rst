@@ -14,6 +14,13 @@ Voir la liste des database
 
     $ mysql> show databases;
 
+
+changer le mode de mot de passe 
+::
+
+   ALTER USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'password';
+   
+
 Selectionner une database
 ::
 
