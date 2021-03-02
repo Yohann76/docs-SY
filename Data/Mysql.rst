@@ -18,7 +18,7 @@ Voir la liste des database
 changer le mode de mot de passe 
 ::
 
-   ALTER USER 'username'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'password';
+   ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass';
    
 
 Selectionner une database
