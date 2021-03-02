@@ -30,6 +30,12 @@ changer le type de mot de passe :
    ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass';
    
 
+sauvegarder les modifications en ligne de commande :
+::
+
+   FLUSH PRIVILEGES;
+   
+
 Selectionner une database
 ::
 
