@@ -14,8 +14,13 @@ Voir la liste des database
 
     $ mysql> show databases;
 
+changer un mot de passe d'un user:
+::
 
-changer le mode de mot de passe 
+   UPDATE mysql.user SET password=PASSWORD("wikipass") where User="zabbix";
+   
+
+changer le type de mot de passe :
 ::
 
    ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass';
