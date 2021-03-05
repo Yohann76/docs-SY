@@ -153,3 +153,8 @@ Configuration webpack.config.js fonctionnel :
 
   ;
   module.exports = Encore.getWebpackConfig();
+  
+  
+  ::
+  
+    yarn encore dev
