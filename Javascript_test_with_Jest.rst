@@ -5,11 +5,17 @@ Jest ( Js testing )
 
   npm install jest --save-dev
 
-lancer les tests
+package.json script : 
+::
+
+  "test" : "jest"
+  
+
+lancer les tests 
 
 ::
 
-  jest
+  yarn test // ou   yarn jest --coverage
   
 
 les tests sont placé dans /tests/ et doivent avoir un nom en *.spec.js
