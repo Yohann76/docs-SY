@@ -7,9 +7,7 @@ Symfony
 Créer un projet
 ****************
 
-
 Créer un projet simple ( API ou format court )
-
 
 .. code-block:: terminal
 
@@ -23,6 +21,7 @@ composer update ( update les librairies du composer.json )
 
 Lancer le serveur interne de Symfony
 .. code-block:: terminal
+
     $ php bin/console server:run
     $ php -S 127.0.0.1:8000 -t public
     $ symfony server:start --no-tls
@@ -173,12 +172,9 @@ Annotations des routes  :
 	* @IsGranted("ROLE_ADMIN")
 	*/
 
-nécessite :
+Nécessite :
  composer require annotations
  use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
-
-
-
 
 
 Code lié aux requêtes via le repository
@@ -197,11 +193,8 @@ Code lié aux requêtes via le repository
 	   ;
 	}
 
-Fixture
+Fixtures
 --------
-
-Besoin de :
-Exportation en production
 
 Installation / création de la bdd avec les entités :
 ::
@@ -217,12 +210,11 @@ Charger les fixtures :
 	$ php bin/console doctrine:fixtures:load
 	$ php bin/console server:run
 
-
 Config Symfony :
 ---------------
 Les recettes de config sont généré par symfony/flex lors de l'instalation d'un paquet
 
-Ajouter une déconnexion dans security.yaml
+Ajouter une déconnexion dans security.yaml :
 ::
 
 	logout:
@@ -259,13 +251,12 @@ utiliser un thème de formulaire twig
 serveur interne de symfony  : ( source )
 ::
 
-	$symfony serve ( Lancer le serveur ) ( option -d )
-	$symfony server:stop ( stopper le serveur )
-	$symfony local:php:list ( lister les version de php dispo pour le server de sf )
+	$ symfony serve ( Lancer le serveur ) ( option -d )
+	$ symfony server:stop ( stopper le serveur )
+	$ symfony local:php:list ( lister les version de php dispo pour le server de sf )
 
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve )
 Ou créer une “.php-version” qui contient “7.3.5”
-
 
 Code divers
 ------------
@@ -290,7 +281,6 @@ retourner a la page précedente :
 ::
 
 	return $this->redirect($_SERVER['HTTP_REFERER']);
-
 
 Création espace de connexion
 ------------------------------------
