@@ -26,3 +26,22 @@ Générer du côté vue :
 	   {{ form_widget(form) }}
 
 	{{  form_end(form) }}
+
+Type de champ
+----------
+
+ChoiceType
+----------
+::
+
+  ->add('Roles', ChoiceType::class, [
+      'required' => true,
+      'multiple' => false,
+      'expanded' => false,
+      'choices'  => [
+          'Administrateur' => 'ROLE_ORGA_ADMIN', # admin orga
+          'DPO' => 'ROLE_ORGA_DPO', # DPO orga
+          'équipier DPO' => 'ROLE_ORGA_DPO_TEAM', # Team DPO
+          'équipier Organisation' => 'ROLE_ORGA_TEAM',  # Team Orga
+      ],
+  ])
