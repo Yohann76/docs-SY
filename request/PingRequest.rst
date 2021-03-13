@@ -1,3 +1,6 @@
+PingRequest - Test de charge
+----------
+
 Requete de ping lourde pour faire de la charge :
 ::
 
