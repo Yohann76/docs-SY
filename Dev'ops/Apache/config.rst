@@ -1,3 +1,8 @@
+dossier de configuration :
+::
+
+  /etc/apache2/sites-enabled/
+
 ::
 
   <VirtualHost 172.20.30.40>
@@ -7,3 +12,9 @@
       RewriteRule "." "/www/subdomain/index.html"
       # ...
   </VirtualHost>
+  
+  
+Réécrire une URL : 
+::
+  
+  Alias "/url" "/urlNext"
