@@ -21,6 +21,7 @@ Réécrire une URL :
   
 
 HTTPS:
+( avec l'activation console : a2enmod ssl ) 
 ::
 
   # vhost https
