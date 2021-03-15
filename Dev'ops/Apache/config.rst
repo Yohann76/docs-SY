@@ -18,3 +18,22 @@ Réécrire une URL :
 ::
   
   Alias "/url" "/urlNext"
+  
+
+HTTPS:
+::
+
+  # vhost https
+  <VirtualHost *:443>
+    DocumentRoot /var/www/webmail
+    ServerName  webmail.mondomaine.com
+
+    ServerSignature Off
+    ErrorLog ${APACHE_LOG_DIR}/error_webmail.log      
+    LogLevel info      
+    CustomLog ${APACHE_LOG_DIR}/access_webmail.log combined      
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/mailserver.crt
+    SSLCertificateKeyFile /etc/ssl/private/mailserver.key
+  </VirtualHost>
