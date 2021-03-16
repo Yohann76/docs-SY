@@ -16,7 +16,14 @@ Design
 btn btn-info le design d'un bouton
 
 
+Poppover
+===================
+::
 
+  <button type="button"
+  class="btn btn-lg btn-danger"
+  data-toggle="popover" title="Popover title"
+  data-content="msg à afficher ">Click to toggle popover</button>
 
 
 Modal bootstrap
