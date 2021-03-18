@@ -26,12 +26,13 @@ Structure ( balise )
   div "container" permet de centrer un block
   col est le nombre de colonnes
   row est le nombre de Ligne
-  jumbotron = corp de text sur fond gris 
+  jumbotron = corp de text sur fond gris
 
 Design
 ===================
-btn btn-info le design d'un bouton
-
+btn btn-info // button bleu
+btn btn-danger // button rouge
+btn btn-succes // button vert
 
 Poppover
 ===================
