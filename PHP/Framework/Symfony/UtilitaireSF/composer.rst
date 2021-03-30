@@ -3,15 +3,19 @@ Composer
 
 `Composer docs`_
 
-Commande Composer : 
+Commande Composer :
 ===================
 ::
 
     Composer install // installer les dépendance dans le composer.json
     Composer update // update les dépendance
+    composer remove // delete
+    composer outdated // Permet de lister les paquets obsolètes et qui auraient besoin d’une mise à jour (si possible, à adapter selon votre cas).
+    composer show // lister les paquets installés sur votre projet
 
 
-Options Composer 
+
+Options Composer
 ===================
 ::
 
