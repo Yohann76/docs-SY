@@ -31,4 +31,16 @@ Options Composer
     --no-ansi: Disable ANSI output.
     --version (-V): Display this application version.
 
+    --name: Name of the package.
+    --description: Description of the package.
+    --author: Author name of the package.
+    --type: Type of package.
+    --homepage: Homepage of the package.
+    --require: Package to require with a version constraint. Should be in format foo/bar:1.0.0.
+    --require-dev: Development requirements, see --require.
+    --stability (-s): Value for the minimum-stability field.
+    --license (-l): License of package.
+
+
+
     .. _`Composer docs`: https://getcomposer.org/doc/
