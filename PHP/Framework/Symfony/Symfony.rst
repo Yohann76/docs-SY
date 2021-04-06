@@ -75,14 +75,15 @@ Création automatique ( makerBundle )
 	$ php bin/console make:functional-test
 	$ php bin/console make:unit-test
 
-
-Commande d’information et Commande divers
+Commande d’information et Commande divers bin/console
 
 .. code-block:: terminal
     $ php bin/console
     $ php bin/console debug:autowiring
     $ php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
     $ php bin/console debug:router ( voir toute les routes ).
+
+    $ php bin/console doctrine:mapping:import /// ?? 
 
 Nouvelles commandes
 ( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) )
