@@ -7,6 +7,11 @@ ANSIBLE :
 `Ansible docs`_
 `Ansible Galaxy`_
 
+Commande dans le vault
+-------------------
+i pour insertion
+:wq pour enregistrer et quitter
+
 Instalation
 -------------------
 
@@ -89,7 +94,7 @@ vars_prompt:
   - name: "githubpassword"
     prompt: "Enter your gitlab password"
     private: yes
-    
+
 # 4 next step for clone repo git private
     - name: install pip3
       apt: name=python3-pip state=present
