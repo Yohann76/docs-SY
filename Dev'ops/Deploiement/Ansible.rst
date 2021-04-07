@@ -35,6 +35,11 @@ créer un host : créer un fichier /ansible/hosts.ini ( base ci-dessous)
     	15.188.106.233 ansible_user=ubuntu ansible_ssh_private_key_file=Yohann-EC2.pem
     ;---------------
 
+dans host.ini :
+
+ansible_ssh_common_args='-o StrictHostKeyChecking=no' // pour ne pas demander la vérification key ssh ( known_key )
+
+
 ping sur un host :
 ::
 
