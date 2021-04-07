@@ -74,6 +74,7 @@ Création automatique ( makerBundle )
 	$ php bin/console make:registration-form
 	$ php bin/console make:functional-test
 	$ php bin/console make:unit-test
+  $ php bin/console make:docker:database // ?? add database container in docker-compose.yaml file
 
 Commande d’information et Commande divers bin/console
 
@@ -83,7 +84,8 @@ Commande d’information et Commande divers bin/console
     $ php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
     $ php bin/console debug:router ( voir toute les routes ).
 
-    $ php bin/console doctrine:mapping:import /// ?? 
+    $ php bin/console doctrine:mapping:import /// ??
+
 
 Nouvelles commandes
 ( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) )
