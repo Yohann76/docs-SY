@@ -59,22 +59,23 @@ Création automatique ( makerBundle )
 ------------------------------------
 ::
 
-	$ php bin/console list make  ( affiche tout les make )
-	$ php bin/console make:controller ( créer un controller )
+	$ php bin/console list make // affiche tout les make
+	$ php bin/console make:controller // créer un controller
 	$ php bin/console generate:bundle
 	$ php bin/console make:command
-	$ php bin/console make:fixtures ( ArticleFixtures, CommentFixture.. )
-	$ php bin/console make:user
-	$ php bin/console make:auth ( créer un authentificateur )
-	$ php bin/console make:voter ( créer un voteurs )
-	$ php bin/console make:entity ( créer/modifier une entité  )
+	$ php bin/console make:fixtures // ArticleFixtures, CommentFixture..
+	$ php bin/console make:user //créer une entity user avec roles, password, email...
+  $ php bin/console make:registration-form // créer un form d'inscription
+	$ php bin/console make:auth // créer un authentificateur
+	$ php bin/console make:voter // créer un voteurs
+	$ php bin/console make:entity // créer/modifier une entité
 	$ php bin/console make:subscriber
-	$ php bin/console make:form ( faire un form )
-	$ php bin/console make:crud ( faire un crud à partir d'une entité )
-	$ php bin/console make:registration-form
+	$ php bin/console make:form // faire un form
+	$ php bin/console make:crud // faire un crud à partir d'une entité
 	$ php bin/console make:functional-test
 	$ php bin/console make:unit-test
   $ php bin/console make:docker:database // ?? add database container in docker-compose.yaml file
+  $ php bin/console make:reset-password // create controller, entity and repository for reset password
 
 Commande d’information et Commande divers bin/console
 
