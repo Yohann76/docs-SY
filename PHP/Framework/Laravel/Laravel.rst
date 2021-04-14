@@ -19,6 +19,12 @@ Architecture
 
 Command 
 ---------
-launch a laravel server : 
+Lancer le serveur laravel intégré : 
 ::
-  php artisan migrate && php artisan serve --host 0.0.0.0 --port 8082
+
+  php artisan serve --host 0.0.0.0 --port 8082
+  
+Effectuer une migration:
+::
+
+  php artisan migrate
