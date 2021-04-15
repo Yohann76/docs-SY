@@ -1,7 +1,7 @@
 Laravel 
 ===================
 
-Démmarage Laravel : 
+Démarrage Laravel : 
 --------------------
 
 Command:
