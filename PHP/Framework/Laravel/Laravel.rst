@@ -1,6 +1,22 @@
 Laravel 
 ===================
 
+Démmarage Laravel : 
+
+Command:
+::
+
+  composer create-project laravel/laravel laravel5 --prefer-dist
+  
+Créer un .env:
+::
+  
+  APP_ENV=local
+  APP_DEBUG=true
+
+  APP_KEY=base64:JjrFWC+TGnySY2LsldPXAxuHpyjh8UuoPMt6yy2gJ8U=
+  
+
 Architecture
 ------------
 
