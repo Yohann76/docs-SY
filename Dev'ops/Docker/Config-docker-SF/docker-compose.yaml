@@ -1,0 +1,82 @@
+version: '3.7'
+
+services:
+
+  mysql:
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    # .env : DATABASE_URL=mysql://root:root@mysql:3306/Blitz #Docker
+    # run : docker-compose exec mysql mysql -uroot -p"root" # enter in container
+
+  nginx:
+    container_name: nginx
+    build : docker/nginx
+    links:
+      - php
+    ports:
+      - 8000:80
+    restart: always
+    volumes:
+      - '.:/var/www/blitz:cached'
+      #- './docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf'
+    working_dir: /var/www/blitz
+    # available in : http://localhost:8000/
+
+  php:
+    build: docker/php
+    container_name: php
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    ports:
+      - 9000:9000
+    restart: always
+    volumes:
+      - .:/var/www/blitz:cached
+    working_dir: /var/www/blitz
+    # run : docker-compose exec php bash 
+    # run : docker-compose exec php composer update
+    # run : docker-compose exec php php /var/www/blitz/bin/console cache:clear 
+    # run : docker-compose exec php php /var/www/blitz/bin/console d:d:c
+    # run : docker-compose exec php php /var/www/blitz/bin/console doctrine:schema:update --force
+    # run : docker-compose exec php php /var/www/blitz/bin/console d:f:l -n
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: PhpMyAdmin
+    restart: always
+    links:
+      - mysql:mysql
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: root
+    # available in : http://localhost:8080/
+
+
+  #varnish:
+    #build: docker/varnish
+    #container_name: varnish
+    #depends_on:
+      #- nginx
+    #ports:
+      #- ${VARNISH_PORT}:80
+    #restart: always
+
+  #blackfire:
+    #container_name: blackfire
+    #environment:
+      #BLACKFIRE_CLIENT_ID: ${BLACKFIRE_CLIENT_ID}
+      #BLACKFIRE_CLIENT_TOKEN: ${BLACKFIRE_CLIENT_TOKEN}
+      #BLACKFIRE_SERVER_ID: ${BLACKFIRE_SERVER_ID}
+      #BLACKFIRE_SERVER_TOKEN: ${BLACKFIRE_SERVER_TOKEN}
+    #image: blackfire/blackfire
+volumes:
+  db_data:
