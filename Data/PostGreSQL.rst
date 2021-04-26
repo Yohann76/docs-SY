@@ -55,7 +55,7 @@ connexion a la bdd en ligne de commande :
 utiliser la base :
 ::
 
-  \c tqa_owner
+  \c tqa_dataservice
   
 recherche :
 ::
