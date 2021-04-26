@@ -45,3 +45,19 @@ Les Select :
   $ select * from books where price < 28;
 
 .. _`PostGreSQL download`: https://www.postgresql.org/download/windows/
+
+
+connexion a la bdd en ligne de commande :
+::
+
+  psql -U tqa_owner tqa_dataservice
+  
+utiliser la base :
+::
+
+  \c tqa_owner
+  
+recherche :
+::
+
+  SELECT * from patients WHERE last_name = 'Zola';
