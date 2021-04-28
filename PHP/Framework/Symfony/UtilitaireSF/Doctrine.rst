@@ -97,3 +97,7 @@ Afficher dans la vue twig :
 			{% endfor %}
 	</td>
 	<!-- end list mission of activity -->
+
+
+	<!-- Si pas d'envoi en bdd lors d'envoi du form, c'est que la relation est mal faite, dans ce cas,
+	inverser dans l'entité, inversedBy=... et mapped=... pour la remettre dans le bon sens -->
