@@ -57,3 +57,8 @@ Effectuer une migration:
 ::
 
   php artisan migrate
+  
+Lancer les tests avec coverage :
+::
+
+  php artisan test --coverage-html tests/coverage
