@@ -108,7 +108,9 @@ Injection de HTML ( et <script> ) dans un form non sécurisé, pour recuperer un
 ----------------------------
 
 essai:
+Jouer avec l'URL, et le document cookie à envoyer sur un hooker de cookie 
 ::
+
 
    <img src="https://sacha.free.beeceptor.com" onload=(alert('error'); >
 
