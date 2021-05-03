@@ -25,6 +25,10 @@ Les tableau
 
 Function sur tableau
 -------------------
+::
+
+  unset($arr[5]); // Ceci efface l'élément du tableau
+  unset($arr);    // Ceci efface complètement le tableau
 
 Fonction utile dans PHP
 ===================
