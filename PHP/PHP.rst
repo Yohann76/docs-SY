@@ -23,6 +23,17 @@ Les tableau
         ...
     )
 
+Boucler et pusher dans un tableau ( dans un objet )
+-------------------
+::
+
+  $ListUser = [];
+  foreach ($listUserInOrga as $value) {
+      $Userid = $value->getUser() ;
+      array_push($ListUser, $Userid);
+  }
+
+
 Function sur tableau
 -------------------
 ::
