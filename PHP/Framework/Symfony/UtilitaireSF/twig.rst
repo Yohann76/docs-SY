@@ -65,4 +65,26 @@ Opérateurs logique
 {% if nb == null %}
 
 
+Boucle & itération
+-----------
+::
+
+  {% for entry in craft.entries.section('news') %}
+      {% if loop.first %}
+          First!
+      {% endif %}
+      {{ entry.title }}
+
+  {% endfor %}
+
+itération :
+::
+
+  loop.first
+  loop.index
+  loop.index0
+  loop.revindex0
+  loop.last
+  loop.length
+
 .. _`Twig Doc`: https://twig.symfony.com/doc/2.x/index.html
