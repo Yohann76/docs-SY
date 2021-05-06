@@ -45,3 +45,14 @@ ChoiceType
           'équipier Organisation' => 'ROLE_ORGA_TEAM',  # Team Orga
       ],
   ])
+
+  // form sur entité
+  ->add('qualificationSupports', EntityType::class, array(
+      'help' => 'Vous pouvez selectionner les types',
+      'class' => QualificationSupport::class,
+      'multiple' => true,
+      'expanded' => true,
+      'choice_label' => function(QualificationSupport $qualificationSupport) {
+          return sprintf('%s', $qualificationSupport->getName());
+      },
+  ))
