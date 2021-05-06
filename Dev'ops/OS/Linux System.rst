@@ -7,21 +7,21 @@ Linux
 Commande Généraliste
 -------------------
 
-Gestion des ports et des processus 
+Gestion des ports et des processus
 -------------------
 
-Supprimer un processus avec un type 
+Supprimer un processus avec un type
 ::
 
    pkill -f nginx
-   
-Lister les processus sur un port 
+
+Lister les processus sur un port
 ::
 
    lsof -i tcp:8080
 
 
-Utilitaire 
+Utilitaire
 --------------------
 
 Utiliser une commande ou un serveur actif ( mongoDB, instance node,... ) même après que la console soit fermé
@@ -196,7 +196,7 @@ installer une surcouche à octopi  :
 spécificité de Debian
 -------------------
 
-lister les user 
+lister les user
 ::
 
    cat /etc/passwd
