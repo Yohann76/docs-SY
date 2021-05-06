@@ -16,9 +16,13 @@ installer une librairie github non publié :
             "package": [
                 {
                     "name": "akarah/hprim",
-                    "version": "^1.0.0"
+                    "version": "dev-master"
                 }],
             "type": "vcs",
             "url": "https://github.com/Akarah/HPRIM"
         }
     ],
+    "require": {
+        ...,
+        "akarah/hprim": "dev-master"
+    },
