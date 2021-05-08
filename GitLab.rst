@@ -91,3 +91,9 @@ Commande diverse :
   $ git push origin master // push ses commit sur la branch master
 
 .. _`Gitlab`: https://gitlab.com/
+
+Avoir une variable privée pour gitlab :
+::
+ 
+ changer les variables dans le compte gitlab 
+ 
