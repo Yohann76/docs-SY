@@ -77,6 +77,24 @@ Au survol :
 
     .section :hover
 
+Curseur
+-------------------
+::
+
+  body{
+    cursor: crosshair;
+  }
+  img{
+    cursor: wait;
+  }
+  a:link{
+    cursor:  pointer;
+  }
+
+Forme et 3D
+-------------------
+::
+
 
 Génération de contenu
 -------------------
