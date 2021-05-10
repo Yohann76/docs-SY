@@ -34,7 +34,7 @@ Les ombres
     box-shadow: 6px 6px 6px black inset; // méme bordure que la précédente mais avec un effet renfoncer ( ombre intérieur du bloc )
     text-shadow: 2px 2px 4px black; // bordure pour text
 
-Les dégrader
+Les dégradé
 -------------------
 ::
 
