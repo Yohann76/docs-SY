@@ -79,6 +79,10 @@ Utilisation
 
    mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
 
+
+Commande dans shell mongo ( accessible avec 'mongo' ) 
+========================================================
+
 - créer une donnée 
 ::
    
@@ -88,7 +92,16 @@ Utilisation
 ::
    
    db.getCollection("stats").find()
+   
+- enlever le TTL qui supprime les données régulierement
+::
 
+   db.adminCommand({setParameter:1, ttlMonitorEnabled:false});
+
+
+
+Autre
+======
 
 
 - se lier a une ip 
