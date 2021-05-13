@@ -79,6 +79,10 @@ Utilisation
 
    mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
 
+
+Commande dans shell mongo ( accessible avec 'mongo' ) 
+========================================================
+
 - créer une donnée 
 ::
    
@@ -88,7 +92,16 @@ Utilisation
 ::
    
    db.getCollection("stats").find()
+   
+- enlever le TTL qui supprime les données régulierement
+::
 
+   db.adminCommand({setParameter:1, ttlMonitorEnabled:false});
+
+
+
+Autre
+======
 
 
 - se lier a une ip 
@@ -168,6 +181,24 @@ lancer le serveur avec terminal éteint :
    
    
 ( nohup permet d'executer un processus détaché quand la console est fermé ) 
+
+
+Sauvegarder une base de donnée Mongo 
+================================================
+
+::
+   
+   mongodump -d <database_name> -o <directory_backup>
+   
+::
+
+   mongorestore -d <database_name> <directory_backup>
+
+avec la date dans le fichier :
+
+::
+
+   mongodump --db somedb --collection somecollection --out - | gzip > dump_`date "+%Y-%m-%d"`.gz
 
 
 Mongo Express ( équivalent phpmyAdmin for mongo ) 
