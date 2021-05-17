@@ -95,51 +95,54 @@ Forme et 3D
 -------------------
 ::
 
+  #triangle-top {
+    width  : 0;
+    height : 0;
+    border-left   : 25px solid transparent;
+    border-right  : 25px solid transparent;
+    border-bottom : 50px solid green;
+  }
 
-#triangle-top {
-  width  : 0;
-  height : 0;
-  border-left   : 25px solid transparent;
-  border-right  : 25px solid transparent;
-  border-bottom : 50px solid green;
-}
+  #triangle-right{
+    width  : 0;
+    height : 0;
+    border-top    : 25px solid transparent;
+    border-bottom : 25px solid transparent;
+    border-left   : 50px solid red;
+  }
 
-#triangle-right{
-  width  : 0;
-  height : 0;
-  border-top    : 25px solid transparent;
-  border-bottom : 25px solid transparent;
-  border-left   : 50px solid red;
-}
+  .hexagone {
+    box-sizing : border-box;
+    position : relative;
+    width : 121.24356px;
+    height : 70px;
+    background-color : #008000;
+    margin : 35px 0;
+  }
 
-.hexagone {
-  box-sizing : border-box;
-  position : relative;
-  width : 121.24356px;
-  height : 70px;
-  background-color : #008000;
-  margin : 35px 0;
-}
+  #trapeze{
+    border-bottom: 50px solid green;
+    border-left  : 25px solid transparent;
+    border-right : 25px solid transparent;
+    height : 0;
+    width  : 50px;
+  }
 
-#trapeze{
-  border-bottom: 50px solid green;
-  border-left  : 25px solid transparent;
-  border-right : 25px solid transparent;
-  height : 0;
-  width  : 50px;
-}
-
-#losange-90{
-  width  : 0;
-  height : 0;
-  position : relative;
-  top : -25px;
-  border : 25px solid transparent;
-  border-bottom-color : green;
-}
-
+  #losange-90{
+    width  : 0;
+    height : 0;
+    position : relative;
+    top : -25px;
+    border : 25px solid transparent;
+    border-bottom-color : green;
+  }
 
 
+Variable en css
+-------------------
+::
+
+   To do 
 
 Génération de contenu
 -------------------
