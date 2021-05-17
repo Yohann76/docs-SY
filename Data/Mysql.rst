@@ -7,8 +7,9 @@ Mysql
 
 `Mysql Doc`_
 
-Show
+Commandes courante
 -------------------
+
 Voir la liste des database
 ::
 
@@ -26,16 +27,12 @@ Gestion User
    ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass'; // changer le type de mot de passe
    FLUSH PRIVILEGES; // Sauvegarder les modifications en ligne de commande
 
-
-Afficher la les types des champs
+Commande divers
+-------------------
 ::
 
-     $ mysql> describe tablename;
-
-Afficher la taille des base de données
-::
-
-     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema;
+     $ mysql> describe tablename; // Afficher la les types des champs
+     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema; // Afficher la taille des base de données
 
 Requêtes
 -------------------
@@ -43,42 +40,33 @@ Requêtes
 SELECT :
 ::
 
-     $ SELECT * FROM xxxx
+     $ SELECT * FROM xxxx ;
 
 UPDATE :
 ::
 
-     $ UPDATE table SET nom_colonne = 'valeur'
+     $ UPDATE table SET nom_colonne = 'valeur' ;
 
 DELETE :
 ::
 
-     $ DELETE FROM table
+     $ DELETE FROM table ;
 
 Les commandes précedentes peuvent être suivi d'une clause WHERE pour préciser une condition.
 
 
-Construction Base de données en Sql
+Commande relative à la gestion de la bdd
 -------------------
-
-Création
 ::
 
-     $ mysql> create database databasename;
 
-Supprimer une base de données
-::
+     $ mysql> create database databasename; // Création bdd
+     $ mysql> drop database databasename; // Supprimer une base de données
+     $ mysql> drop table tablename; // Suppression d’une table
 
-     $ mysql> drop database databasename;
-
-Suppression d’une table
-::
-
-     $ mysql> drop table tablename;
 
 Création user
 -------------------
-
 Créer un user SQL et transférer ses droits :
 ::
 
