@@ -12,39 +12,20 @@ Show
 Voir la liste des database
 ::
 
-    $ mysql> show databases;
+    $ mysql> show databases; // list des database
+    $ mysql> use name_database // Selectionner une database
+    $ mysql> show tables; // La liste des tables dans cette database
+    $ mysql> SELECT * FROM user; // voir le contenu de toute la table user
 
-changer un mot de passe d'un user:
+
+Gestion User
 ::
 
-   UPDATE mysql.user SET password=PASSWORD("wikipass") where User="zabbix";
-   
-::
+   UPDATE mysql.user SET password=PASSWORD("wikipass") where User="zabbix"; // change password
+   UPDATE mysql.user SET passwd="wikipass" where User="zabbix"; // change password
+   ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass'; // changer le type de mot de passe
+   FLUSH PRIVILEGES; // Sauvegarder les modifications en ligne de commande
 
-   UPDATE mysql.user SET passwd="wikipass" where User="zabbix";
-   
-
-changer le type de mot de passe :
-::
-
-   ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass';
-   
-
-sauvegarder les modifications en ligne de commande :
-::
-
-   FLUSH PRIVILEGES;
-   
-
-Selectionner une database
-::
-
-     $ mysql> use name_database
-
-La liste des tables dans cette database
-::
-
-     $ mysql> show tables;
 
 Afficher la les types des champs
 ::
