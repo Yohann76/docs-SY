@@ -29,12 +29,7 @@ Utiliser une commande ou un serveur actif ( mongoDB, instance node,... ) même a
 
    nohup <maCommande> &
 
-
-
-
 -----------------------
-
-
 ::
 
    Etre en “root” en tout temps : sudo su
@@ -48,6 +43,8 @@ Utiliser une commande ou un serveur actif ( mongoDB, instance node,... ) même a
    donner une autorisation à un fichier : sudo chmod 777 php.ini ou dev/log
    Faire du SSH : ssh dev@127.0.0.1 -p 2222 ( accès SSH )
    Lancer un .sh : sh start_moonlander2.sh
+   voir les process en cours ( sur ubuntu ) // : ps aux | grep -i apt
+   kill le process en cours : sudo kill <process_id>
 
 Edition de fichier
 -------------------
