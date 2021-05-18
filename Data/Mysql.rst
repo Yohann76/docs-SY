@@ -70,9 +70,9 @@ Création user
 Créer un user SQL et transférer ses droits :
 ::
 
-   CREATE USER 'user1'@'localhost' IDENTIFIED BY '000000';
-   GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost';
-   FLUSH PRIVILEGES;
+   CREATE USER 'user1'@'localhost' IDENTIFIED BY '000000'; // créer
+   GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost'; // donner les droit
+   FLUSH PRIVILEGES; // pour faire prendre effet les droits
 
 Connexion
 ::
@@ -86,20 +86,6 @@ localhost : nom de votre serveur mysql
 u : user souhaité, ici root
 p : signifie qu'il vas falloir entrer le pass de l'utilisateur
 
-Créer users
-::
-
-     $ mysql> CREATE USER 'users'@'localhost' IDENTIFIED BY 'mdp';
-
-Donner les droits
-::
-
-     $ mysql> GRANT ALL PRIVILEGES ON * . * TO 'users'@'localhost';
-
-Pour que les droits prennent effet
-::
-
-     $ mysql> FLUSH PRIVILEGES;
 
 Listes des users
 ::
@@ -109,27 +95,12 @@ Listes des users
 
 Sauvegarde et restauration
 -------------------
-
-Sauvegarder une seule base de donnée, données et structure
 ::
 
-     $ mysqldump -u username -p --databases databasename > databasename.sql
-
-Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql
-::
-
-     $ mysqldump -uroot -p --all-databases > alldatabases.sql
-
-Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base
-::
-
-     $ mysql -u username -p databasename < databasename.sql
-
-Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases
-::
-
-     $ mysql -u username -p --one-database mybase < alldatabases.sql
-
+     $ mysqldump -u username -p --databases databasename > databasename.sql // Sauvegarder une seule base de donnée, données et structure
+     $ mysqldump -uroot -p --all-databases > alldatabases.sql // Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql
+     $ mysql -u username -p databasename < databasename.sql // Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base
+     $ mysql -u username -p --one-database mybase < alldatabases.sql // Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases
 
 
 .. _`Mysql Doc`: https://dev.mysql.com/doc/
