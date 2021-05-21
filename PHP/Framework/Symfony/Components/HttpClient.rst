@@ -7,9 +7,10 @@ Instalation
 --------------------------------
 ::
 
-    composer require symfony/http-client
+    $ composer require symfony/http-client
 
-
+Exemple
+--------------------------------
 ::
 
     use Symfony\Component\HttpClient\HttpClient;
