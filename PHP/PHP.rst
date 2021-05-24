@@ -99,6 +99,11 @@ remplacer un contenu
 
     $content = str_replace(">", " ",  $content);
     $content = str_replace("<", " ",  $content);
+   
+Enlever les espace a un string :
+::
+
+    trim($msg);
 
 ############
 
