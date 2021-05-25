@@ -4,6 +4,19 @@
 CSS
 ===================
 
+Variable
+-------------------
+::
+
+  :root {
+    --main-bg-color: brown;
+  }
+
+  .un {
+    background-color: var(--main-bg-color);
+  }
+
+
 
 Propriété
 -------------------
@@ -142,7 +155,7 @@ Variable en css
 -------------------
 ::
 
-   To do 
+   To do
 
 Génération de contenu
 -------------------
