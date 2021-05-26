@@ -179,8 +179,12 @@ lancer le serveur avec terminal éteint :
 
    nohup mongod --bind_ip 0.0.0.0 &
    
+LANCER SERVEUR MONGO RENFORCÉ :
+::
+
+   nohup mongod --bind_ip 0.0.0.0 --setParameter ttlMonitorEnabled=false &
    
-( nohup permet d'executer un processus détaché quand la console est fermé ) 
+( nohup et & permet d'executer un processus détaché quand la console est fermé ) 
 
 
 Sauvegarder une base de donnée Mongo 
