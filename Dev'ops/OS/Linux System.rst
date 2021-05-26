@@ -161,6 +161,12 @@ Copier
 
 Cp fichier 1 fichier2
 
+Empecher la suppression d'un fichier :
+::
+
+   http://www.tux-planet.fr/empecher-la-suppression-dun-fichier-ou-dun-repertoire/#:~:text=Voici%20une%20astuce%20pour%20les,fichiers%20Ext2%2C%20Ext3%20et%20Ext4.
+
+
 
 Créer un ScriptPowerShell
 ---------------------------
