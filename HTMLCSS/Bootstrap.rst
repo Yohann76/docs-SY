@@ -78,7 +78,7 @@ Modal bootstrap
 Button dropdown
 ===================
 ::
-  
+
   <div class="btn-group">
     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
       Action
@@ -87,4 +87,12 @@ Button dropdown
     <ul class="dropdown-menu">
       <!-- dropdown menu links -->
     </ul>
+  </div>
+
+Progress bar
+===================
+::
+
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
   </div>
