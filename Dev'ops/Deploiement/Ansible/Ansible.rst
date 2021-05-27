@@ -58,30 +58,11 @@ IMPORTANT
 exécuter le playbook :
 ::
 
-	ansible-playbook ansible/playbook.yml -i ansible/hosts.ini
-
-exécuter le playbook avec le vault :
-::
-
-	ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-vault-pass
-
-Recréer les variables vault :
-::
-
-	ansible-vault rekey foo.yml
-
-
-Visualiser le vault :
-::
-
-	ansible-vault view ansible/vars/vault.yml
-
-Editer le vault :
-::
-
-	ansible-vault edit ansible/vars/vault.yml
-
-
+	$ ansible-playbook ansible/playbook.yml -i ansible/hosts.ini // exec le playbook sans vault
+  $ ansible-playbook ansible/playbook.yml -i ansible/hosts.ini --ask-vault-pass // exécuter le playbook avec le vault
+  $ ansible-vault rekey foo.yml // Recréer les variables vault
+  $ ansible-vault view ansible/vars/vault.yml // Visualiser le vault
+  $ ansible-vault edit ansible/vars/vault.yml // Editer le vault
 
 DEBUGGAGE :
 -------------------
