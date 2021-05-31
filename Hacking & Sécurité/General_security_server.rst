@@ -29,6 +29,11 @@ ajouter un agent:
 
   sudo /var/ossec/bin/manage-agents
   
+restart un agent :
+::
+
+  /var/ossec/bin/agent_control -R <id_agent>
+  
 Generer des clef client.key ( /var/ossec/etc/client.key ) de type :
 ::
   <id> <nameAgent> <ip/24> <key random>
