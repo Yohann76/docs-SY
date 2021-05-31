@@ -1,4 +1,5 @@
 Sécurité générale des serveurs : 
 
 - Utiliser un compte non-root pour installer et gerer le serveur
-- utiliser OSSEC HIDS pour gerer les intrusions
+- utiliser OSSEC HIDS pour gerer les intrusions ( https://all-it-network.com/ossec/ )
+- UFW pour installer un firewall
