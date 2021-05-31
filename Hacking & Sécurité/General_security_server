@@ -1,0 +1,4 @@
+Sécurité générale des serveurs : 
+
+- Utiliser un compte non-root pour installer et gerer le serveur
+- utiliser OSSEC HIDS pour gerer les intrusions
