@@ -46,5 +46,8 @@ Generer des clef client.key ( /var/ossec/etc/client.key ) de type suivant, puis 
   <id> <nameAgent> <ip> <key random>
   001 mercure 51.178.95.96 AxIE5vZGUyIDE5Mi4xNjguNDMuMTkzIDJiOGNlNGYyOTU5ZGZkYTNmMDFjNzY5YjUxODRhZmYyNGY1ZjQzYTA3NmFlMWFiNTBkZDU1MmU1MjU3YTRkZmM=
   
+  
+- Mettre les frequency a 40 
+  
 
   
