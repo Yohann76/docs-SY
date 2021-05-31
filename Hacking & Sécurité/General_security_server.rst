@@ -34,6 +34,13 @@ restart un agent :
 
   /var/ossec/bin/agent_control -R <id_agent>
   
+Effectuer un sysCheck :
+::
+
+  /var/ossec/bin/agent_control -r -u 001
+
+
+
 Generer des clef client.key ( /var/ossec/etc/client.key ) de type :
 ::
   <id> <nameAgent> <ip/24> <key random>
