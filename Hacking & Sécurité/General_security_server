@@ -11,6 +11,16 @@ HIDS - OSSEC pour la detection d'intrusion
 
 https://all-it-network.com/ossec/
 
+Lister les agents actif depuis le serveur :
+::
+
+  sudo /var/ossec/bin/agent_control -lc
+  
+ajouter un agent:
+::
+
+  sudo /var/ossec/bin/manage-agents
+  
 Generer des clef client.key ( /var/ossec/etc/client.key ) de type :
 ::
   <id> <nameAgent> <ip/24> <key random>
