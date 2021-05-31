@@ -11,6 +11,12 @@ HIDS - OSSEC pour la detection d'intrusion
 
 https://all-it-network.com/ossec/
 
+restart, start, stop HIDS OSSEC:
+::
+
+  sudo /var/ossec/bin/ossec-control restart
+  
+
 Lister les agents actif depuis le serveur :
 ::
 
