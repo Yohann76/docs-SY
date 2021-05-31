@@ -41,10 +41,10 @@ Effectuer un sysCheck :
 
 
 
-Generer des clef client.key ( /var/ossec/etc/client.key ) de type :
+Generer des clef client.key ( /var/ossec/etc/client.key ) de type suivant, puis inclure le même fichier dans le serveur et le client
 ::
-  <id> <nameAgent> <ip/24> <key random>
-  001 mercure 51.178.95.96/24 AxIE5vZGUyIDE5Mi4xNjguNDMuMTkzIDJiOGNlNGYyOTU5ZGZkYTNmMDFjNzY5YjUxODRhZmYyNGY1ZjQzYTA3NmFlMWFiNTBkZDU1MmU1MjU3YTRkZmM=
+  <id> <nameAgent> <ip> <key random>
+  001 mercure 51.178.95.96 AxIE5vZGUyIDE5Mi4xNjguNDMuMTkzIDJiOGNlNGYyOTU5ZGZkYTNmMDFjNzY5YjUxODRhZmYyNGY1ZjQzYTA3NmFlMWFiNTBkZDU1MmU1MjU3YTRkZmM=
   
 
   
