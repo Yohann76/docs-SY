@@ -22,6 +22,8 @@ Lister les agents actif depuis le serveur :
 
   sudo /var/ossec/bin/agent_control -lc
   
+  /var/ossec/bin/manage_agents -l
+  
 ajouter un agent:
 ::
 
