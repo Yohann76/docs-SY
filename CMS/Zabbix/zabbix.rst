@@ -13,4 +13,15 @@ Lien de l'intégration et téléchargement zabbix
 Des agents zabbix doivent êtres placé sur les serveurs d'écoute
 
 
+Créer un fichier de config sur un agent : 
+::
+
+   mkdir zabbix_agentd.conf.d
+   
+start, restart, reload or stop zabbix-agent :
+::
+
+  systemctl status zabbix-agent
+
+
 
