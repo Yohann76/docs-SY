@@ -22,6 +22,10 @@ start, restart, reload or stop zabbix-agent :
 ::
 
   systemctl status zabbix-agent
+  
+::
+
+  /etc/init.d/zabbix-agent start
 
 ::
 
