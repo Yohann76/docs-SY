@@ -28,4 +28,4 @@ start, restart, reload or stop zabbix-agent :
   systemctl zabbix_agentd.d start
 
 
-
+- Les configuration UserParameter vont dans zabbix-agentd.conf
