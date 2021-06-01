@@ -37,7 +37,7 @@ start, restart, reload or stop zabbix-agent :
   
 ::
 
-  systemctl status zabbix-agent
+  systemctl start zabbix-agent
 
 
 - Les configuration UserParameter vont dans zabbix-agentd.conf
