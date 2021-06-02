@@ -46,7 +46,7 @@ Generer des clef client.key ( /var/ossec/etc/client.key ) de type suivant, puis 
   <id> <nameAgent> <ip> <key random>
   001 mercure 51.178.95.96 AxIE5vZGUyIDE5Mi4xNjguNDMuMTkzIDJiOGNlNGYyOTU5ZGZkYTNmMDFjNzY5YjUxODRhZmYyNGY1ZjQzYTA3NmFlMWFiNTBkZDU1MmU1MjU3YTRkZmM=
   
-  002 callisto 51.83.108.56 AxIE5vZGUyIDE5Mi4xNjguNDMuMTkzIDJiOGNlNGYyOTU5ZGZkYTNmMDFjNzY5YjUxODRhZmYyNGY1ZjQzYTA3NmFlMWFiNTBkZDU1MmU1MjU3YTRkOpA=
+  002 callisto 51.83.108.56 b0c5548beda537daddb4da698424d0856c3d4e760eaced803d58c07ad1a95f4c
   
   
 - Mettre les frequency a 40 
