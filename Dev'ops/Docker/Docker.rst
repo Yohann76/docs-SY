@@ -16,13 +16,13 @@ tester docker :
 
     docker run hello world
 
-Lancer serveur nginx sur port 80 : docker run -d -p 8080:80 nginx
-récupérer une image du hub docker : docker pull hello-world
-stopper un conteneur : docker stop ID_RETOURNÉ_LORS_DU_DOCKER_RUN
-construire le DockerFile : docker build -t NomADonner
-Exécuter l’environnement : docker run -d -p 2368:2368 NomDonnerPrecedemment.
-puis accéder au localhost créer avec le port du dockerFile : http://127.0.0.1:2368.
-connaître son IP de machine virtuel : docker-machine ip default
+ $ docker run -d -p 8080:80 nginx // Lancer serveur nginx sur port 80
+ $ docker pull hello-world // récupérer une image du hub docker
+ $ docker stop ID_RETOURNÉ_LORS_DU_DOCKER_RUN // stopper un conteneur
+ $ docker build -t NomADonner // construire le DockerFile
+ $ docker run -d -p 2368:2368 NomDonnerPrecedemment. // Exécuter l’environnement
+  puis accéder au localhost créer avec le port du dockerFile : http://127.0.0.1:2368.
+  connaître son IP de machine virtuel : docker-machine ip default
 
 push une image : docker push hasalex/img
 executer un fichier docker-compose.yml : docker-compose up -d
@@ -129,7 +129,7 @@ ANNEXE:
   forcer à recréer : docker-compose up -d --build --force-recreate
   Rentrer dans un container  : docker exec -it nginx bash
   Virer cache : docker system prune --no-cache
-  $ docker-compose logs app // Voir les logs du lancement 
+  $ docker-compose logs app // Voir les logs du lancement
 
 
 Terminale ToolBox Docker :
