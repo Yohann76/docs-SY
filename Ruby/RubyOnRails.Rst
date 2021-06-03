@@ -21,6 +21,29 @@ Instalation & pré-requis
   $ node --version
   $ yarn --version
 
+
+Création de page
+-------------------
+::
+
+  config/route.rb
+    get '/salut', to:'pages#salut'
+
+
+  app/Controllers ( à créer )
+    pages_controller.rb
+    class PagesController < ApplicationController
+      def salut
+      end
+    end
+
+  App/Views
+    pages ( créer dossier )
+      salut.html.erb ( créer dans pages )
+
+  App/View/Layouts/applications ( base du html )
+
+
 Ligne de commande rails ( une fois la gemme installé )
 -------------------
 ::
