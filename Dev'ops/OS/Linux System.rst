@@ -41,6 +41,7 @@ Lister les users linux :
    wget -qO ee rt.cx/ee && sudo bash ee && ee site create example.com --php7 --mysql // créer une structure php-sql basique
    Cp fichier 1 fichier2 // copier un fichier
    mv xxx xxx // deplacer un fichier
+   ulimit -a // lister les limites d'une machine
 
 
 Shell speciaux :
