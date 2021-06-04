@@ -56,6 +56,10 @@ Autoriser toute les IP
 
    mongod --bind_ip_all
 
+utils:
+::
+
+   chown mongodb:mongodb /tmp/mongodb-27017.sock
 Utilisation
 ===================
 
