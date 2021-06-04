@@ -9,16 +9,10 @@ Commande Généraliste
 
 Gestion des ports et des processus
 -------------------
-
-Supprimer un processus avec un type
 ::
 
-   pkill -f nginx
-
-Lister les processus sur un port
-::
-
-   lsof -i tcp:8080
+   $ pkill -f nginx // Supprimer un processus avec un type
+   $ lsof -i tcp:8080 // Lister les processus sur un port
 
 
 Utilitaire
@@ -27,7 +21,7 @@ Utilitaire
 Utiliser une commande ou un serveur actif ( mongoDB, instance node,... ) même après que la console soit fermé
 ::
 
-   nohup <maCommande> &
+   $ nohup <maCommande> &
 
 -----------------------
 ::
