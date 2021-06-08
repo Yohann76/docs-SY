@@ -1,17 +1,13 @@
-.. index::
-   single: Github; Github
 
-Github organization ( compte partagé )
-===================
+## Github organization ( compte partagé )
+
 `Github organisation`_
 
 2 organisation
 - SYD Tools
 
+#### Github
 
-
-Github
-===================
 `Github Doc`_
 `Github API`_
 

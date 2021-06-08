@@ -1,20 +1,19 @@
-WordPress
-===================
+## WordPress
 
 Créer un thème enfant 
 ================
 
 `Tuto WP`_
 
-Dans le dossier wp-content/themes. on cré un dossier : 
+Dans le dossier wp-content/themes. on cré un dossier :
 /nomdevotrethemeenfant
 
 ensuite on crée deux fichier:
 -functions.php
--style.css 
+-style.css
 
 
-dans le function.php on y met : 
+dans le function.php on y met :
 ------------------------------------------
 ::
 
@@ -28,7 +27,7 @@ dans le function.php on y met :
     }
     ------------------------------------------
 
-et dans le style.css on y met : 
+et dans le style.css on y met :
 ------------------------------------------
 ::
 
@@ -37,7 +36,7 @@ et dans le style.css on y met :
     Description: Theme enfant de Benoit WPServeur
     Author: Benoit - WPserveur
     Author URI: https://www.wpserveur.net
-    Template: WPServeur 
+    Template: WPServeur
     Version: 0.1.0
     */
 
@@ -54,14 +53,14 @@ Version : La version de votre thème enfant à titre indicatif
 
 RAPELL :
 ------------------------------------------
-Ne jamais mettre d’espace avant les deux points. Theme Name: fonctionnera 
+Ne jamais mettre d’espace avant les deux points. Theme Name: fonctionnera
 mais Theme Name : ne fonctionnera pas
-Pour l’attribut Template : Si votre thème dans l’admin se nomme par exemple 
-“wpserveur” mais que le nom affiché dans le répertoire FTP est “WPserveur” alors 
+Pour l’attribut Template : Si votre thème dans l’admin se nomme par exemple
+“wpserveur” mais que le nom affiché dans le répertoire FTP est “WPserveur” alors
 il faudra obligatoirement respecter la casse et écrire WPserveur et non wpserveur
 
 
-POUR METTRE UNE IMG DE THEME OU MINIATURE 
+POUR METTRE UNE IMG DE THEME OU MINIATURE
 ------------------------------------------
 Afin d’égayer un peu votre gestionnaire de thèmes WordPress,
 vous pourrez aussi mettre un fichier screenshot.jpg (600×450 px conseillé)
