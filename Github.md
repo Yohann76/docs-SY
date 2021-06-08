@@ -1,7 +1,6 @@
 .. index::
    single: Github; Github
 
-
 Github organization ( compte partagé )
 ===================
 `Github organisation`_
