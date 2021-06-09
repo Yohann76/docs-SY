@@ -4,11 +4,11 @@
 * .NET
     - [ASP.NET MVC](/.NET/ASP.net_MVC.md)
     - [C#](C#.md)
-* [CMS]
+* CMS
     - E-commerce
-      - [Prestashop](/CMS/E-commerce/prestashop.md)
+      - [Prestashop](/CMS/E-commerce/Prestashop/prestashop.md)
 
-* [Gitlab](/Gitlab.md)
+* [Gitlab](/GitLab.md)
 * [Github](/Github.md)
 * [Email HTML](/email-HTML.md)
 * [blackfire](/BlackFire.md)
