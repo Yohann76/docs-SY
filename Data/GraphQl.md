@@ -1,8 +1,5 @@
-.. index::
-   single: GraphQl; 
 
-GraphQl
-===================
+## GraphQl
 
 `GraphQl Docs`_
 

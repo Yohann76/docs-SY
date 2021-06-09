@@ -1,8 +1,5 @@
-.. index::
-   single: Sqlite; 
+## Sqlite
 
-Sqlite
-===================
 
 `SqLite Docs`_
 
@@ -35,11 +32,11 @@ verifier que SQLlite fonctionne ( faire fonctionner ce script )
       die("SQLite 3 NOT supported.");
 
    $base=new SQLite3($dbname, 0666);
-   echo "SQLite 3 supported."; 
+   echo "SQLite 3 supported.";
    ?>
 
 
-creation de base de donnée et table 
+creation de base de donnée et table
 ::
    $dbname='base';
    $mytable ="tablename";
@@ -47,7 +44,7 @@ creation de base de donnée et table
    if(!class_exists('SQLite3'))
    die("SQLite 3 NOT supported.");
 
-   $base=new SQLite3($dbname, 0666); 
+   $base=new SQLite3($dbname, 0666);
 
    $query = "CREATE TABLE $mytable(
                ID bigint(20) NOT NULL PRIMARY KEY,
@@ -57,18 +54,18 @@ creation de base de donnée et table
                post_title text,
                guid VARCHAR(255)            
                )";
-               
+
    $results = $base->exec($query);
 
 
-supprimer une table 
+supprimer une table
 ::
    $query = "DROP TABLE $mytable";
    $results = $base->exec($query);
 
 insertion de donnée :
 ::
-   $query = "INSERT INTO $mytable(ID, post_title, post_content, post_author, post_date, guid) 
+   $query = "INSERT INTO $mytable(ID, post_title, post_content, post_author, post_date, guid)
                   VALUES ('$number', '$title', '$content', '$author', '$date', '$url')";
    $results = $base->exec($query);
 

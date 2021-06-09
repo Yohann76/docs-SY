@@ -35,7 +35,6 @@ Variable
 
   Console.WriteLine(age); // affiche 30
 
-
 Type var framework .NET :
 ::
 

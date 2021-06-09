@@ -1,9 +1,5 @@
-.. index::
-   single: Mysql; Show
+## Mysql
 
-
-Mysql
-===================
 
 `Mysql Doc`_
 

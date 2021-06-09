@@ -1,8 +1,5 @@
-.. index::
-   single: Redis; 
+## Redis
 
-Redis
-===================
 
 `Redis doc`_
 

@@ -1,5 +1,5 @@
-Gitlab
-===================
+## Gitlab
+
 
 `Gitlab`_
 
@@ -8,8 +8,8 @@ Créer par Facebook en 2012.
 Language de requéte :
 Un langage de requête est un langage informatique utilisé pour accéder aux données d'une base de données ou d'autres systèmes d'information.
 
-Commande
--------------------
+#### Commande
+
 
  installer git avec la commande :
  ::
@@ -94,6 +94,5 @@ Commande diverse :
 
 Avoir une variable privée pour gitlab :
 ::
- 
- changer les variables dans le compte gitlab 
- 
+
+ changer les variables dans le compte gitlab
