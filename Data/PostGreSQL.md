@@ -1,5 +1,5 @@
-PostGreSQL
-===================
+## PostGreSQL
+
 
 PostGreSQL s'installe ici
 `PostGreSQL download`_
@@ -51,12 +51,12 @@ connexion a la bdd en ligne de commande :
 ::
 
   psql -U tqa_owner tqa_dataservice
-  
+
 utiliser la base :
 ::
 
   \c tqa_dataservice
-  
+
 recherche :
 ::
 
