@@ -7,16 +7,21 @@
 
 * CMS
     - E-commerce
-        - [PrestaShop](/CMS/E-Commerce/prestashop.md)
+        - [PrestaShop](/CMS/E-Commerce/Prestashop/prestashop.md)
     - ERP
+        - [Dolibar](/CMS/ERP/Dolibar.md)
     - Wordpress
+        - [créer un theme](/CMS/ERP/Wordpress/Créer_theme_WP.md)
+        - [extension](/CMS/ERP/Wordpress/Extension_WP.md)
+        - [Wordpress](/CMS/ERP/Wordpress/Wordpress.md)
     - Zabbix
+        - [zabbix](/CMS/ERP/Zabbix/zabbix.md)
 * Data
     - [Big Data](/Data/Big-Data.md)
     - [GraphQL](/Data/GraphQl.md)
     - [MongoDB](/Data/MongoDB.md)
     - [MySQL](/Data/Mysql.md)
-    - [MongoDB](/Data/PostgreSQL.md)
+    - [PostGres](/Data/PostGreSQL.md)
     - [Redis](/Data/rédis.md)
     - [SQLLite](/Data/SQLLite.md)
 * DevOps
@@ -29,8 +34,14 @@
     - [CSV](/Format/TEXT.md)
 * Go
     - [Go](/Format/Go.md)
+
 * Hacking/Sécurité
 * HTMLCSS
+    - [Bootstrap](/HTMLCSS/Bootstrap.md)
+    - [CSS](/HTMLCSS/CSS.md)
+    - [HTML](/HTMLCSS/HTML.md)
+    - [SASS](/HTMLCSS/SASS.md)
+    - [SCSS](/HTMLCSS/Scss.md)
 * Javascript
 * Mobile
 * PHP
@@ -40,6 +51,14 @@
     - [SMTP](/Protocole/SMTP.md)
     - [SSH](/Protocole/SSH.md)
 * Python
+    - [Python](/Python/Python.md)
+    - [Dépendance/Installation](/Python/dépendance_installations.md)
+    - Librairies
+        - [PyGame](/Python/Librairies/PyGame.md)
+        - [turtlePY](/Python/Librairies/TurtlePY.md)
+    - Framework
+        - [Django](/Python/Framework/Django.md)
+        - [Flask](/Python/Framework/flask.md)
 * Request
     - [Jmeter](/request/Jmeter.md)
     - [Manipuler une requete](/request/Manier_les_requetes.md)
