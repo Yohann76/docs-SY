@@ -3,7 +3,7 @@
 * [Home](/)
 * .NET
     - [ASP.NET MVC](/.NET/ASP.net_MVC.md)
-    - [C#](/.NET/ASP.net_MVC/C#.md)
+    - [C#](/.NET/C#.md)
 
 * CMS
     - E-commerce
@@ -11,11 +11,11 @@
     - ERP
         - [Dolibar](/CMS/ERP/Dolibar.md)
     - Wordpress
-        - [créer un theme](/CMS/ERP/Wordpress/Créer_theme_WP.md)
-        - [extension](/CMS/ERP/Wordpress/Extension_WP.md)
-        - [Wordpress](/CMS/ERP/Wordpress/Wordpress.md)
+        - [créer un theme](/CMS/WordPress/créer_theme_WP.md)
+        - [extension](/CMS/WordPress/Extension_WP.md)
+        - [Wordpress](/CMS/WordPress/WordPress.md)
     - Zabbix
-        - [zabbix](/CMS/ERP/Zabbix/zabbix.md)
+        - [zabbix](/CMS/Zabbix/zabbix.md)
 * Data
     - [Big Data](/Data/Big-Data.md)
     - [GraphQL](/Data/GraphQl.md)
@@ -33,7 +33,7 @@
     - [JSON](/Format/JSON.md)
     - [CSV](/Format/TEXT.md)
 * Go
-    - [Go](/Format/Go.md)
+    - [Go](/Go/Go.md)
 
 * Hacking/Sécurité
 * HTMLCSS
@@ -70,7 +70,7 @@
         - [Stripe](/request/API/Stripe.md)
 * Ruby
     - [Ruby](/Ruby/Ruby.md)
-    - [Ruby](/Ruby/RubyOnRails.md)
+    - [RubyOnRails](/Ruby/RubyOnRails.md)
 
 * [Gitlab](/GitLab.md)
 * [Github](/Github.md)
