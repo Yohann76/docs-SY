@@ -3,23 +3,20 @@ Jest ( Js testing )
 
 ::
 
-  npm install jest --save-dev
+  yarn add -D jest jest-cli
 
 package.json script : 
 ::
 
-  "test" : "jest"
+  "test" : "jest --coverage"
   
 
 lancer les tests 
 
 ::
 
-  yarn test // ou   yarn jest --coverage
+  yarn test
   
-
-les tests sont placé dans /tests/ et doivent avoir un nom en *.spec.js
-
 
 fichier de test:
 
@@ -35,4 +32,4 @@ fichier de test:
 
   test2('mon premier test', () => {
       expect(1).toBe(1);
-    })
+  })
