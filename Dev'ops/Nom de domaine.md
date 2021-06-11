@@ -1,8 +1,4 @@
-.. index::
-   single: NDD;
-
-Nom de domaine sur OVH :
-===================
+## Nom de domaine sur OVH :
 
 Pour configurer un sous non de domaine sur OVH
 -------------------

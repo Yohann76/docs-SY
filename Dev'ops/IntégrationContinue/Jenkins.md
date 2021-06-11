@@ -1,8 +1,5 @@
-.. index::
-   single: Jenkins; 
+## Jenkins
 
-Jenkins
-===================
 
 `Jenkins Docs <https://jenkins.io/doc/>`_
 
@@ -11,5 +8,3 @@ pour automatiser toutes sortes de tâches liées à la création, au test et à 
 
 Jenkins peut être installé via des packages système natifs, Docker, ou même être exécuté de manière autonome par n'importe
 quelle machine avec un environnement d'exécution Java (JRE) installé.
-
-

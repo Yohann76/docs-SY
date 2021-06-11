@@ -1,8 +1,5 @@
-.. index::
-   single: GithubAction; 
+## Github Action
 
-Github Action
-===================
 
 Pour intégration nodeJS (react,javascript,next,..) :
 ::
@@ -13,12 +10,12 @@ Pour intégration PHP (Symfony,Laravel,PHP) :
 ::
 
    //configuration PHP
-   
+
 Pour intégration Docker:
 ::
 
    //intégration Docker
-   
+
 
 `Github Action docs`_
 

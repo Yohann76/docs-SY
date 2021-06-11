@@ -1,8 +1,5 @@
-.. index::
-   single: Ansible; 
+## Ancistrano ( construit sur Base de Ansible ) :
 
-Ancistrano ( construit sur Base de Ansible ) :
--------------------
 
 `Site Officiel Ansistranos`_
 

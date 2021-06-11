@@ -1,8 +1,5 @@
-.. index::
-   single: CircleCI;
+## CircleCI
 
-CircleCI
-===================
 `CircleCi  docs <https://circleci.com/docs/>`_
 
 Se rendre sur le site `CircleCi <https://circleci.com/vcs-authorize/>`_

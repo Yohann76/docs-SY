@@ -1,8 +1,4 @@
-.. index::
-   single: Windows;
-
-Windows
-===================
+## Windows
 
 linux sur windows : taper bash dans le cmd
 

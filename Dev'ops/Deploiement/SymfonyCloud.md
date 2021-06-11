@@ -1,5 +1,5 @@
-Synfony cloud
-================
+## Synfony cloud
+
 
 `Symfony Cloud official site`_
 

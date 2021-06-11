@@ -1,5 +1,1 @@
-.. index::
-   single: DoctorRST; 
-
-Doctor RST
-===================
+## Doctor RST

@@ -1,8 +1,4 @@
-.. index::
-   single: Docker;
-
-Docker
-===================
+## Docker
 
 `docker docs <https://docs.docker.com/>`_
 `docker hub <https://hub.docker.com/>`_

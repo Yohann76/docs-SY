@@ -1,8 +1,4 @@
-.. index::
-   single: Ansible;
-
-ANSIBLE :
-===================
+## ANSIBLE
 
 `Ansible docs`_
 `Ansible Galaxy`_

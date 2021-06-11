@@ -1,3 +1,5 @@
+## config Apache
+
 dossier de configuration :
 ::
 
@@ -12,16 +14,16 @@ dossier de configuration :
       RewriteRule "." "/www/subdomain/index.html"
       # ...
   </VirtualHost>
-  
-  
-Réécrire une URL : 
+
+
+Réécrire une URL :
 ::
-  
+
   Alias "/url" "/urlNext"
-  
+
 
 HTTPS:
-( avec l'activation console : a2enmod ssl ) 
+( avec l'activation console : a2enmod ssl )
 ::
 
   # vhost https

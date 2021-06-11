@@ -1,8 +1,4 @@
-.. index::
-   single: Linux;
-
-Linux
-===================
+## Linux
 
 Commande Généraliste
 -------------------

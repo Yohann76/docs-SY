@@ -1,7 +1,4 @@
-Configuration de l'environnement PHP 
-====================================
-
-
+## Configuration de l'environnement PHP
 
 Xdebug
 ::
@@ -21,9 +18,9 @@ Blackfire
     extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73.dll
     blackfire.agent_timeout = 0.25
 
-    ;extension=blackfire.dll 
-    ;blackfire.agent_timeout = 0.25 
-    blackfire.log_file = /tmp/blackfire.log 
+    ;extension=blackfire.dll
+    ;blackfire.agent_timeout = 0.25
+    blackfire.log_file = /tmp/blackfire.log
     blackfire.log_level = 4
     BLACKFIRE_AGENT_SOCKET="tcp://127.0.0.1:8307"
 
