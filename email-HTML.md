@@ -1,5 +1,4 @@
-Les Emails en HTML
-==================
+## Les Emails en HTML
 
 Gmail et les grands outils de mailing n'accepte pas le même HTML des navigateur, parce que cela transite via le protocole SMTP, il s'agit donc d'un HTML modifié.
 

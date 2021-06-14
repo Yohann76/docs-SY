@@ -1,5 +1,5 @@
-Les bases du PHP
-===================
+## Les bases du PHP
+
 
 `PHP docs`_
 
@@ -99,7 +99,7 @@ remplacer un contenu
 
     $content = str_replace(">", " ",  $content);
     $content = str_replace("<", " ",  $content);
-   
+
 Enlever les espace a un string :
 ::
 
