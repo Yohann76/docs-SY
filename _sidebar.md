@@ -25,6 +25,16 @@
     - [Redis](/Data/rédis.md)
     - [SQLLite](/Data/SQLLite.md)
 * DevOps
+    - OS
+    - tests
+        - [Selenium](DevOps/tests/selenium.md)
+    - Nginx
+    - Kubernetes
+    - Intégration Continue
+    - Docker
+    - Déploiement
+    - Config WAMP
+    - Apache
 * Editeur
     - [VS code](/Editeur/Vscode.md)
 * Format
