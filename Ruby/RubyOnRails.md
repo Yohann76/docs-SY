@@ -1,5 +1,4 @@
-RubyOnRails
-===================
+## RubyOnRails
 
 `RoR guide`_
 

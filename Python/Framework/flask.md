@@ -1,5 +1,4 @@
-Flask
-======
+## Flask
 
 Flask est un micro framework très minimaliste et leger, concu pour developper des application rappidement.
 

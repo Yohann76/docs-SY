@@ -1,5 +1,5 @@
-Python
-===================
+## Python
+
 `Docs Python`_
 
 .. _`Docs Python`: https://docs.python.org/fr/3/
@@ -28,7 +28,7 @@ Condition
 
 
     # On fait un test pour savoir si a est comprise dans l'intervalle allant de 2 à 8 inclus
-    
+
     a = 5
     if a >= 2:
         if a <= 8:
