@@ -101,6 +101,7 @@ Commande divers :
    $ git pull origin master // Récuperer le code de master, copier une branch
    $ git reset monfichieroudossier // Retirer un fichier ou dossier de l'index aprés un git add *
    $ git rev-list --count HEAD // compter le nombre de commit sur la branch actuelle ls
+   $ git submodule update --init // telecharger les modules secondaire ( un repo dans un repo )
 
 ( voir pour git push origin master aprés pour effectuer la merge )
 ( ou faire une demande de pull request sur git )
