@@ -2,8 +2,7 @@
 
 ##### Platform par Microsoft, ASP est le framework, MVC pour model view controller
 
-
-`Cours OC`_
+[Cours OC](https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc).
 
 Introduction
 -------------------
@@ -134,7 +133,3 @@ Récupéré des infos :
 ::
 
     La Category @ViewData["Name"] a bien été trouvé et a @ViewData["Years"] ans.
-
-
-
-.. _`Cours OC`: https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc
