@@ -52,5 +52,14 @@ Ligne de commande rails ( une fois la gemme installé )
   $ cd blog // rentrer dans le projet "blog"
   $ rails server // lancer le server de dev (http://localhost:3000)
 
+
+Base de données
+-------------------
+::
+
+  $ rails g migration CreatePosts title:string content:text // generer la migration d'une table  Posts  avec title, content...
+  $ rails db:migrate // appliquer une migration à la base de données
+  $ rails db:rollback // inverser la derniére migration effectué 
+
 .. _`RoR guide`: https://guides.rubyonrails.org/v5.2/
 .. _`RoR api dev`: https://api.rubyonrails.org/
