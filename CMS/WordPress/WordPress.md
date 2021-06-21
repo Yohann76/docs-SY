@@ -1,9 +1,9 @@
 ## WordPress
 
-Créer un thème enfant 
+Créer un thème enfant
 ================
 
-`Tuto WP`_
+[Tuto WP](https://wpformation.com/theme-enfant-wordpress/)
 
 Dans le dossier wp-content/themes. on cré un dossier :
 /nomdevotrethemeenfant
@@ -66,5 +66,3 @@ Afin d’égayer un peu votre gestionnaire de thèmes WordPress,
 vous pourrez aussi mettre un fichier screenshot.jpg (600×450 px conseillé)
 qui affichera la miniature de votre thème enfant dans le gestionnaire de thèmes.
 Pour le reste, vous pouvez ne rien mettre, cela fonctionnera quand même !
-
-.. _`Tuto WP`: https://wpformation.com/theme-enfant-wordpress/

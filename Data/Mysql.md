@@ -1,7 +1,7 @@
 ## Mysql
 
 
-`Mysql Doc`_
+[Mysql Doc](https://dev.mysql.com/doc/)
 
 Commandes courante
 -------------------
@@ -97,6 +97,3 @@ Sauvegarde et restauration
      $ mysqldump -uroot -p --all-databases > alldatabases.sql // Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql
      $ mysql -u username -p databasename < databasename.sql // Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base
      $ mysql -u username -p --one-database mybase < alldatabases.sql // Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases
-
-
-.. _`Mysql Doc`: https://dev.mysql.com/doc/

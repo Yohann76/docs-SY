@@ -2,7 +2,8 @@
 
 
 PostGreSQL s'installe ici
-`PostGreSQL download`_
+[PostGreSQL download](https://www.postgresql.org/download/windows/)
+
 
 1. Suivre l'installation
 2. Redemarrer le PC
@@ -43,9 +44,6 @@ Les Select :
 
   $ select * from books;
   $ select * from books where price < 28;
-
-.. _`PostGreSQL download`: https://www.postgresql.org/download/windows/
-
 
 connexion a la bdd en ligne de commande :
 ::

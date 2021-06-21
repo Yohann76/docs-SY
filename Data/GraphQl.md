@@ -1,6 +1,3 @@
-
 ## GraphQl
 
-`GraphQl Docs`_
-
-.. _`GraphQl Docs`: https://docs.mongodb.com/
+[GraphQL Docs](https://docs.mongodb.com/)

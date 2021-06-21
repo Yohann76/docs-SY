@@ -1,9 +1,7 @@
 ## MongoDB
 
 
-`MongoDB Docs`_
-
-.. _`MongoDB Docs`: https://docs.mongodb.com/
+[MongoDB Docs](https://docs.mongodb.com/)
 
 ( L'éxécutable shell est dans le /bin )
 
@@ -209,7 +207,8 @@ avec la date dans le fichier :
 Mongo Express ( équivalent phpmyAdmin for mongo )
 ================================================
 
-https://github.com/mongo-express/mongo-express
+[MongoExpress](https://github.com/mongo-express/mongo-express)
+
 
 ::
 
