@@ -59,7 +59,8 @@ Base de données
 
   $ rails g migration CreatePosts title:string content:text // generer la migration d'une table  Posts  avec title, content...
   $ rails db:migrate // appliquer une migration à la base de données
-  $ rails db:rollback // inverser la derniére migration effectué 
+  $ rails db:rollback // inverser la derniére migration effectué
+  $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
 
 .. _`RoR guide`: https://guides.rubyonrails.org/v5.2/
 .. _`RoR api dev`: https://api.rubyonrails.org/
