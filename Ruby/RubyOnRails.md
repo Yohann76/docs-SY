@@ -56,10 +56,27 @@ Commande dans la console ( rails c ou rails console )
 -------------------
 ::
 
+  $ rails console --sandbox // lancer la console en mode bac à sable, pour qu'une fois sortie de la console les modif sont pas persisté
   $ Post.find(1) // chercher dans la base de donnée dans la table post l'id 1
   $ p = Post.find(1) // stocker dans une variable la requete
   $ p.name // pour récupérer le nom
+  $ p.content = "hello ça va" // pour modifier
+  $ p.save // persister le changement en bdd
+  $ p.destroy // supprimer un changement en bdd ( mais toujours existant en bdd )
 
+  // ajouter une ligne
+  $ p = Post.new
+  $ p.title = "salut"
+  $ p.save
+  $ p // voir la variable qu'on à créer
+
+  // récupérer des données
+  $ Post.first // recupérer le premier
+  $ Post.last // recupérer le dernier
+  $ Post.count // Compter le nombre de ligne
+  $ Post.all // tout récupérer p = Post.all, p[0], P[1]..
+  $ Post.where(name:'salut')
+  $ Post.limit(1)
 
 
 Base de données
@@ -78,3 +95,4 @@ Connexion Database SQL sur VSCode
    2. Ouvrir la palette de commandes ( ctrl + shift + p)
    3. sellectionnez SQLite : open database
    4. choisir development.sqlite3
+   ou dans base de données, choisir sqlite connection et prendre le fichier qui se trouve dans db/migrate/development.sqlite3
