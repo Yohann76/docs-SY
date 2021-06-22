@@ -1,6 +1,6 @@
 ## Ruby
 
-`Ruby Docs`_
+[Ruby Docs](https://ruby-doc.org/)
 
 Pré requis
 -------------------
@@ -10,9 +10,5 @@ Instalation
 -------------------
 ::
 
-  `Ruby Installation`_
+  [Ruby Installation](https://rubyinstaller.org/downloads/)
   $ ruby -v // pour voir que ruby est bien installé
-
-
-.. _`Ruby Docs`: https://ruby-doc.org/
-.. _`Ruby Installation`: https://rubyinstaller.org/downloads/

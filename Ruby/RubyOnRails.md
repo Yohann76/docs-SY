@@ -51,6 +51,7 @@ Ligne de commande rails ( une fois la gemme rails installé )
   $ cd blog // rentrer dans le projet "blog"
   $ rails server // lancer le server de dev (http://localhost:3000)
   $ rails console // pour lancer la console rails
+  $ rails g controller Posts index  // Générer un controller nommé Posts avec une méthodes index
 
 Commande dans la console ( rails c ou rails console )
 -------------------
