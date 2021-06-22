@@ -42,7 +42,7 @@ Création de page
   App/View/Layouts/applications ( base du html )
 
 
-Ligne de commande rails ( une fois la gemme installé )
+Ligne de commande rails ( une fois la gemme rails installé )
 -------------------
 ::
 
@@ -50,6 +50,16 @@ Ligne de commande rails ( une fois la gemme installé )
   $ rails new blog --database=mysql // // Créer un projet "blog" avec bdd = mysql
   $ cd blog // rentrer dans le projet "blog"
   $ rails server // lancer le server de dev (http://localhost:3000)
+  $ rails console // pour lancer la console rails
+
+Commande dans la console ( rails c ou rails console )
+-------------------
+::
+
+  $ Post.find(1) // chercher dans la base de donnée dans la table post l'id 1
+  $ p = Post.find(1) // stocker dans une variable la requete
+  $ p.name // pour récupérer le nom
+
 
 
 Base de données
@@ -60,3 +70,11 @@ Base de données
   $ rails db:migrate // appliquer une migration à la base de données
   $ rails db:rollback // inverser la derniére migration effectué
   $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
+
+
+Connexion Database SQL sur VSCode
+-------------------
+   1. Installer l'extension SqLite
+   2. Ouvrir la palette de commandes ( ctrl + shift + p)
+   3. sellectionnez SQLite : open database
+   4. choisir development.sqlite3
