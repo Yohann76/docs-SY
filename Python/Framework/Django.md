@@ -1,6 +1,6 @@
 ## Django
 
-`Django  docs`_
+[Django  docs](https://docs.djangoproject.com/en/3.0/)
 
 Instalation
 ===================
@@ -34,12 +34,12 @@ réglages bdd dans settings.py pour information de connection,
       'django.contrib.staticfiles',
   ]
 
-Commande de database ( `Tuto docs Shell API`_ ) :
+Commande de database ( [Tuto docs Shell API](https://docs.djangoproject.com/fr/3.1/intro/tutorial02/) ) :
 ::
 
   $ python manage.py makemigrations polls // faire une migration de l'app polls ( dans container web docker )
   $ python manage.py migrate // appliquer les modifications à la base de données ( dans container web docker )
-  $ python manage.py shell // avoir le shell API de Django ( pour communiquer avec la bases `Tuto docs Shell API`_ )
+  $ python manage.py shell // avoir le shell API de Django ( pour communiquer avec la bases [Tuto docs Shell API](https://docs.djangoproject.com/fr/3.1/intro/tutorial02/))
 
 Notes :
 ===================
@@ -53,6 +53,3 @@ Creation super user :
   $ python manage.py createsuperuser ( in docker web )
   -> saisir username : admin -> , email -> email , password -> password
   Interface de connexion directement disponibles dans /admin
-
-.. _`Django  docs`: https://docs.djangoproject.com/en/3.0/
-.. _`Tuto docs Shell API`: https://docs.djangoproject.com/fr/3.1/intro/tutorial02/

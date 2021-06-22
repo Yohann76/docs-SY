@@ -1,8 +1,7 @@
 ## RubyOnRails
 
-`RoR guide`_
-
-`RoR api dev`_
+[RoR guide](https://guides.rubyonrails.org/v5.2/)
+[RoR api dev](https://api.rubyonrails.org/)
 
 Ruby on Rails, également appelé RoR ou Rails, est un framework web libre écrit en Ruby. Il suit le motif de conception modèle-vue-contrôleur (MVC).
 Il propose une structure qui permet de développer rapidement et intuitivement. Cependant, il impose un grand niveau d'abstraction dans la programmation
@@ -61,6 +60,3 @@ Base de données
   $ rails db:migrate // appliquer une migration à la base de données
   $ rails db:rollback // inverser la derniére migration effectué
   $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
-
-.. _`RoR guide`: https://guides.rubyonrails.org/v5.2/
-.. _`RoR api dev`: https://api.rubyonrails.org/
