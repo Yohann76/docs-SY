@@ -1,6 +1,7 @@
 ## Instalation
 
-`Github docs`_
+[Github docs](https://github.com/phpro/grumphp)
+
 composer require --dev phpro/grumphp-shim
 
 Config ( dossier grumphp.yml )
@@ -65,5 +66,3 @@ Config ( dossier grumphp.yml )
 
 
 Grump php est un "composant" qui permet de verifier a chaque commit si le code est valide, cela permet de vérifier l'ensemble du projet selon certain critére.
-
-.. _`Github docs`: https://github.com/phpro/grumphp

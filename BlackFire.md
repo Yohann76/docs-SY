@@ -1,11 +1,11 @@
 ## BlackFire
 
-`Blackfire Docs`_
+[Blackfire Docs](https://blackfire.io/docs/introduction)
 
 Instalation Windows
 -------------------
 
-`windows blackfire Instalation`_
+[windows blackfire Instalation](https://blackfire.io/docs/up-and-running/installation)
 
 Config Wamp
 -----------
@@ -72,7 +72,3 @@ Verifier les droits des fichiers ( que l'agent soit accessible )
 Verifier les bon token/id client et server ( dans l'agents  -> server token/id et dans les variable d'environement -> client token/id )
 L'agent doit etre dans Programme Data pour avoir les droits
 Vérifier que l'agent est bien détécter sur la docs de blackfire
-
-
-.. _`Blackfire Docs`: https://blackfire.io/docs/introduction
-.. _`windows blackfire Instalation`: https://blackfire.io/docs/up-and-running/installation

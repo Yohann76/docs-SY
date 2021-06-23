@@ -1,7 +1,7 @@
 ## Gitlab
 
 
-`Gitlab`_
+[Gitlab](https://gitlab.com/)
 
 Créer par Facebook en 2012.
 
@@ -90,7 +90,7 @@ Commande diverse :
   $ git clone adresse_git_projet // Cloner un projet
   $ git push origin master // push ses commit sur la branch master
 
-.. _`Gitlab`: https://gitlab.com/
+
 
 Avoir une variable privée pour gitlab :
 ::

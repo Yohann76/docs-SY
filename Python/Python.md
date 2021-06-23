@@ -1,8 +1,6 @@
 ## Python
 
-`Docs Python`_
-
-.. _`Docs Python`: https://docs.python.org/fr/3/
+[Docs Python](https://docs.python.org/fr/3/)
 
 Variable et dictionnaire
 ===========

@@ -1,7 +1,7 @@
 ## Les bases du PHP
 
 
-`PHP docs`_
+[PHP docs](http://php.net/manual/fr/)
 
 Variable
 ===================
@@ -83,7 +83,7 @@ Executer un fichier php en ligne de commande
 
     php NomDuFichier
 
-`PHP shell-exec`_
+[PHP shell-exec](https://www.php.net/manual/fr/function.shell-exec.php)
 
 Trouver le chemin d'un fichier
 ::
@@ -111,7 +111,7 @@ Enlever les espace a un string :
 Expressions réguliere
 ############
 
-`Memento expression reguliere OC`_
+[Memento expression reguliere OC](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres)
 
 Une regex sert a trouver un motif dans une chaine de caractere:
 
@@ -125,8 +125,3 @@ Regex utile:
 ::
     #(https?://)([\w\d.&:\#@%/;$~_?\+-=]*)#  // trouve une chaine https://
     preg_match_all("#^\s[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}\s$#",$content, $out); // Trouver une adresse mail
-
-
-.. _`Memento expression reguliere OC`: https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres
-.. _`PHP docs`: http://php.net/manual/fr/
-.. _`PHP shell-exec`: https://www.php.net/manual/fr/function.shell-exec.php

@@ -1,8 +1,7 @@
-Symfony
-##################
+## Symfony
 
-`Symfony docs`_
-`SymfonyConnect`_
+[Symfony docs](https://symfony.com/doc/current/index.html#gsc.tab=0)
+[SymfonyConnect](https://connect.symfony.com/)
 
 Créer un projet
 ****************
@@ -89,7 +88,7 @@ Commande d’information et Commande divers bin/console
 
 
 Nouvelles commandes
-( nouvelle commande symfony avec le dernier exécutable ( `Symfony executable`_ ) )
+( nouvelle commande symfony avec le dernier exécutable ( [Symfony executable](https://symfony.com/download) )
 
 .. code-block:: terminal
 
@@ -288,7 +287,7 @@ retourner a la page précedente :
 
 Création espace de connexion
 ------------------------------------
-`Symfony connexion`_
+[Symfony connexion](https://symfony.com/doc/current/the-fast-track/fr/15-security.html#configuring-the-security-authentication)
 ::
 
   $ symfony composer req security
@@ -304,11 +303,4 @@ Création espace de connexion
 Gestion du déploiement :
 ---------------
 
-`Deploiement docs symfony`_
-
-
-.. _`SymfonyConnect`: https://connect.symfony.com/
-.. _`Symfony docs`: https://symfony.com/doc/current/index.html#gsc.tab=0
-.. _`Deploiement docs symfony`: https://symfony.com/doc/current/deployment.html
-.. _`Symfony executable`: https://symfony.com/download
-.. _`Symfony connexion` : https://symfony.com/doc/current/the-fast-track/fr/15-security.html#configuring-the-security-authentication
+[Deploiement docs symfony](https://symfony.com/doc/current/deployment.html)
