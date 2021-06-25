@@ -25,6 +25,4 @@ Code exemple Symfony
 
 
 
-`SwiftMailer docs`_
-
-.. _`SwiftMailer docs`: https://swiftmailer.symfony.com/docs/introduction.html
+[SwiftMailer docs](https://swiftmailer.symfony.com/docs/introduction.html)

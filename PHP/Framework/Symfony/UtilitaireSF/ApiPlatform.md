@@ -1,18 +1,18 @@
-API PLATEFORME : 
+API PLATEFORME :
 ===================
 
-`ApiPlatform docs`_
+[ApiPlatform docs](https://api-platform.com/docs/)
 
 
-Installation 
-$ composer require api 
+Installation
+$ composer require api
 
-Api plateforme interface dispo sur /api 
+Api plateforme interface dispo sur /api
 
-Les annotations : 
+Les annotations :
 -------------------
 
-Définir comme ressource utilisable 
+Définir comme ressource utilisable
 ::
 
     /**
@@ -20,14 +20,14 @@ Définir comme ressource utilisable
     */
 
 
-    Définir Les droits : 
+    Définir Les droits :
     * @ApiResource(
     *     attributes={"security"="is_granted('ROLE_USER')"}
     * )
 
 
 
-Groups 
+Groups
 -------------------
 ::
 
@@ -59,8 +59,5 @@ Divers Annotation
 
 Autre
 -------------------
-Générer une docs : 
-Generer avec le lien qui se trouve dans /api/ et faire pointer cette docs sur un lien 
-
-
-.. _`ApiPlatform docs`: https://api-platform.com/docs/
+Générer une docs :
+Generer avec le lien qui se trouve dans /api/ et faire pointer cette docs sur un lien

@@ -1,7 +1,7 @@
 Composer
 ===================
 
-`Composer docs`_
+[Composer docs](https://getcomposer.org/doc/)
 
 Commande Composer :
 ===================
@@ -52,7 +52,3 @@ Options Composer
     --require-dev: Development requirements, see --require.
     --stability (-s): Value for the minimum-stability field.
     --license (-l): License of package.
-
-
-
-    .. _`Composer docs`: https://getcomposer.org/doc/

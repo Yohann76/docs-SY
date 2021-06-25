@@ -1,16 +1,16 @@
-Les test avec PHPunit 
+Les test avec PHPunit
 ===================
 
-`PHPunit docs`_
+[PHPunit docs](https://phpunit.readthedocs.io/fr/latest/)
 
 Commande et installation
 -------------------
-prérequis : Installer Xdebug ( sur le wamp ) 
+prérequis : Installer Xdebug ( sur le wamp )
 
-Composer require : 
+Composer require :
 ::
 
-    composer require phpunit 
+    composer require phpunit
 
 lancer les test :
 ::
@@ -20,11 +20,11 @@ lancer les test :
 Créer le rapport dans public/data :
 ::
 
-    php bin/phpunit --coverage-html public/data 
+    php bin/phpunit --coverage-html public/data
 
 Rapport disponible : http://localhost/oc/SnowTricks/public/data/index.html
 
-Test : 
+Test :
 
 Test Entité (unitaire)  tests/Entity/phoneTest.php
 
@@ -77,7 +77,7 @@ Test controller (fonctionnelle) tests/Controller/homecontrollerTest
 
 
 
-Test Formulaire (fonctionnelle) 
+Test Formulaire (fonctionnelle)
 ::
 
     public function testFormCreateActionUser(){
@@ -93,20 +93,10 @@ Test Formulaire (fonctionnelle)
 
         $crawler = $client->submit($form);
 
-        $client->followRedirect(); // Suivre la redirection si il y a 
+        $client->followRedirect(); // Suivre la redirection si il y a
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
 
 Les éléments sont à trouvé en html comme "user[email]" ou le bouton "ajouter"
 Sinon, faire un ->getName sur l'objet $form
-
-
-.. _`PHPunit docs`: https://phpunit.readthedocs.io/fr/latest/
-
-
-
-
-
-
-

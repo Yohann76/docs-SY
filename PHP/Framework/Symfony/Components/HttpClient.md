@@ -1,6 +1,6 @@
 HttpClient
 ===================
-`HttpClient Docs`_
+[HttpClient Docs](https://symfony.com/doc/current/components/http_client.html)
 
 
 Instalation
@@ -26,7 +26,3 @@ Exemple
     // $content = '{"id":521583, "name":"symfony-docs", ...}'
     $content = $response->toArray();
     // $content = ['id' => 521583, 'name' => 'symfony-docs', ...]
-
-
-
-.. _`HttpClient Docs`: https://symfony.com/doc/current/components/http_client.html

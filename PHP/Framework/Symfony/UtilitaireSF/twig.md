@@ -1,7 +1,7 @@
 Twig
 ==========
 
-`Twig Doc`_
+[Twig Doc](https://twig.symfony.com/doc/2.x/index.html)
 
 Commande Lié a twig
 --------------------
@@ -86,5 +86,3 @@ itération :
   loop.revindex0
   loop.last
   loop.length
-
-.. _`Twig Doc`: https://twig.symfony.com/doc/2.x/index.html
