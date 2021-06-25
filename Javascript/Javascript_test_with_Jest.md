@@ -1,5 +1,4 @@
-Jest ( Js testing ) 
---------
+###Jest ( Js testing ) 
 
 ::
 
@@ -33,3 +32,22 @@ fichier de test:
   test2('mon premier test', () => {
       expect(1).toBe(1);
   })
+  
+  
+  #### surcouche Enzyme
+  
+  pour les applications a rendu static comme jest, il y a parfois besoin d'une surcouche Enzyme :
+  
+  <pre>
+    test('Testing Components : hamburger and menu', () => {
+    const wrapper = mount(<Hamburger/>);
+    const menuWrapper = shallow(<AnimatedMenu links={layout.navigation} />);
+
+    expect(wrapper).not.toBeUndefined();
+    expect(menuWrapper.find('#menu').getPropertyValue('display')).toBe('none');
+
+    //expect(getComputedStyle(wrapper.getDOMNode()).getPropertyValue('display')).toBe('none');
+    wrapper.simulate('click');
+    expect(getComputedStyle(wrapper.getDOMNode()).getPropertyValue('display')).toBe('block');
+  });
+  </pre>
