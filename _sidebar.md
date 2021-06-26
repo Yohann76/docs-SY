@@ -26,15 +26,30 @@
     - [SQLLite](/Data/SQLLite.md)
 * DevOps
     - OS
+        - [Systême linux](DevOps/OS/Linux System.md)
+        - [Windows/MAC compatibilité](DevOps/OS/Windows-MacOS-Compatibilité.md)
+        - [Windows](DevOps/OS/Windows.md)
     - tests
         - [Selenium](DevOps/tests/selenium.md)
     - Nginx
+        - [config nginx php](DevOps/nginx/conf_nginx_php.md)
+        - [config nginx ssl https](DevOps/nginx/conf_nginx_ssl_https.md)
+        - [config nginx](DevOps/nginx/conf-nginx.md)
     - Kubernetes
+        - [bubernetes](DevOps/Kubernetes/Kubernetes.md)
     - Intégration Continue
+        - CircleCI
+        - GitlabCI
+        - [doctorRST](DevOps/IntégrationContinue/DoctorRST.md)
+        - [GithubAction](DevOps/IntégrationContinue/GithubAction.md)
+        - [Jenkins](DevOps/IntégrationContinue/Jenkins.md)
     - Docker
+        - [Docker](DevOps/Docker/Docker.md)
     - Déploiement
-    - Config WAMP
-    - Apache
+    - [Config WAMP](DevOps/Config Wamp/Php ini.md)
+    - [Apache](DevOps/Apache/config.md)
+    - [AWS](DevOps/AWS.md)
+    - [Nom de domaine](DevOps/Nom de domaine.md)
 * Editeur
     - [VS code](/Editeur/Vscode.md)
 * Format
@@ -59,6 +74,19 @@
     - [SASS](/HTMLCSS/SASS.md)
     - [SCSS](/HTMLCSS/Scss.md)
 * Javascript
+    - Librairies
+        - [AOS](/Javascript/Librairie/AOSJS.md)
+        - [Jquery](/Javascript/Librairie/Jquery.md)
+        - [Phaser](/Javascript/Librairie/Phaser.md)
+    - Framework
+        - [Angular](/Javascript/Framework/AngularJS.md)
+        - [NodeJS](/Javascript/Framework/NodeJS.md)
+        - [React](/Javascript/Framework/ReactJS.md)
+        - [Vue](/Javascript/Framework/VueJS.md)
+    - [Javascript](/Javascript/Javascript.md)
+    - [Jest](/Javascript/Javascript_test_with_jest.md)
+    - [Node NPM Yarn](/Javascript/Node_npm_yarn.md)
+    - [Parse Server](/Javascript/parse.md)
 * Mobile
 * PHP
 * Protocole
