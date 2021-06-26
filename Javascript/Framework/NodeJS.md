@@ -4,11 +4,12 @@ Node.js
 Installation
 -------------------
 
-Sur `windows` Prendre la version `MSI`
-`Node Install`_
+Sur windows Prendre la version MSI
+
+[Node Install](https://nodejs.org/en/download/)
 
 
-.. _`Node Install`: https://nodejs.org/en/download/
+
 
 
 Node

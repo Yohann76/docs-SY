@@ -1,6 +1,6 @@
 AOS
 -------------------
-`AOS github`_
+[AOS github](https://github.com/michalsnik/aos)
 
 Pour animer simplement des pages html en JS
 
@@ -69,6 +69,3 @@ Animation
   zoom-out-down
   zoom-out-left
   zoom-out-right
-
-
-.. _`AOS github`: https://github.com/michalsnik/aos

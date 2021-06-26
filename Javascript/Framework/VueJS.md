@@ -1,8 +1,8 @@
 Vue JS
 ===================
 
-`Vue Docs`_
-`Vue OC cours`_
+[Vue Docs](https://fr.vuejs.org/v2/guide/)
+[Vue OC cours](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862871-creez-un-nouveau-projet-avec-vue-cli)
 
 Vue.js est un framework qui permet de ne pas charger les pages dans leurs intégralité, mais seulement par morceaux, pour des raisons de quantité de donnée et de fluidité. Vue.js est une technologie populaire dans le frontend. Il est connu pour sa facilité de prise en main, même a l'arrivée de projets complexe, et les développeurs deviennet plus productif. Vue est accueillant et sa documentation est remarquable. Un bon choix comme premier framework front.
 
@@ -290,6 +290,3 @@ Apell API avec Axios ( avec bearer_token)
    .then(res => {
            console.log(res);
    });
-
-.. _`Vue Docs`: https://fr.vuejs.org/v2/guide/
-.. _`Vue OC cours`: https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862871-creez-un-nouveau-projet-avec-vue-cli
