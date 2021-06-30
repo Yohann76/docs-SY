@@ -46,6 +46,10 @@
     - Docker
         - [Docker](DevOps/Docker/Docker.md)
     - Déploiement
+        - [Ansistranos](DevOps/Deploiement/ansistranos.md)
+        - [Google Platform](DevOps/Deploiement/GooglePlatform.md)
+        - [Heroku](DevOps/Deploiement/Heroku.md)
+        - [Symfony cloud](DevOps/Deploiement/SymfonyCloud.md)
     - [Config WAMP](DevOps/Config Wamp/Php ini.md)
     - [Apache](DevOps/Apache/config.md)
     - [AWS](DevOps/AWS.md)
@@ -89,7 +93,6 @@
     - [Parse Server](/Javascript/parse.md)
 * Mobile
 * PHP
-*   
 * Protocole
     - [FTP](/Protocole/FTP.md)
     - [HTTP](/Protocole/HTTP.md)
