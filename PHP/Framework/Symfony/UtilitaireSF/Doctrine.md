@@ -65,6 +65,37 @@ Pour les relation :
 Relation manyToMany  :
 -----------------------
 ::
+ 		// form pour add une relation ManyToMany
+		if ($form->isSubmitted() && $form->isValid()) {
+				 $entityManager = $this->getDoctrine()->getManager();
+
+				 // set organization id
+				 $user = $this->getUser();
+				 $OrgaFromCurrentUser = $user->getOrganization();
+				 // set orga with mission entity
+				 $proof->setOrganization($OrgaFromCurrentUser);
+
+				 $entityManager->persist($proof);
+				 $entityManager->flush();
+
+				 //dd($form->get('securityMeasure')->getData());
+
+				 // Change status of measure if proof is submit
+				 // each measure send in form ManyToMany
+				 // boucle pour faire une action sur chaque entity coché 
+				 $countTab = $form->get('securityMeasure')->getData();
+				 $i = 0 ;
+				 while ($i <= count($countTab)-1) {
+						 $data = $form->get('securityMeasure')->getData();
+						 $securityMeasure = $data[$i]->setStatus("prouvé");
+						 $entityManager->persist($securityMeasure);
+						 $entityManager->flush();
+						 $i++;
+				 }
+
+				 return $this->redirectToRoute('proof_index');
+		 }
+
 
 	$ php bin/console make Entity
 	Choisir l'entité a modifier : Category
