@@ -38,31 +38,33 @@ Les routes
 
 Dans le fichier RouteConfig.classes
 ::
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
 
-            // Controller = Home pour homecontroller et action = Index, la méthode : public ActionResult Index() { return View(); }
-            // par default return la view associé au nom.
+    routes.MapRoute(
+        name: "Default",
+        url: "{controller}/{action}/{id}",
+        defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+    );
+
+    // Controller = Home pour homecontroller et action = Index, la méthode : public ActionResult Index() { return View(); }
+    // par default return la view associé au nom.
 
 
 Exemple
+-------------------
 ::
-            routes.MapRoute(
-                name: "Default",
-                url: "{action}/{valeur1}/{valeur2}",
-                defaults: new { controller = "Calculateur", action = "Ajouter", valeur1 = 0, valeur2 = 0 });
+    routes.MapRoute(
+        name: "Default",
+        url: "{action}/{valeur1}/{valeur2}",
+        defaults: new { controller = "Calculateur", action = "Ajouter", valeur1 = 0, valeur2 = 0 });
 
-            public class CalculateurController : Controller
-            {
-                public string Ajouter(int valeur1, int valeur2)
-                {
-                    int resultat = valeur1 + valeur2;
-                    return resultat.ToString();
-                }
-            }
+    public class CalculateurController : Controller
+    {
+        public string Ajouter(int valeur1, int valeur2)
+        {
+            int resultat = valeur1 + valeur2;
+            return resultat.ToString();
+        }
+    }
 
 
 Le Controller
