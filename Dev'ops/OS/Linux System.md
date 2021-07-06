@@ -60,16 +60,15 @@ General :
 -------------------
 
 - ./.bashrc est le fichier de démarrage
-- http://www.tux-planet.fr/empecher-la-suppression-dun-fichier-ou-dun-repertoire/#:~:text=Voici%20une%20astuce%20pour%20les,fichiers%20Ext2%2C%20Ext3%20et%20Ext4.
+- [Suppression démarrage](http://www.tux-planet.fr/empecher-la-suppression-dun-fichier-ou-dun-repertoire/#:~:text=Voici%20une%20astuce%20pour%20les,fichiers%20Ext2%2C%20Ext3%20et%20Ext4).
 
 
 
 
 Tuto Projet Raspberry
 -------------------
-`Miner avec un futurebit`_
 
-.. _`Miner avec un futurebit`: https://medium.com/@david_senate/running-a-super-low-cost-digibyte-scrypt-miner-rig-with-a-raspberry-pi-3-model-b-and-a-futurebit-14dd7d95e566
-.. _`Autre lien DietPi config`: http://dietpi.com/phpbb/viewtopic.php?f=8&t=5#p5
-.. _`Configuration DietPi`: http://blog.choum.ca/20170819-dietpi-configuration-de-base
-.. _`Site DietPi`: https://dietpi.com/#noAction
+[Miner avec un futurebit](https://medium.com/@david_senate/running-a-super-low-cost-digibyte-scrypt-miner-rig-with-a-raspberry-pi-3-model-b-and-a-futurebit-14dd7d95e566)
+[Autre lien DietPi config](http://dietpi.com/phpbb/viewtopic.php?f=8&t=5#p5)
+[Configuration DietPi](http://blog.choum.ca/20170819-dietpi-configuration-de-base)
+[Site DietPi](https://dietpi.com/#noAction)

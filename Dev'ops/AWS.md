@@ -1,6 +1,6 @@
 ## Amazon Web Service :
 
-`Site Officiel Ansistranos`_
+[Site Officiel Ansistranos](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
 
 
 Lancer un serveur MC2 ( machine linux )
@@ -120,5 +120,3 @@ définit ce qu'on a le droit de faire sur un bucket ou un fichier.
 Le cloud Uploader ( Service d’upload via site)  :
 
 Faire pointer Sur un nom de domaine
-
-.. _`Site Officiel Ansistranos`: https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2#
