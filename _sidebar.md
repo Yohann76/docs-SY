@@ -3,13 +3,13 @@
 * [Home](/)
 * .NET
     - [ASP.NET MVC](/.NET/ASP.net_MVC.md)
-    - [C#](/.NET/C#.md)
+    - [CSharp](/.NET/CSharp.md)
 
 * CMS
     - E-commerce
-        - [PrestaShop](/CMS/E-Commerce/Prestashop/prestashop.md)
+        - [Prestashop](/CMS/E-Commerce/Prestashop/prestashop.md)
     - ERP
-        - [Dolibar](/CMS/ERP/Dolibar.md)
+        - [Dolibarr](/CMS/ERP/Dolibarr.md)
     - Wordpress
         - [créer un theme](/CMS/WordPress/créer_theme_WP.md)
         - [extension](/CMS/WordPress/Extension_WP.md)
@@ -124,6 +124,3 @@
 * [Github](/Github.md)
 * [Email HTML](/email-HTML.md)
 * [blackfire](/BlackFire.md)
-
-
-

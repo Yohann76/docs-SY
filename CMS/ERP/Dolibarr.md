@@ -2,7 +2,7 @@
 
 CMS pour installer un ERP sur un server
 
-[Dolibar github](https://github.com/Dolibarr/dolibarr)
+[Dolibarr github](https://github.com/Dolibarr/dolibarr)
 
 ## Instalation sur VPS OVH ubuntu
 
