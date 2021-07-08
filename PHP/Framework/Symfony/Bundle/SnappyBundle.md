@@ -7,7 +7,7 @@ SnappyBundle est un bundle pour transformer des vue twig en pdf,
 Instalation
 -------------------
 
-https://github.com/KnpLabs/KnpSnappyBundle
+[Github Knp Snappy Bundle](https://github.com/KnpLabs/KnpSnappyBundle)
 
   $ composer require knplabs/knp-snappy-bundle
 
@@ -15,7 +15,7 @@ https://github.com/KnpLabs/KnpSnappyBundle
 Le binaire
 -------------------
 
-windows : https://wkhtmltopdf.org/downloads.html
+windows : [binaire de wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
 
 Commande sur serveur ( selon machine ) :
 ::
