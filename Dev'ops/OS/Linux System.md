@@ -38,6 +38,9 @@ Commande Généraliste
    $ Cp fichier 1 fichier2 // copier un fichier
    $ mv xxx xxx // deplacer un fichier
    $ ulimit -a // lister les limites d'une machine
+   // copier un fichier d'une machine windows sur une machine linux
+   $ scp ubuntu@51.178.30.23:/etc/nginx/sites-available /home/yohann/data/erp.yohanndurand.fr.conf
+   $ sudo chmod 777 nginx / donner les droit au repertoire nginx 
 
 
 Shell speciaux :

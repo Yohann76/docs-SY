@@ -9,6 +9,21 @@ CMS pour installer un ERP sur un server
 dans le VPS :
   $ sudo git clone https://github.com/Dolibarr/dolibarr.git
 
+Donc première chose à faire il faut ajouter un champ CNAME à vos résolutions DNS, afin que sub.toto.me pointe vers toto.me
+
+### pour apache :
+
+ Il faut éditer le fichiers /etc/apache2/sites-available/default et y ajouter les lignes suivantes :
+
+ <VirtualHost *:80>
+ DocumentRoot /home/toto/www/sub
+ ServerName sub.toto.me
+</VirtualHost>
+
+ il suffit de redémarrer Apache avec un :
+$ sudo /etc/init.d/apache2 restart
+$ sudo /etc/init.d/apache2 nginx
+
 
 ---------------
 Télécharger Dolibarr.
