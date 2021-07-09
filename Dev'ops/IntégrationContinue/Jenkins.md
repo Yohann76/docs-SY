@@ -1,7 +1,7 @@
 ## Jenkins
 
 
-`Jenkins Docs <https://jenkins.io/doc/>`_
+[Jenkins Docs](https://jenkins.io/doc/)
 
 Jenkins est un serveur d'automatisation open source autonome qui peut être utilisé
 pour automatiser toutes sortes de tâches liées à la création, au test et à la livraison ou au déploiement de logiciels.

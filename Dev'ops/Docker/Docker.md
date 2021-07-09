@@ -1,7 +1,7 @@
 ## Docker
 
-`docker docs <https://docs.docker.com/>`_
-`docker hub <https://hub.docker.com/>`_
+[docker docs](https://docs.docker.com/)
+[docker hub](https://hub.docker.com/)
 
 Commande Général  :
 -------------------
@@ -28,13 +28,13 @@ docker-compose.yaml à la racine
 Dossier Docker à la racine
 Modifier/ajouté les variable d'environnement du .env si il y a
 Commande :
-::
+
 
     $ docker-compose up -d --build
 
 ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
 -------------------
-::
+
 
     docker system prune ( remise a zero de docker ( perte de donnée ) )
     docker-compose down ( ferme les services et conteneurs )
@@ -51,24 +51,24 @@ NETTOYAGE
 -------------------
 
 Arrêter et supprimer tous  les conteneurs :
-::
+
     docker stop $(docker ps -a -q); docker rm $(docker ps -a -q)
     docker volume rm $(docker volume ls -qf dangling=true)
 
 supprimer un conteneur :
-::
+
     docker rm ‘id’
 
 supprimer une image :
-::
+
     docker rmi ‘id’  ( -f pour force )
 
 supprimer l’ensemble des ressources :
-::
+
     docker system prune
 
 supprimer toutes les images :
-::
+
     docker rmi $(docker images)
 
 INFORMATION
@@ -78,12 +78,12 @@ voir les image local présente : docker images -a
 
 LANCER DES COMMANDES SYMFONY DANS DOCKER
 Accès à la machine dans php, rentrer pour exécuter des commande - exit pour sortir
-::
 
-    $docker exec -it php sh ( une fois avec var/www/projet #php bin/console..)
+
+    $ docker exec -it php sh ( une fois avec var/www/projet #php bin/console..)
 
 Accès à la machine pour exécuter des commande coup par coup
-::
+
 
     docker-compose exec php bin/console …
 
@@ -96,7 +96,6 @@ savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell )
 Couldn't connect to Docker daemon. You might need to start Docker for Windows.  ????????????????
 
 Si la machine default plante :
-::
 
     $ docker-machine rm default  ( supprimer la machine )
     $ docker-machine create --driver virtualbox default ( créer une machine default )
@@ -104,7 +103,6 @@ Si la machine default plante :
     $ docker-compose build && docker-compose up -d
 
 Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machine start default`.
-::
 
     $ docker-machine start default
     $ docker-machine env ( X2 )
@@ -136,23 +134,20 @@ DOCKER SUR DEBIAN ( windows environment )  :
 Doc install docker on debian : Docker On Debian
 
 Installer docker :
-::
 
     sudo apt-get install docker
 
 Accéder au projet :
-::
+
 
   cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
   cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
 
 Lancer docker :
-::
 
   sudo service docker start
 
 Lancer la config :
-::
 
     docker-compose down
     docker-compose up -d
@@ -162,7 +157,6 @@ Probléme Résolue :
 -------------------
 
 prblm :
-::
 
   Couldn't connect to Docker daemon at http+docker://localhost - is it running?
 
