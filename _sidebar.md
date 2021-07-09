@@ -7,11 +7,11 @@
 
 * CMS
     - E-commerce
-        - [Prestashop](/CMS/E-Commerce/Prestashop/prestashop.md)
+        - [Prestashop](/CMS/E-commerce/Prestashop/prestashop.md)
     - ERP
         - [Dolibarr](/CMS/ERP/Dolibarr.md)
     - Wordpress
-        - [créer un theme](/CMS/WordPress/créer_theme_WP.md)
+        - [créer un theme](/CMS/WordPress/créer_theme_wp.md)
         - [extension](/CMS/WordPress/Extension_WP.md)
         - [Wordpress](/CMS/WordPress/WordPress.md)
     - Zabbix
@@ -26,34 +26,34 @@
     - [SQLLite](/Data/SQLLite.md)
 * DevOps
     - OS
-        - [Systême linux](DevOps/OS/Linux System.md)
-        - [Windows/MAC compatibilité](DevOps/OS/Windows-MacOS-Compatibilité.md)
-        - [Windows](DevOps/OS/Windows.md)
+        - [Systême linux](Dev'ops/OS/Linux System.md)
+        - [Windows/MAC compatibilité](Dev'ops/OS/Windows-MacOS-Compatibilité.md)
+        - [Windows](Dev'ops/OS/Windows.md)
     - tests
-        - [Selenium](DevOps/tests/selenium.md)
+        - [Selenium](Dev'ops/tests/selenium.md)
     - Nginx
-        - [config nginx php](DevOps/nginx/conf_nginx_php.md)
-        - [config nginx ssl https](DevOps/nginx/conf_nginx_ssl_https.md)
-        - [config nginx](DevOps/nginx/conf-nginx.md)
+        - [config nginx php](Dev'ops/nginx/conf_nginx_php.md)
+        - [config nginx ssl https](Dev'ops/nginx/conf_nginx_ssl_https.md)
+        - [config nginx](Dev'ops/nginx/conf-nginx.md)
     - Kubernetes
-        - [bubernetes](DevOps/Kubernetes/Kubernetes.md)
+        - [bubernetes](Dev'ops/Kubernetes/Kubernetes.md)
     - Intégration Continue
         - CircleCI
         - GitlabCI
-        - [doctorRST](DevOps/IntégrationContinue/DoctorRST.md)
-        - [GithubAction](DevOps/IntégrationContinue/GithubAction.md)
-        - [Jenkins](DevOps/IntégrationContinue/Jenkins.md)
+        - [doctorRST](Dev'ops/IntégrationContinue/DoctorRST.md)
+        - [GithubAction](Dev'ops/IntégrationContinue/GithubAction.md)
+        - [Jenkins](Dev'ops/IntégrationContinue/Jenkins.md)
     - Docker
-        - [Docker](DevOps/Docker/Docker.md)
+        - [Docker](Dev'ops/Docker/Docker.md)
     - Déploiement
-        - [Ansistranos](DevOps/Deploiement/ansistranos.md)
-        - [Google Platform](DevOps/Deploiement/GooglePlatform.md)
-        - [Heroku](DevOps/Deploiement/Heroku.md)
-        - [Symfony cloud](DevOps/Deploiement/SymfonyCloud.md)
-    - [Config WAMP](DevOps/Config Wamp/Php ini.md)
-    - [Apache](DevOps/Apache/config.md)
-    - [AWS](DevOps/AWS.md)
-    - [Nom de domaine](DevOps/Nom de domaine.md)
+        - [Ansistranos](Dev'ops/Deploiement/ansistranos.md)
+        - [Google Platform](Dev'ops/Deploiement/GooglePlatform.md)
+        - [Heroku](Dev'ops/Deploiement/Heroku.md)
+        - [Symfony cloud](Dev'ops/Deploiement/SymfonyCloud.md)
+    - [Config WAMP](Dev'ops/Config Wamp/Php ini.md)
+    - [Apache](Dev'ops/Apache/config.md)
+    - [AWS](Dev'ops/AWS.md)
+    - [Nom de domaine](Dev'ops/Nom de domaine.md)
 * Editeur
     - [VS code](/Editeur/Vscode.md)
 * Format
