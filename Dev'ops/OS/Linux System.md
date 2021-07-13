@@ -40,7 +40,11 @@ Commande Généraliste
    $ ulimit -a // lister les limites d'une machine
    // copier un fichier d'une machine windows sur une machine linux
    $ scp ubuntu@51.178.30.23:/etc/nginx/sites-available /home/yohann/data/erp.yohanndurand.fr.conf
-   $ sudo chmod 777 nginx / donner les droit au repertoire nginx 
+   $ sudo chmod 777 nginx / donner les droit au repertoire nginx
+
+   $ sudo service nginx status // savoir le status de Nginx
+   $ sudo service nginx start // démarer nginx
+   $ sudo service nginx stop // Stopper le service Nginx 
 
 
 Shell speciaux :
