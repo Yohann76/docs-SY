@@ -101,9 +101,23 @@
                 - [ListeBundle](/PHP/Symfony/Bundle/ListBundle.md)
                 - [SnappyBundle](/PHP/Symfony/Bundle/SnappyBundle.md)
             - Components
+                - [Command](/PHP/Symfony/Components/Command.md)
+                - [HttpClient](/PHP/Symfony/Components/HttpClient.md)
+                - [Messenger](/PHP/Symfony/Components/Messenger.md)
+                - [SwiftMailer](/PHP/Symfony/Components/SwiftMailer.md)
+                - [Workflow](/PHP/Symfony/Components/Workflow.md)
             - Intégration
+                - [Intégration-React-Dans-SF](/PHP/Symfony/Intégration/Intégration-React-Dans-SF.md)
+                - [Intégration-VueJS-Dans-SF](/PHP/Symfony/Intégration/Intégration-VueJS-Dans-SF.md)
             - Service
+                - [Intégration-VueJS-Dans-SF](/PHP/Symfony/Service/CreateActionwithEntity.md)
             - UtilitaireSF
+                - [ApiPlatform](/PHP/Symfony/UtilitaireSF/ApiPlatform.md)
+                - [composer](/PHP/Symfony/UtilitaireSF/composer.md)
+                - [Doctrine](/PHP/Symfony/UtilitaireSF/Doctrine.md)
+                - [PHPunit Pro Testing](/PHP/Symfony/UtilitaireSF/PHPunit-Pro-Testing.md)
+                - [swiftMailer](/PHP/Symfony/UtilitaireSF/swiftMailer.md)
+                - [Twig](/PHP/Symfony/UtilitaireSF/twig.md)
             - [Symfony](/PHP/Symfony/Symfony.md)
             - [form](/PHP/Symfony/form.md)
             - [repositoryEx](/PHP/Symfony/repositoryEx.md)
