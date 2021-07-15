@@ -167,3 +167,15 @@ début ou à la fin d'un élément, grâce à la propriété content
   #toto::after {
       content: "je suis le dernier";
   }
+
+
+Aligner les input d'un form
+---------------------------
+::
+
+   label
+   {
+      width: 40%;
+     display: block;
+      float: left;
+   }
