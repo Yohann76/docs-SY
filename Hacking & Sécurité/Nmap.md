@@ -1,8 +1,4 @@
-.. index::
-   single: Nmap;
-
-Nmap - Hacking - Analyse réseau
-===================
+## Nmap - Hacking - Analyse réseau
 
 Commande pour scanner une plage d'adresses :
 ::
@@ -25,4 +21,4 @@ Autre
   nmap www.exemple.com // scanner un seul host ou un site
   nmap -sS 192.168.1.3 // Scan de port ouvert
   nmap -O 192.168.1.3nmap -v -O --osscan-guess 192.168.1.1 // Detecter le systéme d'exploitation d'un host
-  nmap -p 80 192.168.1.3 // Verifier qu'une machine écoute bien sur un port 
+  nmap -p 80 192.168.1.3 // Verifier qu'une machine écoute bien sur un port

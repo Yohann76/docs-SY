@@ -1,5 +1,1 @@
-.. index::
-   single: EvilNginx ;
-
-EvilNginx - Hacking
-===================
+## EvilNginx - Hacking
