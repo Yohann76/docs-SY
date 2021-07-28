@@ -8,3 +8,9 @@ Se connecter en SSH linux :
 
 
 Par défaut, le port 22 est utilisé pour établir une connexion SSH
+
+
+Ajouter la clef sur un serveur distant :
+::
+  
+  ssh-copy-id root@192.168.240.132
