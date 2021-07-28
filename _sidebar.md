@@ -139,8 +139,8 @@
         - [GrumpPHP](/PHP/Librairies/GrumpPhp.md)
     - [env sans framework](/PHP/.env-sans-framework.md)
     - [Composer](/PHP/composer.md)
-    - [PHP](/PHP/Php.md)
-    - [PHP Scripting](/PHP/PHP scripting.md)
+    - [PHP](/PHP/PHP.md)
+    - [PHP Scripting](/PHP/PHP_scripting.md)
     - [PHP Testing](/PHP/PHP_testing.md)
 * Protocole
     - [FTP](/Protocole/FTP.md)
@@ -162,7 +162,7 @@
     - [POSTMAN](/request/PostMan.md)
     - [Requetes HTTP](/request/request_http_construct.md)
     - API
-        - [Les API](/request/API/Les API's.md)
+        - [Les API](/request/API/API.md)
         - [Paypal](/request/API/Paypal.md)
         - [Stripe](/request/API/Stripe.md)
 * Ruby
