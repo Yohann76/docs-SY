@@ -26,17 +26,17 @@
     - [SQLLite](/Data/SQLLite.md)
 * DevOps
     - OS
-        - [Systême linux](Dev'ops/OS/Linux System.md)
+        - [Systême linux](Dev'ops/OS/Linux-System.md)
         - [Windows/MAC compatibilité](Dev'ops/OS/Windows-MacOS-Compatibilité.md)
         - [Windows](Dev'ops/OS/Windows.md)
     - tests
         - [Selenium](Dev'ops/tests/selenium.md)
     - Nginx
-        - [config nginx php](Dev'ops/nginx/conf_nginx_php.md)
-        - [config nginx ssl https](Dev'ops/nginx/conf_nginx_ssl_https.md)
-        - [config nginx](Dev'ops/nginx/conf-nginx.md)
+        - [config nginx php](Dev'ops/Nginx/conf_nginx_php.md)
+        - [config nginx ssl https](Dev'ops/Nginx/conf_nginx_ssl_https.md)
+        - [config nginx](Dev'ops/Nginx/conf-nginx.md)
     - Kubernetes
-        - [bubernetes](Dev'ops/Kubernetes/Kubernetes.md)
+        - [Kubernetes](Dev'ops/Kubernetes/Kubernetes.md)
     - Intégration Continue
         - CircleCI
         - GitlabCI

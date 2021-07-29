@@ -1,6 +1,6 @@
-##Test avec selenium
+## Test avec selenium
 
-###Selenium Javascript :
+### Selenium Javascript :
 
 package.json :
 - "chromedriver": "^91.0.1",
@@ -161,5 +161,3 @@ intégration avec jest :
       stage: deploy
       script: npm run start
       when: manual
-
-
