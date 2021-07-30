@@ -39,7 +39,12 @@
         - [Kubernetes](Dev'ops/Kubernetes/Kubernetes.md)
     - Intégration Continue
         - CircleCI
+            - [CircleCI](Dev'ops/IntégrationContinue/CircleCI/CircleCI.md)
+            - [CircleCI Exemple SF Ansible](Dev'ops/IntégrationContinue/CircleCI/CircleCI-example-Symfony-Ansible.md.md)
         - GitlabCI
+            - [GitlabCI](Dev'ops/IntégrationContinue/GitlabCI/gitlabCI.md)
+            - [GitlabCI Exemple node next js](Dev'ops/IntégrationContinue/GitlabCI/gitlab-CI-example-node-next-js.md.md)
+            - [GitlabCI Exemple SF Ansible](Dev'ops/IntégrationContinue/GitlabCI/gitlab-CI-exemple-SF-Ansible.md)
         - [doctorRST](Dev'ops/IntégrationContinue/DoctorRST.md)
         - [GithubAction](Dev'ops/IntégrationContinue/GithubAction.md)
         - [Jenkins](Dev'ops/IntégrationContinue/Jenkins.md)
