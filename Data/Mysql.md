@@ -97,3 +97,9 @@ Sauvegarde et restauration
      $ mysqldump -uroot -p --all-databases > alldatabases.sql // Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql
      $ mysql -u username -p databasename < databasename.sql // Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base
      $ mysql -u username -p --one-database mybase < alldatabases.sql // Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases
+
+
+Requete d'Insertion
+-------------------
+::
+     $mysql> INSERT INTO user_orga VALUES (33, 50, 17, 'ROLE_ORGA_DPO', NULL);  // dans la table user orga aprés avoir choisis d'utiliser la bdd correspondante
