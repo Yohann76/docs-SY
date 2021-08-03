@@ -2,17 +2,14 @@
 
 ##### Platform par Microsoft, ASP est le framework, MVC pour model view controller
 
-[Cours OC](https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc).
+[Cours OC](https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc)
 
 Introduction
 -------------------
 
 Il existe deux logique ASP.NET ( MVC et Webform ) ici nous allons utilisé MVC
-
 Créer un nouveau projet ASP.NET MVC. Rendez-vous dans le menu Fichier et choisissez Nouveau Projet,
 puis dans les modèles, choisissez un projet Visual C#/Web de type Application Web ASP.NET
-
-
 Pour ouvrir un fichier déja existant, ouvrir le projet avec le .sln pour pouvoir executer le code.
 Sous visual studio, le code peut etre exécuter avec F5 ( avec debug ) ou ctrl + F5 ( sans débug ).
 
@@ -28,16 +25,11 @@ Un fichier Global.asax, qui est exécuté au tout début du lancement de l’app
 Un fichier packages.config que nous pouvons ignorer ,il sert à la configuration des packages nuget
 Un autre fichier Web.config (différent de celui présent dans le répertoire Views), bien connu des développeurs ASP.NET WebForms, qui contient des éléments de configuration de l’application.
 
-Les bases
--------------------
-
-
-
 Les routes
 -------------------
 
 Dans le fichier RouteConfig.classes
-::
+
 
     routes.MapRoute(
         name: "Default",
@@ -51,11 +43,13 @@ Dans le fichier RouteConfig.classes
 
 Exemple
 -------------------
-::
+
+
     routes.MapRoute(
         name: "Default",
         url: "{action}/{valeur1}/{valeur2}",
-        defaults: new { controller = "Calculateur", action = "Ajouter", valeur1 = 0, valeur2 = 0 });
+        defaults: new { controller = "Calculateur", action = "Ajouter", valeur1 = 0, valeur2 = 0 }
+    );
 
     public class CalculateurController : Controller
     {
@@ -74,7 +68,7 @@ Le Controller
 Le Modele
 -------------------   
 Exemple d'un modéle Category :
-::
+
 
     using System;
     using System.Collections.Generic;
