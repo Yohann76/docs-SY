@@ -15,7 +15,7 @@ ensuite on crée deux fichier:
 
 dans le function.php on y met :
 ------------------------------------------
-::
+
 
     <?php
     /**
@@ -29,7 +29,7 @@ dans le function.php on y met :
 
 et dans le style.css on y met :
 ------------------------------------------
-::
+
 
     /*
     Theme Name: Theme enfant

@@ -6,17 +6,17 @@
 ( L'éxécutable shell est dans le /bin )
 
 1. creer une base de donnée
-::
+
 
    use bddTest
 
 2. créer une collection
-::
+
 
    db.createCollection(name, options)
 
 3. URI de db
-::
+
 
    mongodb://mongodb0.example.com:27017
    mongodb://localhost:27017/shifumi
@@ -25,56 +25,56 @@
 MongoDB sur un debian INSTALLATION
 ===================
 
-::
+
 
    echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 
-::
+
 
    sudo apt-get update
 
-::
+
 
    sudo apt-get install -y mongodb-org
 
-::
+
 
    sudo systemctl restart mongod
 
 Accès a mongoShell
-::
+
 
    Mongo
 
 Autoriser toute les IP
-::
+
 
    mongod --bind_ip_all
 
 utils:
-::
+
 
    chown mongodb:mongodb /tmp/mongodb-27017.sock
 Utilisation
 ===================
 
 - créer ou utiliser une base
-::
+
 
    use mybdd
 
 - se mettre sur un port
-::
+
 
    mongo --port 28015
 
 - se connecter depuis une autre machine
-::
+
 
    mongo --host mongodb0.example.com:28015
 
 - connexion string
-::
+
 
    mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
 
@@ -83,17 +83,17 @@ Commande dans shell mongo ( accessible avec 'mongo' )
 ========================================================
 
 - créer une donnée
-::
+
 
    db.myCollection.insertOne( { x: 1 } );
 
 - trouver une donnée
-::
+
 
    db.getCollection("stats").find()
 
 - enlever le TTL qui supprime les données régulierement
-::
+
 
    db.adminCommand({setParameter:1, ttlMonitorEnabled:false});
 
@@ -112,7 +112,7 @@ Autre
 
 Restart le service
 
-::
+
 
    sudo systemctl restart mongod
 
@@ -121,7 +121,7 @@ Restart le service
 /etc/mongod.conf configuration
 ===================
 
-::
+
 
       # mongod.conf
 
@@ -174,12 +174,12 @@ reset : rm -Rf mongodb/*
 
 
 lancer le serveur avec terminal éteint :
-::
+
 
    nohup mongod --bind_ip 0.0.0.0 &
 
 LANCER SERVEUR MONGO RENFORCÉ :
-::
+
 
    nohup mongod --bind_ip 0.0.0.0 --setParameter ttlMonitorEnabled=false &
 
@@ -189,17 +189,17 @@ LANCER SERVEUR MONGO RENFORCÉ :
 Sauvegarder une base de donnée Mongo
 ================================================
 
-::
+
 
    mongodump -d <database_name> -o <directory_backup>
 
-::
+
 
    mongorestore -d <database_name> <directory_backup>
 
 avec la date dans le fichier :
 
-::
+
 
    mongodump --db somedb --collection somecollection --out - | gzip > dump_`date "+%Y-%m-%d"`.gz
 
@@ -210,34 +210,32 @@ Mongo Express ( équivalent phpmyAdmin for mongo )
 [MongoExpress](https://github.com/mongo-express/mongo-express)
 
 
-::
-
    yarn global add mongo-express
 
 - copier default.config.js avec config.js, puis parametrer la connexion dans config.js
 
 Lancer la configuration
-::
+
 
    mongo-express
 
 Accès a une base sur une application ( installation non globale )
-::
+
 
    mongo-express -u user -p password -d database
 
 Accès a une base distante
-::
+
 
    mongo-express -u user -p password -d database -H mongoDBHost -P mongoDBPort
 
 Mode admin
-::
+
 
    mongo-express -a -u superuser -p password
 
 
 exemple fonctionnel (pas toucher) :
-::
+
 
    mongo-express -a -U "mongodb://51.83.108.56:27017/wikirun-db"

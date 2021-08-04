@@ -110,7 +110,6 @@ La View
 Une vue est sous format .cshtml
 
 Pour écrire du C# dans la view :
-::
 
             <tr>
                 <td>@category.Name</td>
@@ -119,13 +118,11 @@ Pour écrire du C# dans la view :
             </tr>
 
 Info de view ( début de page , titre... ) :
-::
 
     @{
         Layout = "~/Views/Shared/_Layout.cshtml";
     }
 
 Récupéré des infos :
-::
 
     La Category @ViewData["Name"] a bien été trouvé et a @ViewData["Years"] ans.

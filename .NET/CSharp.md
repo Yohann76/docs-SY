@@ -26,7 +26,7 @@ le fichier .exe servira à lancer une application et qu'une dll pourra être par
 
 Variable
 -------------------
-::
+
 
   int age = 30;
   string prenom = "nicolas";
@@ -36,7 +36,7 @@ Variable
   Console.WriteLine(age); // affiche 30
 
 Type var framework .NET :
-::
+
 
   byte : Entier de 0 à 255
   short : Entier de -32768 à 32767
@@ -51,7 +51,7 @@ Type var framework .NET :
 
 
 Opérateurs de comparaison
-::
+
 
   == : égalité
   !=  : Différence
@@ -66,7 +66,7 @@ Opérateurs de comparaison
 
 Conditions
 -------------------
-::
+
 
     if (civilite == "Mme")
         Console.WriteLine("Vous êtes une femme");
@@ -80,6 +80,6 @@ Conditions
 
 Divers
 -------------------
-::
+
 
     Console.WriteLine("Hello World !!");
