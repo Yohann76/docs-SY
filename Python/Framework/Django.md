@@ -4,7 +4,7 @@
 
 Instalation
 ===================
-::
+
 
   $ python -m pip install Django // install Django avec Pip
   $ python -m django --version // voir la version de Django
@@ -15,7 +15,7 @@ Instalation
 
 Créer une App dans Django
 ===================
-::
+
 
   $ python manage.py startapp polls // création d'une App nommé "polls"// etre dans le méme repertoire que manage.py
 
@@ -23,7 +23,7 @@ BDD :
 ===================
 réglages bdd dans settings.py pour information de connection,
 également pour inclure l'application polls dans le projet ( toujours dans settings.py )
-::
+
   INSTALLED_APPS = [
       'polls.apps.PollsConfig',
       'django.contrib.admin',
@@ -35,7 +35,7 @@ réglages bdd dans settings.py pour information de connection,
   ]
 
 Commande de database ( [Tuto docs Shell API](https://docs.djangoproject.com/fr/3.1/intro/tutorial02/) ) :
-::
+
 
   $ python manage.py makemigrations polls // faire une migration de l'app polls ( dans container web docker )
   $ python manage.py migrate // appliquer les modifications à la base de données ( dans container web docker )

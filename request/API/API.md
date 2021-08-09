@@ -21,7 +21,7 @@ A interface uniforme
 
 Code serveur :
 -------------------
-::
+
 
   200 : Requête traitée avec succès
   201 : Validation

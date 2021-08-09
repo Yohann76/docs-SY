@@ -12,14 +12,14 @@ installer pip:
 Installer directement avec l'application windows Store
 
 upgrade pip :
-::
+
 
   $ pip install --upgrade pip
 
 
 Dépendances et installation de librairie
 ========================================
-::
+
 
     $ pip install pytest ( python testing ? )
     $ pip install Flask-Testing ( test pour flask )
@@ -38,18 +38,18 @@ Module de Data Science
 
 Module IA et machine learning
 ========================================
-::
+
 
     $ pip install TensorFlow
 
 Connaitre les modules installé avec python
 ==========================================
-::
+
 
     $ pip freeze
 
 Config de package python ( pour réinstallation complete )
 ==========================================================
-::
+
 
     $ pip install alembic apipkg appdirs astroid atomicwrites attrs click colorama contextlib2 distlib execnet filelock Flask Flask-Migrate Flask-Script  Flask-SQLAlchemy Flask- Testing iniconfig isort itsdangerous Jinja2 lazy-object-proxy Mako MarkupSafe mccabe mock packaging path path.py pluggy psycopg2 py pylint pyparsing pytest pytest-shutil python-date util python-editor six SQLAlchemy svg.path svgwrite termcolor toml virtualenv Werkzeug wrapt xlrd

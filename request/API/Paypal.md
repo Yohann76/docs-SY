@@ -3,12 +3,12 @@ Paypal
 
 Outils/API pour payer.
 
-`Paypal docs`_
+[Paypal docs](https://developer.paypal.com/docs/platforms/get-started/)
 
 -------------------
 
-Http client connect paypal, return token 
-::
+Http client connect paypal, return token
+
 
    public function connectPaypal() {
         // https://developer.paypal.com/docs/platforms/get-started/#step-1-get-api-credentials
@@ -30,13 +30,13 @@ Http client connect paypal, return token
         return $tokenPaypalAcces;
     }
 
-    
 
-Js 
-::
+
+Js
+
 
 <script src="https://www.paypal.com/sdk/js?client-id=CLIENT-ID-TOKEN"></script> <!-- Prod Token  -->  
-                                                                                 
+
     <script>
         paypal.Buttons({
             // createOrder est appelé lorsque l'acheteur clique sur l'un des boutons de paiement.
@@ -80,4 +80,3 @@ Js
             }
         }).render('#paypal-button-container');
     </script>
-.. _`Paypal docs`: https://developer.paypal.com/docs/platforms/get-started/

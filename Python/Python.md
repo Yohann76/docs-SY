@@ -4,7 +4,7 @@
 
 Variable et dictionnaire
 ===========
-::
+
 
     a = 1
 
@@ -15,7 +15,7 @@ Variable et dictionnaire
 
 Condition
 ===========
-::
+
 
     if os.path.exists(path):
             # Delete old app/static/img/diagram.svg
@@ -38,7 +38,7 @@ Condition
 
 Boucle
 ===========
-::
+
 
     for nodes in rectangle:
         #node left
@@ -51,7 +51,7 @@ Boucle
 
 fonction
 ===========
-::
+
 
     def nameFunction():
         i = 5
@@ -59,21 +59,21 @@ fonction
 
 Mannipuller les chaines de charactére
 ===========
-::
+
 
     txtLabel[0:25] # prend les 25 premieres lettres, si négatif = partant de la fin
     txtLabel[25:50] # prend les lettres entre 25 et 50 ?
 
 Debug
 ===========
-::
+
 
     print("je suis un label")
     print(var)
 
 Lever une erreur
 ===========
-::
+
 
     if i - 2 > nbLabel:
     else:
@@ -86,7 +86,7 @@ Lever une erreur
 Opérateur logique et comparaison
 ===========
 comparaison
-::
+
 
     ==	x == y	Égal	0 (faux)
     !=	x != y	Non égal	1 (vrai)
@@ -98,7 +98,7 @@ comparaison
     is not	x is not y	n'est pas le même objet	1
 
 Opérateur logique
-::
+
 
     ( )	de gauche à droite	parenthèses
     + -	de gauche à droite	singulier

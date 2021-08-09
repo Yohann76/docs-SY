@@ -15,7 +15,7 @@ S'identifier à git
 -------------------
 
 Commande pour s'identifier:
-::
+
      $ git config --global user.name "Username"
      $ git config --global user.email "mail"
 
@@ -23,14 +23,14 @@ Ajouté un repository a github :
 -------------------
 
 Créer le repo sur la plateforme, upload les fichiers, et cloner le projet
-::
+
 
    $ git clone LienDuProjet
 
 Créer le repo sur la plateforme SANS README.txt et pusher en cli
 pour le push la première fois, enlever le .git a la racine si il y a
 git init
-::
+
 
    git add .
    git status ( pour voir les fichier add a l'index )
@@ -43,7 +43,7 @@ ou cliquer sur le repo et copier les commandes, avec https
 
 Faire un commit :
 -------------------
-::
+
 
    git add * ( pour ajouter tout a l'index, sauf ce qui est exclus dans .gitignore )
    git status
@@ -51,45 +51,45 @@ Faire un commit :
    git push origin master
 
 Corriger le message du dernier commit :
-::
+
 
    git commit --amend -m "Nom de commit corrigé"
 
 mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
 
 revenir sur un commit précédent  :
-::
+
 
    git checkout SHADuCommit ( 5e78e8e389e28cf9ea91708eb37abfd975ffce31 par exemple )
 
 Créer un commit qui fait l'inverse du précédent ( attention cela crée un nouveau commit )  :
-::
+
 
    git revert SHADuCommit
 
 Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait :
-::
+
    git reset
    git reset --hard‌
 
 
 Voir la liste des commit effectué
-::
+
    git log
 
 Désindexer un fichier ajouté a l'index pour un commit
-::
+
 
     git restore --staged <fichier>...
 
 Synchroniser une branche avec une autre branche
-::
+
    git pull origin master ou dev...
 
 
 Commande divers :
 -------------------
-::
+
 
    $ git branch // voir la branche actuelle et toutes les branch
    $ git branch mon-test // Créer une nouvelle branch nommé "mon-test"

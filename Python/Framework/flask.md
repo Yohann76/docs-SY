@@ -3,7 +3,7 @@
 Flask est un micro framework très minimaliste et leger, concu pour developper des application rappidement.
 
 Demmarrer avec flask en 7 lignes
-::
+
   from flask import Flask
 
   app = Flask(__name__)
@@ -22,17 +22,19 @@ installation
 Necessite pip
 
 flask
-::
-  pip install flask
+
+  $ pip install flask
 
 virtualenv ( pas obligatoire ,
 pour géré plusieurs projets avec des variables différentes )
-::
-  pip install virtualenv
-  virtualenv -p python3 env // créer un environnement
+
+
+  $ pip install virtualenv
+  $ virtualenv -p python3 env // créer un environnement
 
 Obtenir l'environnement ( simuler le site et démarrer le serveur )
 ===========
+
 1. Terminal : Aller dans le repertoire du site
 2. Terminal : python views.py
 3. Se rendre sur l'adresse indiqué ( souvent http://127.0.0.1:5000/ )
@@ -53,13 +55,13 @@ Console Flask
 ==============
 
 lancer la console flask
-::
+
 
   $ set FLASK_APP=run.py
   $ set FLASK_APP=run.py flask init_db  // avec une méthode d'initialisation
 
 puis
-::
+
 
   $ flask shell
 
@@ -70,7 +72,8 @@ Base de donnée SQLlite
 Comment connecter la base de donnée ?
 
 Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi définir ce dossier comme variable d'environnement. Voici ensuite quelques commande sur la base de donnée :
-::
+
+
   from fbapp.models import db, Content
 
   db.session.add(Content("What's your favorite scary movie?", 0))
@@ -87,7 +90,7 @@ Les tests
 =========
 
 lancer un test :
-::
+
 
   $ pytest app/tests/test_functionnal.py
 
@@ -105,7 +108,7 @@ BDD postres SQL
 - models.py pour implementer la classe qui représente les tables
 - manage.py pour acceder a a la base
 
-::
+
 
   #from flask import Flask
   from flask_script import Manager
@@ -122,7 +125,7 @@ BDD postres SQL
       #manager.run()
 
 Commande :
-::
+
 
     $ python manage.py db init ( initialiser la base )
     $ python manage.py db migrate ( faire une migration )
@@ -130,13 +133,13 @@ Commande :
 
 Route avec flask
 =================
-::
+
 
   @app.route("/greeting")
   def greeting():
     return {"greeting": "Hello from Flask API"}
 
-::
+
 
   @app.route("/addLabel/<nb1>/<nb2>")
   def addLabel(nb1,nb2):
@@ -147,7 +150,7 @@ API avec flask ( /api/ )
 =================
 
 dans api/app.py
-::
+
 
   from flask import Flask
   from flask_cors import CORS
@@ -173,7 +176,7 @@ dans api/app.py
       return addLabelAPI(str(title), str(node1), str(node2), int(functionNumber), int(column))
 
 Définition de addLabelAPI dans /api/apiFunction.py
-::
+
 
   import math
   from models import db, Label, Record
@@ -185,13 +188,6 @@ Définition de addLabelAPI dans /api/apiFunction.py
       db.session.add(Label1)
       db.session.commit()
       return {"labelStatus": "added in database"}
-
-
-
-
-
-
-
 
 other
 =====
