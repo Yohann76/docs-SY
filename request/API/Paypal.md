@@ -35,7 +35,7 @@ Http client connect paypal, return token
 Js
 
 
-<script src="https://www.paypal.com/sdk/js?client-id=CLIENT-ID-TOKEN"></script> <!-- Prod Token  -->  
+    <script src="https://www.paypal.com/sdk/js?client-id=CLIENT-ID-TOKEN"></script> <!-- Prod Token  -->  
 
     <script>
         paypal.Buttons({

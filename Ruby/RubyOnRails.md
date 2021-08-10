@@ -11,83 +11,83 @@ Instalation & pré-requis
 -------------------
 
 
-  $ ruby --version // savoir la version
-  $ gem install rails // Installer Rails avec une gemme de ruby
-  $ rails --version // savoir la version de rails installer
+    $ ruby --version // savoir la version
+    $ gem install rails // Installer Rails avec une gemme de ruby
+    $ rails --version // savoir la version de rails installer
 
-  $ sqlite3 --version
-  $ node --version
-  $ yarn --version
+    $ sqlite3 --version
+    $ node --version
+    $ yarn --version
 
 
 Création de page
 -------------------
 
 
-  config/route.rb
-    get '/salut', to:'pages#salut'
+    config/route.rb
+      get '/salut', to:'pages#salut'
 
 
-  app/Controllers ( à créer )
-    pages_controller.rb
-    class PagesController < ApplicationController
-      def salut
+    app/Controllers ( à créer )
+      pages_controller.rb
+      class PagesController < ApplicationController
+        def salut
+        end
       end
-    end
 
-  App/Views
-    pages ( créer dossier )
-      salut.html.erb ( créer dans pages )
+    App/Views
+      pages ( créer dossier )
+        salut.html.erb ( créer dans pages )
 
-  App/View/Layouts/applications ( base du html )
+    App/View/Layouts/applications ( base du html )
 
 
 Ligne de commande rails ( une fois la gemme rails installé )
 -------------------
 
 
-  $ rails new blog // Créer un projet "blog" par default bdd = sqlite
-  $ rails new blog --database=mysql // // Créer un projet "blog" avec bdd = mysql
-  $ cd blog // rentrer dans le projet "blog"
-  $ rails server // lancer le server de dev (http://localhost:3000)
-  $ rails console // pour lancer la console rails
-  $ rails g controller Posts index  // Générer un controller nommé Posts avec une méthodes index
+    $ rails new blog // Créer un projet "blog" par default bdd = sqlite
+    $ rails new blog --database=mysql // // Créer un projet "blog" avec bdd = mysql
+    $ cd blog // rentrer dans le projet "blog"
+    $ rails server // lancer le server de dev (http://localhost:3000)
+    $ rails console // pour lancer la console rails
+    $ rails g controller Posts index  // Générer un controller nommé Posts avec une méthodes index
 
 Commande dans la console ( rails c ou rails console )
 -------------------
 
 
-  $ rails console --sandbox // lancer la console en mode bac à sable, pour qu'une fois sortie de la console les modif sont pas persisté
-  $ Post.find(1) // chercher dans la base de donnée dans la table post l'id 1
-  $ p = Post.find(1) // stocker dans une variable la requete
-  $ p.name // pour récupérer le nom
-  $ p.content = "hello ça va" // pour modifier
-  $ p.save // persister le changement en bdd
-  $ p.destroy // supprimer un changement en bdd ( mais toujours existant en bdd )
+    $ rails console --sandbox // lancer la console en mode bac à sable, pour qu'une fois sortie de la console les modif sont pas persisté
+    $ Post.find(1) // chercher dans la base de donnée dans la table post l'id 1
+    $ p = Post.find(1) // stocker dans une variable la requete
+    $ p.name // pour récupérer le nom
+    $ p.content = "hello ça va" // pour modifier
+    $ p.save // persister le changement en bdd
+    $ p.destroy // supprimer un changement en bdd ( mais toujours existant en bdd )
 
-  // ajouter une ligne
-  $ p = Post.new
-  $ p.title = "salut"
-  $ p.save
-  $ p // voir la variable qu'on à créer
+    // ajouter une ligne
+    $ p = Post.new
+    $ p.title = "salut"
+    $ p.save
+    $ p // voir la variable qu'on à créer
 
-  // récupérer des données
-  $ Post.first // recupérer le premier
-  $ Post.last // recupérer le dernier
-  $ Post.count // Compter le nombre de ligne
-  $ Post.all // tout récupérer p = Post.all, p[0], P[1]..
-  $ Post.where(name:'salut')
-  $ Post.limit(1)
+    // récupérer des données
+    $ Post.first // recupérer le premier
+    $ Post.last // recupérer le dernier
+    $ Post.count // Compter le nombre de ligne
+    $ Post.all // tout récupérer p = Post.all, p[0], P[1]..
+    $ Post.where(name:'salut')
+    $ Post.limit(1)
 
 
 Base de données
 -------------------
 
 
-  $ rails g migration CreatePosts title:string content:text // generer la migration d'une table  Posts  avec title, content...
-  $ rails db:migrate // appliquer une migration à la base de données
-  $ rails db:rollback // inverser la derniére migration effectué
-  $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
+    $ rails g migration CreatePosts title:string content:text // generer la migration d'une table  Posts  avec title, content...
+    $ rails db:migrate // appliquer une migration à la base de données
+    $ rails db:rollback // inverser la derniére migration effectué
+    $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
 
 
 Connexion Database SQL sur VSCode

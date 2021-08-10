@@ -8,7 +8,7 @@ Outils/API pour payer.
 -------------------
 
 Session Stripe
-::
+
 
     $session = \Stripe\Checkout\Session::create([
         'payment_method_types' => ['card'],

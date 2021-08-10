@@ -4,7 +4,7 @@ Manier les requetes
 Requete de ping lourde pour faire de la charge :
 
 
-  $ ping -f -n 500 -l 1250 51.178.95.96
+    $ ping -f -n 500 -l 1250 51.178.95.96
 
 
 EndPOINT pour tester un envoi POST ou GET :

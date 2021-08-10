@@ -20,4 +20,3 @@ Liste server
   Ruby : WEBrick, Mongrel, Thin
   Erlang : Yaws
   Javascript : Node.js
-  

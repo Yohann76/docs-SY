@@ -4,8 +4,6 @@
 Checker une URL avec Curl
 #######################
 
-::
-
     private function checkUrlCurl($link)
     {
         // initialisation de la session

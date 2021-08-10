@@ -14,7 +14,7 @@ Installer directement avec l'application windows Store
 upgrade pip :
 
 
-  $ pip install --upgrade pip
+    $ pip install --upgrade pip
 
 
 Dépendances et installation de librairie
