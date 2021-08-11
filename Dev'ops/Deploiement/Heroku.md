@@ -1,9 +1,9 @@
 ## Heroku :
 
 
-`Heroku docs`_
+[Heroku docs](https://devcenter.heroku.com/categories/reference)
 
-Symfony : `Deployer avec SF4 `_
+Symfony : [Deployer avec SF4](https://devcenter.heroku.com/articles/deploying-symfony4)
 -------------------
 
   $ heroku create
@@ -35,6 +35,3 @@ Divers :
     $ heroku restart // restart Heroku
     $ heroku run composer install // le prefixe heroku run permet d'executer sur le server heroku
     $ heroku config // voir la liste des config
-
-.. _`Heroku docs`: https://devcenter.heroku.com/categories/reference
-.. _`Deployer avec SF4`: https://devcenter.heroku.com/articles/deploying-symfony4

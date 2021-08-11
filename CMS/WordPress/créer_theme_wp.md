@@ -15,14 +15,14 @@ Général :
 -------------------
 Architecture
 /
-index.php
-screenshot.png ( taille ? )
-style.css ( avec /* Info thème  */
-functions.php ( ajout de fonctionnalité )
-Fonction WordPress ( Toute les fonctions ici ( docs ))
-<?php wp_title(); ?>  // Pour le titre de la page <title> </title>
-<?php wp_head(); ?> // pour le head
-<?php wp_footer(); ?>  // intégration du footer
+    index.php
+    screenshot.png ( taille ? )
+    style.css ( avec /* Info thème  */
+    functions.php ( ajout de fonctionnalité )
+    Fonction WordPress ( Toute les fonctions ici ( docs ))
+    <?php wp_title(); ?>  // Pour le titre de la page <title> </title>
+    <?php wp_head(); ?> // pour le head
+    <?php wp_footer(); ?>  // intégration du footer
 
 
 Fonctionnalité :

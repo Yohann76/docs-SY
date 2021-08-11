@@ -111,11 +111,11 @@ Une vue est sous format .cshtml
 
 Pour écrire du C# dans la view :
 
-            <tr>
-                <td>@category.Name</td>
-                <td>@category.Years</td>
+    <tr>
+        <td>@category.Name</td>
+        <td>@category.Years</td>
 
-            </tr>
+    </tr>
 
 Info de view ( début de page , titre... ) :
 

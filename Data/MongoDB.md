@@ -29,54 +29,44 @@ MongoDB sur un debian INSTALLATION
 
    echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 
-
-
-   sudo apt-get update
-
-
-
-   sudo apt-get install -y mongodb-org
-
-
-
-   sudo systemctl restart mongod
+   $ sudo apt-get update
+   $ sudo apt-get install -y mongodb-org
+   $ sudo systemctl restart mongod
 
 Accès a mongoShell
-
 
    Mongo
 
 Autoriser toute les IP
 
-
-   mongod --bind_ip_all
+   $ mongod --bind_ip_all
 
 utils:
 
 
-   chown mongodb:mongodb /tmp/mongodb-27017.sock
+   $ chown mongodb:mongodb /tmp/mongodb-27017.sock
+
 Utilisation
 ===================
 
 - créer ou utiliser une base
 
-
-   use mybdd
+   $ use mybdd
 
 - se mettre sur un port
 
 
-   mongo --port 28015
+   $ mongo --port 28015
 
 - se connecter depuis une autre machine
 
 
-   mongo --host mongodb0.example.com:28015
+   $ mongo --host mongodb0.example.com:28015
 
 - connexion string
 
 
-   mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
+   $ mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
 
 
 Commande dans shell mongo ( accessible avec 'mongo' )
@@ -112,63 +102,60 @@ Autre
 
 Restart le service
 
-
-
-   sudo systemctl restart mongod
-
-   mongo --bind_ip 127.0.0.1
+   $ sudo systemctl restart mongod
+   $ mongo --bind_ip 127.0.0.1
 
 /etc/mongod.conf configuration
 ===================
 
 
 
-      # mongod.conf
+    # mongod.conf
 
-      # for documentation of all options, see:
-      #   http://docs.mongodb.org/manual/reference/configuration-options/
+    # for documentation of all options, see:
+    #   http://docs.mongodb.org/manual/reference/configuration-options/
 
-      # Where and how to store data.
-      storage:
-        dbPath: /var/lib/mongodb
-        journal:
-          enabled: true
-      #  engine:
-      #  mmapv1:
-      #  wiredTiger:
+    # Where and how to store data.
+    storage:
+      dbPath: /var/lib/mongodb
+      journal:
+        enabled: true
+    #  engine:
+    #  mmapv1:
+    #  wiredTiger:
 
-      # where to write logging data.
-      systemLog:
-        destination: file
-        logAppend: true
-        path: /var/log/mongodb/mongod.log
+    # where to write logging data.
+    systemLog:
+      destination: file
+      logAppend: true
+      path: /var/log/mongodb/mongod.log
 
-      # network interfaces
-      net:
-        port: 27017
-        bindIp: 127.0.0.1, /tmp/mongod.sock, 10.0.86.86
+    # network interfaces
+    net:
+      port: 27017
+      bindIp: 127.0.0.1, /tmp/mongod.sock, 10.0.86.86
 
 
-      # how the process runs
-      processManagement:
-        timeZoneInfo: /usr/share/zoneinfo
-        fork: true
+    # how the process runs
+    processManagement:
+      timeZoneInfo: /usr/share/zoneinfo
+      fork: true
 
-      setParameter:
-        enableLocalhostAuthBypass: false
-      #security:
+    setParameter:
+      enableLocalhostAuthBypass: false
+    #security:
 
-      #operationProfiling:
+    #operationProfiling:
 
-      #replication:
+    #replication:
 
-      #sharding:
+    #sharding:
 
-      ## Enterprise-Only Options:
+    ## Enterprise-Only Options:
 
-      #auditLog:
+    #auditLog:
 
-      #snmp:
+    #snmp:
 
 reset : rm -Rf mongodb/*
 
