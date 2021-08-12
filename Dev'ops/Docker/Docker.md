@@ -8,15 +8,16 @@ Commande Général  :
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
 tester docker :
-::
+
 
     docker run hello world
 
- $ docker run -d -p 8080:80 nginx // Lancer serveur nginx sur port 80
- $ docker pull hello-world // récupérer une image du hub docker
- $ docker stop ID_RETOURNÉ_LORS_DU_DOCKER_RUN // stopper un conteneur
- $ docker build -t NomADonner // construire le DockerFile
- $ docker run -d -p 2368:2368 NomDonnerPrecedemment. // Exécuter l’environnement
+    $ docker run -d -p 8080:80 nginx // Lancer serveur nginx sur port 80
+    $ docker pull hello-world // récupérer une image du hub docker
+    $ docker stop ID_RETOURNÉ_LORS_DU_DOCKER_RUN // stopper un conteneur
+    $ docker build -t NomADonner // construire le DockerFile
+    $ docker run -d -p 2368:2368 NomDonnerPrecedemment. // Exécuter l’environnement
+
   puis accéder au localhost créer avec le port du dockerFile : http://127.0.0.1:2368.
   connaître son IP de machine virtuel : docker-machine ip default
 
@@ -34,7 +35,6 @@ Commande :
 
 ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
 -------------------
-
 
     docker system prune ( remise a zero de docker ( perte de donnée ) )
     docker-compose down ( ferme les services et conteneurs )
@@ -85,7 +85,7 @@ Accès à la machine dans php, rentrer pour exécuter des commande - exit pour s
 Accès à la machine pour exécuter des commande coup par coup
 
 
-    docker-compose exec php bin/console …
+    $ docker-compose exec php bin/console …
 
 
 DEBUGGAGE :
@@ -135,7 +135,7 @@ Doc install docker on debian : Docker On Debian
 
 Installer docker :
 
-    sudo apt-get install docker
+    $ sudo apt-get install docker
 
 Accéder au projet :
 
@@ -145,12 +145,12 @@ Accéder au projet :
 
 Lancer docker :
 
-  sudo service docker start
+    $ sudo service docker start
 
 Lancer la config :
 
-    docker-compose down
-    docker-compose up -d
+    $ docker-compose down
+    $ docker-compose up -d
 
 
 Probléme Résolue :
