@@ -1,9 +1,5 @@
-.. index::
-   single: SCSS; 
-
 SCSS
 ===================
-::
 
    $color-red: #FF0000;
 

@@ -2,17 +2,16 @@
 
 
 Pour intégration nodeJS (react,javascript,next,..) :
-::
 
    // configuration nodeJS
 
 Pour intégration PHP (Symfony,Laravel,PHP) :
-::
+
 
    // configuration PHP
 
 Pour intégration Docker:
-::
+
 
    // intégration Docker
 

@@ -8,7 +8,7 @@ Commande bash
 --------------
 
 ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté independament
-::
+
 
     $ cls :efface le contenu de la console
     $ del : supprimer un fichier

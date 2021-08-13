@@ -11,7 +11,7 @@ Installation de vue
 =====================
 
 Via un simple lien CDN :
-::
+
     <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -27,44 +27,44 @@ Via un simple lien CDN :
       </html>
 
 Tester le fonctionnement de vue :
-::
-  <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Mon Application Vue.js</title>
-    </head>
-    <body>
-        <div id="app">
-            <h1>Ma première application Vue.js !</h1>
 
-            <p>J'ai hâte de créer des applications incroyables !</p>
-        </div>
-        <script>
-        // Vue n'est pas encore chargé donc une RefenreceError devrait être retournée
-        console.log(Vue)
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-        <script>
-            // La console devrait maintenant afficher une fonction
-            console.log(Vue)
-        </script>
-    </body>
-    </html>
+    <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <title>Mon Application Vue.js</title>
+      </head>
+      <body>
+          <div id="app">
+              <h1>Ma première application Vue.js !</h1>
+
+              <p>J'ai hâte de créer des applications incroyables !</p>
+          </div>
+          <script>
+          // Vue n'est pas encore chargé donc une RefenreceError devrait être retournée
+          console.log(Vue)
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+          <script>
+              // La console devrait maintenant afficher une fonction
+              console.log(Vue)
+          </script>
+      </body>
+      </html>
 
 Pour commencer une application :Ajoutez Vue.js à  index.html  pour le convertir en application monopage.
 Definir ou vue devrait apparaitre sur une page ( pour decider de ce vue peut controller, Vue est spécialisé dans les application SPA : monopage  )
-::
-  <script>
-    const app = new Vue({
-      el: '#app'
-    })
-  </script>
+
+    <script>
+      const app = new Vue({
+        el: '#app'
+      })
+    </script>
 
 Base de Vue.js
 =====================
 
 Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge des variables.
-::
+
     const app = new Vue({
         el: '#app',
         data:{
@@ -74,7 +74,8 @@ Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge
     })
 
 Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
-::
+
+
     {{ variable }}
     {{ (2 + 8) *10 }}
     {{ variable.toUpperCase() }}
@@ -82,7 +83,8 @@ Les données peuvent être afficher avec la syntaxe "en moustache" dans du HTML
 
 Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier d'achat
 ( une propriété calculé/computed doit retourner une fonction obligatoirement):
-::
+
+
     <html>
     <body>
       <div id="app">
@@ -116,7 +118,7 @@ Directives
 
 Les directive permettent de résoudre les probleme courant. Elle sont écrit de manière semantique, elles ressemble a des attributs HTML, elle se préfixe par v-
 ( v-show ; v-if ; v-for ; v-model ; v-on ; v-bind ; v-else-if ; v-else )
-::
+
     <div id="app">
         <!-- Si (if) l'utilisateur a les autorisations par défaut, afficher ce qui suit -->
         <section v-if="userPermission === 'default'">...</section>
@@ -127,7 +129,7 @@ Les directive permettent de résoudre les probleme courant. Elle sont écrit de 
     </div>
 
 v-show est utilisté pour les éléments de toggle, pour controler la visibilité d'un élément avec une permutation fréquente comme une modale
-::
+
     <div id="app">
         <button>Display Modal</button>
         <div v-show="showModal" class="modal">...</div>
@@ -143,7 +145,7 @@ v-show est utilisté pour les éléments de toggle, pour controler la visibilit�
     </script>
 
 une boucle for
-::
+
     <div id="app">
         <h1>Vue Mart</h1>
         <h2>Shopping Cart</h2>
@@ -168,14 +170,14 @@ une boucle for
     </script>
 
 v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est utilisé pour renvoyer des donnée issue d'API, ou des données en fonction d'autre systême.
-::
+
     v-bind:href="item.url"
 
 Les évenements
 =====================
 
 Voici commencer créer un evenement avec la directive v-on
-::
+
     <div id="app">
         <button v-on:click="alert('Bonjour')">Cliquez ici !</button>
     </div>
@@ -183,7 +185,7 @@ Voici commencer créer un evenement avec la directive v-on
 peut être abrégé en : @click="alert('Bonjour')"
 
 Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler d'autre ) :
-::
+
     const app = new Vue({
         el: '#app',
         data: {
@@ -205,7 +207,7 @@ Un évenement peut faire appel au méthodes ( et des méthode peuvent en appeler
     })
 
 Insertion de donnée dans les formulaire :
-::
+
     <div id="app">
         <label for="un">Nom d'utilisateur</label>
         <input id="un" type="text" v-model="username" />
@@ -226,7 +228,7 @@ Insertion de donnée dans les formulaire :
 
 Changer les délimiter
 ================
-::
+
 
     console.log(Vue)
     const app = new Vue({
@@ -242,21 +244,21 @@ Changer les délimiter
 Vue avec le CLI
 ================
 Installer vue CLI
-::
-    npm install -g @vue/cli # avec npm
-    yarn global add @vue/cli #avec yarn
+
+    $ npm install -g @vue/cli # avec npm
+    $ yarn global add @vue/cli #avec yarn
     vue --version #TEST
 
 Créer un projet
-::
+
     vue create my-first-vue-cli-app
 
 Acceder a une interface local
-::
+
     vue ui
 
 Lancer un environnement de dev local
-::
+
     npm run serve
 
 Architecture de l'application

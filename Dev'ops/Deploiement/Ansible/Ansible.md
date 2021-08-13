@@ -1,7 +1,7 @@
 ## ANSIBLE
 
-`Ansible docs`_
-`Ansible Galaxy`_
+[Ansible docs](https://docs.ansible.com/ansible/latest/index.html)
+[Ansible Galaxy](https://galaxy.ansible.com/)
 
 Commande dans le vault
 -------------------
@@ -98,7 +98,3 @@ Clonner un projet privé  :
               Username: "{{ githubuser }}" # Username is a regex
               Password: "{{ githubpassword }}" # Password is a regex
             #no_log: true
-
-
-.. _`Ansible docs`: https://docs.ansible.com/ansible/latest/index.html
-.. _`Ansible Galaxy`: https://galaxy.ansible.com/

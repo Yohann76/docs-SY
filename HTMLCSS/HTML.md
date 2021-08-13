@@ -5,7 +5,7 @@ HTML
 ===================
 
 code minimal pour page html :
-::
+
 
     <!DOCTYPE html>
     <html>
@@ -21,7 +21,6 @@ code minimal pour page html :
 
 
 Balise d'en-tête :
-::
 
     <head>
         <meta charset="utf-8" />
@@ -32,7 +31,6 @@ Balise d'en-tête :
     </head>
 
 Balise de tableau :
-::
 
     <table> // Tableau
     <caption> // Titre du tableau
@@ -45,13 +43,11 @@ Balise de tableau :
 
 
 Inserstion image :
-::
 
     <img src="images/montagne.jpg" alt="Photo de montagne" />
 
 
 Balises Divers :
-::
 
    <hr> // ligne horizontale
    <audio> // fichier audio
@@ -63,4 +59,4 @@ Balises Divers :
    <option> // Élément d'une liste déroulante
    <optgroup> // Groupe d'éléments d'une liste déroulante
 
-   <h1> <h2> <h3> <h4> <h5> <h6> // titre 
+   <h1> <h2> <h3> <h4> <h5> <h6> // titre

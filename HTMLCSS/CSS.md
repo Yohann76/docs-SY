@@ -6,21 +6,21 @@ CSS
 
 Variable
 -------------------
-::
 
-  :root {
-    --main-bg-color: brown;
-  }
 
-  .un {
-    background-color: var(--main-bg-color);
-  }
+    :root {
+      --main-bg-color: brown;
+    }
+
+    .un {
+      background-color: var(--main-bg-color);
+    }
 
 
 
 Propriété
 -------------------
-::
+
 
     background-color : green ; // background color green
     margin : 0px ; // Marge extérieur
@@ -33,7 +33,6 @@ Propriété
 
 Les bordures
 -------------------
-::
 
     border: 3px blue dashed; // bordur 3px bleu, style de bordure : none - solid - dotted - dashed - double - groove - ridge - inset - outset
     border: 3px blue dashed; // bordur seulement en bas
@@ -41,7 +40,6 @@ Les bordures
 
 Les ombres
 -------------------
-::
 
     box-shadow: 6px 6px 6px black; // bordure : 1 bordur normal, 2 l'ombre, 3 genre de transparence 4 couleur
     box-shadow: 6px 6px 6px black inset; // méme bordure que la précédente mais avec un effet renfoncer ( ombre intérieur du bloc )
@@ -49,7 +47,6 @@ Les ombres
 
 Les dégradé
 -------------------
-::
 
     background: linear-gradient(blue, white); // dégrader linéaire haut en bas, bleu vers blanc
     background: linear-gradient(to right, blue, white); // dégrader linéaire gauche a droite, bleu droite - blanc gauche
@@ -67,32 +64,29 @@ Les dégradé
 
 Selection des éléments
 -------------------
-::
 
-  .nomDeLaclasse // selectionne une classe
-  #nomDeLaDiv // selectionne une div
-  .section // selectionne une section ( ou nav .. )
-  nav a // tout élément a descendant d'un élément nav
-  nav > a // tout élément a fils direct d'un élément nav
+    .nomDeLaclasse // selectionne une classe
+    #nomDeLaDiv // selectionne une div
+    .section // selectionne une section ( ou nav .. )
+    nav a // tout élément a descendant d'un élément nav
+    nav > a // tout élément a fils direct d'un élément nav
 
 Styler les liens
 -------------------
-::
 
-  a:link { color: green; }  // par défaut
-  a:visited { color: orange; }  // déjà visité
-  a:hover { color: black; background-color: red; }  // lors du survol
-  a:focus { color: #aaa; text-decoration: line-through; }  // focus clavier
-  a:active { color: yellow; }  // lors du clic
+
+    a:link { color: green; }  // par défaut
+    a:visited { color: orange; }  // déjà visité
+    a:hover { color: black; background-color: red; }  // lors du survol
+    a:focus { color: #aaa; text-decoration: line-through; }  // focus clavier
+    a:active { color: yellow; }  // lors du clic
 
 Au survol :
-::
 
     .section :hover
 
 Curseur
 -------------------
-::
 
   body{
     cursor: crosshair;
@@ -106,54 +100,52 @@ Curseur
 
 Forme et 3D
 -------------------
-::
 
-  #triangle-top {
-    width  : 0;
-    height : 0;
-    border-left   : 25px solid transparent;
-    border-right  : 25px solid transparent;
-    border-bottom : 50px solid green;
-  }
+    #triangle-top {
+      width  : 0;
+      height : 0;
+      border-left   : 25px solid transparent;
+      border-right  : 25px solid transparent;
+      border-bottom : 50px solid green;
+    }
 
-  #triangle-right{
-    width  : 0;
-    height : 0;
-    border-top    : 25px solid transparent;
-    border-bottom : 25px solid transparent;
-    border-left   : 50px solid red;
-  }
+    #triangle-right{
+      width  : 0;
+      height : 0;
+      border-top    : 25px solid transparent;
+      border-bottom : 25px solid transparent;
+      border-left   : 50px solid red;
+    }
 
-  .hexagone {
-    box-sizing : border-box;
-    position : relative;
-    width : 121.24356px;
-    height : 70px;
-    background-color : #008000;
-    margin : 35px 0;
-  }
+    .hexagone {
+      box-sizing : border-box;
+      position : relative;
+      width : 121.24356px;
+      height : 70px;
+      background-color : #008000;
+      margin : 35px 0;
+    }
 
-  #trapeze{
-    border-bottom: 50px solid green;
-    border-left  : 25px solid transparent;
-    border-right : 25px solid transparent;
-    height : 0;
-    width  : 50px;
-  }
+    #trapeze{
+      border-bottom: 50px solid green;
+      border-left  : 25px solid transparent;
+      border-right : 25px solid transparent;
+      height : 0;
+      width  : 50px;
+    }
 
-  #losange-90{
-    width  : 0;
-    height : 0;
-    position : relative;
-    top : -25px;
-    border : 25px solid transparent;
-    border-bottom-color : green;
-  }
+    #losange-90{
+      width  : 0;
+      height : 0;
+      position : relative;
+      top : -25px;
+      border : 25px solid transparent;
+      border-bottom-color : green;
+    }
 
 
 Variable en css
 -------------------
-::
 
    To do
 
@@ -162,20 +154,19 @@ Génération de contenu
 
 Les pseudo-éléments ::before, ::after permettent d'insérer du contenu au
 début ou à la fin d'un élément, grâce à la propriété content
-::
 
-  #toto::after {
-      content: "je suis le dernier";
-  }
+
+    #toto::after {
+        content: "je suis le dernier";
+    }
 
 
 Aligner les input d'un form
 ---------------------------
-::
 
-   label
-   {
+    label
+    {
       width: 40%;
      display: block;
       float: left;
-   }
+    }

@@ -84,9 +84,9 @@
     - [SCSS](/HTMLCSS/Scss.md)
 * Javascript
     - Librairies
-        - [AOS](/Javascript/Librairie/AOSJS.md)
-        - [Jquery](/Javascript/Librairie/Jquery.md)
-        - [Phaser](/Javascript/Librairie/Phaser.md)
+        - [AOS](/Javascript/Librairies/AOSJS.md)
+        - [Jquery](/Javascript/Librairies/Jquery.md)
+        - [Phaser](/Javascript/Librairies/Phaser.md)
     - Framework
         - [Angular](/Javascript/Framework/AngularJS.md)
         - [NodeJS](/Javascript/Framework/NodeJS.md)

@@ -13,6 +13,5 @@ Node
 -------------------
 
 Executer un fichier js avec node ( cli ) :
-::
 
     node nom_du_fichier

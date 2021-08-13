@@ -26,12 +26,12 @@ Ensuite pour pusher correctement avec ansible :
 
 Modifier la variable server_name dans ansible/vars :
 server_name:
-::
+
 
     bilemo.yohanndurand.fr
 
 Ensuite modifier le symfony.conf pour que nginx puisse avoir les bonnes info :
-::
+
 
     server_name {{ server_name }} www.{{ server_name }};
         root {{ symfony_web_dir }};
