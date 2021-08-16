@@ -19,6 +19,8 @@ Commande pour s'identifier:
      $ git config --global user.name "Username"
      $ git config --global user.email "mail"
 
+     $ git remote set-url origin https://<token>@github.com/<username>/<repo> // add token for repo ( without<> ( token ( github profil ), username, repo) )
+
 Ajouté un repository a github :
 -------------------
 
