@@ -12,7 +12,7 @@ pré-requis:
 
 - Installer node.js
 - nécésite "expo-cli", demande de téléchargement lors de la création de l'appli ou cette commande :
-::
+
 
     npm install -g expo-cli
 
@@ -22,7 +22,7 @@ Créer son App :
 -------------------
 
 1. Avec npm : Le Natif  :
-::
+
 
     npm install create-react-native-app -g
     create-react-native-app TestReact ( pour une version de React Sans utiliser les composants telephone )
@@ -31,7 +31,7 @@ Créer son App :
 
 
 2. Avec expo : la CRNA ( recommandé au début )
-::
+
     expo init MonProjet ( commande pour créer le projet )
     choisir "blank" a minimal app as clean as an empty canvas
     cd MonProjet
@@ -46,14 +46,14 @@ Créer un dossier "Helpers" pour avoir de la data par exemple
 Helpers/filmsData.js
 
 Ne pas oublier d'importer les composants :
-::
+
 
     import React from 'react'
     import { StyleSheet, View, TextInput, Button , Text,FlatList } from 'react-native'
 
 Style
 -------------------
-::
+
 
     render() {
         return (
@@ -74,7 +74,7 @@ Style
 
 Le style ( Aprés la class )
 -------------------
-::
+
 
     const styles = StyleSheet.create({
         main_container: {
@@ -99,22 +99,21 @@ Le style ( Aprés la class )
     })
 
 Ne pas oublié d'exporter un composants en fin de fichier
-::
 
     export default Search
 
 Rendre un composant
-::
 
-  render() {
-    return (
-        <Search/>
-    )
-  }
+
+    render() {
+      return (
+          <Search/>
+      )
+    }
 
 Utilisé une API
 API/Name_apiAPI.js ( exemple ) :
-::
+
 
     // API/TMDBApi.js
 
@@ -138,29 +137,28 @@ Gestion de Librairies
 Pour installer une librairie il faut Stopper le serveur Node.js avec ctrl + C
 
 A la racine du projet dans le terminal :
-::
+
 
     npm install --save react-navigation
 
-`React Naviguation`_  Pour avoir une bonne naviguation
+[React Naviguation](https://reactnavigation.org/docs/getting-started/)  Pour avoir une bonne naviguation
 
 
 Le --save permet d'enregistrer la librairie dans le package.json , ainsi sur un autre ordinateur, on peux installer les dépendances avec :
-::
+
 
     npm install
 
 Relancer le serveur avec :
-::
+
 
     npm start
 
 
 Préparer pour les stores
 -------------------
-`Lien OC`_
 
 
-.. _`Lien OC`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/
-.. _`React Naviguation`: https://reactnavigation.org/docs/getting-started/
-.. _`Lien OpenclassRooms`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/
+[Lien OC](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/)
+[React Naviguation](https://reactnavigation.org/docs/getting-started/)
+[Lien OpenclassRooms](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/)

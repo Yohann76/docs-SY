@@ -5,25 +5,25 @@ Le terme « Java EE » signifie Java Enterprise Edition, et était anciennement 
 Il fait quant à lui référence à une extension de la plate-forme standard. Autrement dit,
 la plate-forme Java EE est construite sur le langage Java et la plate-forme Java SE,
 et elle y ajoute un grand nombre de bibliothèques remplissant tout un tas de fonctionnalités que la plate-forme standard ne remplit pas
-d'origine. L'objectif majeur de Java EE est de faciliter le développement d'applications web robustes et distribuées, 
+d'origine. L'objectif majeur de Java EE est de faciliter le développement d'applications web robustes et distribuées,
 déployées et exécutées sur un serveur d'applications.
 
 
-Spécificité de l'extension EE 
+Spécificité de l'extension EE
 -------------------
 
 
-Installation 
+Installation
 -------------------
 
-_`Serveur tomcat`
-`IDE Eclipse pour Java EE <https://www.eclipse.org/downloads/packages/>`
-`création de projet avec eclipse <https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/>`
+
+[IDE Eclipse pour Java EE](https://www.eclipse.org/downloads/packages/)
+[création de projet avec eclipse](https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/)
 
 Création de projet
 -------------------
 -> File -> New Project -> web -> Dynamic Web Project
-si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse. 
+si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
 -> cliquer sur new runtime, et cliquer sur un serveur d'éxécution ( apache tomcat peut etre installer rapidement grace a un serveur-repertoire )
 -> selectionner la version du serveur
@@ -38,8 +38,8 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 Utilité de JAVA EE
 -------------------
 
-Java EE offre une structure et des librairies pour le developpement d'applications web. Java EE utilise le java classique, et le JRE pour compiler le code 
-en un site web. 
+Java EE offre une structure et des librairies pour le developpement d'applications web. Java EE utilise le java classique, et le JRE pour compiler le code
+en un site web.
 
 Structure de JAVA EE
 -------------------
@@ -47,8 +47,6 @@ Java EE repose sur un modèle MVC.
 
 
 
-.. _`IDE Eclipse`: https://www.eclipse.org/downloads/packages/
-.. _`Serveur tomcat`: https://tomcat.apache.org/download-70.cgi
-.. _`Cours Openclassrooms`: https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/
-
-
+[IDE Eclipse](https://www.eclipse.org/downloads/packages/)
+[Serveur tomcat](https://tomcat.apache.org/download-70.cgi)
+[Cours Openclassrooms](https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/)

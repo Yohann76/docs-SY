@@ -7,7 +7,7 @@ Flutter est un framework qui utilise le Dart pour effectuer une développement m
 Nous pouvous utiliser Firebase pour la bdd.
 
 
-flutter Docs : 
+flutter Docs :
 ===================
 
-https://flutter.dev/docs
+[Flutter Docs](https://flutter.dev/docs)

@@ -1,34 +1,33 @@
 Le langage JAVA
 ===================
-`Java DOC <https://docs.oracle.com/en/java/>`_
+[Java DOC](https://docs.oracle.com/en/java/)
+[Cours Java OC](https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java)
 
-`Cours Java OC  <https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java>`_
 
-
-Installation 
+Installation
 -------------------
-`Télécharger l'environnement JAVA  <http://www.oracle.com/technetwork/java/javase/downloads/index.html>`_
-`Télécharger Eclipse IDE  <https://www.eclipse.org/>`_
+[Télécharger l'environnement JAVA](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+[Télécharger Eclipse IDE](https://www.eclipse.org/)
 
 Pour developper avec java, il faut le JDK ( Java Dev Kit) + un IDE ( Eclipse, VS/CODE )
 
 
-Utilité de JAVA 
+Utilité de JAVA
 -------------------
 
-Syntaxe du langage 
+Syntaxe du langage
 -------------------
 
 variables
-::
+
     int temperatureSoleil;
     temperatureSoleil = 15600000; //La température est exprimée en kelvins
     float nombre;
     nombre = 2.0f;
     String text = "ABCDE";
 
-Un hello World made in JAVA 
-::
+Un hello World made in JAVA
+
 
     package hello;
 
@@ -44,18 +43,18 @@ Un hello World made in JAVA
 
     }
 
-Executer un .java avec le terminal : 
+Executer un .java avec le terminal :
     $ javac.exe hello∖HelloWorld.java
 
 
-classe java 
-::
+classe java
+
     class Unicorn {
-        
+
         // propriétés
         private int height = 170;
         public String power = "Double.infinity";
-        
+
         // méthodes
         private static void sleep() {
         }
@@ -64,8 +63,8 @@ classe java
 
     }
 
-boucle for : 
-::
+boucle for :
+
     int[] myArray = new int[]{7,2,4};
 
     for (int i=0; i<myArray.length; i++) {
@@ -75,17 +74,10 @@ boucle for :
     }
 
 boucle while:
-::
+
     int numberOfTrees = 0;
 
     while (numberOfTrees < 10) {
         numberOfTrees += 1;
         System.out.println("I planted " + numberOfTrees + " trees");
     }
-
-
-
-
-
-
-
