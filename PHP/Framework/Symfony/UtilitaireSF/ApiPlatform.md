@@ -13,7 +13,6 @@ Les annotations :
 -------------------
 
 Définir comme ressource utilisable
-::
 
     /**
     * @ApiResource()
@@ -29,7 +28,7 @@ Définir comme ressource utilisable
 
 Groups
 -------------------
-::
+
 
     use Symfony\Component\Serializer\Annotation\Groups;
 

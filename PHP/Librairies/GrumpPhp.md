@@ -6,7 +6,7 @@ composer require --dev phpro/grumphp-shim
 
 Config ( dossier grumphp.yml )
 ===================
-::
+
 
     parameters:
         tasks:

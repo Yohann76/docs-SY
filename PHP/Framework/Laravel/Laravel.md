@@ -1,22 +1,22 @@
-Laravel 
+Laravel
 ===================
 
-Démarrage Laravel : 
+Démarrage Laravel :
 --------------------
 
 Command:
-::
 
-  composer create-project laravel/laravel laravel5 --prefer-dist
-  
+
+    composer create-project laravel/laravel laravel5 --prefer-dist
+
 Créer un .env:
-::
-  
-  APP_ENV=local
-  APP_DEBUG=true
 
-  APP_KEY=base64:JjrFWC+TGnySY2LsldPXAxuHpyjh8UuoPMt6yy2gJ8U=
-  
+
+    APP_ENV=local
+    APP_DEBUG=true
+
+    APP_KEY=base64:JjrFWC+TGnySY2LsldPXAxuHpyjh8UuoPMt6yy2gJ8U=
+
 
 Architecture
 ------------
@@ -34,31 +34,31 @@ Architecture
 - vendor
 
 
-Command 
+Command
 ---------
-Lancer le serveur laravel intégré : 
-::
+Lancer le serveur laravel intégré :
 
-  php artisan serve --host 0.0.0.0 --port 8082
-  
-  
+
+    php artisan serve --host 0.0.0.0 --port 8082
+
+
 Générer une key :
-::
 
-  php artisan key:generate
-  
+
+    php artisan key:generate
+
 Clear la config et MAJ :
-::
-  
-  php artisan config:cache
-  
-  
+
+
+    php artisan config:cache
+
+
 Effectuer une migration:
-::
 
-  php artisan migrate
-  
+
+    php artisan migrate
+
 Lancer les tests avec coverage :
-::
 
-  php artisan test --coverage-html tests/coverage
+
+    php artisan test --coverage-html tests/coverage

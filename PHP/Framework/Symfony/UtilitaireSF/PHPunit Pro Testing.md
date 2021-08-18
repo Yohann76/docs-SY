@@ -8,17 +8,15 @@ Commande et installation
 prérequis : Installer Xdebug ( sur le wamp )
 
 Composer require :
-::
+
 
     composer require phpunit
 
 lancer les test :
-::
 
     php bin/phpunit
 
 Créer le rapport dans public/data :
-::
 
     php bin/phpunit --coverage-html public/data
 
@@ -28,35 +26,31 @@ Test :
 
 Test Entité (unitaire)  tests/Entity/phoneTest.php
 
-::
+  	<?php
 
-	<?php
+      namespace App\Tests;
 
-    namespace App\Tests;
+      use App\Entity\Phone;
+      use PHPUnit\Framework\TestCase;
 
-    use App\Entity\Phone;
-    use PHPUnit\Framework\TestCase;
+      class phoneTest extends TestCase
+      {
+          private $phone;
 
-    class phoneTest extends TestCase
-    {
-        private $phone;
-
-        public function setUp()
-        {
-            $this->phone = new Phone();
-        }
-        public function testPhoneName()
-        {
-            $this->phone->setName('Iphone');
-            $this->assertEquals('Iphone', $this->phone->getName());
-        }
-    }
-
-
+          public function setUp()
+          {
+              $this->phone = new Phone();
+          }
+          public function testPhoneName()
+          {
+              $this->phone->setName('Iphone');
+              $this->assertEquals('Iphone', $this->phone->getName());
+          }
+      }
 
 
 Test controller (fonctionnelle) tests/Controller/homecontrollerTest
-::
+
 
     <?php
 
@@ -78,7 +72,7 @@ Test controller (fonctionnelle) tests/Controller/homecontrollerTest
 
 
 Test Formulaire (fonctionnelle)
-::
+
 
     public function testFormCreateActionUser(){
         $client = $this->login('Yohann','dev') ;

@@ -5,7 +5,7 @@ Composer
 
 Commande Composer :
 ===================
-::
+
 
     Composer install // installer les dépendance dans le composer.json
     Composer update // update les dépendance
@@ -15,21 +15,21 @@ Commande Composer :
 
 Commande divers sur serveur ( ubuntu ) :
 ===================
-::
 
-  sudo apt autoremove composer // désinstaller composer
-  composer self-update // mise à jour de composer ?
-  composer self-update --2 // mise à jour de composer V1.X vers V2.X ( sortie en octobre 2020 )
 
-  // installer composer en cli pour ubuntu
-  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-  php -r "if (hash_file('sha384', 'composer-setup.php') === '795f976fe0ebd8b75f26a6dd68f78fd3453ce79f32ecb33e7fd087d39bfeb978342fb73ac986cd4f54edd0dc902601dc') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-  php composer-setup.php
-  php -r "unlink('composer-setup.php');"
+    sudo apt autoremove composer // désinstaller composer
+    composer self-update // mise à jour de composer ?
+    composer self-update --2 // mise à jour de composer V1.X vers V2.X ( sortie en octobre 2020 )
+
+    // installer composer en cli pour ubuntu
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    php -r "if (hash_file('sha384', 'composer-setup.php') === '795f976fe0ebd8b75f26a6dd68f78fd3453ce79f32ecb33e7fd087d39bfeb978342fb73ac986cd4f54edd0dc902601dc') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    php composer-setup.php
+    php -r "unlink('composer-setup.php');"
 
 Options Composer
 ===================
-::
+
 
     --verbose (-v): Increase verbosity of messages.
     --help (-h): Display help information.

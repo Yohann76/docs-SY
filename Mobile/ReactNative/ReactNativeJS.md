@@ -1,45 +1,44 @@
 React Native ( react cross-platform )
 ===================
 
-Info : 
-------------------- 
-React Native permet de developper des application cross-platforms en javascript 
+Info :
+-------------------
+React Native permet de developper des application cross-platforms en javascript
 
 Pré-requis
 - Node
-- Expo ou device 
+- Expo ou device
 
 
-Initialisation : 
+Initialisation :
 -------------------
 
 pré-requis:
 
 - Installer node.js
 - nécésite "expo-cli", demande de téléchargement lors de la création de l'appli ou cette commande :
-::
 
     npm install -g expo-cli
 
-- Instalation de l'appplication android "expo" pour avoir le rendu sur le telephone ( connecter au méme réseau wii-fii ) 
+- Instalation de l'appplication android "expo" pour avoir le rendu sur le telephone ( connecter au méme réseau wii-fii )
 
-Créer son App : 
+Créer son App :
 -------------------
-   
-1. Avec npm ( fournis avec node.js ) : 
-::
+
+1. Avec npm ( fournis avec node.js ) :
+
 
     npm install create-react-native-app -g
-    create-react-native-app TestReact ( pour une version de React Sans utiliser les composants telephone ) 
+    create-react-native-app TestReact ( pour une version de React Sans utiliser les composants telephone )
     cd TestReact
-    npm start ( donne un QR code et lance le serveur node.js ) 
+    npm start ( donne un QR code et lance le serveur node.js )
 
-2. Avec expo ( recomandé ) 
-::
-    expo init MonProjet ( commande pour créer le projet ) 
+2. Avec expo ( recomandé )
+
+    expo init MonProjet ( commande pour créer le projet )
     choisir "blank" a minimal app as clean as an empty canvas
     cd MonProjet
-    nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo ) 
+    nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo )
 
 
 
@@ -53,22 +52,22 @@ Gestion assets
 
 Pour inclure des images dans l'application, il faut faire un fichier _image.js, une constante objet qui possède toute les images. puis dans le code du composant, il faudra appeler { img.nameimage }
 
-Architecture de l'application 
+Architecture de l'application
 -------------------
 - Components : dossier des composants ( a refactoriser dès que possible
-- Stores : Modèle et base de donnée 
-- utils : service annexe ( get, petite function ) 
+- Stores : Modèle et base de donnée
+- utils : service annexe ( get, petite function )
 - assets : image et icon
-- nodes_module : librairie 
+- nodes_module : librairie
 
-Classes des composants 
+Classes des composants
 -------------------
-::
 
-   
+
+
 Le style du composant
 -------------------
-::
+
 
     const styles = StyleSheet.create({
         main_container: {
@@ -95,10 +94,10 @@ Le style du composant
 Utiliser flexbox pour styliser les view et les arrangements..
 
 
-Faire une requete 
+Faire une requete
 ----------------------
 
-::
+
      const url = 'xxxxx'
      return fetch(url)
          .then((response) => response.json())
@@ -110,19 +109,17 @@ State et props
 --------------------
 
 This.state()
-This.setstate() 
+This.setstate()
 
-Exporter l'app en APK 
+Exporter l'app en APK
 -------------------
 
-https://docs.expo.io/distribution/building-standalone-apps/
-
+[Docs Expo](https://docs.expo.io/distribution/building-standalone-apps/)
 
 configure app.json
 
-::
 
-     {
+    {
    "expo": {
     "name": "Your App Name",
     "icon": "./path/to/your/app-icon.png",
@@ -138,34 +135,23 @@ configure app.json
     }
    }
  }
- 
 
-::
+
+
 
     expo build:android -t apk
-    
+
 Récuperer la keystore ( indispensable pour les MAJ )
 
-::
+
 
     expo fetch:android:keystore
-    
-    
+
+
 puis publier sur play store ( avec bannière, icone, screen, description,...
 
 
 
-`Lien OC`_
-
-
-.. _`Lien OC`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/
-.. _`React Naviguation`: https://reactnavigation.org/docs/getting-started/
-.. _`Lien OpenclassRooms`: https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/
-
-
-
-
-
-
-
-
+[Lien OC](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/)
+[React Naviguation](https://reactnavigation.org/docs/getting-started/)
+[Lien OpenclassRooms](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959616-formalisez-votre-application-pour-utiliser-les-composants-du-device/)

@@ -3,49 +3,44 @@ Upgrade Symfony Version
 ##################
 
 [Cours SymfonyCast migration 3.0 a 4.0/4.4](https://symfonycasts.com/screencast/symfony4-upgrade/framework-config)
-::
 
-  // Program
-  3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
+
+    // Program
+    3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
 
 
 A partir de Symfony 3.1 -> Symfony 3.3
 =======================================
-::
 
-  //composer.json
-  "symfony/symfony": "3.3.*",
-::
 
-  $ composer update
-  $ composer install
+    //composer.json
+    "symfony/symfony": "3.3.*",
+
+
+    $ composer update
+    $ composer install
 
 
 A partir de Symfony 3.3 -> Symfony 3.4
 =======================================
-::
-
-  $ composer self-update
-  $ composer require symfony/flex
-
-::
-
-  $ rm -Rf vendor
-  $ composer install
 
 
-::
+    $ composer self-update
+    $ composer require symfony/flex
 
-  //composer.json
-  "symfony/symfony": "3.4.*",
+    $ rm -Rf vendor
+    $ composer install
 
-::
 
-  $ composer update
-  $ composer install
+    //composer.json
+    "symfony/symfony": "3.4.*",
+
+    $ composer update
+    $ composer install
 
 Gestion de Flex
 =======================================
+
 Flex est présent a partir de la 3.4
 Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du composer.json
 
@@ -61,7 +56,7 @@ A partir de Symfony 3.4 -> Symfony 4.4
 - enlever les probleme de conflit
 
 2. Faire le systeme de double application ( autoload double chargement )
-::
+
     "autoload": {
         "psr-4": {
             "": "src/"
