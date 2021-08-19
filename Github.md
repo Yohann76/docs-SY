@@ -27,18 +27,18 @@ Ajouté un repository a github :
 Créer le repo sur la plateforme, upload les fichiers, et cloner le projet
 
 
-   $ git clone LienDuProjet
+    $ git clone LienDuProjet
 
 Créer le repo sur la plateforme SANS README.txt et pusher en cli
 pour le push la première fois, enlever le .git a la racine si il y a
 git init
 
 
-   git add .
-   git status ( pour voir les fichier add a l'index )
-   git commit -m "message"
-   git remote add origin https://github.com/Yohann76/BileMo_B2B_API
-   git push -u origin master ( demande UserName et mots de passe )
+    $ git add .
+    $ git status ( pour voir les fichier add a l'index )
+    $ git commit -m "message"
+    $ git remote add origin https://github.com/Yohann76/BileMo_B2B_API
+    $ git push -u origin master ( demande UserName et mots de passe )
 
 ou cliquer sur le repo et copier les commandes, avec https
 
@@ -46,64 +46,63 @@ ou cliquer sur le repo et copier les commandes, avec https
 Faire un commit :
 -------------------
 
-
-   git add * ( pour ajouter tout a l'index, sauf ce qui est exclus dans .gitignore )
-   git status
-   git commit -m "Message du commit"  // -m = commentaire du commit
-   git push origin master
+    $ git add * ( pour ajouter tout a l'index, sauf ce qui est exclus dans .gitignore )
+    $ git status
+    $ git commit -m "Message du commit"  // -m = commentaire du commit
+    $ git push origin master
 
 Corriger le message du dernier commit :
 
 
-   git commit --amend -m "Nom de commit corrigé"
+    $ git commit --amend -m "Nom de commit corrigé"
 
 mais attention, vous ne pouvez modifier ce message que si vous n'avez pas encore pushé votre commit sur l'origine !
 
 revenir sur un commit précédent  :
 
 
-   git checkout SHADuCommit ( 5e78e8e389e28cf9ea91708eb37abfd975ffce31 par exemple )
+    $ git checkout SHADuCommit ( 5e78e8e389e28cf9ea91708eb37abfd975ffce31 par exemple )
 
 Créer un commit qui fait l'inverse du précédent ( attention cela crée un nouveau commit )  :
 
 
-   git revert SHADuCommit
+    $ git revert SHADuCommit
 
 Annuler tout les changements lorsqu'un nouveau commit n'a pas été fait :
 
-   git reset
-   git reset --hard‌
+    $ git reset
+    $ git reset --hard‌
 
 
 Voir la liste des commit effectué
 
-   git log
+    $ git log
 
 Désindexer un fichier ajouté a l'index pour un commit
 
 
-    git restore --staged <fichier>...
+    $ git restore --staged <fichier>...
 
 Synchroniser une branche avec une autre branche
 
-   git pull origin master ou dev...
+    $ git pull origin master ou dev...
 
 
 Commande divers :
 -------------------
 
 
-   $ git branch // voir la branche actuelle et toutes les branch
-   $ git branch mon-test // Créer une nouvelle branch nommé "mon-test"
-   $ git checkout mon-test // pour changer de branch, se positionner sur une branch
-   $ git branch -D mon-test // Supprimer une branche
-   $ git branch -b mon-test // Créer une branche et aller dessus directement
-   $ git remote show origin // voir la liste des branches distantes
-   $ git merge brancheB // La B rentre dans A ou master
-   $ git pull origin master // Récuperer le code de master, copier une branch
-   $ git reset monfichieroudossier // Retirer un fichier ou dossier de l'index aprés un git add *
-   $ git rev-list --count HEAD // compter le nombre de commit sur la branch actuelle ls
-   $ git submodule update --init // telecharger les modules secondaire ( un repo dans un repo )
+    $ git branch // voir la branche actuelle et toutes les branch
+    $ git branch mon-test // Créer une nouvelle branch nommé "mon-test"
+    $ git checkout mon-test // pour changer de branch, se positionner sur une branch
+    $ git branch -D mon-test // Supprimer une branche
+    $ git branch -b mon-test // Créer une branche et aller dessus directement
+    $ git remote show origin // voir la liste des branches distantes
+    $ git merge brancheB // La B rentre dans A ou master
+    $ git pull origin master // Récuperer le code de master, copier une branch
+    $ git reset monfichieroudossier // Retirer un fichier ou dossier de l'index aprés un git add *
+    $ git rev-list --count HEAD // compter le nombre de commit sur la branch actuelle ls
+    $ git submodule update --init // telecharger les modules secondaire ( un repo dans un repo )
 
 ( voir pour git push origin master aprés pour effectuer la merge )
 ( ou faire une demande de pull request sur git )
