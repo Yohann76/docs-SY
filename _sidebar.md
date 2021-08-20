@@ -34,7 +34,8 @@
     - Nginx
         - [config nginx php](Dev'ops/Nginx/conf_nginx_php.md)
         - [config nginx ssl https](Dev'ops/Nginx/conf_nginx_ssl_https.md)
-        - [config nginx](Dev'ops/Nginx/conf-nginx.md)
+        - [config nginx](Dev'ops/Nginx/config-nginx.md)
+        - [config nginx laravel](Dev'ops/Nginx/nginx_laravel.md)
     - Kubernetes
         - [Kubernetes](Dev'ops/Kubernetes/Kubernetes.md)
     - Intégration Continue
@@ -51,14 +52,14 @@
     - Docker
         - [Docker](Dev'ops/Docker/Docker.md)
     - Déploiement
-        - [Ansistranos](Dev'ops/Deploiement/ansistranos.md)
+        - [Ansistranos](Dev'ops/Deploiement/Ansistranos.md)
         - [Google Platform](Dev'ops/Deploiement/GooglePlatform.md)
         - [Heroku](Dev'ops/Deploiement/Heroku.md)
         - [Symfony cloud](Dev'ops/Deploiement/SymfonyCloud.md)
     - [Config WAMP](Dev'ops/Config Wamp/Php ini.md)
     - [Apache](Dev'ops/Apache/config.md)
     - [AWS](Dev'ops/AWS.md)
-    - [Nom de domaine](Dev'ops/Nom de domaine.md)
+    - [Nom de domaine](Dev'ops/Nom-de-domaine.md)
 * Editeur
     - [VS code](/Editeur/Vscode.md)
 * Format
@@ -92,14 +93,14 @@
         - [NodeJS](/Javascript/Framework/NodeJS.md)
         - [React](/Javascript/Framework/ReactJS.md)
         - [Vue](/Javascript/Framework/VueJS.md)
-    - [Javascript](/Javascript/Javascript.md)
+    - [Javascript](/Javascript/JavaScript.md)
     - [Jest](/Javascript/Javascript_test_with_jest.md)
     - [Node NPM Yarn](/Javascript/Node_npm_yarn.md)
     - [Parse Server](/Javascript/parse.md)
 * Mobile
     - Java
         - J2EE
-            - [J2EE](/Mobile/J2EE/J2EE.md)
+            - [J2EE](/Mobile/Java/J2EE/J2EE.md)
         - [Application mobile java native](/Mobile/Java/application mobile java native.md)
         - [Java](/Mobile/Java/JAVA.md)
     - ReactNative
@@ -107,7 +108,7 @@
         - [ReactNativeJS](/Mobile/ReactNative/ReactNativeJS.md)
     - [Expo](/Mobile/expo.md)
     - [Flutter](/Mobile/flutter.md)
-    - [React-native-sans-expo](/Mobile/ReactNativeSansExpo.md)
+    - [React-native-sans-expo](/Mobile/React-native-sans-expo-naturel.md)
     - [ReactNativeJS](/Mobile/ReactNativeJS.md)
 * PHP
     - Framework
