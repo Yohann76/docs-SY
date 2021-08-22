@@ -1,8 +1,4 @@
-.. index::
-   single: ReactNative
-
-Expo
-===================
+## Expo
 
 Info :
 -------------------

@@ -1,8 +1,4 @@
-.. index::
-   single: Bootstrap;
-
-BootStrap
-===================
+## BootStrap
 
 CDN
 

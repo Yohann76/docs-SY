@@ -1,8 +1,4 @@
-.. index::
-   single: Angular;
-
-Angular.js ( google )
-===================
+## Angular.js ( google )
 
 Installation
 -------------------

@@ -1,8 +1,4 @@
-.. index::
-   single: SASS;
-
-SASS
-===================
+## SASS
 
    $base-color: #c6538c;
    $border-dark: rgba($base-color, 0.88);

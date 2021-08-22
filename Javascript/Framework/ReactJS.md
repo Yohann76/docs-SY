@@ -1,5 +1,4 @@
-React.js ( Facebook )
-===================
+## React.js ( Facebook )
 
 pré-requis : node, npm5.3+
 Commande pour monter un projet React

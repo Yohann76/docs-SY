@@ -1,5 +1,5 @@
-Gitlab CI info
-===================
+## Gitlab CI info
+
 
 Configuration
 -------------------

@@ -1,5 +1,5 @@
-Application mobile avec java
-===================
+## Application mobile avec java
+
 
 Installation & outils
 -------------------
@@ -17,9 +17,5 @@ AndroidStudio possède également des emulateurs, qui sont essentiel pour simule
 Spécificité developpement mobile
 -------------------
 
-L'architecture java natif est plus complexe, mais a également plus de possibilité, avec l'utilisation de composant et de périphérique natif. Avec 
+L'architecture java natif est plus complexe, mais a également plus de possibilité, avec l'utilisation de composant et de périphérique natif. Avec
 une application native, c'est également plus simple de gerer les priorité de l'application.
-
-
-
-

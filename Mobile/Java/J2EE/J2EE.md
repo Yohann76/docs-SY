@@ -1,5 +1,5 @@
-J2EE Généralitée
-===================
+## J2EE Généralitée
+
 
 Le terme « Java EE » signifie Java Enterprise Edition, et était anciennement raccourci en « J2EE ».
 Il fait quant à lui référence à une extension de la plate-forme standard. Autrement dit,

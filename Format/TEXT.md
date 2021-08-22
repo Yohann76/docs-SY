@@ -1,2 +1,1 @@
-Formatage TEXT ( export simple )
-=================================
+## Formatage TEXT ( export simple )

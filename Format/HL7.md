@@ -1,2 +1,1 @@
-Format HL7 ( transmision domaine de la santé )
-================================================
+## Format HL7 ( transmision domaine de la santé )

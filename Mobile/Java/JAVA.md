@@ -1,5 +1,5 @@
-Le langage JAVA
-===================
+## Le langage JAVA
+
 [Java DOC](https://docs.oracle.com/en/java/)
 [Cours Java OC](https://openclassrooms.com/fr/courses/26832-apprenez-a-programmer-en-java)
 

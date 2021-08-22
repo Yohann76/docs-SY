@@ -1,8 +1,4 @@
-.. index::
-   single: JavaScript;
-
-JavaScript
-===================
+## JavaScript
 
 Base du javascript
 -------------------

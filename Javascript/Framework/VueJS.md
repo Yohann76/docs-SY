@@ -1,5 +1,4 @@
-Vue JS
-===================
+## Vue JS
 
 [Vue Docs](https://fr.vuejs.org/v2/guide/)
 [Vue OC cours](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js/6862871-creez-un-nouveau-projet-avec-vue-cli)

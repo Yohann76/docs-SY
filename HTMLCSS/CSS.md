@@ -1,8 +1,4 @@
-.. index::
-   single: CSS;
-
-CSS
-===================
+## CSS
 
 Variable
 -------------------

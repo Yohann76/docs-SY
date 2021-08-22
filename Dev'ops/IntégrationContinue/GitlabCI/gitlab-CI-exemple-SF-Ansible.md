@@ -1,5 +1,5 @@
-Gitlab CI Example ( Yohann maintener )
-===================
+## Gitlab CI Example ( Yohann maintener )
+
 
 Config GitlabCI pour push un projet SF avec Ansible et vérification ( sécurité, phpcs , phpstan , twig-lint)
 -------------------

@@ -1,8 +1,4 @@
-.. index::
-   single: HTML;
-
-HTML
-===================
+## HTML
 
 code minimal pour page html :
 
