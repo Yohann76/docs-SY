@@ -20,7 +20,7 @@ Commande pour s'identifier:
      $ git config --global user.email "mail"
 
      $ git remote set-url origin https://<token>@github.com/<username>/<repo> // add token for repo ( without<> ( token ( github profil ), username, repo) )
-     $ git remote set-url origin https://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@github.com/DYS-Tools/Sygma-Lead-Extractor // 13 aout fix , with orga and repo 
+     
 
 Ajouté un repository a github :
 -------------------
