@@ -1,5 +1,5 @@
-SnappyBundle
-===================
+## SnappyBundle
+
 
 SnappyBundle est un bundle pour transformer des vue twig en pdf,
 çela nécéssite d'installer le binaire de wkhtmltopdf sur windows et sur le serveur

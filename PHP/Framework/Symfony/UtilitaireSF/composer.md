@@ -1,5 +1,5 @@
-Composer
-===================
+## Composer
+
 
 [Composer docs](https://getcomposer.org/doc/)
 

@@ -1,5 +1,5 @@
-Command
-===================
+## Command
+
 [Console Commands](https://symfony.com/doc/current/console.html#the-console-app-env-app-debug)
 
 

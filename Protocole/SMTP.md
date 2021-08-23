@@ -1,5 +1,5 @@
-Protocole SMTP
-==============
+## Protocole SMTP
+
 
 Configuration d'un service SMTP avec Gmail :
 

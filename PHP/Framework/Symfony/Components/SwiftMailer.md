@@ -1,5 +1,5 @@
-Swift Mailer
-===================
+## Swift Mailer
+
 
 
 Code exemple Symfony

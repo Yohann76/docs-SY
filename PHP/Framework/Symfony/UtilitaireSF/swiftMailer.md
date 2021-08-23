@@ -1,5 +1,5 @@
-SwiftMailer
-==========
+## SwiftMailer
+
 
     // send mail with data
 

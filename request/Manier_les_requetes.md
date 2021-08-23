@@ -1,5 +1,4 @@
-Manier les requetes
-----------
+## Manier les requetes
 
 Requete de ping lourde pour faire de la charge :
 

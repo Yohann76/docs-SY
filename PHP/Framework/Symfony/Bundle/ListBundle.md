@@ -1,5 +1,4 @@
-Liste des bundles PHP pour SF
-===================
+## Liste des bundles PHP pour SF
 
 CalendarBundle : Bundle pour intégrer un calendrier ( [Calendar bundle](https://github.com/tattali/CalendarBundle)
 FOSUserBundle : Gestion utilisateurs, form inscription, mdp oublié ..

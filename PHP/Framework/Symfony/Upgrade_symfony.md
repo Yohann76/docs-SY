@@ -1,6 +1,4 @@
-##################
-Upgrade Symfony Version
-##################
+## Upgrade Symfony Version
 
 [Cours SymfonyCast migration 3.0 a 4.0/4.4](https://symfonycasts.com/screencast/symfony4-upgrade/framework-config)
 

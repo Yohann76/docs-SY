@@ -1,5 +1,4 @@
-LE protocole HTTP
-===================
+## Le protocole HTTP
 
   GET = Requête de la ressource située à l'URL spécifiée
   HEAD = Requête de l'en-tête de la ressource située à l'URL spécifiée

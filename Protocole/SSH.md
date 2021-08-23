@@ -1,5 +1,4 @@
-Le protocole SSH
-==================
+## Le protocole SSH
 
 Se connecter en SSH linux :
 
