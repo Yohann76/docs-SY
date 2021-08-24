@@ -56,7 +56,7 @@
         - [Google Platform](Dev'ops/Deploiement/GooglePlatform.md)
         - [Heroku](Dev'ops/Deploiement/Heroku.md)
         - [Symfony cloud](Dev'ops/Deploiement/SymfonyCloud.md)
-    - [Config WAMP](Dev'ops/Config Wamp/Php ini.md)
+    - [Config WAMP](Dev'ops/Config-Wamp/Php-ini.md)
     - [Apache](Dev'ops/Apache/config.md)
     - [AWS](Dev'ops/AWS.md)
     - [Nom de domaine](Dev'ops/Nom-de-domaine.md)
@@ -94,14 +94,14 @@
         - [React](/Javascript/Framework/ReactJS.md)
         - [Vue](/Javascript/Framework/VueJS.md)
     - [Javascript](/Javascript/JavaScript.md)
-    - [Jest](/Javascript/Javascript_test_with_jest.md)
+    - [Jest](/Javascript/Javascript_test_with_Jest.md)
     - [Node NPM Yarn](/Javascript/Node_npm_yarn.md)
     - [Parse Server](/Javascript/parse.md)
 * Mobile
     - Java
         - J2EE
             - [J2EE](/Mobile/Java/J2EE/J2EE.md)
-        - [Application mobile java native](/Mobile/Java/application mobile java native.md)
+        - [Application mobile java native](/Mobile/Java/application-mobile-java-native.md)
         - [Java](/Mobile/Java/JAVA.md)
     - ReactNative
         - [ReactNavigate](/Mobile/ReactNative/ReactNavigate.md)
