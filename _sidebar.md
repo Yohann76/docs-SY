@@ -52,6 +52,8 @@
     - Docker
         - [Docker](Dev'ops/Docker/Docker.md)
     - Déploiement
+        - Ansible
+            - [Ansible](Dev'ops/Deploiement/Ansible/Ansible.md)
         - [Ansistranos](Dev'ops/Deploiement/Ansistranos.md)
         - [Google Platform](Dev'ops/Deploiement/GooglePlatform.md)
         - [Heroku](Dev'ops/Deploiement/Heroku.md)
