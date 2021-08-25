@@ -140,7 +140,7 @@
             - [form](/PHP/Framework/Symfony/form.md)
             - [repositoryEx](/PHP/Framework/Symfony/repositoryEx.md)
             - [UpgradeSF](/PHP/Framework/Symfony/Upgrade_symfony.md)
-            - [Webpack et Encore bundle](/PHP/Framework/Symfony/WebPack&Encorebundle.md)
+            - [Webpack et Encore bundle](/PHP/Framework/Symfony/WebPack&Encore_bundle.md)
     - Librairies
         - [GrumpPHP](/PHP/Librairies/GrumpPhp.md)
     - [env sans framework](/PHP/.env-sans-framework.md)
