@@ -44,6 +44,10 @@ Function sur tableau
 Fonction utile dans PHP
 ===================
 
+attendre:
+
+    sleep($second);
+
 Trouver la longueur d'une chaine de caractere :
 
     strlen()
