@@ -25,6 +25,7 @@ Commande divers
 -------------------
 
     $ mysql> describe tablename; // Afficher la les types des champs
+    $ mysql> ALTER TABLE `risk` CHANGE `description` `description` LONGTEXT // Modifier le type de text de la colonne description dans la table risk
     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema; // Afficher la taille des base de données
 
 Requêtes
