@@ -2,17 +2,13 @@
 
 pré-requis : node, npm5.3+
 Commande pour monter un projet React
-####################
-
 
     $ npm install --global create-react-app // (utiliser pour initialiser l'utilitaire create-react-app )
     $ create-react-app my-app
     $ composer require encore  / yarn add @symfony/webpack-encore --dev // (uniquement dans un projet symfony
     $ yarn install // (uniquement dans un projet symfony )
 
-
 Dépendances additionelles :
-############################
 
     $ yarn add eslint --dev ( détecte les violation de code js )
     $ yarn add eslint-plugin-react --dev ( détecte les violation de code react )
@@ -22,7 +18,7 @@ Dépendances additionelles :
     $ yarn add prop-types --dev // Vérification de data ( props )
 
 Code
-######
+
 
     import PropTypes from 'prop-types';
 
@@ -47,7 +43,6 @@ Ajouter au webpack-config.js : .enableReactPreset()
 ( pour bien compiler le JSX )
 
 Avoir un fichier .eslintrc.js a la racine :
-
 
     module.exports = {
       extends: ['eslint:recommended','plugin:react/recommended'],

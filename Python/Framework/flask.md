@@ -190,4 +190,3 @@ Définition de addLabelAPI dans /api/apiFunction.py
         return {"labelStatus": "added in database"}
 
 other
-=====

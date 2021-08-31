@@ -2,7 +2,6 @@
 
 
 Checker une URL avec Curl
-#######################
 
     private function checkUrlCurl($link)
     {
@@ -27,4 +26,3 @@ Checker une URL avec Curl
 
 
 Autre script
-#######################

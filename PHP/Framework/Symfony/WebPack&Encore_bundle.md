@@ -124,8 +124,6 @@ Production :
     $Yarn build
 
 Configuration webpack.config.js fonctionnel :
-#############################################
-
 
     var Encore = require('@symfony/webpack-encore');
     Encore

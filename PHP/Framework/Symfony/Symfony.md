@@ -92,7 +92,6 @@ Nouvelles commandes
     $ symfony new --full my_project
 
 Code
-#######
 
 Cette partie présente des démonstrations codé
 

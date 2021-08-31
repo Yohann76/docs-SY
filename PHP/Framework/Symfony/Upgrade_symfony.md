@@ -86,17 +86,10 @@ A partir de Symfony 3.4 -> Symfony 4.4
 9. Enlever l'autoload de double chargement
 
 
-
 A partir de Symfony 4.4 -> Symfony 5.4
 =======================================
 
-
-
-
-
-##################
 DEPRECIATION
-##################
 
 Pour regler les depréciations il faut mettre a jour certain fichier obtenu sur
 [Symfony Recipe](https://github.com/symfony/recipes)

@@ -106,14 +106,9 @@ remplacer un contenu
 
 Enlever les espace a un string :
 
-
     trim($msg);
 
-############
-
-
 Expressions réguliere
-############
 
 [Memento expression reguliere OC](https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/918834-memento-des-expressions-regulieres)
 
