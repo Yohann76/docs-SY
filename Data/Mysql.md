@@ -88,6 +88,10 @@ Sauvegarde et restauration
     $ mysql -u username -p databasename < databasename.sql // Restaurer une base à partir d'un fichier .sql contenant une sauvegarde de la base
     $ mysql -u username -p --one-database mybase < alldatabases.sql // Restaurer une base à partir d'un fichier. sql contenant une sauvegarde de toutes les bases
 
+    $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base_1 nom_de_la_base_2 > fichier_destination.sql // Pour sauvegarder plusieurs bases de données
+    $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base > fichier_destination.sql // Pour sauvegarder une base de données précise
+    $ mysql --user=mon_user --password=mon_password nom_de_la_base < fichier_source.sql // restaurer dans une base de données précise
+
 
 Requete d'Insertion
 -------------------
