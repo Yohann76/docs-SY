@@ -25,6 +25,12 @@ Les variables
 -------------------
 
 
+Divers elements utile en JS
+-------------------
+
+    window.location.reload(true); // recharger la méme url // true = on serve, false = on cache
+
+
     var x = 1; // Déclarer une variable
     let varTxt = 'La révolution ne sera pas télévisée.'; // Déclarer une vairable chaine de caractére
 
@@ -111,6 +117,31 @@ Appel AJAX Simple :
           function(){
               $row.fadeOut();
           }
+
+      // other exemple 
+      $('#mySubmitButton').attr("disabled",true);
+        $.ajax({
+        url: "{{ path('new_mission_json') }}",
+        type: 'POST',
+        dataType: 'json',
+        data: form_data,
+        processData: false, // for ilegal invoc error
+        contentType: false,
+
+        success:function(data){
+          if(data.status == 'error'){
+            console.log("[API] ERROR: "+data.message);
+                // To do : display error in html
+          }
+          if(data.status == 'success'){
+            console.log("[API] SUCCESS: "+ data.message);
+
+                $('#myModal-1').modal('hide'); // close modal
+
+                // reload page with cookie ?
+                // for reload on /edit or /new
+                window.location.reload(true); // reload page, true = reload on serve, false = on cache
+      }
 
 API & Annexe a Javascript
 POO Javascript
