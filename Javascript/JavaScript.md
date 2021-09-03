@@ -102,6 +102,7 @@ Fonctions Sympathique
     console.log(xxx);   // affiche quelque chose sur la console ( texte,variable,objet..)
     console.dir(objet);  // affiche les méthode et attribut d’un objet
     alert();
+    JSON.stringify() ; //  convertit une valeur JavaScript en chaîne JSON.
 
 Appel AJAX et fonctions asynchrone
 -------------------
@@ -118,7 +119,7 @@ Appel AJAX Simple :
               $row.fadeOut();
           }
 
-      // other exemple 
+      // other exemple
       $('#mySubmitButton').attr("disabled",true);
         $.ajax({
         url: "{{ path('new_mission_json') }}",
