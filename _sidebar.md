@@ -123,6 +123,8 @@
         - Laravel
             - [Laravel](/PHP/Framework/Laravel/Laravel.md)
         - Symfony
+            - Sylius
+                - [Sylius](/PHP/Framework/Symfony/Sylius/Sylius.md)
             - Bundle
                 - [ListeBundle](/PHP/Framework/Symfony/Bundle/ListBundle.md)
                 - [SnappyBundle](/PHP/Framework/Symfony/Bundle/SnappyBundle.md)
