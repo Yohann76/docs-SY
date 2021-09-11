@@ -1,7 +1,7 @@
 ## ReactNative ( Base de React fait par Facebook )
 
 Info :
--------------------
+
 React native permet le développement d'application avec l'écosysteme react.
 
 pré-requis:
@@ -15,7 +15,7 @@ pré-requis:
 - Instalation de l'appplication android "expo" pour avoir le rendu sur le telephone ( connecter au méme réseau wii-fii )
 
 Créer son App :
--------------------
+
 
 1. Avec npm : Le Natif  :
 
@@ -34,7 +34,8 @@ Créer son App :
     nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo )
 
 Architecture
--------------------
+
+
 Créer un dossier "Components" A la racine pour ranger les composants
 Components/Search.js
 
@@ -48,7 +49,7 @@ Ne pas oublier d'importer les composants :
     import { StyleSheet, View, TextInput, Button , Text,FlatList } from 'react-native'
 
 Style
--------------------
+
 
 
     render() {
@@ -69,7 +70,7 @@ Style
     }
 
 Le style ( Aprés la class )
--------------------
+
 
 
     const styles = StyleSheet.create({
@@ -129,13 +130,13 @@ API/Name_apiAPI.js ( exemple ) :
 
 
 Gestion de Librairies
--------------------
+
 Pour installer une librairie il faut Stopper le serveur Node.js avec ctrl + C
 
 A la racine du projet dans le terminal :
 
 
-    npm install --save react-navigation
+    $ npm install --save react-navigation
 
 [React Naviguation](https://reactnavigation.org/docs/getting-started/)  Pour avoir une bonne naviguation
 
@@ -143,16 +144,16 @@ A la racine du projet dans le terminal :
 Le --save permet d'enregistrer la librairie dans le package.json , ainsi sur un autre ordinateur, on peux installer les dépendances avec :
 
 
-    npm install
+    $ npm install
 
 Relancer le serveur avec :
 
 
-    npm start
+    $ npm start
 
 
 Préparer pour les stores
--------------------
+
 
 
 [Lien OC](https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native/4959626-preparez-votre-application-pour-les-stores-apple-et-google/)

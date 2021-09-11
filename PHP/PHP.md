@@ -4,15 +4,12 @@
 [PHP docs](http://php.net/manual/fr/)
 
 Variable
-===================
 
 Concatener une variable dans une chaine de caractére a simple quote
-
 
     'https://www.google.com/search?q='.$keyword1.'&num=1000'
 
 Les tableau
-===================
 
     $theVariable = array("A", "B", "C");
 
@@ -24,7 +21,6 @@ Les tableau
     )
 
 Boucler et pusher dans un tableau ( dans un objet )
--------------------
 
 
     $ListUser = [];
@@ -33,59 +29,34 @@ Boucler et pusher dans un tableau ( dans un objet )
         array_push($ListUser, $Userid);
     }
 
-
 Function sur tableau
--------------------
-
 
     unset($arr[5]); // Ceci efface l'élément du tableau
     unset($arr);    // Ceci efface complètement le tableau
 
-Fonction utile dans PHP
-===================
 
-attendre:
+Divers fonction en php
 
-    sleep($second);
 
-Trouver la longueur d'une chaine de caractere :
 
-    strlen()
 
-modifie une chaine de caractere avec un parametre d'entrée et de sortie :
+    sleep($second); // attendre
+    strlen() // Trouver la longueur d'une chaine de caractere
+    substr("abcdef", 0, -1);  // retourne "abcde" // modifie une chaine de caractere avec un parametre d'entrée et de sortie
+    strpos($mystring, $findme);  // retourne un int : la premier occurence // Cherche la position d'un premier motif dans une chaine
+    phpinfo() ; // Afficher l'environement php
+    var_dump($var); // savoir la valeur d'une variable
 
-    substr("abcdef", 0, -1);  // retourne "abcde"
+Ligne de commande en php :
 
-Cherche la position d'un premier motif dans une chaine :
+    $ php -S 127.0.0.1:8000 -t public // Generer un serveur PHP
+    $ php NomDuFichier // Executer un fichier php en ligne de commande
 
-    strpos($mystring, $findme);  // retourne un int : la premier occurence
 
 Fonctions de chiffrements :
 
-
-    ( base64 ) base64_encode($content) && base64_decode($content);
-    ( encrypt) encrypt($data) && decrypt($data)
-
-
-savoir la valeur d'une variable :
-
-
-    var_dump($var);
-
-Afficher l'environement php
-
-
-    phpinfo() ;
-
-Generer un serveur PHP
-
-
-    php -S 127.0.0.1:8000 -t public
-
-Executer un fichier php en ligne de commande
-
-
-    php NomDuFichier
+    (base64) base64_encode($content) && base64_decode($content);
+    (encrypt) encrypt($data) && decrypt($data)
 
 [PHP shell-exec](https://www.php.net/manual/fr/function.shell-exec.php)
 
@@ -99,7 +70,6 @@ cela va nous retransmettre le chemin
 
 
 remplacer un contenu
-
 
     $content = str_replace(">", " ",  $content);
     $content = str_replace("<", " ",  $content);
