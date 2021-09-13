@@ -81,3 +81,66 @@ Js
             }
         }).render('#paypal-button-container');
     </script>
+
+
+
+
+Autre methode ( [Paypal checkout](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout)  )
+
+
+    <div id="paypal-button-container"></div>
+
+    <!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+     <script src="https://www.paypal.com/sdk/js?client-id=Ad-nmCDN4U0J_u8A2XXUd2JMrEp6BMSRisXjZdzlWyrhGRpqe3YDoQ9sNiLxLIQSOaPRxDl-7DPfQuyg&currency=EUR"></script>
+
+
+     <!-- jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+     <script>
+       /*
+       var price = $("#getPrice").val();
+       console.log(price);
+       */
+       paypal.Buttons({
+         // Sets up the transaction when a payment button is clicked
+         createOrder: function(data, actions) {
+           return actions.order.create({
+             purchase_units: [{
+               amount: {
+                 value: '{{price}}' // Can reference variables or functions. Example: `value: document.getElementById('...').value` // price is twig var
+               }
+             }]
+           });
+         },
+         // Finalize the transaction after payer approval
+         onApprove: function(data, actions) {
+           return actions.order.capture().then(function(orderData) {
+             // Successful capture! For dev/demo purposes:
+                 // this is a json info ( generate auto paypal )
+                 // console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                 var transaction = orderData.purchase_units[0].payments.captures[0];
+                 // alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+                 // ???? me
+                 if ( transaction.status == "COMPLETED"  ) {
+                     // To do :  set credit
+                     document.location.href="{{ path('succes_pay') }}" // redirect on controller function
+                     // https://developer.paypal.com/developer/notifications # notification has been effectued
+
+                 }
+                 else {
+                     document.location.href="{{ path('invalid_pay') }}"
+                     // error page ?
+                 }
+             // When ready to go live, remove the alert and show a success message within this page. For example:
+             // var element = document.getElementById('paypal-button-container');
+             // element.innerHTML = '';
+             // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+             // Or go to another URL:  actions.redirect('thank_you.html');
+           });
+         }
+       }).render('#paypal-button-container');
+       // account sell : sb-wfh9g2582019@business.example.com  4xxx
+       // account buy personal  : sb-lz8752580455@personal.example.com 4xxx*
+     </script>
