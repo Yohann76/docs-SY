@@ -27,9 +27,9 @@ Commande divers
     $ mysql> describe tablename; // Afficher la les types des champs
     $ mysql> ALTER TABLE `risk` CHANGE `description` `description` LONGTEXT // Modifier le type de text de la colonne description dans la table risk
     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema; // Afficher la taille des base de données
-    
-    
-Lister les clefs etrangère sur une database 
+
+
+Lister les clefs etrangère sur une database
 -------------------------------------------
 
     SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE `table_schema` LIKE 'database_name' AND `constraint_type` = 'FOREIGN KEY';
@@ -97,6 +97,14 @@ Sauvegarde et restauration
     $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base_1 nom_de_la_base_2 > fichier_destination.sql // Pour sauvegarder plusieurs bases de données
     $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base > fichier_destination.sql // Pour sauvegarder une base de données précise
     $ mysql --user=mon_user --password=mon_password nom_de_la_base < fichier_source.sql // restaurer dans une base de données précise
+
+Dump avec condition
+-------------------
+
+    $ mysqldump -umy_user_name -p database_name  --tables my_table1 --where="date_created > '2016-01-01' " > mytable1_filtered_dump.sql
+    $ mysqldump -t -u root -p  mytestdb mytable --where="datetime LIKE '2014-09%'"
+    $ mysqldump my_db_name my_table_name --where="id > 500" > my_backup.sql
+
 
 
 Requete d'Insertion
