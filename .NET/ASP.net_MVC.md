@@ -4,8 +4,8 @@
 
 [Cours OC](https://openclassrooms.com/fr/courses/1730206-apprenez-asp-net-mvc/1809316-hello-world-mvc)
 
-Introduction
--------------------
+## Introduction
+
 
 Il existe deux logique ASP.NET ( MVC et Webform ) ici nous allons utilisé MVC
 Créer un nouveau projet ASP.NET MVC. Rendez-vous dans le menu Fichier et choisissez Nouveau Projet,
@@ -13,8 +13,8 @@ puis dans les modèles, choisissez un projet Visual C#/Web de type Application W
 Pour ouvrir un fichier déja existant, ouvrir le projet avec le .sln pour pouvoir executer le code.
 Sous visual studio, le code peut etre exécuter avec F5 ( avec debug ) ou ctrl + F5 ( sans débug ).
 
-Les fichiers
--------------------
+## Les fichiers
+
 
 Le répertoire App_Data est un répertoire où nous pourrons stocker des données, fichiers binaires ou bases de données.
 Le répertoire App_Start contient en général la logique de configuration
@@ -25,8 +25,7 @@ Un fichier Global.asax, qui est exécuté au tout début du lancement de l’app
 Un fichier packages.config que nous pouvons ignorer ,il sert à la configuration des packages nuget
 Un autre fichier Web.config (différent de celui présent dans le répertoire Views), bien connu des développeurs ASP.NET WebForms, qui contient des éléments de configuration de l’application.
 
-Les routes
--------------------
+## Les routes
 
 Dans le fichier RouteConfig.classes
 
@@ -41,9 +40,7 @@ Dans le fichier RouteConfig.classes
     // par default return la view associé au nom.
 
 
-Exemple
--------------------
-
+## Exemple
 
     routes.MapRoute(
         name: "Default",
@@ -61,12 +58,10 @@ Exemple
     }
 
 
-Le Controller
--------------------  
+## Le Controller
 
+## Le Modele
 
-Le Modele
--------------------   
 Exemple d'un modéle Category :
 
 
@@ -103,8 +98,8 @@ Exemple d'un modéle Category :
 
 
 
-La View
--------------------
+## La View
+
 
 
 Une vue est sous format .cshtml

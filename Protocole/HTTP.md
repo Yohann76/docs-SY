@@ -7,9 +7,7 @@
   DELETE = Suppression de la ressource située à l'URL spécifiée
 
 
-Liste server
-===================
-
+## Liste server
 
   Apache, Zeus Web Server, nginx, lighttpd, Cherokee, Hiawatha Webserver
   ASP/ASP.Net(C#, VB.net) : IIS

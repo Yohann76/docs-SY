@@ -16,8 +16,8 @@ Demmarrer avec flask en 7 lignes
 
 Python créer un environnement a l'adresse localhost:5000
 
-installation
-===========
+## installation
+
 
 Necessite pip
 
@@ -40,8 +40,7 @@ Obtenir l'environnement ( simuler le site et démarrer le serveur )
 3. Se rendre sur l'adresse indiqué ( souvent http://127.0.0.1:5000/ )
 4. Naviguer sur le site et observer le terminal
 
-Structure
-===========
+## Structure
 
 - Static : CSS/images:script
 - Templates : Fichiers HTML
@@ -52,7 +51,7 @@ Structure
 
 
 Console Flask
-==============
+
 
 lancer la console flask
 
@@ -65,8 +64,8 @@ puis
 
     $ flask shell
 
-Base de donnée SQLlite
-=======================
+## Base de donnée SQLlite
+
 
 1. Connecter la base de donnée :
 Comment connecter la base de donnée ?
@@ -86,8 +85,7 @@ Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi d�
     Content.query.all()
     // affiche un tableau vide
 
-Les tests
-=========
+## Les tests
 
 lancer un test :
 
@@ -103,7 +101,7 @@ Les tests ont besoin de __init__.py, config.py dans le dossier de test
 
 
 BDD postres SQL
-=================
+
 
 - models.py pour implementer la classe qui représente les tables
 - manage.py pour acceder a a la base
@@ -124,15 +122,15 @@ BDD postres SQL
     #if __name__ == '__main__':
         #manager.run()
 
-Commande :
+## Commande :
 
 
     $ python manage.py db init ( initialiser la base )
     $ python manage.py db migrate ( faire une migration )
 
 
-Route avec flask
-=================
+## Route avec flask
+
 
 
     @app.route("/greeting")
@@ -145,9 +143,7 @@ Route avec flask
     def addLabel(nb1,nb2):
       return addLabelAPI(escape(nb1),escape(nb2))
 
-
-API avec flask ( /api/ )
-=================
+## API avec flask ( /api/ )
 
 dans api/app.py
 

@@ -1,16 +1,16 @@
 ## React Native ( react cross-platform )
 
-Info :
--------------------
+## Info :
+
 React Native permet de developper des application cross-platforms en javascript
 
-Pré-requis
+## Pré-requis
 - Node
 - Expo ou device
 
 
 Initialisation :
--------------------
+
 
 pré-requis:
 
@@ -21,8 +21,8 @@ pré-requis:
 
 - Instalation de l'appplication android "expo" pour avoir le rendu sur le telephone ( connecter au méme réseau wii-fii )
 
-Créer son App :
--------------------
+## Créer son App :
+
 
 1. Avec npm ( fournis avec node.js ) :
 
@@ -40,9 +40,7 @@ Créer son App :
     nnpm start ( donne un QR code et lance le serveur node.js , resultat disponible sur l'app expo )
 
 
-
 Gestion assets
--------------------
 
 - icone
 - Screen1, Screen2, Screen3
@@ -51,22 +49,18 @@ Gestion assets
 
 Pour inclure des images dans l'application, il faut faire un fichier _image.js, une constante objet qui possède toute les images. puis dans le code du composant, il faudra appeler { img.nameimage }
 
-Architecture de l'application
--------------------
+## Architecture de l'application
+
 - Components : dossier des composants ( a refactoriser dès que possible
 - Stores : Modèle et base de donnée
 - utils : service annexe ( get, petite function )
 - assets : image et icon
 - nodes_module : librairie
 
-Classes des composants
--------------------
-
+ ## Classes des composants
 
 
 Le style du composant
--------------------
-
 
     const styles = StyleSheet.create({
         main_container: {
@@ -94,7 +88,6 @@ Utiliser flexbox pour styliser les view et les arrangements..
 
 
 Faire une requete
-----------------------
 
 
      const url = 'xxxxx'
@@ -105,13 +98,13 @@ Faire une requete
 
 
 State et props
---------------------
+
 
 This.state()
 This.setstate()
 
 Exporter l'app en APK
--------------------
+
 
 [Docs Expo](https://docs.expo.io/distribution/building-standalone-apps/)
 
@@ -135,14 +128,9 @@ configure app.json
    }
  }
 
-
-
-
-    expo build:android -t apk
+    $ expo build:android -t apk
 
 Récuperer la keystore ( indispensable pour les MAJ )
-
-
 
     expo fetch:android:keystore
 
