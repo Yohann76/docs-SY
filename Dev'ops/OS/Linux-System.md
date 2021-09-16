@@ -1,7 +1,6 @@
 ## Linux
 
-Commande Généraliste
--------------------
+## Commande Généraliste
 
     $ wget // ( wget <lien>  ) ( apt-get install wget )
     $ cat /etc/group | awk -F: '{print $ 1}' // lister les groupes utilisateurs
@@ -60,15 +59,14 @@ man in the middle attack SSH problem:
     ;ssh-keygen -f "/root/.ssh/known_hosts" -R "164.132.105.114"
     ; or command: export ANSIBLE_HOST_KEY_CHECKING=False on 2 machine
 
-General :
--------------------
+## General :
+
 
 - ./.bashrc est le fichier de démarrage
 - [Suppression démarrage](http://www.tux-planet.fr/empecher-la-suppression-dun-fichier-ou-dun-repertoire/#:~:text=Voici%20une%20astuce%20pour%20les,fichiers%20Ext2%2C%20Ext3%20et%20Ext4).
 
 
-Tuto Projet Raspberry
--------------------
+## Tuto Projet Raspberry
 
 [Miner avec un futurebit](https://medium.com/@david_senate/running-a-super-low-cost-digibyte-scrypt-miner-rig-with-a-raspberry-pi-3-model-b-and-a-futurebit-14dd7d95e566)
 [Autre lien DietPi config](http://dietpi.com/phpbb/viewtopic.php?f=8&t=5#p5)

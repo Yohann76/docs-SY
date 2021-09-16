@@ -23,7 +23,7 @@ Ligne de connexion à la BDD
     Username : dauser
     password : dapassword
 
-Divers commande
+## Divers commandes
 
     $ create database bddDragDrop; // créer une bdd
     $ drop database bddDragDrop; // supprimer une bdd

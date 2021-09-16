@@ -3,8 +3,8 @@
 
 [Mysql Doc](https://dev.mysql.com/doc/)
 
-Commandes courante
--------------------
+## Commandes courante
+
 
 Voir la liste des database
 
@@ -21,21 +21,20 @@ Gestion User
     ALTER USER 'zabbix'@'ip_address' IDENTIFIED WITH mysql_native_password BY 'wikipass'; // changer le type de mot de passe
     FLUSH PRIVILEGES; // Sauvegarder les modifications en ligne de commande
 
-Commande divers
--------------------
+## Commande divers
 
     $ mysql> describe tablename; // Afficher la les types des champs
     $ mysql> ALTER TABLE `risk` CHANGE `description` `description` LONGTEXT // Modifier le type de text de la colonne description dans la table risk
     $ mysql> SELECT table_schema "Databases", sum( data_length + index_length) / 1024 / 1024 "Size of DB in MB" FROM information_schema.TABLES GROUP BY table_schema; // Afficher la taille des base de données
 
 
-Lister les clefs etrangère sur une database
--------------------------------------------
+## Lister les clefs etrangère sur une database
+
 
     SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE `table_schema` LIKE 'database_name' AND `constraint_type` = 'FOREIGN KEY';
 
-Requêtes
--------------------
+## Requêtes
+
 
 SELECT :
 
@@ -52,24 +51,23 @@ DELETE :
 Les commandes précedentes peuvent être suivi d'une clause WHERE pour préciser une condition.
 
 
-Commande relative à la gestion de la bdd
--------------------
+## Commande relative à la gestion de la bdd
+
 
     $ mysql> create database databasename; // Création bdd
     $ mysql> drop database databasename; // Supprimer une base de données
     $ mysql> drop table tablename; // Suppression d’une table
 
 
-Création user
--------------------
+## Création user
+
 Créer un user SQL et transférer ses droits :
 
     CREATE USER 'user1'@'localhost' IDENTIFIED BY '000000'; // créer
     GRANT ALL PRIVILEGES ON * . * TO 'user1'@'localhost'; // donner les droit
     FLUSH PRIVILEGES; // pour faire prendre effet les droits
 
-Connexion
--------------------
+## Connexion
 
     $ mysql -u root -p
     $ mysql -h localhost -u root -p // connexion en tant que root password = root
@@ -86,8 +84,8 @@ Listes des users
     $ mysql> select * from mysql.user;
 
 
-Sauvegarde et restauration
--------------------
+## Sauvegarde et restauration
+
 
     $ mysqldump -u username -p --databases databasename > databasename.sql // Sauvegarder une seule base de donnée, données et structure
     $ mysqldump -uroot -p --all-databases > alldatabases.sql // Sauvegarder toutes les bases, données et structure, dans un seul fichier .sql
@@ -98,16 +96,14 @@ Sauvegarde et restauration
     $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base > fichier_destination.sql // Pour sauvegarder une base de données précise
     $ mysql --user=mon_user --password=mon_password nom_de_la_base < fichier_source.sql // restaurer dans une base de données précise
 
-Dump avec condition
--------------------
+## Dump avec condition
 
     $ mysqldump -umy_user_name -p database_name  --tables my_table1 --where="date_created > '2016-01-01' " > mytable1_filtered_dump.sql
     $ mysqldump -t -u root -p  mytestdb mytable --where="datetime LIKE '2014-09%'"
     $ mysqldump my_db_name my_table_name --where="id > 500" > my_backup.sql
 
 
+## Requete d'Insertion
 
-Requete d'Insertion
--------------------
 
     $ mysql> INSERT INTO user_orga VALUES (33, 50, 17, 'ROLE_ORGA_DPO', NULL);  // dans la table user orga aprés avoir choisis d'utiliser la bdd correspondante

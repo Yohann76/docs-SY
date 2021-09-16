@@ -3,14 +3,13 @@
 [docker docs](https://docs.docker.com/)
 [docker hub](https://hub.docker.com/)
 
-Commande Général  :
--------------------
+## Commande Général  :
+
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
 tester docker :
 
-
-    docker run hello world
+    $ docker run hello world
 
     $ docker run -d -p 8080:80 nginx // Lancer serveur nginx sur port 80
     $ docker pull hello-world // récupérer une image du hub docker
@@ -28,13 +27,12 @@ Mettre en place les fichier
 docker-compose.yaml à la racine
 Dossier Docker à la racine
 Modifier/ajouté les variable d'environnement du .env si il y a
-Commande :
 
+Commande :
 
     $ docker-compose up -d --build
 
-ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
--------------------
+## ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
 
     docker system prune ( remise a zero de docker ( perte de donnée ) )
     docker-compose down ( ferme les services et conteneurs )
@@ -47,8 +45,8 @@ Adresse disponible pour PhpMyAdmin : http://192.168.99.100:8080/
 
 A partir d’une config, docker-compose build && docker-compose up -d suffit à faire tourner les container. Si ne marche pas, aller à la section nettoyage
 
-NETTOYAGE
--------------------
+## NETTOYAGE
+
 
 Arrêter et supprimer tous  les conteneurs :
 
@@ -71,8 +69,8 @@ supprimer toutes les images :
 
     $ docker rmi $(docker images)
 
-INFORMATION
--------------------
+## INFORMATION
+
 lister les conteneurs existant : docker ps
 voir les image local présente : docker images -a
 
@@ -88,8 +86,8 @@ Accès à la machine pour exécuter des commande coup par coup
     $ docker-compose exec php bin/console …
 
 
-DEBUGGAGE :
--------------------
+## DEBUGGAGE :
+
 cannot start service caused process_linux… : regarder les ligne de volumes ( voir -v )
 ports allocated : changer le port d’utilisation du service
 savoir qui écoute le port : sudo fuser 8080/tcp ( en -shell )
@@ -110,7 +108,7 @@ Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machi
     $ docker-compose up -d
 
 ANNEXE:
--------------------
+##
 
 
     $ docker-compose up --build
@@ -126,8 +124,8 @@ ANNEXE:
     $ docker-compose logs app // Voir les logs du lancement
 
 
-Terminale ToolBox Docker :
--------------------
+## Terminale ToolBox Docker :
+
 projet : cd /c/wamp64/www/OC/BileMo_B2B_API (dev)
 DOCKER SUR DEBIAN ( windows environment )  :
 
@@ -153,8 +151,8 @@ Lancer la config :
     $ docker-compose up -d
 
 
-Probléme Résolue :
--------------------
+## Probléme Résolue :
+
 
 prblm :
 

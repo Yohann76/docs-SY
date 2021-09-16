@@ -2,12 +2,10 @@
 
 linux sur windows : taper bash dans le cmd
 
+## Commande bash
 
 
-Commande bash
---------------
-
-ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté independament
+Ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté independament
 
 
     $ cls :efface le contenu de la console
@@ -31,5 +29,4 @@ ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté in
     $ echo: affiche un message
     $ bootcfg: répare ou edite le fichier de démarrage boot.ini
 
-parametrage
---------------
+# Parametrage

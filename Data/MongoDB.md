@@ -22,10 +22,7 @@
    mongodb://localhost:27017/shifumi
 
 
-MongoDB sur un debian INSTALLATION
-===================
-
-
+## MongoDB sur un debian INSTALLATION
 
    echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 
@@ -41,13 +38,12 @@ Autoriser toute les IP
 
    $ mongod --bind_ip_all
 
-utils:
-
+utils :
 
    $ chown mongodb:mongodb /tmp/mongodb-27017.sock
 
-Utilisation
-===================
+## Utilisation
+
 
 - créer ou utiliser une base
 
@@ -69,8 +65,8 @@ Utilisation
    $ mongo "mongodb://mongodb0.example.com.local:27017,mongodb1.example.com.local:27017,mongodb2.example.com.local:27017/?replicaSet=replA&ssl=true"
 
 
-Commande dans shell mongo ( accessible avec 'mongo' )
-========================================================
+## Commande dans shell mongo ( accessible avec 'mongo' )
+
 
 - créer une donnée
 
@@ -89,8 +85,7 @@ Commande dans shell mongo ( accessible avec 'mongo' )
 
 
 
-Autre
-======
+## Autre
 
 
 - se lier a une ip
@@ -106,8 +101,6 @@ Restart le service
    $ mongo --bind_ip 127.0.0.1
 
 /etc/mongod.conf configuration
-===================
-
 
 
     # mongod.conf

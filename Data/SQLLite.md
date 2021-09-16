@@ -16,8 +16,8 @@ inconveniant:
 - plusieurs utilisateurs ne peuvent pas modifier une base simulanément
 - extension parfois non activé sur les hebergement mutualisé
 
-utilisation:
------------
+# Utilisation :
+
 
 dans le php.ini
 
@@ -69,9 +69,8 @@ insertion de donnée :
     $results = $base->exec($query);
 
 
-Le fichier SQLlite:
------------
+## Le fichier SQLlite:
 
 
-Utilisation avec symfony:
------------
+
+## Utilisation avec symfony:
