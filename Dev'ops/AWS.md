@@ -3,8 +3,8 @@
 [Site Officiel Ansistranos](https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2)
 
 
-Lancer un serveur MC2 ( machine linux )
--------------------
+## Lancer un serveur MC2 ( machine linux )
+
 Configuration ( obligatoire ) :
 Dans service/MC2, lancer une instance
 Choisir une image ( ex Ubuntu Server ) ou un AMI déjà pré-configuré comme
@@ -15,8 +15,8 @@ A partir de maintenant , deux options :
 Lancer le serveur
 Configurer en profondeur ( suite )
 
-Configuration suite :
--------------------
+## Configuration suite :
+
 Configurer instance ( autoscaling..) : rien toucher faire suivant
 Ajouter le stockage , gérer le stockage, laisser par défaut ( 10 )
 Ajouter Balise : Tagger le serveur pour le retrouver facilement ( laisser default )
@@ -27,8 +27,8 @@ Authentification par Clé
 Fichier a telecharger a la fin en choisissant “new paire de clé”
 Surtout ne pas le perdre, non re-téléchargeable, si perdu serveur mort
 
-Se connecter au Serveur
--------------------
+## Se connecter au Serveur
+
 En SSH :
 Mettre la clé sur le bureau ( plus simple )
 chmod 400 Yohann-dev.pem ( donner les droit au clé )
@@ -41,28 +41,27 @@ type d’authentification : clé
 identifiant : ubuntu
 fichier de clé : lien du fichier de clé
 
-Adresse Ip-Élastique ( qui ne change pas )
--------------------
+## Adresse Ip-Élastique ( qui ne change pas )
+
 Aller dans réseau et sécurité
 Allouer une nouvelle adresse
 Action -> Associer une adresse
 Choisir instance du serveur sur liste déroulante et cliquer sur associé
 
-Sauvegarde
--------------------
+## Sauvegarde
+
 EC2, puis Actions > Image > Créer l'image
 Donner un nom à l’image et cliquer sur Créer
     - Restauration
 Images" > AMI >Lancer (ne pas oublier de associé ip Élastique)
 
 
-Suppression des vieux AMI
--------------------
+## Suppression des vieux AMI
+
 Actions" > "Annuler l'inscription" pour supprimer l'AMI
 supprimé EBS ( elastic block store ) -> Actions" > "Supprimer"
 Sauvegarde avec un instantané EBS
 Elastic Block Store" > Volume -> Donner un nom et “Créer”
-
 
 
 Lancer un serveur RDS ( Gestion BDD )
@@ -71,22 +70,22 @@ Suivre les étapes
 Faire Easy pour plus de facilité
 Prendre Mysql pour  version gratuite
 
-Restauration RDS
--------------------
+## Restauration RDS
+
 “Action d’instance” -> “ prendre un instantané ( fait automatiquement toute les semaines )
 Cliquez sur instantané
 "Restaurer l'instantané". ( pour le restaurer )
 “Restaurer à un moment donnée” ( plus précis )
 
-Lié avec EC2
--------------------
+## Lié avec EC2
+
 Vérifier que l’instance RDS est publique
 Sinon : Sélectionner l’instance et modifier
 Vérifier Que le groupe de sécurité RDS utilisé autorise MySQL sur le port 3306 depuis votre IP.
 configurés dans l'interface EC2 d'AWS.
 
-Connection WorkBench
--------------------
+## Connection WorkBench
+
 Requiert une accessibilité public
 cliquer sur Manage connection
 Standart TCP/IP
@@ -95,15 +94,13 @@ username : yohannrRDS ( identifiant PRINCIPALE )
 Indiqué également le password dans Store in vault
 Configurer également un groupe de sécurité pour EC2 en entrant 3306 sql
 
-Pour se connecter à rds sur EC2 :
--------------------
+## Pour se connecter à rds sur EC2 :
+
 $bdd = new PDO('mysql:host=dbinstance.cmo5fnknxzqh.us-east-2.rds.amazonaws.com;
 dbname=test;
 charset=utf8',
  'mateo',
 'VOTRE_MOT_DE_PASSE_ICI');
-
-
 
 
 Lancer un serveur S3 ( Stockage fichier )
