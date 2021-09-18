@@ -11,9 +11,7 @@ Aller dans la zone dns du domaine , modifier l'entre de type de champ "A" et met
 voir si c'est le bon propriétaire du domaine :
 DNS  ownercheck.yohanndurand.fr. avec la valeur texte "1c53caf5" ( fournis par OVH quand sur le vps on veux ajouter le ndd dans zone dns )
 
-Les sous domaine :
-===================
-
+## Les sous domaine :
 
 Se rendre dans la partie "nom de domaines"
 

@@ -14,14 +14,13 @@ Utilité :
     IOS
     Jeux-vidéos
 
-Pré-requis :
-===================
+## Pré-requis :
+
 
   Visual Studio Code avec l'extension Go
   Le Complilateur Go :   [Install Complilateur Go](https://golang.org/dl/)
 
-Tester et lancer son premier programme( test.go) :
-===================
+## Tester et lancer son premier programme( test.go) :
 
     package main
 

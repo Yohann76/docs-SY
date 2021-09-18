@@ -1,8 +1,8 @@
 ## Format CSV
 
 
-Exemple
------------------------
+## Exemple
+
 
 # structure ( for exemple )
 [NomColonne1;NomColonne2;...;NomColonneN]
