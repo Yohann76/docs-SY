@@ -1,13 +1,12 @@
 ## Sécurité générale des serveurs :
 
 Tips
-======
+
 
 - Utiliser un compte non-root pour installer et gerer le serveur
 - UFW pour installer un firewall
 
-HIDS - OSSEC pour la detection d'intrusion
-===========================================
+## HIDS - OSSEC pour la detection d'intrusion
 
 [ossec](https://all-it-network.com/ossec/)
 

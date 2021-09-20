@@ -5,7 +5,6 @@ Outils/API pour payer.
 
 [Paypal docs](https://developer.paypal.com/docs/platforms/get-started/)
 
--------------------
 
 Http client connect paypal, return token
 
