@@ -34,10 +34,10 @@ Spécificité de chaque row :
 ----------
 
 Type de champ
-----------
 
-ChoiceType
-----------
+
+## ChoiceType
+
 
     ->add('Roles', ChoiceType::class, [
         'required' => true,

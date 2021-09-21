@@ -14,7 +14,7 @@ Voir la liste des database
     $ mysql> SELECT * FROM user; // voir le contenu de toute la table user
 
 
-Gestion User
+## Gestion User
 
     UPDATE mysql.user SET password=PASSWORD("wikipass") where User="zabbix"; // change password
     UPDATE mysql.user SET passwd="wikipass" where User="zabbix"; // change password

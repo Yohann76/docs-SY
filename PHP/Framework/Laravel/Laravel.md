@@ -1,11 +1,10 @@
 ## Laravel
 
-Démarrage Laravel :
---------------------
+## Démarrage Laravel :
 
-Créer Laravel avec Composer
+## Créer Laravel avec Composer
 
-    composer create-project laravel/laravel laravel5 --prefer-dist
+    $ composer create-project laravel/laravel laravel5 --prefer-dist
 
 Créer un .env:
 
@@ -13,8 +12,7 @@ Créer un .env:
     APP_DEBUG=true
     APP_KEY=base64:JjrFWC+TGnySY2LsldPXAxuHpyjh8UuoPMt6yy2gJ8U=
 
-Architecture
-------------
+## Architecture
 
 - config
 - database
@@ -28,8 +26,8 @@ Architecture
 - bootstrap
 - vendor
 
-Commande principal
----------
+## Commande principal
+
 
     $ php artisan serve --host 0.0.0.0 --port 8082 // Lancer le serveur laravel intégré
     $ php artisan key:generate // Générer une key

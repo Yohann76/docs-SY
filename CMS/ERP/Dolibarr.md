@@ -6,8 +6,9 @@ CMS pour installer un ERP sur un server
 
 ## Instalation sur VPS OVH ubuntu
 
-dans le VPS :
-  $ sudo git clone https://github.com/Dolibarr/dolibarr.git
+Dans le VPS :
+
+    $ sudo git clone https://github.com/Dolibarr/dolibarr.git
 
 Donc première chose à faire il faut ajouter un champ CNAME à vos résolutions DNS, afin que sub.toto.me pointe vers toto.me
 
@@ -15,17 +16,18 @@ Donc première chose à faire il faut ajouter un champ CNAME à vos résolutions
 
  Il faut éditer le fichiers /etc/apache2/sites-available/default et y ajouter les lignes suivantes :
 
- <VirtualHost *:80>
- DocumentRoot /home/toto/www/sub
- ServerName sub.toto.me
-</VirtualHost>
+    <VirtualHost *:80>
+     DocumentRoot /home/toto/www/sub
+     ServerName sub.toto.me
+    </VirtualHost>
 
- il suffit de redémarrer Apache avec un :
-$ sudo /etc/init.d/apache2 restart
-$ sudo /etc/init.d/apache2 nginx
+ Il suffit de redémarrer Apache avec un :
+
+    $ sudo /etc/init.d/apache2 restart
+    $ sudo /etc/init.d/apache2 nginx
 
 
----------------
+
 Télécharger Dolibarr.
 Créer le dossier documents de Dolibarr.
 Extraire l'archive de Dolibarr.

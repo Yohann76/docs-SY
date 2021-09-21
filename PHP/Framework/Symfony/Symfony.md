@@ -3,8 +3,8 @@
 [Symfony docs](https://symfony.com/doc/current/index.html#gsc.tab=0)
 [SymfonyConnect](https://connect.symfony.com/)
 
-Créer un projet
-****************
+## Créer un projet
+
 
 Créer un projet simple ( API ou format court )
 
@@ -19,15 +19,14 @@ composer update ( update les librairies du composer.json )
 
 Lancer le serveur interne de Symfony
 
-
     $ php bin/console server:run
     $ php -S 127.0.0.1:8000 -t public
     $ symfony server:start --no-tls
     $ symfony serve
     $ php bin/console cache:clear
 
-Composer require utile :
-===============
+## Composer require utile :
+
 
 Composer : Les requires indispensable  et commandes composer
 
@@ -53,8 +52,7 @@ Composer : Les requires indispensable  et commandes composer
   	$ composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev )
   	$ composer require twig/extensions ( Extension Twig )
 
-Création automatique ( makerBundle )
-------------------------------------
+## Création automatique ( makerBundle )
 
   	$ php bin/console list make // affiche tout les make
   	$ php bin/console make:controller // créer un controller
@@ -96,7 +94,7 @@ Code
 Cette partie présente des démonstrations codé
 
 Faire apelle a une fonction du repository
---------------------------------
+
 
       /**
        * @Route("/dashboard/admin", name="app_dashboard_admin")
@@ -131,7 +129,7 @@ Dans la vue :
 
 
 Service interne les plus utilisé
---------------------------------
+
 
 
   	Security $sécurity (   $this->security->getUser()    )
@@ -139,7 +137,7 @@ Service interne les plus utilisé
 
 
 Bundle utile
--------
+
 créer un bundle (help):
 
 
@@ -147,8 +145,7 @@ créer un bundle (help):
 
 ( convention de nommage Xxx/XxxxBundle ) -> Terminer par Bundle
 
-Session
--------
+## Session
 
 Session Users, dispo dans twig avec App.users
 
@@ -174,7 +171,7 @@ Nécessite :
 
 
 Code lié aux requêtes via le repository
----------------------
+
 
   	public function findByExampleField($value)
   	{
@@ -189,8 +186,8 @@ Code lié aux requêtes via le repository
   	   ;
   	}
 
-Fixtures
---------
+## Fixtures
+
 
 Installation / création de la bdd avec les entités :
 
@@ -206,8 +203,8 @@ Charger les fixtures :
   	$ php bin/console doctrine:fixtures:load
   	$ php bin/console server:run
 
-Config Symfony :
----------------
+## Config Symfony :
+
 Les recettes de config sont généré par symfony/flex lors de l'instalation d'un paquet
 
 Ajouter une déconnexion dans security.yaml :
@@ -252,8 +249,9 @@ serveur interne de symfony  : ( source )
 $echo “7.3.5” > .php-version ( utiliser cette version de php pour le symfony serve )
 Ou créer une “.php-version” qui contient “7.3.5”
 
-Code divers
-------------
+## Code divers
+
+
 se faire passer pour un utilisateur :
 mettre une URL et ajouter ?_switch_user="xxx" ( x est le mail de l’utilisateur )
 Nous pouvons désormais naviguer sur le rôle de cet utilisateur
@@ -276,10 +274,9 @@ retourner a la page précedente :
 
   	return $this->redirect($_SERVER['HTTP_REFERER']);
 
-Création espace de connexion
-------------------------------------
-[Symfony connexion](https://symfony.com/doc/current/the-fast-track/fr/15-security.html#configuring-the-security-authentication)
+## Création espace de connexion
 
+[Symfony connexion](https://symfony.com/doc/current/the-fast-track/fr/15-security.html#configuring-the-security-authentication)
 
     $ symfony composer req security
     $ symfony console make:user Admin
@@ -291,7 +288,7 @@ Création espace de connexion
 
    $ symfony console make:auth
 
-Gestion du déploiement :
----------------
+## Gestion du déploiement :
+
 
 [Deploiement docs symfony](https://symfony.com/doc/current/deployment.html)

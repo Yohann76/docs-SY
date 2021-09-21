@@ -1,7 +1,7 @@
 ## Expo
 
-Info :
--------------------
+## Info :
+
 Expo est un utilitaire pour la gestion des CRNA. Une application expo facilite le développement mobile avec javascript.
 En revanche, expo et les CRNA ne permettent pas d'utiliser des composants natifs, pour cela il faudra ejecter l'application. C'est a dire enlever la couche
 expo, et tester son application avec un port USB ( + SDK + AVD + Android studio ).
@@ -9,8 +9,8 @@ expo, et tester son application avec un port USB ( + SDK + AVD + Android studio 
 Ejecter une application est irréversible, mais cela est courant a la fin de projet, lors d'utilisation de composants natifs.
 
 
-Initialisation d'une application expo :
--------------------
+## Initialisation d'une application expo :
+
 
 A utiliser avec l'application expo
 
@@ -18,7 +18,7 @@ A utiliser avec l'application expo
     npm start
 
 
-Build une application expo :
+## Build une application expo :
 ----------------------------
 
     expo build:android

@@ -1,8 +1,8 @@
 ## Créer un thème WP
 
 
-Général :
--------------------
+## Général :
+
 Architecture
 Fonction WordPress ( Toute les fonctions ici ( docs ))
 Fonctionnalité :
@@ -11,8 +11,8 @@ intégrer les widget
 intégrer les commentaires
 intégrer la pagination..
 
-Général :
--------------------
+## Général :
+
 Architecture
 /
     index.php
@@ -25,8 +25,8 @@ Architecture
     <?php wp_footer(); ?>  // intégration du footer
 
 
-Fonctionnalité :
--------------------
+## Fonctionnalité :
+
 intégrer le menu
 intégrer les widget
 intégrer les commentaires
