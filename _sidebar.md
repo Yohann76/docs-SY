@@ -95,6 +95,7 @@
         - [AOS](/Javascript/Librairies/AOSJS.md)
         - [Jquery](/Javascript/Librairies/Jquery.md)
         - [Phaser](/Javascript/Librairies/Phaser.md)
+        - [AlpineJS](/Javascript/Librairies/AlpineJS.md)
     - Framework
         - [Angular](/Javascript/Framework/AngularJS.md)
         - [NodeJS](/Javascript/Framework/NodeJS.md)

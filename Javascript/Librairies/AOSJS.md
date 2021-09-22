@@ -1,25 +1,25 @@
-AOS
--------------------
+## AOS
+
 [AOS github](https://github.com/michalsnik/aos)
 
 Pour animer simplement des pages html en JS
 
-Code CSS
--------------------
+##Code CSS
+
 
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-Code JS
--------------------
+## Code JS
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+      AOS.init();
     </script>
 
-Code HTML
--------------------
+## Code HTML
+
 
     <div
     data-aos="fade-up"
@@ -33,8 +33,7 @@ Code HTML
     >
     </div>
 
-Animation
--------------------
+## Animation
 
     fade
     fade-up
