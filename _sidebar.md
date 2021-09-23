@@ -51,6 +51,8 @@
         - [Jenkins](Dev'ops/IntégrationContinue/Jenkins.md)
     - Docker
         - [Docker](Dev'ops/Docker/Docker.md)
+    - DockerSwarm
+        - [DockerSwarm](Dev'ops/DockerSwarm/DockerSwarm.md)
     - Déploiement
         - Ansible
             - [Ansible](Dev'ops/Deploiement/Ansible/Ansible.md)

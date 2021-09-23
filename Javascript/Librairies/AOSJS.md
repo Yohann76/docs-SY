@@ -4,14 +4,11 @@
 
 Pour animer simplement des pages html en JS
 
-##Code CSS
-
-
+## Code CSS
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 ## Code JS
-
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -19,7 +16,6 @@ Pour animer simplement des pages html en JS
     </script>
 
 ## Code HTML
-
 
     <div
     data-aos="fade-up"

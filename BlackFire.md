@@ -7,8 +7,7 @@ Instalation Windows
 
 [windows blackfire Instalation](https://blackfire.io/docs/up-and-running/installation)
 
-Config Wamp
------------
+## Config Wamp
 
     [blackfire]
     ;extension=C:\wamp64\bin\php\php7.3.12\ext\blackfire-php-windows_x64-php-73_nts.dll
@@ -21,8 +20,8 @@ Config Wamp
     blackfire.log_level = 4
     BLACKFIRE_AGENT_SOCKET="tcp://127.0.0.1:8307"
 
-Commande
-=========
+## Commande
+
 
 Profiler :
 
@@ -36,8 +35,8 @@ configuration pre-requis
 - reproduire la configuration cité plus haut dans le php.ini de php et également celui d'apache
 
 
-Mettre a jour les configuration:
-------------------------------
+## Mettre a jour les configuration:
+
 Sacha
 
      **Configuration de l'agent:**
@@ -57,7 +56,6 @@ Yohann
     blackfire config --client-id=b584c08a-b27a-4ad0-bed9-d130a93450de --client-token=a72fb8e56b5513d8c9f689b80a6a9d485664b1be762f4783cc695c681604d1f6
 
 profiler :
-
 
     **Lancer l'agent**
     blackfire-agent.exe

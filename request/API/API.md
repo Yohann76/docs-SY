@@ -8,8 +8,7 @@ PUT : Permet de remplacer une ressource existante.
 PATCH : Permet de remplacer partiellement une ressource existante.
 DELETE : Permet la suppression d’une ressource.
 
-6 contraintes de REST :
--------------------
+## 6 contraintes de REST :
 
 Client-serveur
 Sans état
@@ -18,8 +17,8 @@ En couche
 Avec code à la demande ( facultative )
 A interface uniforme
 
-Code serveur :
--------------------
+## Code serveur :
+
 
 
   200 : Requête traitée avec succès
@@ -29,8 +28,7 @@ Code serveur :
   500 : Erreur interne du serveur
 
 
-API Utilisable
-===================
+## API Utilisable
 
 
 Facebook
@@ -46,21 +44,21 @@ Github
 TODO : Se connecter via auth ?
 TODO : Récupérer le contenu d'un repository ( requete )
 
-Google
--------------------
+# Google
+
 [Google API Docs](https://developers.google.com/apis-explorer)
 
 TODO : Se connecter via auth ?
 
 
-Paypal
--------------------
+## Paypal
+
 [Paypal API Docs](https://api.nasa.gov/)
 
 TODO : Gestion d'un service de paiment
 
-Nasa
--------------------
+## Nasa
+
 [Nasa API Docs](https://api.nasa.gov/)
 
 TODO : Récupérer des informations sur une planete ( requete )
