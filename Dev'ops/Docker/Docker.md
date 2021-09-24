@@ -5,6 +5,23 @@
 
 ## Commande Général  :
 
+    $ docker --version // si docker est installé
+    $ docker images// Répertoriez toutes les images du docker
+    $ docker pull httpd // extraire l'image du docker hub
+    $ docker run -it -d httpd // Cette commande créera un conteneur docker dans lequel le serveur HTTP Apache s'exécutera.
+    $ docker ps // répertorie tous les conteneurs Docker exécutés avec les détails du conteneur.
+    $ docker ps -a // Répertoriez tous les conteneurs Docker en cours d'exécution / sortis / arrêtés avec les détails du conteneur.
+    $ docker exec -it 09ca6feb6efc bash // Accédez au conteneur Docker et exécuter des commandes à l'intérieur du conteneur.
+    $ docker rm 9b6343d3b5a0 // remove container
+    $ docker restart 09ca6feb6efc // redémarer un container
+    $ docker stop 09ca6feb6efc // Stop un container
+    $ docker start 09ca6feb6efc // start un container
+    $ docker info // info docker, nbr image, version noyau...
+    $ docker network ls // répertorie les détails de tout le réseau du cluster.
+    $ docker login // connexion hub docker
+    $ sudo docker cp 09ca6feb6efc:/usr/local/apache2/logs/httpd.pid /home/geekflare/  // Copiez un fichier d'un conteneur Docker vers le système local.
+
+## Lancer docker :
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
 tester docker :
