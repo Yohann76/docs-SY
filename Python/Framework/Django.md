@@ -2,7 +2,7 @@
 
 [Django  docs](https://docs.djangoproject.com/en/3.0/)
 
-Instalation
+## Instalation
 
 
 
@@ -17,7 +17,7 @@ Créer une App dans Django
 
     $ python manage.py startapp polls // création d'une App nommé "polls"// etre dans le méme repertoire que manage.py
 
-BDD :
+## BDD :
 
 réglages bdd dans settings.py pour information de connection,
 également pour inclure l'application polls dans le projet ( toujours dans settings.py )
@@ -38,7 +38,7 @@ Commande de database ( [Tuto docs Shell API](https://docs.djangoproject.com/fr/3
     $ python manage.py migrate // appliquer les modifications à la base de données ( dans container web docker )
     $ python manage.py shell // avoir le shell API de Django ( pour communiquer avec la bases [Tuto docs Shell API](https://docs.djangoproject.com/fr/3.1/intro/tutorial02/))
 
-Notes :
+## Notes :
 
     $ pip install psycopg2 // à installer pour pouvoir utiliser PostGreeSQL
 

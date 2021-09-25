@@ -6,8 +6,8 @@
 Vue.js est un framework qui permet de ne pas charger les pages dans leurs intégralité, mais seulement par morceaux, pour des raisons de quantité de donnée et de fluidité. Vue.js est une technologie populaire dans le frontend. Il est connu pour sa facilité de prise en main, même a l'arrivée de projets complexe, et les développeurs deviennet plus productif. Vue est accueillant et sa documentation est remarquable. Un bon choix comme premier framework front.
 
 
-Installation de vue
-=====================
+## Installation de vue
+
 
 Via un simple lien CDN :
 
@@ -59,8 +59,8 @@ Definir ou vue devrait apparaitre sur une page ( pour decider de ce vue peut con
       })
     </script>
 
-Base de Vue.js
-=====================
+## Base de Vue.js
+
 
 Nous pouvons stocker des donner avec l'attribut data, qui peut prendre en charge des variables.
 
@@ -112,8 +112,8 @@ Nous pouvons écrire des fonctions pré-compilé, comme pour le total de panier 
     </body>
     </html>
 
-Directives
-=====================
+## Directives
+
 
 Les directive permettent de résoudre les probleme courant. Elle sont écrit de manière semantique, elles ressemble a des attributs HTML, elle se préfixe par v-
 ( v-show ; v-if ; v-for ; v-model ; v-on ; v-bind ; v-else-if ; v-else )
@@ -172,8 +172,8 @@ v-bind est utile pour les lien, elle peut être raccourci par un ':', v-bind est
 
     v-bind:href="item.url"
 
-Les évenements
-=====================
+## Les évenements
+
 
 Voici commencer créer un evenement avec la directive v-on
 
@@ -225,8 +225,8 @@ Insertion de donnée dans les formulaire :
     </script>
 
 
-Changer les délimiter
-================
+##Changer les délimiter
+
 
 
     console.log(Vue)
@@ -240,8 +240,8 @@ Changer les délimiter
     })
 
 
-Vue avec le CLI
-================
+## Vue avec le CLI
+
 Installer vue CLI
 
     $ npm install -g @vue/cli # avec npm
@@ -260,8 +260,8 @@ Lancer un environnement de dev local
 
     npm run serve
 
-Architecture de l'application
-=============================
+## Architecture de l'application
+
 
 - node_module ( dépendance, gérer par yarn ou npm )
 - public
@@ -273,8 +273,8 @@ Architecture de l'application
 - .gitignore
 - package.json ( avec serve pour l'env de developpement, et build )
 
-Apell API avec Axios ( avec bearer_token)
-=============================
+## Apell API avec Axios ( avec bearer_token)
+
 
   const TOKEN = '17e30c48-3d17-394d-b224-72611bcab21f'; // Token Test
   const BASEURL = 'https://api.insee.fr/entreprises/sirene/V3';

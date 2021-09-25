@@ -3,8 +3,8 @@
 
 [Composer docs](https://getcomposer.org/doc/)
 
-Commande Composer :
-===================
+## Commande Composer :
+
 
 
     Composer install // installer les dépendance dans le composer.json
@@ -13,8 +13,7 @@ Commande Composer :
     composer outdated // Permet de lister les paquets obsolètes et qui auraient besoin d’une mise à jour (si possible, à adapter selon votre cas).
     composer show // lister les paquets installés sur votre projet
 
-Commande divers sur serveur ( ubuntu ) :
-===================
+## Commande divers sur serveur ( ubuntu ) :
 
 
     sudo apt autoremove composer // désinstaller composer
@@ -27,9 +26,7 @@ Commande divers sur serveur ( ubuntu ) :
     php composer-setup.php
     php -r "unlink('composer-setup.php');"
 
-Options Composer
-===================
-
+## Options Composer
 
     --verbose (-v): Increase verbosity of messages.
     --help (-h): Display help information.

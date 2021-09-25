@@ -2,8 +2,8 @@
 
 [Docs Python](https://docs.python.org/fr/3/)
 
-Variable et dictionnaire
-===========
+## Variable et dictionnaire
+
 
 
     a = 1
@@ -13,9 +13,7 @@ Variable et dictionnaire
     print dico
     {clé 1: valeur 1, clé 2: valeur 2}
 
-Condition
-===========
-
+## Condition
 
     if os.path.exists(path):
             # Delete old app/static/img/diagram.svg
@@ -36,9 +34,7 @@ Condition
     else:
         print("a n'est pas dans l'intervalle.")
 
-Boucle
-===========
-
+## Boucle
 
     for nodes in rectangle:
         #node left
@@ -49,30 +45,23 @@ Boucle
         #turtle.circle(50, 180)  #Trace un demi-cercle de rayon 70px
         turtle.up()
 
-fonction
-===========
-
+## fonction
 
     def nameFunction():
         i = 5
         return i
 
-Mannipuller les chaines de charactére
-===========
-
+## Mannipuller les chaines de charactére
 
     txtLabel[0:25] # prend les 25 premieres lettres, si négatif = partant de la fin
     txtLabel[25:50] # prend les lettres entre 25 et 50 ?
 
-Debug
-===========
-
+## Debug
 
     print("je suis un label")
     print(var)
 
-Lever une erreur
-===========
+## Lever une erreur
 
 
     if i - 2 > nbLabel:
@@ -83,10 +72,9 @@ Lever une erreur
             pass
 
 
-Opérateur logique et comparaison
-===========
-comparaison
+## Opérateur logique et comparaison
 
+comparaison
 
     ==	x == y	Égal	0 (faux)
     !=	x != y	Non égal	1 (vrai)

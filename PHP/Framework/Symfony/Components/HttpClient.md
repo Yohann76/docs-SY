@@ -3,14 +3,14 @@
 [HttpClient Docs](https://symfony.com/doc/current/components/http_client.html)
 
 
-Instalation
---------------------------------
+## Instalation
+
 
 
     $ composer require symfony/http-client
 
-Exemple
---------------------------------
+## Exemple
+
 
     use Symfony\Component\HttpClient\HttpClient;
 

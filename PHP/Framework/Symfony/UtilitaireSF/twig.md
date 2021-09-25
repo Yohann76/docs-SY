@@ -3,15 +3,14 @@
 
 [Twig Doc](https://twig.symfony.com/doc/2.x/index.html)
 
-Commande Lié a twig
---------------------
+## Commande Lié a twig
 
     $php bin/console make:twig-extension ( créer une extension twig )
     $php bin/console debug:twig ( voir les filtre )
 
 
-Twig Syntax
------------
+## Twig Syntax
+
 
   	{% block title %}Hello {{ controller_name }}!{% endblock %}
   	{{ article.author }}
@@ -54,8 +53,8 @@ Structure If elseif else endif
       </ul>
   	{% endif %}
 
-Opérateurs logique
------------
+## Opérateurs logique
+
 
     {% if nb == 0 %}
     {% if nb => 0 %}
@@ -64,9 +63,7 @@ Opérateurs logique
     {% if nb == null %}
 
 
-Boucle & itération
------------
-
+## Boucle & itération
 
     {% for entry in craft.entries.section('news') %}
         {% if loop.first %}
@@ -76,7 +73,7 @@ Boucle & itération
 
     {% endfor %}
 
-itération :
+## Itération :
 
     loop.first
     loop.index

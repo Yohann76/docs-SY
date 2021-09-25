@@ -3,8 +3,8 @@
 
 [PHPunit docs](https://phpunit.readthedocs.io/fr/latest/)
 
-Commande et installation
--------------------
+## Commande et installation
+
 prérequis : Installer Xdebug ( sur le wamp )
 
 Composer require :
@@ -67,8 +67,6 @@ Test controller (fonctionnelle) tests/Controller/homecontrollerTest
             $this->assertEquals(200, $client->getResponse()->getStatusCode());
         }
     }
-
-
 
 
 Test Formulaire (fonctionnelle)

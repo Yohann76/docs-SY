@@ -7,8 +7,8 @@
     3.1 -> 3.3 -> symfony flex -> 3.4 -> 4.4
 
 
-A partir de Symfony 3.1 -> Symfony 3.3
-=======================================
+## A partir de Symfony 3.1 -> Symfony 3.3
+
 
 
     //composer.json
@@ -19,8 +19,8 @@ A partir de Symfony 3.1 -> Symfony 3.3
     $ composer install
 
 
-A partir de Symfony 3.3 -> Symfony 3.4
-=======================================
+## A partir de Symfony 3.3 -> Symfony 3.4
+
 
 
     $ composer self-update
@@ -36,8 +36,7 @@ A partir de Symfony 3.3 -> Symfony 3.4
     $ composer update
     $ composer install
 
-Gestion de Flex
-=======================================
+## Gestion de Flex
 
 Flex est présent a partir de la 3.4
 Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du composer.json
@@ -45,8 +44,7 @@ Pour passer sur l'architecture flex, il faut enlever le symfony/symfony du compo
 Pour installer une recette, faire un composer require ...
 ( vérifier que le fichier de configuration est supprimé pour que flex puisse le configurer lui méme )
 
-A partir de Symfony 3.4 -> Symfony 4.4
-=======================================
+## A partir de Symfony 3.4 -> Symfony 4.4
 
 1. Mettre a jour le composer. json
 - enlever symfony/symfony et faire un composer update pour installer les recettes flex
@@ -86,8 +84,8 @@ A partir de Symfony 3.4 -> Symfony 4.4
 9. Enlever l'autoload de double chargement
 
 
-A partir de Symfony 4.4 -> Symfony 5.4
-=======================================
+## A partir de Symfony 4.4 -> Symfony 5.4
+
 
 DEPRECIATION
 

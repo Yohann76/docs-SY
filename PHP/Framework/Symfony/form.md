@@ -31,7 +31,7 @@ Spécificité de chaque row :
     {{  form_row(form.description, {'attr': {'onchange' :'sessionStorage.description=this.value' }} ) }}
     {{ form_start(formMission,{'attr': {'id' : 'newMissionForm', 'class': 'form-horizontal','data-parsley-validate':''}}) }}
 
-----------
+
 
 Type de champ
 

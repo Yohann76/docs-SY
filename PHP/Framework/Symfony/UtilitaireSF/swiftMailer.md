@@ -1,6 +1,5 @@
 ## SwiftMailer
 
-
     // send mail with data
 
     $message = (new \Swift_Message('Invitation Blitz'))

@@ -10,15 +10,13 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
 
 #### Commande
 
-
  installer git avec la commande :
-
 
     $ apt-get install git
     $ git config --global user.name "ThorAndCo" // connecter
     $ git config --global user.email thorandco@domaine.fr // connecter
 
-Créer un nouveau projet vide sur un dépot git vide :
+## Créer un nouveau projet vide sur un dépot git vide :
 
 
     cd /home/git
@@ -31,7 +29,7 @@ Créer un nouveau projet vide sur un dépot git vide :
     git remote add origin git.domaine.fr/thorandco/monprojet.git
     git push -u origin master
 
- Initialiser un projet git depuis un dépôt existant
+## Initialiser un projet git depuis un dépôt existant
 
 
     cd /home/git
@@ -41,36 +39,36 @@ Créer un nouveau projet vide sur un dépot git vide :
     git remote add git.domaine.fr/thorandco/monprojet.git
     git pull -u origin master
 
-Commiter sur le dépôt git local :
+## Commiter sur le dépôt git local :
 
 
     git commit --amend -m "Ajout du fichier monfichier.txt pour le projet"
 
-Information :
+## Information :
 
 
     git log
 
-Annuler un commit :
+## Annuler un commit :
 
 
    git reset HEAD
    git reset HEAD nomdufichier.txt ( sur un fichier précis )
 
-Récupérer les sources du dépôt distants:
+## Récupérer les sources du dépôt distants:
 
 
     git fetch
     git pull origin master
 
-Annuler un commit en particulier déjà pushé:
+## Annuler un commit en particulier déjà pushé:
 
 
     git log
     git revert XXX
     git push
 
-Gestion des branches :
+## Gestion des branches :
 
 
   $ git checkout dev // Changer la branche courante
@@ -79,7 +77,7 @@ Gestion des branches :
   $ git checkout -b dev origin/dev // Récupérer une branche du dépôt git distant en local ( déconseiller )
   $ git merge dev // se rendre sur master, puis effectuer cette commande pour merger dev dans master
 
-Commande diverse :
+## Commande diverse :
 
 
   $ git status // savoir le changement

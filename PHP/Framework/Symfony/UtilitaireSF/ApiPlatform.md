@@ -9,8 +9,8 @@ $ composer require api
 
 Api plateforme interface dispo sur /api
 
-Les annotations :
--------------------
+## Les annotations :
+
 
 Définir comme ressource utilisable
 
@@ -26,9 +26,7 @@ Définir comme ressource utilisable
 
 
 
-Groups
--------------------
-
+## Groups
 
     use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -52,11 +50,11 @@ Groups
 
 
 
-Divers Annotation
--------------------
+## Divers Annotation
 
 
-Autre
--------------------
+
+## Autre
+
 Générer une docs :
 Generer avec le lien qui se trouve dans /api/ et faire pointer cette docs sur un lien

@@ -1,9 +1,7 @@
 ## Doctrine sous symfony
 
 
-Annotations des entités  :
----------------------------
-
+## Annotations des entités  :
 
 		/**
 		* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
@@ -26,8 +24,7 @@ Annotations des entités  :
 		* @ORM\OneToMany(targetEntity="App\Entity\Comment", mappedBy="article")
 
 
-Commande lié a doctrine
------------------------
+## Commande lié a doctrine
 
     $ php bin/console doctrine:database:create ( avec port :3306 )
 
@@ -47,8 +44,7 @@ Commande lié a doctrine
 
     $ php bin/console doctrine:fixtures:load ( charger les data des fixtures dans la bdd )
 
-Pour les relation :
------------------------
+## Pour les relation :
 
 		$ php bin/console make Entity
 		Choisir l'entité a modifier : Category
@@ -59,8 +55,8 @@ Pour les relation :
 
 
 
-Relation manyToMany  :
------------------------
+## Relation manyToMany  :
+
  		// form pour add une relation ManyToMany
 		if ($form->isSubmitted() && $form->isValid()) {
 				 $entityManager = $this->getDoctrine()->getManager();

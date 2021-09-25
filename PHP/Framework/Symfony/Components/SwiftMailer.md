@@ -1,9 +1,6 @@
 ## Swift Mailer
 
-
-
-Code exemple Symfony
-===================
+## Code exemple Controller Symfony
 
     $message = (new \Swift_Message('Invitation Blitz'))
                     ->setFrom('yohanndurand76@gmail.com')

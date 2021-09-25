@@ -2,8 +2,8 @@
 
 [Blackfire Docs](https://blackfire.io/docs/introduction)
 
-Instalation Windows
--------------------
+## Instalation Windows
+
 
 [windows blackfire Instalation](https://blackfire.io/docs/up-and-running/installation)
 
@@ -27,8 +27,8 @@ Profiler :
 
     blackfire curl http://developpement/Formation%20PHP%20Symfony/Projet%208%20TodoList/TodoList/public/
 
-configuration pre-requis
---------------------------
+## Configuration pre-requis
+
 
 - installer curl
 - deplacer les dll dans le dossier wamp64/bin/php/php7.3.12/ext/fihier.dll (preconiser sans extension nts)

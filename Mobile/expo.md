@@ -14,15 +14,15 @@ Ejecter une application est irréversible, mais cela est courant a la fin de pro
 
 A utiliser avec l'application expo
 
-    expo init MonProjet
-    npm start
+    $ expo init MonProjet
+    $ npm start
 
 
 ## Build une application expo :
-----------------------------
 
-    expo build:android
-    expo build:ios
+
+    $ expo build:android
+    $ expo build:ios
 
 Expo dispose d'un serveur dédié pour build les application et télécharger les APK, il faudra s'inscrire sur le site expo pour avoir un dashboard
 des applications ainsi que leurs états.

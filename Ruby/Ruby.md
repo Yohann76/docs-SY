@@ -2,12 +2,12 @@
 
 [Ruby Docs](https://ruby-doc.org/)
 
-Pré requis
--------------------
+## Pré requis
 
 
-Instalation
--------------------
+
+## Instalation
+
 
 
   [Ruby Installation](https://rubyinstaller.org/downloads/)

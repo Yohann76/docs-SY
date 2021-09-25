@@ -7,9 +7,7 @@ Ruby on Rails, également appelé RoR ou Rails, est un framework web libre écri
 Il propose une structure qui permet de développer rapidement et intuitivement. Cependant, il impose un grand niveau d'abstraction dans la programmation
 qui apporte en contrepartie l'économie d'écrire soi-même la plupart des routines obligatoires d'une application web.
 
-Instalation & pré-requis
--------------------
-
+## Instalation & pré-requis
 
     $ ruby --version // savoir la version
     $ gem install rails // Installer Rails avec une gemme de ruby
@@ -19,10 +17,8 @@ Instalation & pré-requis
     $ node --version
     $ yarn --version
 
-
-Création de page
+## Création de page
 -------------------
-
 
     config/route.rb
       get '/salut', to:'pages#salut'
@@ -42,9 +38,8 @@ Création de page
     App/View/Layouts/applications ( base du html )
 
 
-Ligne de commande rails ( une fois la gemme rails installé )
+## Ligne de commande rails ( une fois la gemme rails installé )
 -------------------
-
 
     $ rails new blog // Créer un projet "blog" par default bdd = sqlite
     $ rails new blog --database=mysql // // Créer un projet "blog" avec bdd = mysql
@@ -53,9 +48,7 @@ Ligne de commande rails ( une fois la gemme rails installé )
     $ rails console // pour lancer la console rails
     $ rails g controller Posts index  // Générer un controller nommé Posts avec une méthodes index
 
-Commande dans la console ( rails c ou rails console )
--------------------
-
+## Commande dans la console ( rails c ou rails console )
 
     $ rails console --sandbox // lancer la console en mode bac à sable, pour qu'une fois sortie de la console les modif sont pas persisté
     $ Post.find(1) // chercher dans la base de donnée dans la table post l'id 1
@@ -80,9 +73,7 @@ Commande dans la console ( rails c ou rails console )
     $ Post.limit(1)
 
 
-Base de données
--------------------
-
+## Base de données
 
     $ rails g migration CreatePosts title:string content:text // generer la migration d'une table  Posts  avec title, content...
     $ rails db:migrate // appliquer une migration à la base de données
@@ -90,8 +81,8 @@ Base de données
     $ rails g migration RenamePostTitleToName // donner un nom à une migration, utile pour modifier les choses
 
 
-Connexion Database SQL sur VSCode
--------------------
+## Connexion Database SQL sur VSCode
+
    1. Installer l'extension SqLite
    2. Ouvrir la palette de commandes ( ctrl + shift + p)
    3. sellectionnez SQLite : open database

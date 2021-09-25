@@ -9,19 +9,19 @@ d'origine. L'objectif majeur de Java EE est de faciliter le développement d'app
 déployées et exécutées sur un serveur d'applications.
 
 
-Spécificité de l'extension EE
--------------------
+## Spécificité de l'extension EE
 
 
-Installation
--------------------
+
+## Installation
+
 
 
 [IDE Eclipse pour Java EE](https://www.eclipse.org/downloads/packages/)
 [création de projet avec eclipse](https://openclassrooms.com/fr/courses/626954-creez-votre-application-web-avec-java-ee/619346-outils-et-environnement-de-developpement/)
 
-Création de projet
--------------------
+## Création de projet
+
 -> File -> New Project -> web -> Dynamic Web Project
 si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
@@ -35,14 +35,14 @@ si cette catégorie n'existe pas, c'est que ce n'est pas le bon eclipse.
 
 
 
-Utilité de JAVA EE
--------------------
+## Utilité de JAVA EE
+
 
 Java EE offre une structure et des librairies pour le developpement d'applications web. Java EE utilise le java classique, et le JRE pour compiler le code
 en un site web.
 
-Structure de JAVA EE
--------------------
+## Structure de JAVA EE
+
 Java EE repose sur un modèle MVC.
 
 

@@ -4,8 +4,8 @@
 Installation
 Installer webpack avec yarn : yarn add webpack@3 --dev   ( ou webpack-cli )
 
-Fonctionnement
--------------------
+## Fonctionnement
+
 Exporter un objet, une variable, une classe, une fonction… :
 
   - exporter de module : module.exports = food
@@ -30,9 +30,7 @@ Exemple de webpack.config.js :
    };
 
 
-Webpack Encore
-===================
-
+## Webpack Encore
 
     Prendre sur nos git les bases
     Webpackconfig.js [Copier]
@@ -116,9 +114,7 @@ Module get_phone.js exporter :
       return 'Hello Webpack EEncore! Edit me in assets/js/app.js'+'!'.repeat(exclamationCount);
    };
 
-
-Production :
--------------------
+## Production :
 
     $Yarn install
     $Yarn build

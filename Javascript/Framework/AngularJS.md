@@ -1,7 +1,7 @@
 ## Angular.js ( google )
 
-Installation
--------------------
+## Installation
+
 
 node requis.
 
@@ -24,5 +24,4 @@ Si tout se passe bien, vous verrez les informations du serveur qui se lance à
 avec le message "Welcome to app!!" et le logo Angular.
 Félicitations, votre environnement de développement est prêt !
 
-Fonctionnement
--------------------
+## Fonctionnement

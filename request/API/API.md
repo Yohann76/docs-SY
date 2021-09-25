@@ -31,14 +31,14 @@ A interface uniforme
 ## API Utilisable
 
 
-Facebook
--------------------
+## Facebook
+
 [Facebook API Docs](https://developer.github.com/v3/)
 
 TODO : Se connecter via auth ?
 
-Github
--------------------
+## Github
+
 [Github API Docs](https://developer.github.com/v3/)
 
 TODO : Se connecter via auth ?

@@ -1,16 +1,16 @@
 ## Node.js
 
 
-Installation
--------------------
+## Installation
+
 
 Sur windows Prendre la version MSI
 
 [Node Install](https://nodejs.org/en/download/)
 
 
-Node
--------------------
+## Node
+
 
 Executer un fichier js avec node ( cli ) :
 
