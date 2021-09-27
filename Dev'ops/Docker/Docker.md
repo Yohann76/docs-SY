@@ -51,11 +51,11 @@ Commande :
 
 ## ORDRE POUR METTRE EN PLACE UNE CONFIG ( à partir des fichier )
 
-    docker system prune ( remise a zero de docker ( perte de donnée ) )
-    docker-compose down ( ferme les services et conteneurs )
-    docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image )
-    docker-compose up -d
-    docker run -d -p 8080:80 sfserver  ( port pour nginx )
+    $ docker system prune ( remise a zero de docker ( perte de donnée ) )
+    $ docker-compose down ( ferme les services et conteneurs )
+    $ docker build -f docker/php/Dockerfile . -t  sfserver  ( nom libre ) ( créer une image )
+    $ docker-compose up -d
+    $ docker run -d -p 8080:80 sfserver  ( port pour nginx )
 
 Adresse disponible pour Yohann : http://192.168.99.100:8000/
 Adresse disponible pour PhpMyAdmin : http://192.168.99.100:8080/
@@ -99,9 +99,7 @@ Accès à la machine dans php, rentrer pour exécuter des commande - exit pour s
 
 Accès à la machine pour exécuter des commande coup par coup
 
-
     $ docker-compose exec php bin/console …
-
 
 ## DEBUGGAGE :
 
@@ -127,7 +125,6 @@ Ou Si :  Couldn't connect to Docker daemon - you might need to run `docker-machi
 ANNEXE:
 ##
 
-
     $ docker-compose up --build
     $ démarrer un conteneur nginx $ docker run --name mynginx -P -d nginx
     $ docker exec -it ‘id’ bash
@@ -139,7 +136,6 @@ ANNEXE:
     Rentrer dans un container  : docker exec -it nginx bash
     Virer cache : docker system prune --no-cache
     $ docker-compose logs app // Voir les logs du lancement
-
 
 ## Terminale ToolBox Docker :
 
@@ -154,9 +150,8 @@ Installer docker :
 
 Accéder au projet :
 
-
-    cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
-    cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
+    $ cd /mnt/c/Users/yohan/OneDrive/desktop  ( Sacha )
+    $ cd /mnt/c/wamp64/www/OC/BileMo_B2B_API ( Yohann )
 
 Lancer docker :
 
@@ -167,11 +162,9 @@ Lancer la config :
     $ docker-compose down
     $ docker-compose up -d
 
-
 ## Probléme Résolue :
 
-
-prblm :
+probleme :
 
   Couldn't connect to Docker daemon at http+docker://localhost - is it running?
 

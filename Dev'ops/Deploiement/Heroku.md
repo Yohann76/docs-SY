@@ -3,8 +3,7 @@
 
 [Heroku docs](https://devcenter.heroku.com/categories/reference)
 
-Symfony : [Deployer avec SF4](https://devcenter.heroku.com/articles/deploying-symfony4)
--------------------
+## Symfony : [Deployer avec SF4](https://devcenter.heroku.com/articles/deploying-symfony4)
 
   $ heroku create
 
@@ -17,19 +16,18 @@ Symfony : [Deployer avec SF4](https://devcenter.heroku.com/articles/deploying-sy
   $ git push heroku master // push or deploy
   $ heroku open // open new windows
 
-Commande :
--------------------
-
-    heroku create
-    git remote-set-url heroku <lien obtenu précédement de git>
-    heroku config:set DATABASE_URL=......
-    Heroku open // ouvrir le lien de la page
-    heroku ps:exec  // Se connencter a la machine // SSH
-    git push heroku master // pousher sur la branch heroku
+## Commande :
 
 
-Divers :
--------------------
+    $ heroku create
+    $ git remote-set-url heroku <lien obtenu précédement de git>
+    $ heroku config:set DATABASE_URL=......
+    $ Heroku open // ouvrir le lien de la page
+    $ heroku ps:exec  // Se connencter a la machine // SSH
+    $ git push heroku master // pousher sur la branch heroku
+
+## Divers :
+
 
     $ heroku ps:scale web=1 // vérifier qu'une instance est en cours
     $ heroku logs --tail // voir les logs en cours

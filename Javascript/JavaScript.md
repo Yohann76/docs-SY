@@ -1,11 +1,8 @@
 ## JavaScript
 
-Base du javascript
--------------------
+## Base du javascript
 
-Les tableau
--------------------
-
+## Les tableau
 
     var fruits = ['Apple', 'Banana'];
     console.log(fruits.length); // compter le nombre d'éléments
@@ -21,12 +18,9 @@ Les tableau
     }
     fruits.splice(indexPosition, 1); // supprimer un élément du tableau a un index précis
 
-Les variables
--------------------
+## Les variables
 
-
-Divers elements utile en JS
--------------------
+## Divers elements utile en JS
 
     window.location.reload(true); // recharger la méme url // true = on serve, false = on cache
 
@@ -45,8 +39,8 @@ Définition d’un objet :
           function xxxx(){}
       }
 
-Sélection des éléments
--------------------
+## Sélection des éléments
+
 
 
     document.getElementById(‘monId’);
@@ -95,20 +89,16 @@ utilisable directement dans le html :
   span id=”input” onclick=”alert(‘vous avez cliqué’)”></span>
 
 
-Fonctions Sympathique
--------------------
-
+## Fonctions Sympathique
 
     console.log(xxx);   // affiche quelque chose sur la console ( texte,variable,objet..)
     console.dir(objet);  // affiche les méthode et attribut d’un objet
     alert();
     JSON.stringify() ; //  convertit une valeur JavaScript en chaîne JSON.
 
-Appel AJAX et fonctions asynchrone
--------------------
+## Appel AJAX et fonctions asynchrone
 
 Appel AJAX Simple :
-
 
     $.ajax(
           {
@@ -177,8 +167,8 @@ Démonstration d’un objet :
          }
       }
 
-Syntaxe :
--------------------
+## Syntaxe :
+
 
 
   	var clickme = document.getElementById('clickme');
@@ -186,8 +176,7 @@ Syntaxe :
           e.target.innerHTML = 'Vous avez cliqué !';
       });
 
-ES6 ou ES 2015:
--------------------
+## ES6 ou ES 2015:
 
 déclaration de fonction : =>
 déclaration de variable : possible avec let a la place de var ( Let a la portée d’un bloc, moins d’erreur si la variable est pas défini )
@@ -196,8 +185,8 @@ boucle for of : for (let element of $elements) {}
 type d’objet : Map ; WeakMap
 
 
-Yarn
--------------------
+## Yarn
+
 Yarn est un gestionnaire de dépendance JS :
 installer yarn avec un exécutable msi
 

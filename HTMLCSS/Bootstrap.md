@@ -13,35 +13,27 @@ CDN
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
-
-Structure ( balise )
-===================
-
+## Structure ( balise )
 
     div "container" permet de centrer un block
     col est le nombre de colonnes
     row est le nombre de Ligne
     jumbotron = corp de text sur fond gris
 
-Design
-===================
+## Design
+
 btn btn-info // button bleu
 btn btn-danger // button rouge
 btn btn-succes // button vert
 
-Poppover
-===================
-
+## Poppover
 
     <button type="button"
     class="btn btn-lg btn-danger"
     data-toggle="popover" title="Popover title"
     data-content="msg à afficher ">Click to toggle popover</button>
 
-
-Modal bootstrap
-===================
-
+## Modal bootstrap
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -70,9 +62,7 @@ Modal bootstrap
     </div>
 
 
-Button dropdown
-===================
-
+## Button dropdown
 
     <div class="btn-group">
       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -84,18 +74,13 @@ Button dropdown
       </ul>
     </div>
 
-Progress bar
-===================
-
+## Progress bar
 
     <div class="progress">
       <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
     </div>
 
-
-
-Simple Card
-===================
+## Simple Card
 
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="..." alt="Card image cap">

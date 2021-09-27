@@ -1,7 +1,6 @@
 ## CSS
 
-Variable
--------------------
+## Variable
 
 
     :root {
@@ -13,10 +12,7 @@ Variable
     }
 
 
-
-Propriété
--------------------
-
+## Propriété
 
     background-color : green ; // background color green
     margin : 0px ; // Marge extérieur
@@ -27,22 +23,19 @@ Propriété
     margin-right : 20% ; // marge extérieur droite
     border-radius : 15px ; //  bord arrondi, utilisé pour faire un rond
 
-Les bordures
--------------------
+## Les bordures
 
     border: 3px blue dashed; // bordur 3px bleu, style de bordure : none - solid - dotted - dashed - double - groove - ridge - inset - outset
     border: 3px blue dashed; // bordur seulement en bas
     border-radius: 10px 5px 10px 5px; // bordur avec 10px en haut a gauche, 5px en haut a droite, 10px en bas a droite et 5px en bas a gauche
 
-Les ombres
--------------------
+## Les ombres
 
     box-shadow: 6px 6px 6px black; // bordure : 1 bordur normal, 2 l'ombre, 3 genre de transparence 4 couleur
     box-shadow: 6px 6px 6px black inset; // méme bordure que la précédente mais avec un effet renfoncer ( ombre intérieur du bloc )
     text-shadow: 2px 2px 4px black; // bordure pour text
 
-Les dégradé
--------------------
+## Les dégradé
 
     background: linear-gradient(blue, white); // dégrader linéaire haut en bas, bleu vers blanc
     background: linear-gradient(to right, blue, white); // dégrader linéaire gauche a droite, bleu droite - blanc gauche
@@ -58,8 +51,7 @@ Les dégradé
     background: linear-gradient(to right, transparent, mistyrose),
       url("https://mdn.mozillademos.org/files/15525/critters.png"); // dégrader avec intégration d'image transparent
 
-Selection des éléments
--------------------
+## Selection des éléments
 
     .nomDeLaclasse // selectionne une classe
     #nomDeLaDiv // selectionne une div
@@ -67,9 +59,7 @@ Selection des éléments
     nav a // tout élément a descendant d'un élément nav
     nav > a // tout élément a fils direct d'un élément nav
 
-Styler les liens
--------------------
-
+## Styler les liens
 
     a:link { color: green; }  // par défaut
     a:visited { color: orange; }  // déjà visité
@@ -81,8 +71,7 @@ Au survol :
 
     .section :hover
 
-Curseur
--------------------
+## Curseur
 
   body{
     cursor: crosshair;
@@ -94,8 +83,7 @@ Curseur
     cursor:  pointer;
   }
 
-Forme et 3D
--------------------
+## Forme et 3D
 
     #triangle-top {
       width  : 0;
@@ -140,13 +128,11 @@ Forme et 3D
     }
 
 
-Variable en css
--------------------
+## Variable en css
 
    To do
 
-Génération de contenu
--------------------
+## Génération de contenu
 
 Les pseudo-éléments ::before, ::after permettent d'insérer du contenu au
 début ou à la fin d'un élément, grâce à la propriété content
@@ -157,8 +143,7 @@ début ou à la fin d'un élément, grâce à la propriété content
     }
 
 
-Aligner les input d'un form
----------------------------
+## Aligner les input d'un form
 
     label
     {
