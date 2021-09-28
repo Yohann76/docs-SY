@@ -23,8 +23,8 @@ Pour avoir accès a une librairie depuis n'importe ou, il faut installer les dé
     $ npm search <nompartiel> // Chercher un package avec son nom partiel
     $ npm dedupe // Résoudre les dépendences avec un rollback
 
-Utiliser pm2 :
---------------------------
+## Utiliser pm2 :
+
 
 pm2 est un utilitaire pour faire des cluster de serveur node et répartir la charge. pm2 permet de relancer un serveur en prod au démarrage du serveur, ou si celui-ci crash. pm2 permet de faire plusieurs instance node.
 
@@ -63,7 +63,6 @@ Configuration d'un fichier ecosystem.config.js
 [package npm](https://www.npmjs.com/package/npm-check)
 
 
-
 Lancer une instance plus complexe en cas de bug :
 
-    pm2 start npm --name wikirunParse -- run npm start
+    $ pm2 start npm --name wikirunParse -- run npm start
