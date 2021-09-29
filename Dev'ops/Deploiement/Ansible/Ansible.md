@@ -3,21 +3,21 @@
 [Ansible docs](https://docs.ansible.com/ansible/latest/index.html)
 [Ansible Galaxy](https://galaxy.ansible.com/)
 
-Commande dans le vault
--------------------
+### Commande dans le vault
+
 i pour insertion
 :wq pour enregistrer et quitter
 
-Instalation
--------------------
+## Instalation
 
-COMMANDE GÉNÉRALE
+
+## COMMANDE GÉNÉRALE
 
     $ ansible localhost -m command -a "/bin/echo 'Hello Ansible'"
     $ ansible localhost -m ping
     $ ansible localhost -m composer -a "working_dir=./ no_dev=false"
 
-HOSTING
+## HOSTING
 
 créer un host : créer un fichier /ansible/hosts.ini ( base ci-dessous)
 
@@ -45,8 +45,8 @@ Lister host(server) :
 	ansible local --list-hosts -i ansible/hosts.ini
 
 
-PLAYBOOK
--------------------
+## PLAYBOOK
+
 
 IMPORTANT
 exécuter le playbook :
@@ -58,16 +58,15 @@ exécuter le playbook :
     $ ansible-vault view ansible/vars/vault.yml // Visualiser le vault
     $ ansible-vault edit ansible/vars/vault.yml // Editer le vault
 
-DEBUGGAGE :
--------------------
+## DEBUGGAGE :
+
 
 deployment avec Nginx, si problème de 403 forbidden, voir/supprimer le défaut dans /etc/nginx/sites-enabled
 Faire un composer install manuellement par SSH
 
 
-Clonner un projet privé  :
+## Clonner un projet privé  :
 
--------------------
 
     vars_prompt:
       - name: "githubuser"

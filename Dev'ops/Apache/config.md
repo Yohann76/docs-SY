@@ -19,9 +19,9 @@ Réécrire une URL :
     Alias "/url" "/urlNext"
 
 
-    HTTPS:
-    ( avec l'activation console : a2enmod ssl )
-    ::
+HTTPS:
+( avec l'activation console : a2enmod ssl )
+
 
       # vhost https
       <VirtualHost *:443>

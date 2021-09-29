@@ -93,8 +93,6 @@ utils :
    2. mongo --host 198.51.100.1
    3. mongod --bind_ip localhost,My-Example-Associated-Hostname
 
-::
-
 Restart le service
 
    $ sudo systemctl restart mongod

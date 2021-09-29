@@ -10,11 +10,7 @@ Choisir un projet et initialisé ( automatique )
     -> fait un commit avec .circleci/config.yml
 
 
-
-Accepter les projets d'organisation github
-===================
-
-
+## Accepter les projets d'organisation github
 
 - Se rendre ici : [CircleCi account](https://circleci.com/account)
 

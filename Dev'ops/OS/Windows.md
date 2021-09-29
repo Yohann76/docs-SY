@@ -7,7 +7,6 @@ linux sur windows : taper bash dans le cmd
 
 Ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté independament
 
-
     $ cls :efface le contenu de la console
     $ del : supprimer un fichier
     $ dir : affche la liste des dossier

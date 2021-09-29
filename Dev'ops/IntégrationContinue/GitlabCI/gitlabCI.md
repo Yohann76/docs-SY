@@ -1,5 +1,4 @@
 ## Gitlab CI info
 
 
-Configuration
--------------------
+## Configuration

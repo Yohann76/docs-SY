@@ -1,7 +1,7 @@
 ## Nom de domaine sur OVH :
 
 Pour configurer un sous non de domaine sur OVH
--------------------
+
 
 Acheter un ndd ...
 

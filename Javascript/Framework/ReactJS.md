@@ -8,7 +8,7 @@ Commande pour monter un projet React
     $ composer require encore  / yarn add @symfony/webpack-encore --dev // (uniquement dans un projet symfony
     $ yarn install // (uniquement dans un projet symfony )
 
-Dépendances additionelles :
+## Dépendances additionelles :
 
     $ yarn add eslint --dev ( détecte les violation de code js )
     $ yarn add eslint-plugin-react --dev ( détecte les violation de code react )
@@ -98,8 +98,7 @@ Possibilité de passer des états en props :
     etatX={this.state.StateX}
     />
 
-Architecture
-###############
+## Architecture
 
 Architecture entre Composant?
 3 types de composants

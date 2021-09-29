@@ -1,7 +1,7 @@
 ## WordPress
 
-Créer un thème enfant
-================
+## Créer un thème enfant
+
 
 [Tuto WP](https://wpformation.com/theme-enfant-wordpress/)
 
@@ -24,10 +24,10 @@ dans le function.php on y met :
     function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     }
-    ------------------------------------------
+
 
 et dans le style.css on y met :
-------------------------------------------
+
 
     /*
     Theme Name: Theme enfant

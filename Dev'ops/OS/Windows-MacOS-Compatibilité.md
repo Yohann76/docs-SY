@@ -14,8 +14,7 @@ Modifier une variable d'environement en ligne de commande
     $ export FLASK_ENV=development // export = mac
     $ set FLASK_ENV=development // set = windows
 
-Execution d'un fichier
-
+## Execution d'un fichier
 
     $ pipenv run ./wsgi.py // ./ = mac
     $ pipenv run wsgi.py // juste le nom de fichier = windows

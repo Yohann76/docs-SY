@@ -7,9 +7,7 @@
    border: 1px solid $border-dark;
    }
 
-Operation
-===================
-
+## Operation
 
     == and != are used to check if two values are the same.
     +, -, *, /, and % have their usual mathematical meaning for numbers, with special behaviors for units that matches the use of units in scientific math.
