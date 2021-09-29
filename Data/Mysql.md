@@ -30,23 +30,25 @@ Voir la liste des database
 
 ## Lister les clefs etrangère sur une database
 
-
     SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE `table_schema` LIKE 'database_name' AND `constraint_type` = 'FOREIGN KEY';
 
-## Requêtes
+## Requêtes et gestion des données
 
 
-SELECT :
+### SELECT :
 
-    $ SELECT * FROM xxxx ;
+    $ SELECT * FROM membres ;
+    $ SELECT pseudo FROM membres WHERE id_membre BETWEEN 40 AND 60
 
-UPDATE :
+### UPDATE :
 
-    $ UPDATE table SET nom_colonne = 'valeur' ;
+    $ UPDATE `membres` SET `email`="p@pierre.fr" WHERE `id`=1; // Modifier tout ID
+    $ UPDATE `membres` SET `email`="jacques@monfai.fr", `pseudo`="Jacques" WHERE `id`=1;  // supprimer seulement ID 1
 
-DELETE :
+### DELETE :
 
-    $ DELETE FROM table ;
+    $ DELETE FROM `membres`; // supprimer TOUT les membres
+    $ DELETE FROM `membres` WHERE `id`=1; // supprimer le membre avec id 1
 
 Les commandes précedentes peuvent être suivi d'une clause WHERE pour préciser une condition.
 
