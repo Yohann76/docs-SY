@@ -18,7 +18,6 @@ Python créer un environnement a l'adresse localhost:5000
 
 ## installation
 
-
 Necessite pip
 
 flask
@@ -32,8 +31,7 @@ pour géré plusieurs projets avec des variables différentes )
     $ pip install virtualenv
     $ virtualenv -p python3 env // créer un environnement
 
-Obtenir l'environnement ( simuler le site et démarrer le serveur )
-===========
+## Obtenir l'environnement ( simuler le site et démarrer le serveur )
 
 1. Terminal : Aller dans le repertoire du site
 2. Terminal : python views.py
@@ -49,9 +47,7 @@ Obtenir l'environnement ( simuler le site et démarrer le serveur )
 - config.py : variable de configuration
 - Les controllers peuvent êtres inclus en annexe ( utils.py,... ) et être importé sur views.py
 
-
 Console Flask
-
 
 lancer la console flask
 
@@ -61,11 +57,9 @@ lancer la console flask
 
 puis
 
-
     $ flask shell
 
 ## Base de donnée SQLlite
-
 
 1. Connecter la base de donnée :
 Comment connecter la base de donnée ?
@@ -89,7 +83,6 @@ Il faudra installer Sqlite, et mettre le dossier sqllite dans C:\sqlite, pusi d�
 
 lancer un test :
 
-
     $ pytest app/tests/test_functionnal.py
 
 librairie requise :
@@ -102,17 +95,13 @@ Les tests ont besoin de __init__.py, config.py dans le dossier de test
 
 BDD postres SQL
 
-
 - models.py pour implementer la classe qui représente les tables
 - manage.py pour acceder a a la base
-
-
 
     #from flask import Flask
     from flask_script import Manager
     from flask_migrate import Migrate, MigrateCommand
     from app import app, db
-
 
     manager = Manager(app)
     migrate = Migrate(app, db)
@@ -124,20 +113,14 @@ BDD postres SQL
 
 ## Commande :
 
-
     $ python manage.py db init ( initialiser la base )
     $ python manage.py db migrate ( faire une migration )
 
-
 ## Route avec flask
-
-
 
     @app.route("/greeting")
     def greeting():
       return {"greeting": "Hello from Flask API"}
-
-
 
     @app.route("/addLabel/<nb1>/<nb2>")
     def addLabel(nb1,nb2):
@@ -146,7 +129,6 @@ BDD postres SQL
 ## API avec flask ( /api/ )
 
 dans api/app.py
-
 
     from flask import Flask
     from flask_cors import CORS
@@ -172,7 +154,6 @@ dans api/app.py
         return addLabelAPI(str(title), str(node1), str(node2), int(functionNumber), int(column))
 
 Définition de addLabelAPI dans /api/apiFunction.py
-
 
     import math
     from models import db, Label, Record
