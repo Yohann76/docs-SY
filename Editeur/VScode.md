@@ -16,3 +16,6 @@ nginx.conf // coloration syntaxique pour fichier nginx
 
 Extension PHP DocBlocker // Généré rapidement des docs
 Extension Twig Language 2 // coloration syntaxique sur twig
+
+Extension Github Copilot // IA pour coder + vite :
+[Github Copilot webiste](https://copilot.github.com/)
