@@ -41,29 +41,27 @@ Définition d’un objet :
 
 ## Sélection des éléments
 
-
-
     document.getElementById(‘monId’);
     document.getElementsByName(‘monId’);
     document.getElementsByClassName(‘class’);
 
 
 Méthode sur sur les éléments ( représenté par variable )
-modifier le css d’un élément :
 
-    variable.style[‘color’] = ‘green’;
 
-compter le nombre de caractère :
+    variable.style[‘color’] = ‘green’; // modifier le css d’un élément
+    variable.length; // compter le nombre de caractère
+    variable.add(‘new class’); // ajouter une class a l’élément :
+    variable.append(‘new class’);  //( || appendChild ) // ajouter a l'élément
 
-    variable.length;
+Événement sur sur les éléments ( représenté par variable )
 
-ajouter une class a l’élément :
+    variable.click; // ( appui sur l'élément )
+    variable.double click; //(double-click)
+    variable.input; //( surveiller l’entrée dans un champ texte )
+    variable.select; //( sélectionner le contenu d’un textArea )
+    variable.mouseover; // ( survol )
 
-    variable.add(‘new class’);
-
-ajouter a l'élément :
-
-    variable.append(‘new class’);  //( || appendChild )
 
 lire un attribut data-url :
 
@@ -72,16 +70,6 @@ lire un attribut data-url :
 Rechercher chaque élément :
 
     $element.find(‘tbody tr’).each(function(){       });
-
-
-Événement sur sur les éléments ( représenté par variable )
-
-
-    variable.click; // ( appui sur l'élément )
-    variable.double click; //(double-click)
-    variable.input; //( surveiller l’entrée dans un champ texte )
-    variable.select; //( sélectionner le contenu d’un textArea )
-    variable.mouseover; // ( survol )
 
 utilisable directement dans le html :
 
