@@ -19,6 +19,8 @@ Composer command
     $ composer update ( update les librairies du composer.json )
     $ composer remove symfony/profiler-pack // profiler // Supprimer debug bar
 
+    $ rm -rf vendor/   // pour supprimer toute les dependances /vendor pour réinstaller proprement
+
 Lancer le serveur interne de Symfony
 
     $ php bin/console server:run
