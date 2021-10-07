@@ -8,14 +8,16 @@
 
 Créer un projet simple ( API ou format court )
 
-
     $ composer create-project symfony/skeleton myProject // composer API
     $ composer create-project symfony/website-skeleton my_project_name // composer website
     $ symfony new my_project_name --full // Symfony website ( recommander )
     $ symfony new my_project_name // symfony API
 
-composer install ( installer les librairies du composer.json )
-composer update ( update les librairies du composer.json )
+Composer command
+
+    $ composer install ( installer les librairies du composer.json )
+    $ composer update ( update les librairies du composer.json )
+    $ composer remove symfony/profiler-pack // profiler // Supprimer debug bar
 
 Lancer le serveur interne de Symfony
 
@@ -26,7 +28,6 @@ Lancer le serveur interne de Symfony
     $ php bin/console cache:clear
 
 ## Composer require utile :
-
 
 Composer : Les requires indispensable  et commandes composer
 
