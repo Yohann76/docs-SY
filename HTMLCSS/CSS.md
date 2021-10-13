@@ -128,9 +128,20 @@ Au survol :
     }
 
 
-## Variable en css
+## Variable en css ( fichier bien css )
 
-   To do
+    :root {
+    --main-bg-color: #eaeaea; /* background */ /* rgb(51,118,205) old */
+    --second-bg-color: #dcdfe3; /* title card.. */
+    --three-bg-color: #4ecdc4; /*  rgb(31, 85, 156)  old */
+    --four-bg-color: #f5f5f5; /*  background card*/ /* old transparency */
+    --five-bg-color: #2f323a; /*  background left nav */ /* old rgb(28,38,43) */
+    }
+
+    background-color: var(--main-bg-color);
+    color: var(--three-bg-color);
+
+
 
 ## Génération de contenu
 
