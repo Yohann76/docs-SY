@@ -20,6 +20,9 @@
     $ docker network ls // répertorie les détails de tout le réseau du cluster.
     $ docker login // connexion hub docker
     $ sudo docker cp 09ca6feb6efc:/usr/local/apache2/logs/httpd.pid /home/geekflare/  // Copiez un fichier d'un conteneur Docker vers le système local.
+    $ docker ps -aq --filter status=exited | xargs docker rm -f  // supprimer les conteneurs qui sont exited
+    $ docker login // se connecter au hub en CLI
+    $ docker logs <container>  // obtenir les logs 
 
 ## Lancer docker :
 
