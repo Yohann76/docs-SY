@@ -33,6 +33,7 @@ Ligne de connexion à la BDD
     $ \d // Lister les tables
     $ create table books(title varchar(128), author varchar(128), price int, date date); // créer une table
     $ DROP TABLE  alembic_version CASCADE; // supprimer une table
+    $ psql -h 127.0.0.1 -U postgres // connexion depuis le WSL2 Windows
 
 Se déconnecter d'une bdd:
 
