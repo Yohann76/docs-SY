@@ -29,3 +29,10 @@ Ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté in
     $ bootcfg: répare ou edite le fichier de démarrage boot.ini
 
 # Parametrage
+
+
+# Linux dans Windows
+
+On peut acceder a des machine debian, ubunto ou kali depuis le windows store
+
+pour avoir acces au fichier / de ces machine il suffit de taper "\\wsl$" dans l'explorateur de fichier
