@@ -25,14 +25,14 @@ Ligne de connexion à la BDD
 
 ## Divers commandes
 
-    $ create database bddDragDrop; // créer une bdd
-    $ drop database bddDragDrop; // supprimer une bdd
+    $ CREATE DATABASE bdd_drag_drop; // créer une bdd
+    $ DROP DATABASE bdd_drag_drop; // supprimer une bdd
     $ \l // lister les bases de données
     $ \d nametable // Lister les champs d'une table
-    $ \c bddDragDrop // se connecter a la base
+    $ \c bdd_drag_drop // se connecter a la base
     $ \d // Lister les tables
-    $ create table books(title varchar(128), author varchar(128), price int, date date); // créer une table
-    $ DROP TABLE  alembic_version CASCADE; // supprimer une table
+    $ CREATE TABLE books(title varchar(128), author varchar(128), price int, date date); // créer une table
+    $ DROP TABLE alembic_version CASCADE; // supprimer une table en cascade
     $ psql -h 127.0.0.1 -U postgres // connexion depuis le WSL2 Windows
 
 Se déconnecter d'une bdd:
@@ -42,8 +42,8 @@ Se déconnecter d'une bdd:
 
 Les select :
 
-    $ select * from books;
-    $ select * from books where price < 28;
+    $ SELECT * FROM books;
+    $ SELECT * FROM books WHERE price < 28;
 
 Connexion a la bdd en ligne de commande :
 
@@ -58,4 +58,4 @@ Utiliser la base :
 recherche :
 
 
-    mysql> SELECT * from patients WHERE last_name = 'Zola';
+    SELECT * FROM patients WHERE last_name = 'Zola';
