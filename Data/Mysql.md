@@ -98,6 +98,9 @@ Listes des users
     $ mysqldump --user=mon_user --password=mon_password --databases nom_de_la_base > fichier_destination.sql // Pour sauvegarder une base de données précise
     $ mysql --user=mon_user --password=mon_password nom_de_la_base < fichier_source.sql // restaurer dans une base de données précise
 
+    $ mysqldump -u root -pxxxxxx test2 > test2backup.sql // sauvegarde
+    $ mysql -u root -pxxxxxx test < test2backup.sql // restauration
+
 ## Dump avec condition
 
     $ mysqldump -umy_user_name -p database_name  --tables my_table1 --where="date_created > '2016-01-01' " > mytable1_filtered_dump.sql

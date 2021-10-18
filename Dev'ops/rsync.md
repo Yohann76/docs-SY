@@ -25,4 +25,10 @@ Pour planifier déclanchement automatique de cette commande de sauvegarde :
     - Une fois le script effectuer, on va permettre l'execution : chmod +x /home/yohann/sauvegarde.sh
     - tache cron ( journalier à 20h ):    $ 00 20 * * * /home/yohann/sauvegarde.sh  // tout les jour à 20h = sauvegarde
 
+## Récupération
+
+pour le fichier sql, on peut injecter notre backup dans la base de données avec :
+
+    $ source ;/var/backup/backup.sql (in the $mysql container)
+
 ## Xcopy ( Windows )
