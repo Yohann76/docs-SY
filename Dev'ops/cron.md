@@ -4,11 +4,11 @@ Syntaxe :
 
     mm hh jj MMM JJJ [user] tâche > log
 
-     lister :  $ crontab -l
-     editer :  $ crontab -e
-     supprimer tous : $ crontab -r
+     $ crontab -l // lister
+     $ crontab -e // editer
+     $  crontab -r // supprimer tous
 
-
+     $ export VISUAL=nano; crontab -e // paramettrer l'ouverture des taches cron avec nano
 
 Tous les jour a 22h :
 
@@ -27,7 +27,7 @@ toute les minute seulement le lundi :
 
     $ * * * * 1 /root/script/commandes-du-lundi.sh
 
-    
+
 22 decembre a 00h15 ( une fois par an ) :
 
     $ 15 00 25 12 * echo "Le père Noël est passé !"
