@@ -63,6 +63,8 @@
     - [Config WAMP](Dev'ops/Config-Wamp/Php-ini.md)
     - [Apache](Dev'ops/Apache/config.md)
     - [AWS](Dev'ops/AWS.md)
+    - [Tache cron](Dev'ops/cron.md)
+    - [Rsync](Dev'ops/rsync.md)
     - [Nom de domaine](Dev'ops/Nom-de-domaine.md)
 * Editeur
     - [VS code](/Editeur/Vscode.md)
