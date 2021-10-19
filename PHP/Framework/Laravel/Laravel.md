@@ -34,3 +34,13 @@ Créer un .env:
     $ php artisan config:cache // Clear la config et MAJ
     $ php artisan migrate // Effectuer une migration
     $ php artisan test --coverage-html tests/coverage // Lancer les tests avec coverage
+    
+## Fonctionnement 
+    - Les views sont découpé en components, chaque component <myNav> peut être inclus avec <x-myNav>
+    - Laravel utilise des components Symfony
+    - Blade s'utilise a peu près comme twig
+    - Une utilisation sans fichier CSS, avec simplement tailwind et alpineJS est très interessent
+    - Il n'y a pas d'annotations, les routes sont dans un fichier spécifique
+    - Les authenticators s'appelent des "middleware"
+    - php artisan xxx:xxx est l'utilitaire de commande de laravel
+    - Laravel propose plusieurs template par defaut ( plus que sur Symfony )
