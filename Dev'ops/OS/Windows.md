@@ -36,3 +36,9 @@ Ces lignes de commande peuvent etre dans un fichier .bat pour etre éxécuté in
 On peut acceder a des machine debian, ubunto ou kali depuis le windows store
 
 pour avoir acces au fichier / de ces machine il suffit de taper "\\wsl$" dans l'explorateur de fichier
+
+# xcopy
+
+Pouvoir synchroniser des fichiers sous windows
+
+[Docs Xcopy](https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/xcopy)

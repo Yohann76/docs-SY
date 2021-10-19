@@ -33,8 +33,12 @@ pour le fichier sql, on peut injecter notre backup dans la base de données avec
 
 ## Xcopy ( Windows )
 
+[Xcopy Docs](https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/xcopy)
+
 Il existe une solution de synchronisation sur windows. c'est Xcopy.
 
+    $ Xcopy <Source> [<Destination>] [/w] [/p] [/c] [/v] [/q] [/f] [/l] [/g] [/d [:MM-DD-YYYY]] [/u] [/i] [/s [/e]] [/t] [/k] [/r] [/h] [{/a | /m}] [/n] [/o] [/x]
+    [/exclude:FileName1[+[FileName2]][+[FileName3]]] [{/y | /-y}] [/z] [/b] [/j]
 
 ## Rclone  ( linux )
 
