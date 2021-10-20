@@ -13,8 +13,8 @@ intégrer la pagination..
 
 ## Général :
 
-Architecture
-/
+    Architecture
+    /
     index.php
     screenshot.png ( taille ? )
     style.css ( avec /* Info thème  */
