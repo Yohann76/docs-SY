@@ -31,3 +31,6 @@ toute les minute seulement le lundi :
 22 decembre a 00h15 ( une fois par an ) :
 
     $ 15 00 25 12 * echo "Le père Noël est passé !"
+
+
+$ 00 22 * * * /root/scripts/sauvegarde.sh >> /root/scripts/sauvegarde.log // mettre les logs
