@@ -18,7 +18,9 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
 
 #### Config special
 
-    $ git config --global http.version HTTP/1.1 // if error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1) 
+    $ git config --global http.version HTTP/1.1 // if error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1)
+    $ git config --local http.postBuffer 157286400 // permet de push des fichier + volumineux
+    $ git config --global http.postBuffer 1024000000
 
 ## Créer un nouveau projet vide sur un dépot git vide :
 

@@ -77,13 +77,15 @@ Composer : Les requires indispensable  et commandes composer
 
 Commande d’information et Commande divers bin/console
 
-
     $ php bin/console
     $ php bin/console debug:autowiring
     $ php bin/console debug:container --parameters ( voir les paramètres ( variable %xx% dans .yaml package )
     $ php bin/console debug:router ( voir toute les routes ).
 
+## Commande symfony de base de donnée
+
     $ php bin/console doctrine:mapping:import /// ??
+    $ php bin/console doctrine:database:import ./Docs/backup/backup.sql  /// importer une database
 
 Nouvelles commandes
 ( nouvelle commande symfony avec le dernier exécutable ( [Symfony executable](https://symfony.com/download) )
