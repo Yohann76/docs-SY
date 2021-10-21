@@ -16,6 +16,10 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
     $ git config --global user.name "ThorAndCo" // connecter
     $ git config --global user.email thorandco@domaine.fr // connecter
 
+#### Config special
+
+    $ git config --global http.version HTTP/1.1 // if error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1) 
+
 ## Créer un nouveau projet vide sur un dépot git vide :
 
 
