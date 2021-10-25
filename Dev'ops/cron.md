@@ -1,8 +1,25 @@
 ## Tache Cron
 
+
+Si non installé par default :
+
+    $ apt-get install cron
+
+
 Syntaxe :
 
-    mm hh jj MMM JJJ [user] tâche > log
+    mm hh jj MM (day of month (1 - 31))  JJJ ( day of week (0 - 6) )   [user] tâche > log
+
+
+mm : minutes (00-59).
+hh : heures (00-23) .
+jj : jour du mois (01-31).
+MMM : mois (01-12 ou abréviation anglaise sur trois lettres : jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
+JJJ : jour de la semaine (1-7 ou abréviation anglaise sur trois lettres : mon, tue, wed, thu, fri, sat, sun).
+user (facultatif) : nom d'utilisateur avec lequel exécuter la tâche.
+tâche : commande à exécuter.
+> log (facultatif) : redirection de la sortie vers un fichier de log. Si un fichier de log n'est pas spécifié, un mail sera envoyé à l'utilisateur local.
+
 
      $ crontab -l // lister
      $ crontab -e // editer
