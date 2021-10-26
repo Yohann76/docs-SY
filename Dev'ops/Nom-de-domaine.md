@@ -1,9 +1,13 @@
+## domaine
+
+Un nom de domaine redirige sur une adresse ip. Nous pouvons lié n'importe quels domaine à n'importe quels adresse ip.
+Adresse IP et Serveur ne sont pas obligatoirement avec le méme hebergeur.
+
+Pour lié un ndd à un serveur, il faut modifier la zone DNS :  l'entre de type de champ "A" et mettre une cible en IP
+
 ## Nom de domaine sur OVH :
 
 Pour configurer un sous non de domaine sur OVH
-
-
-Acheter un ndd ...
 
 Ensuite pour le lié à un server :
 Aller dans la zone dns du domaine , modifier l'entre de type de champ "A" et mettre une cible en IP
