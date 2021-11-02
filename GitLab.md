@@ -24,58 +24,50 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
 
 ## Créer un nouveau projet vide sur un dépot git vide :
 
-
-    cd /home/git
-    mkdir monprojet
-    cd monprojet
-    git init
-    touch README
-    git add README
-    git commit -m 'Premier Commit'
-    git remote add origin git.domaine.fr/thorandco/monprojet.git
-    git push -u origin master
+    $ cd /home/git
+    $ mkdir monprojet
+    $ cd monprojet
+    $ git init
+    $ touch README
+    $ git add README
+    $ git commit -m 'Premier Commit'
+    $ git remote add origin git.domaine.fr/thorandco/monprojet.git
+    $ git push -u origin master
 
 ## Initialiser un projet git depuis un dépôt existant
 
-
-    cd /home/git
-    mkdir monprojet
-    cd monprojet
-    git init
-    git remote add git.domaine.fr/thorandco/monprojet.git
-    git pull -u origin master
+    $ cd /home/git
+    $ mkdir monprojet
+    $ cd monprojet
+    $ git init
+    $ git remote add git.domaine.fr/thorandco/monprojet.git
+    $ git pull -u origin master
 
 ## Commiter sur le dépôt git local :
 
-
-    git commit --amend -m "Ajout du fichier monfichier.txt pour le projet"
+    $ git commit --amend -m "Ajout du fichier monfichier.txt pour le projet"
 
 ## Information :
 
-
-    git log
+    $ git log
 
 ## Annuler un commit :
 
-
-   git reset HEAD
-   git reset HEAD nomdufichier.txt ( sur un fichier précis )
+   $ git reset HEAD
+   $ git reset HEAD nomdufichier.txt ( sur un fichier précis )
 
 ## Récupérer les sources du dépôt distants:
 
-
-    git fetch
-    git pull origin master
+    $ git fetch
+    $ git pull origin master
 
 ## Annuler un commit en particulier déjà pushé:
 
-
-    git log
-    git revert XXX
-    git push
+    $ git log
+    $ git revert XXX
+    $ git push
 
 ## Gestion des branches :
-
 
   $ git checkout dev // Changer la branche courante
   $ git branch -v // Lister les branches
@@ -85,7 +77,6 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
 
 ## Commande diverse :
 
-
   $ git status // savoir le changement
   $ git add * // ajouter à l'index
   $ git shortlog -sn // Connaitre le nombre de commit git par utilisateur
@@ -93,7 +84,6 @@ Un langage de requête est un langage informatique utilisé pour accéder aux do
   $ git checkout -b dev // créer et switcher dessus
   $ git clone adresse_git_projet // Cloner un projet
   $ git push origin master // push ses commit sur la branch master
-
 
 
 Avoir une variable privée pour gitlab :
