@@ -68,7 +68,7 @@
     - [Nom de domaine](Dev'ops/Nom-de-domaine.md)
     - [SSL](Dev'ops/ssl.md)
 * Editeur
-    - [VS code](/Editeur/Vscode.md)
+    - [VS code](/Editeur/VScode.md)
 * Format
     - [CSV](/Format/CSV.md)
     - [HL7](/Format/HL7.md)
