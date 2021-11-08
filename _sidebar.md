@@ -76,6 +76,8 @@
     - [CSV](/Format/TEXT.md)
 * Go
     - [Go](/Go/Go.md)
+    - Framework
+        - [Hugo Framework](/Go/Framework/hugo.md)
 
 * Hacking/Sécurité
     - RootMe
