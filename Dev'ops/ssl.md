@@ -12,3 +12,9 @@ Vous devez passer par un organisme de certification.
     $ sudo ln -s /snap/bin/certbot /usr/bin/certbot
     $ sudo certbot --nginx
     $ sudo certbot renew --dry-run
+
+
+## Organisme de de certification
+
+- [Certbot for Let's Encrypt](https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx)
+- [Cloudfare](https://dash.cloudflare.com/) 
