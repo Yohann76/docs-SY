@@ -155,6 +155,7 @@
                 - [swiftMailer](/PHP/Framework/Symfony/UtilitaireSF/swiftMailer.md)
                 - [Twig](/PHP/Framework/Symfony/UtilitaireSF/twig.md)
             - [Symfony](/PHP/Framework/Symfony/Symfony.md)
+            - [SF Traduction](/PHP/Framework/Symfony/traduction.md)
             - [form](/PHP/Framework/Symfony/form.md)
             - [repositoryEx](/PHP/Framework/Symfony/repositoryEx.md)
             - [UpgradeSF](/PHP/Framework/Symfony/Upgrade_symfony.md)
