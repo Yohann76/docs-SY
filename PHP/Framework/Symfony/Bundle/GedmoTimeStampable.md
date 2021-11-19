@@ -12,3 +12,6 @@ Utilisation dans les entités :
 use App\Entity\Behavior\TimestampableTrait;
 
      use TimestampableTrait;
+
+
+Configuration avec [SymfonyCast TimeStampableTrait](https://symfonycasts.com/screencast/symfony4-doctrine/timestampable)
