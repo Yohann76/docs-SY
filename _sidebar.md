@@ -136,6 +136,7 @@
             - Bundle
                 - [ListeBundle](/PHP/Framework/Symfony/Bundle/ListBundle.md)
                 - [SnappyBundle](/PHP/Framework/Symfony/Bundle/SnappyBundle.md)
+                - [GedmoTimeStampable](/PHP/Framework/Symfony/Bundle/GedmoTimeStampable.md)
             - Components
                 - [Command](/PHP/Framework/Symfony/Components/Command.md)
                 - [HttpClient](/PHP/Framework/Symfony/Components/HttpClient.md)
