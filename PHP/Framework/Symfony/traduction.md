@@ -31,7 +31,7 @@ Pour traduire dans les bases de données :
 
 -  Une fois toute les traductions faites, il est possible de generer un fichier xlf ( editable avec le logiciel poedit )
 
-    $ php bin/console translation:update --force fr // fr ou en ou autre langue // commande pour generer un fichier mais ecrase la traduction d'avant
+    $ php bin/console translation:update --force fr // fr ou en ou autre langue // commande pour generer un fichier, créer un nouveau fichier, ecrase pas l'ancien 
 
 ## Traducteur Externe
 
