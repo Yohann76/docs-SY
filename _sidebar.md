@@ -97,6 +97,7 @@
     - [HTML](/HTMLCSS/HTML.md)
     - [SASS](/HTMLCSS/SASS.md)
     - [SCSS](/HTMLCSS/Scss.md)
+    - [tailwind CSS](/HTMLCSS/tailwindCSS.md)
 * Javascript
     - Librairies
         - [AOS](/Javascript/Librairies/AOSJS.md)
