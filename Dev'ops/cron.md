@@ -21,9 +21,11 @@ tâche : commande à exécuter.
 > log (facultatif) : redirection de la sortie vers un fichier de log. Si un fichier de log n'est pas spécifié, un mail sera envoyé à l'utilisateur local.
 
 
+Une cron task est répértorier dans un fichier que nous pouvons éditer avec crontab -e, le fichier est éditer avec nano, les cron tab sont à l'intérieur ligne par ligne.
+
      $ crontab -l // lister
      $ crontab -e // editer
-     $  crontab -r // supprimer tous
+     $ crontab -r // supprimer tous
 
      $ export VISUAL=nano; crontab -e // paramettrer l'ouverture des taches cron avec nano
 
