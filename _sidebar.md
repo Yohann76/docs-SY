@@ -31,6 +31,7 @@
         - [Windows](Dev'ops/OS/Windows.md)
     - tests
         - [Selenium](Dev'ops/tests/selenium.md)
+        - [Panther](Dev'ops/tests/panther.md)
     - Nginx
         - [config nginx php](Dev'ops/Nginx/conf_nginx_php.md)
         - [config nginx ssl https](Dev'ops/Nginx/conf_nginx_ssl_https.md)
@@ -64,7 +65,7 @@
     - [Apache](Dev'ops/Apache/config.md)
     - [AWS](Dev'ops/AWS.md)
     - [Tache cron](Dev'ops/cron.md)
-    - [Rsync](Dev'ops/rsync.md)
+    - [Rsync-Rclone](Dev'ops/rsync.md)
     - [Nom de domaine](Dev'ops/Nom-de-domaine.md)
     - [SSL](Dev'ops/ssl.md)
 * Editeur
