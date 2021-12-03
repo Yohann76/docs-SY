@@ -97,3 +97,22 @@ Faire un composer install manuellement par SSH
               Username: "{{ githubuser }}" # Username is a regex
               Password: "{{ githubpassword }}" # Password is a regex
             #no_log: true
+
+
+
+## Inclure une role dans votre playbook :
+
+
+- Cloner le role dans ansible/roles/clonedurole ( avec github ?)
+- ajouter le role dans votre playbook principale ( role - yohann.clonedurole)
+
+## Liste des roles ansible Galaxy :
+
+Liste des roles utile :
+
+    [Installer RClone ( non test)](https://galaxy.ansible.com/stefangweichinger/ansible_rclone)
+
+
+## Créer son propre role :
+
+[Exemple role](https://galaxy.ansible.com/stefangweichinger/ansible_rclone)
