@@ -150,6 +150,24 @@ créer un bundle (help):
 
 ( convention de nommage Xxx/XxxxBundle ) -> Terminer par Bundle
 
+## Gerer la session [Session docs SF ](https://symfony.com/doc/current/session.html?fbclid=IwAR3vT8p0uYb3eFJ8tdTyG2Io17dsulf9DzeSKZXX6YZ0DosxwB1Q9itdrP4)
+
+La gestion de la session qui est le role de PHP de base peut etre transferer à symfony
+(cela evite les problémes d'expiration de session et de duplication de session entre divers site web)
+
+pour que symfony gére la session, il suffit de modifier le config/packages/framework.yaml
+
+    session:
+        # ...
+        handler_id: 'session.handler.native_file'
+        save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'  
+
+La session sera alors ecrite dans var/session
+
+Le stockage des sessions peut aussi etre utiliser avec un serveur redis (pour un systéme conséquent)
+
+To do : stockage with redis
+
 ## Session
 
 Session Users, dispo dans twig avec App.users
