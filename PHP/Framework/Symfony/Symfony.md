@@ -311,6 +311,30 @@ retourner a la page précedente :
 
    $ symfony console make:auth
 
+### Security
+
+Utiliser plusieurs providers
+
+# multi provider [SF cos provier](https://symfony.com/doc/current/security/user_providers.html)
+
+    providers:
+        # personal provider, request database app.privanciel
+        webservice:
+            id: App\Security\User\WebserviceUserProvider
+            #arguments: ['@doctrine']
+
+        #entity hub
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: email
+
+        all_users:
+            chain:
+                providers: ['webservice', 'app_user_provider']
+
+
+
 ## Gestion du déploiement :
 
 
