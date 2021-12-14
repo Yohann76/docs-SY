@@ -84,41 +84,18 @@ Commande d’information et Commande divers bin/console
 
 ## Commande symfony de base de donnée
 
-    $ php bin/console doctrine:mapping:import /// ??
     $ php bin/console doctrine:database:import ./Docs/backup/backup.sql  /// importer une database
 
-Nouvelles commandes
-( nouvelle commande symfony avec le dernier exécutable ( [Symfony executable](https://symfony.com/download) )
 
+(nouvelle commande symfony avec le dernier exécutable ([Symfony executable](https://symfony.com/download))
 
     $ symfony server:start --no-tls
     $ symfony new --full my_project
 
 Code
 
-Cette partie présente des démonstrations codé
-
-Faire apelle a une fonction du repository
-
-
-      /**
-       * @Route("/dashboard/admin", name="app_dashboard_admin")
-       */
-      public function index(UserRepository $userRepository, OrderRepository $orderRepository, ListMailRepository $listMailRepository)
-      {
-          $ClientNumber = $userRepository->countAllUser();
-          $OrderNumber = $orderRepository->countAllOrder();
-          $ListMailNumber = $listMailRepository->countAllListMail();
-
-          return $this->render('dashboard/dashboardAdmin.html.twig', [
-              'ClientNumber' => $ClientNumber,
-              'OrderNumber' => $OrderNumber,
-              'ListMailNumber' => $ListMailNumber
-          ]);
-      }
 
 Fonction de count pour une entité dans le repository :
-
 
     public function countAllUser()
     {
@@ -127,21 +104,14 @@ Fonction de count pour une entité dans le repository :
         return (int) $qb->getQuery()->getSingleScalarResult();
     }
 
-Dans la vue :
-
-
-    {{ ClientNumber }} {{ OrderNumber }} {{ ListMailNumber }}
-
 
 Service interne les plus utilisé
-
-
 
   	Security $sécurity (   $this->security->getUser()    )
   	LoggerInterface $logger ( $logger->debug(‘xxxxx’)   )
 
 
-Bundle utile
+## Bundle utile
 
 créer un bundle (help):
 
