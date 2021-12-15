@@ -112,3 +112,31 @@ Listes des users
 
 
     $ mysql> INSERT INTO user_orga VALUES (33, 50, 17, 'ROLE_ORGA_DPO', NULL);  // dans la table user orga aprés avoir choisis d'utiliser la bdd correspondante
+
+
+## Utilisation MySQL WorkBench
+
+Connexion à une bdd sur un serveur distant :
+
+Standart TCP/IP with SSH :
+
+  SSH HostName : Ip server
+  SSH username : ubuntu
+  SSH password : ssh password
+
+  MySQL Hostname : localhost
+  MySQL Server Port : 3306
+  Username : username mysql
+  mysql pass : password mysql
+
+
+Sur l'onglet "Query" des scripts peuvent etre effectué :
+
+    show databases;
+    use blitz;
+    select * from user;
+
+    Controle + enter pour executer le script
+
+
+à droite du resultat, nous pouvons modifier un element avec un formulaire.
