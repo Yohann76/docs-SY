@@ -59,3 +59,10 @@ recherche :
 
 
     SELECT * FROM patients WHERE last_name = 'Zola';
+
+
+## PG admin
+
+[PG admin docs](https://www.pgadmin.org/docs/)
+
+Utilisation local pour connecter des bases de données distantes
