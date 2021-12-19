@@ -1,0 +1,154 @@
+---
+- hosts: all
+
+  vars_files:
+    - ./vars/vault.yml
+    - ./vars/vars.yml
+
+  vars_prompt:
+    - name: symfony_env
+      prompt: "Enter the environment for your Symfony app (prod|dev|test)"
+      default: prod
+      private: no
+
+  environment:
+    SYMFONY_ENV: "{{ symfony_env|lower }}"
+
+  pre_tasks:
+
+
+    - ping: ~
+
+    - name: Update and upgrade apt packages
+      become: true
+      apt:
+        upgrade: yes
+        update_cache: yes
+        #cache_valid_time: 86400 #One day
+
+    - name: Convert entered Symfony environment to lowercase
+      set_fact:
+        symfony_env: "{{ symfony_env|lower }}"
+      tags:
+        - always
+
+    - name: Upgrade installed packages
+      become: true
+      apt:
+        upgrade: safe
+
+  tasks:
+    #Mounting docker
+    - name: Install utils packages
+      apt:
+        #name: "{{ item }}"
+        state: present
+        update_cache: yes
+      become: true
+      ignore_errors: yes
+      with_items:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - software-properties-common
+        - docker-ce
+        - python3
+        - virtualenv
+        - python3-pip
+        - python3-setuptools
+        - python3-pip
+        - pip
+
+    - name: Add Docker s official GPG key
+      become: true
+      apt_key:
+        id: '0EBFCD88'
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Verify that we have the key with the fingerprint
+      become: true
+      apt_key:
+        id: 0EBFCD88
+        state: present
+      tags:
+        - docker
+
+    - name: Add Docker Repository
+      become: true
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu bionic stable
+        state: present
+
+    - name: Install Docker Module for Python
+      become: true
+      apt:
+        name: docker
+
+    - name: Update apt packages
+      become: true
+      apt:
+        update_cache: yes
+
+    - name: Install docker-compose
+      become: true
+      get_url: 
+        url : https://github.com/docker/compose/releases/download/1.25.1-rc1/docker-compose-Linux-x86_64
+        dest: /usr/local/bin/docker-compose
+        mode: 'u+x,g+x'
+
+    #Set up Project
+
+    - name: Install Git VCS
+      become: true
+      apt:
+        name: git
+        state: latest
+
+    - name: Create project directory and set its permissions
+      become: true
+      file:
+        path: "/var/www/portfolio"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        recurse: yes
+
+    - name: Checkout Git repository
+      git:
+        repo: https://github.com/DurandSacha/Portfolio
+        dest: "/var/www/portfolio"
+        force: yes
+        clone: yes
+      register: repo_code
+
+    - name: Install low-level utilities
+      become: true
+      apt:
+        name:
+          - zip
+          - unzip
+
+    - name: install acl package
+      become: yes
+      apt: pkg=acl
+    
+    - name: pull portfolio
+      become: True
+      shell:
+        cmd: "git pull"
+        chdir: /var/www/portfolio
+
+    - name: Run containers
+      become: True
+      shell:
+        cmd: "docker-compose up -d"
+        chdir: /var/www/portfolio
+
+  handlers:
+
+    - name: Restart Docker containers
+      become: true
+      service:
+        name: docker
+        state: restarted
