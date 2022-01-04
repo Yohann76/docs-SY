@@ -29,6 +29,10 @@
         - [Systême linux](Dev'ops/OS/Linux-System.md)
         - [Windows/MAC compatibilité](Dev'ops/OS/Windows-MacOS-Compatibilité.md)
         - [Windows](Dev'ops/OS/Windows.md)
+    - SEO
+        - [Analyctis](Dev'ops/SEO/Analyctis.md)
+        - [Les bases SEO](Dev'ops/SEO/Les-bases_SEO.md)
+        - [SendinBlue](Dev'ops/SEO/SendinBlue.md)
     - tests
         - [Selenium](Dev'ops/tests/selenium.md)
         - [Panther](Dev'ops/tests/panther.md)
