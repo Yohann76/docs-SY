@@ -7,12 +7,16 @@ included:
 
 - Hacking
 - HTML/CSS
+- CMS
 - PHP
 - Javascript
 - Framework
 - Python
 - Data
+- Go
 - Docker
 - DevOps ( deployment, CI/CD )
+- Protocole
+- Ruby
 
 ## Other

@@ -13,8 +13,6 @@ Ejection d'une application expo  :
 
 ## Configuration d'environnement sans expo :
 
-
-
 Sans expo, il faut lancer la commande suivante pour tester l'application, avec un téléphone branché en USB, ou un simulateur android studio :
 
     $ react-native run-android
