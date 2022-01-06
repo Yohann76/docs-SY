@@ -1,9 +1,13 @@
 ## Les bases SEO
 
-La balise title doit etre selon des mots clés précis. ( titre qui apparait sur google, faire un titre qui donne envie )
+Le SEO est l'art de montrer à un moteur de recherche que le site est pertinant
 
 
-Les balises meta doivent étre accrocheuse
+## Sur un site web
+
+
+- La balise title doit etre selon des mots clés précis. ( titre qui apparait sur google, faire un titre qui donne envie )
+- Les balises meta doivent étre accrocheuse
 
     <meta name="description" content="Privanciel, la meilleurs solution pour la gestion de votre projet RGPD.
     Un outil simple et accessible pour gérer, auditer et certifier votre conformité.
@@ -18,3 +22,5 @@ Les balises meta doivent étre accrocheuse
   - Performance du site important
   - Des backlink de qualité
   - Pas de 404
+  - Cohérence d'un sujet sur une page
+  - Publication d'article SEO réguliére 
