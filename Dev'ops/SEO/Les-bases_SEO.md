@@ -21,6 +21,24 @@ Le SEO est l'art de montrer à un moteur de recherche que le site est pertinant
   - Mettre des liens vers les réseau sociaux
   - Performance du site important
   - Des backlink de qualité
-  - Pas de 404
+  - Pas de 404 ou erreur existante
   - Cohérence d'un sujet sur une page
-  - Publication d'article SEO réguliére 
+  - Publication d'article SEO réguliére
+
+
+## Facteur de référencement
+
+- Pas de page orpheline ( zero liens qui méne vers cette page)
+- Etre coherent dans chaque pages
+- Ne pas cibler uniquement les mots-clés à fort trafic
+- Bon d'avoir un fil d'ariane
+- Bon maillage interne
+
+
+## Outils SEO
+
+- Google Search Console
+- Semrush [Lien de Semrush](https://fr.semrush.com/)
+- Google Trends, Moz, Hootsuite et SimilarWeb ( outils de recherche pour mots-clés)
+- screaming frog [ici](https://www.screamingfrog.co.uk/seo-spider/)
+- SEO META in 1 CLICK [ici](https://chrome.google.com/webstore/search/seo%20meta%20in%20one%20click%20?hl=fr)
