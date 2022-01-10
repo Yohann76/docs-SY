@@ -15,6 +15,10 @@ Le SEO est l'art de montrer à un moteur de recherche que le site est pertinant
 
     <meta name="author" content="Data Transition">
 
+## mots-clés
+
+- + de 3 mots
+- Faible Compétitivité
 
 ## Autre
 
@@ -34,6 +38,17 @@ Le SEO est l'art de montrer à un moteur de recherche que le site est pertinant
 - Bon d'avoir un fil d'ariane
 - Bon maillage interne
 
+
+## robots.TXT
+
+    User-Agent: *
+    Disallow: /intranet/
+    Disallow: /login
+    Disallow: /article/admin/index
+    Disallow: /article/new
+    Disallow: /legal
+    Allow: /*.css?*
+    Sitemap: https://privanciel.com/sitemap.xml
 
 ## Outils SEO
 
