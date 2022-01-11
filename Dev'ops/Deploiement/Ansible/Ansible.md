@@ -102,7 +102,6 @@ Faire un composer install manuellement par SSH
 
 ## Inclure une role dans votre playbook :
 
-
 - Cloner le role dans ansible/roles/clonedurole ( avec github ?)
 - ajouter le role dans votre playbook principale ( role - yohann.clonedurole)
 
@@ -116,3 +115,25 @@ Liste des roles utile :
 ## Créer son propre role :
 
 [Exemple role](https://galaxy.ansible.com/stefangweichinger/ansible_rclone)
+
+
+## Divers taches utile :
+
+    - name: save old article/img folder  copy/paste with Rclone (already install manualy)
+          command: 'sudo rclone copy /var/www/html/website-privanciel/public/article/img drive:/privanciel-save/website-privanciel/img-article'
+
+    - name: delete old folders
+      become: true
+      file:
+        state: absent
+        path: "{{ symfony_root_dir }}/"
+
+    # set old article/img in new folder ( after clone )  copy/paste with Rclone drive -> article/img
+    # sudo rclone copy /var/www/html/website-privanciel/public/article/img drive:/privanciel-save/website-privanciel/img-article
+    - name: set old article/img in new folder with Rclone (already install manualy)
+      command: 'sudo rclone copy drive:/privanciel-save/website-privanciel/img-article /var/www/html/website-privanciel/public/article/img'
+
+    # for forced yarn is last role, include task t moment
+    - name: include last yarn role
+      include_role:
+        name: yarn
