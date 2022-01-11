@@ -43,6 +43,7 @@
     $ sudo service nginx status // savoir le status de Nginx
     $ sudo service nginx start // démarer nginx
     $ sudo service nginx stop // Stopper le service Nginx
+    $ ls -Art | tail -n 1 // trouver le dernier fichier modifier en date 
 
 
 Shell speciaux :
