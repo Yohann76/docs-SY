@@ -161,6 +161,7 @@
                 - [PHPunit Pro Testing](/PHP/Framework/Symfony/UtilitaireSF/PHPunit-Pro-Testing.md)
                 - [swiftMailer](/PHP/Framework/Symfony/UtilitaireSF/swiftMailer.md)
                 - [Twig](/PHP/Framework/Symfony/UtilitaireSF/twig.md)
+                - [Sentry](/PHP/Framework/Symfony/UtilitaireSF/sentry.md)
             - [Symfony](/PHP/Framework/Symfony/Symfony.md)
             - [SF Traduction](/PHP/Framework/Symfony/traduction.md)
             - [form](/PHP/Framework/Symfony/form.md)
