@@ -57,3 +57,5 @@ Le SEO est l'art de montrer à un moteur de recherche que le site est pertinant
 - Google Trends, Moz, Hootsuite et SimilarWeb ( outils de recherche pour mots-clés)
 - screaming frog [ici](https://www.screamingfrog.co.uk/seo-spider/)
 - SEO META in 1 CLICK [ici](https://chrome.google.com/webstore/search/seo%20meta%20in%20one%20click%20?hl=fr)
+- Page speed insight (gratuit : pour la Performance )
+- Google Trends ( gratuit, analyse des mots-clés)
