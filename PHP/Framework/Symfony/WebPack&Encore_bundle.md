@@ -113,11 +113,22 @@ Module get_phone.js exporter :
    export default function(exclamationCount) {
       return 'Hello Webpack EEncore! Edit me in assets/js/app.js'+'!'.repeat(exclamationCount);
    };
+## Gestion du CSS  :
+
+postcss.config.js :
+
+    module.exports = {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        }
+    }
+
 
 ## Production :
 
-    $Yarn install
-    $Yarn build
+    $ Yarn install
+    $ Yarn build
 
 Configuration webpack.config.js fonctionnel :
 
