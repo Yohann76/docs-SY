@@ -55,6 +55,10 @@ Composer : Les requires indispensable  et commandes composer
   	$ composer require fzaninotto/faker --dev ( génération de jeux de donnée factice ( en --dev )
   	$ composer require twig/extensions ( Extension Twig )
 
+
+    $ composer recipes // pour voir la liste des recipe (avec symfony flex)
+    // attention si instalation avec force, efface toutes les config de bases.
+
 ## Création automatique ( makerBundle )
 
   	$ php bin/console list make // affiche tout les make
