@@ -1,5 +1,8 @@
 ## Formulaire
 
+[Symfony form Docs](https://symfony.com/doc/current/components/form.html)
+
+Créer un formulaire :
 
     $ php bin/console make:form
 
@@ -21,16 +24,13 @@ Générer du côté vue :
 
 
   	{{  form_start(form) }}
-
   	   {{ form_widget(form) }}
 
   	{{  form_end(form) }}
-
 Spécificité de chaque row :
 
     {{  form_row(form.description, {'attr': {'onchange' :'sessionStorage.description=this.value' }} ) }}
     {{ form_start(formMission,{'attr': {'id' : 'newMissionForm', 'class': 'form-horizontal','data-parsley-validate':''}}) }}
-
 
 
 Type de champ
@@ -61,3 +61,9 @@ Type de champ
             return sprintf('%s', $qualificationSupport->getName());
         },
     ))
+
+
+## Form dinamique (avec js)
+
+[Groupe resolvers Sf docs](https://symfony.com/doc/current/form/validation_group_service_resolver.html)
+[Form collection SF Docs](https://symfony.com/doc/current/form/form_collections.html)
