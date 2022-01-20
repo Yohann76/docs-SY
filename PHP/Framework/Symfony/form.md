@@ -67,3 +67,5 @@ Type de champ
 
 [Groupe resolvers Sf docs](https://symfony.com/doc/current/form/validation_group_service_resolver.html)
 [Form collection SF Docs](https://symfony.com/doc/current/form/form_collections.html)
+
+[Form Dynamic modification](https://symfony.com/doc/current/form/dynamic_form_modification.html)
