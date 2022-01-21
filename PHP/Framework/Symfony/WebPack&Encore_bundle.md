@@ -1,5 +1,6 @@
 ## Webpack
 
+[Webpack encore bundle Github](https://github.com/symfony/webpack-encore-bundle)
 
 Installation
 Installer webpack avec yarn : yarn add webpack@3 --dev   ( ou webpack-cli )
@@ -13,7 +14,7 @@ Exporter un objet, une variable, une classe, une fonction… :
   - const $ = require('jquery');
   - const Helper = require('./RepLogAppHelper')
 
-après modification du webpack.config.js : exécuter “sh node_modules/.bin/webpack” pour builder le Js
+Après modification du webpack.config.js : exécuter “sh node_modules/.bin/webpack” pour builder le Js
 
 Exemple de webpack.config.js :
 
@@ -159,3 +160,11 @@ Configuration webpack.config.js fonctionnel :
     module.exports = Encore.getWebpackConfig();
 
     yarn encore dev
+
+
+
+## Install react on SF :
+
+
+
+## Install Vue on SF :
