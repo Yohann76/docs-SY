@@ -29,10 +29,19 @@ Boucler et pusher dans un tableau ( dans un objet )
         array_push($ListUser, $Userid);
     }
 
-Function sur tableau
+Function sur tableau :
 
     unset($arr[5]); // Ceci efface l'élément du tableau
     unset($arr);    // Ceci efface complètement le tableau
+
+
+
+Si un element est dans le tableau :
+
+    $os = array("Mac", "NT", "Irix", "Linux");
+    if (in_array("Irix", $os)) {
+        echo "L'element à été trouvé";
+    }
 
 
 Divers fonction en php
