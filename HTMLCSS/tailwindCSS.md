@@ -11,3 +11,8 @@
 ## CDN
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+## Utilisation
+
+pb : padding-bottom
+mb : margin-bottom
