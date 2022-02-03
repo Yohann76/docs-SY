@@ -13,6 +13,8 @@ CDN
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
+[Bootstrap avec webpack](https://getbootstrap.com/docs/4.0/getting-started/webpack/)
+
 ## Structure ( balise )
 
     div "container" permet de centrer un block
@@ -25,6 +27,10 @@ CDN
 btn btn-info // button bleu
 btn btn-danger // button rouge
 btn btn-succes // button vert
+btn btn-warning // button  orange
+
+
+
 
 ## Poppover
 
@@ -90,6 +96,8 @@ btn btn-succes // button vert
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
+
+## Boostrap-table librairie
 
 
 ## Boostrap-table librairie
