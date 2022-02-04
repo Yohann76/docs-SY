@@ -1,6 +1,6 @@
 ## Tailwind
 
-[Tailwind Docs ](https://tailwindcss.com/docs)
+[Tailwind Docs](https://tailwindcss.com/docs)
 
 
 
@@ -16,3 +16,8 @@
 
 pb : padding-bottom
 mb : margin-bottom
+
+
+## Component ready
+
+[Taildwind Component](https://tailwindui.com/)
