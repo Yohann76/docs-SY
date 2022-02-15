@@ -24,6 +24,11 @@
     $ docker login // se connecter au hub en CLI
     $ docker logs <container>  // obtenir les logs
 
+## Option commandes :
+
+    -a = all
+    -d = detache
+
 ## Lancer docker :
 
 Lancer docker s’il n’est pas lancer :docker-machine start default
