@@ -91,3 +91,12 @@ DEPRECIATION
 
 Pour regler les depréciations il faut mettre a jour certain fichier obtenu sur
 [Symfony Recipe](https://github.com/symfony/recipes)
+
+
+
+## 5.4 -> 6.0
+
+Pré-requis : PHP 8
+
+Regler les depréciations
+executer les recipe
