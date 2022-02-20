@@ -5,19 +5,21 @@ available in https://yohann76.github.io/docs-SY/#/
 This documentation is for informational purposes for sacha and yohann
 included:
 
+- .NET
+- CMS
+- Data
+- DevOps ( deployment, CI/CD )
+- Go
 - Hacking
 - HTML/CSS
-- CMS
-- PHP
 - Javascript
-- Framework
-- Python
-- Data
-- Go
-- Docker
-- DevOps ( deployment, CI/CD )
+- Mobile
+- PHP
 - Protocole
+- Python
+- Request
 - Ruby
+- Docker
 
 ## Contributing
 
