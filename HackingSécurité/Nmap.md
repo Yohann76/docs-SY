@@ -19,3 +19,11 @@ Commande pour Scanner son réseau local ( et aussi trouver une raspberry ) :
     $ nmap -O 192.168.1.3nmap -v -O --osscan-guess 192.168.1.1 // Detecter le systéme d'exploitation d'un host
     $ nmap -p 80 192.168.1.3 // Verifier qu'une machine écoute bien sur un port ( port 80 ici )
     $ nmap -p- -Pn 192.168.1.1 // scanner tout les port ouvert avec le minimum d'informations
+
+
+## Outils windows de port ouvert
+
+[Cours OC Scan de ports](https://openclassrooms.com/fr/courses/2340511-maitrisez-vos-applications-et-reseaux-tcp-ip/2883743-initiez-vous-au-scan-de-ports)
+  $ netstat -an
+  $ netstat -anpe
+  $ netstat -antp
