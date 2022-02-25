@@ -162,3 +162,7 @@ début ou à la fin d'un élément, grâce à la propriété content
      display: block;
       float: left;
     }
+
+## Style PDF
+
+[CSS propriété](https://developer.mozilla.org/fr/docs/Web/CSS/page-break-after)
