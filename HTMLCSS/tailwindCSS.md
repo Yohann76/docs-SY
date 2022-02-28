@@ -21,3 +21,7 @@ mb : margin-bottom
 ## Component ready
 
 [Taildwind Component](https://tailwindui.com/)
+
+
+
+[Dark mode](https://tailwindcss.com/docs/dark-mode)
