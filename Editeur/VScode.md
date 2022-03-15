@@ -7,8 +7,9 @@
     CTRL + q // Recherche visual studio
     CTRL + f // chercher les occurences
     CTRL + MAJ + F // rechercher dans les fichiers
-    Ctrl + X // Suppression de ligne 
+    Ctrl + X // Suppression de ligne
     Ctrl + D // Modification par occurence
+    Ctrl + K + F // Indentation automatique
 
 ## Plugin/Extension :
 
