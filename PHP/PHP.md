@@ -103,3 +103,8 @@ Regex utile:
 
     #(https?://)([\w\d.&:\#@%/;$~_?\+-=]*)#  // trouve une chaine https://
     preg_match_all("#^\s[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}\s$#",$content, $out); // Trouver une adresse mail
+
+
+## PHP 8
+
+[Nouveau PHP8](https://kinsta.com/fr/blog/php-8/#new-php-functions)
