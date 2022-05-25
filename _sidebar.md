@@ -16,6 +16,8 @@
         - [Wordpress](/CMS/WordPress/WordPress.md)
     - Zabbix
         - [zabbix](/CMS/Zabbix/zabbix.md)
+    - [moodle](/CMS/moodle.md)
+    
 * Data
     - [Big Data](/Data/Big-Data.md)
     - [GraphQL](/Data/GraphQl.md)
