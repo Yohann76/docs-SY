@@ -114,6 +114,11 @@ Listes des users
     $ mysql> INSERT INTO user_orga VALUES (33, 50, 17, 'ROLE_ORGA_DPO', NULL);  // dans la table user orga aprés avoir choisis d'utiliser la bdd correspondante
 
 
+## Configuration & info :
+
+
+  SHOW VARIABLES WHERE Variable_name = 'port'; // requete SQL pour savoir le port de mysql
+
 ## Utilisation MySQL WorkBench
 
 Connexion à une bdd sur un serveur distant :
