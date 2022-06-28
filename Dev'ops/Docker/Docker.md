@@ -172,11 +172,12 @@ Lancer la config :
 
 ## Probléme Résolue :
 
-probleme :
+probleme : Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+Solution : Passer en sudo
 
-  Couldn't connect to Docker daemon at http+docker://localhost - is it running?
 
-- Essayer en sudo
+problême : Version de docker-compose non valide : 
+Solution : MAJ docker-compose : https://github.com/datahub-project/datahub/issues/2020
 
 
 ## Les images docker et le docker Hub :
