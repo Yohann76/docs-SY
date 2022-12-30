@@ -117,7 +117,7 @@ Liste des roles utile :
 [Exemple role](https://galaxy.ansible.com/stefangweichinger/ansible_rclone)
 
 
-## Divers taches utile :
+## Diverses taches utile :
 
     - name: save old article/img folder  copy/paste with Rclone (already install manualy)
           command: 'sudo rclone copy /var/www/html/website-privanciel/public/article/img drive:/privanciel-save/website-privanciel/img-article'
